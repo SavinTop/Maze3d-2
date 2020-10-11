@@ -1,0 +1,12 @@
+[
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/hello.dir/includes_CXX.rsp -g   -o CMakeFiles\\hello.dir\\main.cpp.obj -c D:\\21\\Maze3d\\main.cpp",
+  "file": "D:/21/Maze3d/main.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/hello.dir/includes_C.rsp -g   -o CMakeFiles\\hello.dir\\src\\glad.c.obj   -c D:\\21\\Maze3d\\src\\glad.c",
+  "file": "D:/21/Maze3d/src/glad.c"
+}
+]
