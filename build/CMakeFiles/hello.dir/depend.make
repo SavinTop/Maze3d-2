@@ -8,5 +8,6 @@ CMakeFiles/hello.dir/src/glad.c.obj: ../src/glad.c
 CMakeFiles/hello.dir/main.cpp.obj: ../include/GLFW/glfw3.h
 CMakeFiles/hello.dir/main.cpp.obj: ../include/KHR/khrplatform.h
 CMakeFiles/hello.dir/main.cpp.obj: ../include/glad/glad.h
+CMakeFiles/hello.dir/main.cpp.obj: ../src/utilities/script.hpp
 CMakeFiles/hello.dir/main.cpp.obj: ../main.cpp
 

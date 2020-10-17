@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : "Release"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -879,7 +879,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "hello"
+			"value" : "maze3d"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1271,6 +1271,30 @@
 		},
 		{
 			"name" : "hello_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/21/Maze3d"
+		},
+		{
+			"name" : "maze3d_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/21/Maze3d/build"
+		},
+		{
+			"name" : "maze3d_SOURCE_DIR",
 			"properties" : 
 			[
 				{

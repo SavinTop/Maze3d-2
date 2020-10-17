@@ -9,4 +9,5 @@ CMakeFiles/hello.dir/main.cpp.obj
  ../include/GLFW/glfw3.h
  ../include/KHR/khrplatform.h
  ../include/glad/glad.h
+ ../src/utilities/script.hpp
  D:/21/Maze3d/main.cpp

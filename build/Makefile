@@ -75,17 +75,6 @@ CMAKE_BINARY_DIR = D:\21\Maze3d\build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	D:\dev\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -96,6 +85,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	D:\dev\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello
+# Target rules for targets named maze3d
 
 # Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 hello
-.PHONY : hello
+maze3d: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 maze3d
+.PHONY : maze3d
 
 # fast build rule for target.
-hello/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/build
-.PHONY : hello/fast
+maze3d/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/build
+.PHONY : maze3d/fast
 
 main.obj: main.cpp.obj
 
@@ -148,7 +148,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -157,7 +157,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -166,8 +166,62 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/baseTypes/disk_file_text_res.obj: src/baseTypes/disk_file_text_res.cpp.obj
+
+.PHONY : src/baseTypes/disk_file_text_res.obj
+
+# target to build an object file
+src/baseTypes/disk_file_text_res.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/baseTypes/disk_file_text_res.cpp.obj
+.PHONY : src/baseTypes/disk_file_text_res.cpp.obj
+
+src/baseTypes/disk_file_text_res.i: src/baseTypes/disk_file_text_res.cpp.i
+
+.PHONY : src/baseTypes/disk_file_text_res.i
+
+# target to preprocess a source file
+src/baseTypes/disk_file_text_res.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/baseTypes/disk_file_text_res.cpp.i
+.PHONY : src/baseTypes/disk_file_text_res.cpp.i
+
+src/baseTypes/disk_file_text_res.s: src/baseTypes/disk_file_text_res.cpp.s
+
+.PHONY : src/baseTypes/disk_file_text_res.s
+
+# target to generate assembly for a file
+src/baseTypes/disk_file_text_res.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/baseTypes/disk_file_text_res.cpp.s
+.PHONY : src/baseTypes/disk_file_text_res.cpp.s
+
+src/baseTypes/resource.obj: src/baseTypes/resource.cpp.obj
+
+.PHONY : src/baseTypes/resource.obj
+
+# target to build an object file
+src/baseTypes/resource.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/baseTypes/resource.cpp.obj
+.PHONY : src/baseTypes/resource.cpp.obj
+
+src/baseTypes/resource.i: src/baseTypes/resource.cpp.i
+
+.PHONY : src/baseTypes/resource.i
+
+# target to preprocess a source file
+src/baseTypes/resource.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/baseTypes/resource.cpp.i
+.PHONY : src/baseTypes/resource.cpp.i
+
+src/baseTypes/resource.s: src/baseTypes/resource.cpp.s
+
+.PHONY : src/baseTypes/resource.s
+
+# target to generate assembly for a file
+src/baseTypes/resource.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/baseTypes/resource.cpp.s
+.PHONY : src/baseTypes/resource.cpp.s
 
 src/glad.obj: src/glad.c.obj
 
@@ -175,7 +229,7 @@ src/glad.obj: src/glad.c.obj
 
 # target to build an object file
 src/glad.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/src/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/glad.c.obj
 .PHONY : src/glad.c.obj
 
 src/glad.i: src/glad.c.i
@@ -184,7 +238,7 @@ src/glad.i: src/glad.c.i
 
 # target to preprocess a source file
 src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/glad.c.i
 .PHONY : src/glad.c.i
 
 src/glad.s: src/glad.c.s
@@ -193,8 +247,62 @@ src/glad.s: src/glad.c.s
 
 # target to generate assembly for a file
 src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/glad.c.s
 .PHONY : src/glad.c.s
+
+src/render/shader.obj: src/render/shader.cpp.obj
+
+.PHONY : src/render/shader.obj
+
+# target to build an object file
+src/render/shader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/render/shader.cpp.obj
+.PHONY : src/render/shader.cpp.obj
+
+src/render/shader.i: src/render/shader.cpp.i
+
+.PHONY : src/render/shader.i
+
+# target to preprocess a source file
+src/render/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/render/shader.cpp.i
+.PHONY : src/render/shader.cpp.i
+
+src/render/shader.s: src/render/shader.cpp.s
+
+.PHONY : src/render/shader.s
+
+# target to generate assembly for a file
+src/render/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/render/shader.cpp.s
+.PHONY : src/render/shader.cpp.s
+
+src/utilities/fileLoader.obj: src/utilities/fileLoader.cpp.obj
+
+.PHONY : src/utilities/fileLoader.obj
+
+# target to build an object file
+src/utilities/fileLoader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/utilities/fileLoader.cpp.obj
+.PHONY : src/utilities/fileLoader.cpp.obj
+
+src/utilities/fileLoader.i: src/utilities/fileLoader.cpp.i
+
+.PHONY : src/utilities/fileLoader.i
+
+# target to preprocess a source file
+src/utilities/fileLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/utilities/fileLoader.cpp.i
+.PHONY : src/utilities/fileLoader.cpp.i
+
+src/utilities/fileLoader.s: src/utilities/fileLoader.cpp.s
+
+.PHONY : src/utilities/fileLoader.s
+
+# target to generate assembly for a file
+src/utilities/fileLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/utilities/fileLoader.cpp.s
+.PHONY : src/utilities/fileLoader.cpp.s
 
 # Help Target
 help:
@@ -204,13 +312,25 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... hello
+	@echo ... maze3d
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/baseTypes/disk_file_text_res.obj
+	@echo ... src/baseTypes/disk_file_text_res.i
+	@echo ... src/baseTypes/disk_file_text_res.s
+	@echo ... src/baseTypes/resource.obj
+	@echo ... src/baseTypes/resource.i
+	@echo ... src/baseTypes/resource.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s
+	@echo ... src/render/shader.obj
+	@echo ... src/render/shader.i
+	@echo ... src/render/shader.s
+	@echo ... src/utilities/fileLoader.obj
+	@echo ... src/utilities/fileLoader.i
+	@echo ... src/utilities/fileLoader.s
 .PHONY : help
 
 

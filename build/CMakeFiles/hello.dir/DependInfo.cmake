@@ -12,6 +12,7 @@ set(CMAKE_C_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
+  "../src"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/main.cpp" "D:/21/Maze3d/build/CMakeFiles/hello.dir/main.cpp.obj"
@@ -21,6 +22,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
+  "../src"
   )
 
 # Targets to which this target links.

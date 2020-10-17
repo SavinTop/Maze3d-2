@@ -62,6 +62,8 @@ stdint.h
 KHR/khrplatform.h
 -
 
+../src/utilities/script.hpp
+
 D:/21/Maze3d/main.cpp
 glad/glad.h
 -
@@ -69,4 +71,6 @@ GLFW/glfw3.h
 -
 iostream
 -
+utilities/script.hpp
+D:/21/Maze3d/utilities/script.hpp
 

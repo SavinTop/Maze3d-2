@@ -1,9 +1,23 @@
 cmake_minimum_required(VERSION 3.17.2)
-project (hello)
+project (maze3d)
 
-include_directories("include/")
+file(GLOB helloworld_SRC
+    "*.h"
+    "*.cpp"
+)
+
+include_directories("include/" "src/")
 LINK_DIRECTORIES("libs/")
 
-add_executable(hello main.cpp src/glad.c)
+SET(TARGET_SRC
+    main.cpp
+    src/glad.c
+    src/render/shader.cpp
+    src/utilities/fileLoader.cpp
+    src/baseTypes/resource.cpp
+    src/baseTypes/disk_file_text_res.cpp
+    )
 
-target_link_libraries(hello libglfw3.a)
+add_executable(maze3d ${TARGET_SRC})
+
+target_link_libraries(maze3d libglfw3.a)
