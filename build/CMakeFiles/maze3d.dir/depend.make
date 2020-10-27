@@ -14,6 +14,7 @@ CMakeFiles/maze3d.dir/main.cpp.obj: ../include/glad/glad.h
 CMakeFiles/maze3d.dir/main.cpp.obj: ../include/stb/stb_image.h
 CMakeFiles/maze3d.dir/main.cpp.obj: ../src/engine/baseTypes/resource.hpp
 CMakeFiles/maze3d.dir/main.cpp.obj: ../src/engine/baseTypes/resourceManager.hpp
+CMakeFiles/maze3d.dir/main.cpp.obj: ../src/engine/baseTypes/resources/external/Image.hpp
 CMakeFiles/maze3d.dir/main.cpp.obj: ../src/engine/baseTypes/resources/external/TextFile.hpp
 CMakeFiles/maze3d.dir/main.cpp.obj: ../src/engine/baseTypes/scene.hpp
 CMakeFiles/maze3d.dir/main.cpp.obj: ../src/engine/render/render.hpp
@@ -24,9 +25,18 @@ CMakeFiles/maze3d.dir/main.cpp.obj: ../src/game/gameprocess.hpp
 CMakeFiles/maze3d.dir/main.cpp.obj: ../src/game/testScene.hpp
 CMakeFiles/maze3d.dir/main.cpp.obj: ../main.cpp
 
+CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.obj: ../src/engine/baseTypes/containers/Image.cpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.obj: ../src/engine/baseTypes/containers/Image.hpp
+
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource.cpp.obj: ../src/engine/baseTypes/resource.cpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource.cpp.obj: ../src/engine/baseTypes/resource.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource.cpp.obj: ../src/engine/baseTypes/resourceManager.hpp
+
+CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj: ../include/stb/stb_image.h
+CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj: ../src/engine/baseTypes/resource.hpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj: ../src/engine/baseTypes/resourceManager.hpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj: ../src/engine/baseTypes/resources/external/Image.cpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj: ../src/engine/baseTypes/resources/external/Image.hpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.obj: ../src/engine/baseTypes/resource.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.obj: ../src/engine/baseTypes/resourceManager.hpp
@@ -48,6 +58,7 @@ CMakeFiles/maze3d.dir/src/engine/render/texture.cpp.obj: ../include/glad/glad.h
 CMakeFiles/maze3d.dir/src/engine/render/texture.cpp.obj: ../include/stb/stb_image.h
 CMakeFiles/maze3d.dir/src/engine/render/texture.cpp.obj: ../src/engine/baseTypes/resource.hpp
 CMakeFiles/maze3d.dir/src/engine/render/texture.cpp.obj: ../src/engine/baseTypes/resourceManager.hpp
+CMakeFiles/maze3d.dir/src/engine/render/texture.cpp.obj: ../src/engine/baseTypes/resources/external/Image.hpp
 CMakeFiles/maze3d.dir/src/engine/render/texture.cpp.obj: ../src/engine/render/texture.cpp
 CMakeFiles/maze3d.dir/src/engine/render/texture.cpp.obj: ../src/engine/render/texture.hpp
 
@@ -58,8 +69,11 @@ CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../include/GLFW/glfw3.h
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../include/KHR/khrplatform.h
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../include/glad/glad.h
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../include/stb/stb_image.h
+CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../src/engine/baseTypes/color.hpp
+CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../src/engine/baseTypes/containers/Image.hpp
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../src/engine/baseTypes/resource.hpp
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../src/engine/baseTypes/resourceManager.hpp
+CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../src/engine/baseTypes/resources/external/Image.hpp
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../src/engine/baseTypes/resources/external/TextFile.hpp
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../src/engine/baseTypes/scene.hpp
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../src/engine/render/render.hpp
@@ -70,17 +84,20 @@ CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../src/game/gameprocess.cpp
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../src/game/gameprocess.hpp
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../src/game/testScene.hpp
 
+CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../include/GLFW/glfw3.h
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../include/KHR/khrplatform.h
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../include/glad/glad.h
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../include/stb/stb_image.h
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../src/engine/baseTypes/resource.hpp
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../src/engine/baseTypes/resourceManager.hpp
+CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../src/engine/baseTypes/resources/external/Image.hpp
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../src/engine/baseTypes/resources/external/TextFile.hpp
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../src/engine/baseTypes/scene.hpp
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../src/engine/render/render.hpp
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../src/engine/render/shader.hpp
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../src/engine/render/texture.hpp
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../src/engine/utilities/fileLoader.hpp
+CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../src/game/gameprocess.hpp
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../src/game/testScene.cpp
 CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj: ../src/game/testScene.hpp
 

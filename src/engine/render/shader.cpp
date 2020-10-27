@@ -2,55 +2,56 @@
 
 ShaderProgram::ShaderProgram(const std::string VertexShaderPath, const std::string FragmentShaderPath, const std::string pname)
 	:Resource(pname), 
-	m_fragmentShader(0), 
-	m_vertexShader(0), 
-	m_program(0),
-	VertexShaderFile(VertexShaderPath), 
-	FragmentShaderFile(FragmentShaderPath)
+	fragmentShader_(0), 
+	vertexShader_(0), 
+	program_(0)
 {
-	this->subResources_.setResources({&this->VertexShaderFile, &this->FragmentShaderFile});
+	setParams(VertexShaderPath, FragmentShaderPath, pname);
 }
 
 void ShaderProgram::load(){
-	subResources_.load();
-	if(subResources_.isLoaded()){
-		CreateShader(GL_VERTEX_SHADER, m_vertexShader, this->VertexShaderFile.data());
-		CreateShader(GL_FRAGMENT_SHADER, m_fragmentShader, this->FragmentShaderFile.data());
+	if(loaded = subResources_.isLoaded()){
+		CreateShader(GL_VERTEX_SHADER, vertexShader_, this->VertexShaderFile_.data());
+		CreateShader(GL_FRAGMENT_SHADER, fragmentShader_, this->FragmentShaderFile_.data());
 		CreateProgram();
 	}
-	loaded = subResources_.isLoaded();
 }
 
 void ShaderProgram::unload(){
-	subResources_.unload();
-	glDetachShader(m_program, m_vertexShader);
-	glDetachShader(m_program, m_fragmentShader);
+	glDetachShader(program_, vertexShader_);
+	glDetachShader(program_, fragmentShader_);
 
-    glDeleteShader(m_vertexShader);
-	glDeleteShader(m_fragmentShader);
-	glDeleteProgram(m_program);
+    glDeleteShader(vertexShader_);
+	glDeleteShader(fragmentShader_);
+	glDeleteProgram(program_);
+
+	vertexShader_ = 0;
+	fragmentShader_ = 0;
+	program_ = 0;
 
 	loaded = false;
 }
 
-ShaderProgram::~ShaderProgram()
+void ShaderProgram::setParams(const std::string VertexShaderPath, const std::string FragmentShaderPath, const std::string pname) 
 {
-	unload();
+	this->VertexShaderFile_.setParams(VertexShaderPath);
+	this->FragmentShaderFile_.setParams(FragmentShaderPath);
+	this->resName_ = pname;
+	this->subResources_.setResources({&this->VertexShaderFile_, &this->FragmentShaderFile_});
 }
 
-unsigned int ShaderProgram::getProgramID()
-{
-	return m_program;
-}
+ShaderProgram::~ShaderProgram(){}
+
+unsigned int ShaderProgram::getProgramID(){ return program_; }
 
 unsigned int ShaderProgram::getUniformLocation(const std::string& name)
 {
-	return glGetUniformLocation(m_program, name.c_str());
+	return glGetUniformLocation(program_, name.c_str());
 }
 
 void ShaderProgram::bind()
 {
-	glUseProgram(m_program);
+	glUseProgram(program_);
 }
 
 void ShaderProgram::unbind()
@@ -58,10 +59,11 @@ void ShaderProgram::unbind()
 	glUseProgram(0);
 }
 
-void ShaderProgram::CreateShader(unsigned int Type, unsigned int & id, const char* source)
+void ShaderProgram::CreateShader(unsigned int Type, unsigned int & id, const std::string& code)
 {
 	id = glCreateShader(Type);
-	glShaderSource(id, 1, &source, 0);
+	const char* c_str = code.c_str();
+	glShaderSource(id, 1, &c_str, 0);
 	glCompileShader(id);
 
 	GLint success = 0;
@@ -84,28 +86,37 @@ void ShaderProgram::CreateShader(unsigned int Type, unsigned int & id, const cha
 
 void ShaderProgram::CreateProgram()
 {
-	m_program = glCreateProgram();
-	glAttachShader(m_program, m_vertexShader);
-	glAttachShader(m_program, m_fragmentShader);
-	glLinkProgram(m_program);
+	program_ = glCreateProgram();
+	glAttachShader(program_, vertexShader_);
+	glAttachShader(program_, fragmentShader_);
+	glLinkProgram(program_);
 
 	int isLinked = 0;
-	glGetProgramiv(m_program, GL_LINK_STATUS, &isLinked);
+	glGetProgramiv(program_, GL_LINK_STATUS, &isLinked);
 	if (isLinked == GL_FALSE)
 	{
 		int maxLength = 0;
-		glGetProgramiv(m_program, GL_INFO_LOG_LENGTH, &maxLength);
+		glGetProgramiv(program_, GL_INFO_LOG_LENGTH, &maxLength);
 
 		std::vector<GLchar> infoLog(maxLength);
-		glGetProgramInfoLog(m_program, maxLength, &maxLength, &infoLog[0]);
+		glGetProgramInfoLog(program_, maxLength, &maxLength, &infoLog[0]);
 
 		std::cout<<infoLog.data();
 
-		glDeleteProgram(m_program);
-		glDeleteShader(m_vertexShader);
-		glDeleteShader(m_fragmentShader);
+		glDeleteProgram(program_);
+		glDeleteShader(vertexShader_);
+		glDeleteShader(fragmentShader_);
 
 		return;
 	}
 
+}
+
+ShaderProgram::ShaderProgram():
+Resource(),
+fragmentShader_(0), 
+vertexShader_(0), 
+program_(0)
+{
+	
 }

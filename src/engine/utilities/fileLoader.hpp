@@ -3,6 +3,5 @@
 #include <fstream>
 
 namespace FileLoad{
-    char* loadFile(const char* path, bool &succ);
-    void freeMem(char* file);
+    std::string loadFile(const std::string& path, bool &succ);
 };

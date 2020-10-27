@@ -3,6 +3,7 @@
 #include "stb/stb_image.h"
 #include "glad/glad.h"
 #include "baseTypes/resource.hpp"
+#include "baseTypes/resources/external/Image.hpp"
 
 #include <string>
 
@@ -23,7 +24,7 @@ struct TextureInfo
     
 };
 
-static TextureInfo DefaultTextureInfo{GL_RGB, GL_NEAREST, GL_NEAREST, GL_REPEAT, GL_REPEAT, 8};
+static TextureInfo DefaultTextureInfo{GL_RGBA, GL_NEAREST, GL_NEAREST, GL_REPEAT, GL_REPEAT, 8};
 
 class Texture : public Resource
 {

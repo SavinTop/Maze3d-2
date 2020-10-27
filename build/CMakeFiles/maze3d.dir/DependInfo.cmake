@@ -18,7 +18,9 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/main.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/main.cpp.obj"
+  "D:/21/Maze3d/src/engine/baseTypes/containers/Image.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resource.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resource.cpp.obj"
+  "D:/21/Maze3d/src/engine/baseTypes/resources/external/Image.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/external/TextFile.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.obj"
   "D:/21/Maze3d/src/engine/render/shader.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/render/shader.cpp.obj"
   "D:/21/Maze3d/src/engine/render/texture.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/render/texture.cpp.obj"

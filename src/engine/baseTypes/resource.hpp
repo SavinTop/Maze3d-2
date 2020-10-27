@@ -25,6 +25,7 @@ class Resource{
     public:
     ResourcePack subResources_;
     std::string resName_;
+    Resource(){};
     Resource(const std::string& name, ResourceManager* rm = nullptr){this->resName_ = name; this->rm = rm;}
     virtual void load() = 0;
     virtual void unload() = 0;

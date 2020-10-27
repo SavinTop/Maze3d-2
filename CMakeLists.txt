@@ -3,6 +3,8 @@ project (maze3d)
 
 file(GLOB_RECURSE TARGET_SRC
     "src/*.cpp"
+    "src/*.hpp"
+    "src/*.h"
     "src/*.c"
 )
 
@@ -17,4 +19,5 @@ ${TARGET_SRC}
 
 add_executable(maze3d ${TARGET_SRC})
 
-target_link_libraries(maze3d libglfw3.a libassimp.dll.a)
+target_link_libraries(maze3d opengl32 libglfw3.a) # libassimp.dll.a
+set_target_properties(maze3d PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Maze3d )

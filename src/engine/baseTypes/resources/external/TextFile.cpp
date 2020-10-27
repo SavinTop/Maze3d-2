@@ -1,28 +1,41 @@
 #include "TextFile.hpp"
 
+namespace Resources{
+namespace External{
 
-TextFile_res::TextFile_res(const std::string& path):Resource(path)
+TextFile::TextFile(const std::string& path):Resource()
 {
     rs = ResourceSource::EXTERNAL;
-    this->path = path;
+    setParams(path);
 }
 
-void TextFile_res::load() 
+TextFile::TextFile() :Resource()
+{
+    
+}
+
+void TextFile::load() 
 {
     bool succ = false;
-    this->textBuffer = FileLoad::loadFile(this->path.c_str(), succ);
+    this->text = FileLoad::loadFile(this->resName_, succ);
+
     this->loaded = succ;
 }
 
-void TextFile_res::unload() 
+void TextFile::unload() 
 {   
-    if(this->textBuffer)
-        FileLoad::freeMem(this->textBuffer);
+    this->text.clear();
     this->loaded = false;
-    this->textBuffer = nullptr;
 }
 
-char* TextFile_res::data() 
+void TextFile::setParams(const std::string& path) 
 {
-    return this->textBuffer;
+    this->resName_ = path;
 }
+
+std::string& TextFile::data() 
+{
+    return this->text;
+}
+
+}}

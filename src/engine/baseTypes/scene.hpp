@@ -8,10 +8,10 @@ class Scene{
 
 public:
 Scene(GameProcess* proc){proc_ = proc;};
-virtual void Start() = 0;
-virtual void Update(float delta) = 0;
+virtual void start() = 0;
+virtual void update(float delta) = 0;
 virtual ResourcePack getResources() = 0;
 
-private:
+protected:
     GameProcess* proc_;
 };

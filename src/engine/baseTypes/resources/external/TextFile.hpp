@@ -4,15 +4,22 @@
 #include "baseTypes/resource.hpp"
 #include "utilities/fileLoader.hpp"
 
-class TextFile_res : public Resource{
+namespace Resources{
+namespace External{
+class TextFile : public Resource{
     public:
-    TextFile_res(const std::string& path);
+    TextFile(const std::string& path);
+    TextFile();
+
     void load() override;
     void unload() override;
+    void setParams(const std::string& path);
 
-    char* data();
+    std::string& data();
 
     private:
-        std::string path;
-        char* textBuffer;
+        std::string text;
 };
+}
+}
+

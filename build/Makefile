@@ -196,6 +196,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/engine/baseTypes/containers/Image.obj: src/engine/baseTypes/containers/Image.cpp.obj
+
+.PHONY : src/engine/baseTypes/containers/Image.obj
+
+# target to build an object file
+src/engine/baseTypes/containers/Image.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.obj
+.PHONY : src/engine/baseTypes/containers/Image.cpp.obj
+
+src/engine/baseTypes/containers/Image.i: src/engine/baseTypes/containers/Image.cpp.i
+
+.PHONY : src/engine/baseTypes/containers/Image.i
+
+# target to preprocess a source file
+src/engine/baseTypes/containers/Image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.i
+.PHONY : src/engine/baseTypes/containers/Image.cpp.i
+
+src/engine/baseTypes/containers/Image.s: src/engine/baseTypes/containers/Image.cpp.s
+
+.PHONY : src/engine/baseTypes/containers/Image.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/containers/Image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.s
+.PHONY : src/engine/baseTypes/containers/Image.cpp.s
+
 src/engine/baseTypes/resource.obj: src/engine/baseTypes/resource.cpp.obj
 
 .PHONY : src/engine/baseTypes/resource.obj
@@ -222,6 +249,33 @@ src/engine/baseTypes/resource.s: src/engine/baseTypes/resource.cpp.s
 src/engine/baseTypes/resource.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resource.cpp.s
 .PHONY : src/engine/baseTypes/resource.cpp.s
+
+src/engine/baseTypes/resources/external/Image.obj: src/engine/baseTypes/resources/external/Image.cpp.obj
+
+.PHONY : src/engine/baseTypes/resources/external/Image.obj
+
+# target to build an object file
+src/engine/baseTypes/resources/external/Image.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj
+.PHONY : src/engine/baseTypes/resources/external/Image.cpp.obj
+
+src/engine/baseTypes/resources/external/Image.i: src/engine/baseTypes/resources/external/Image.cpp.i
+
+.PHONY : src/engine/baseTypes/resources/external/Image.i
+
+# target to preprocess a source file
+src/engine/baseTypes/resources/external/Image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.i
+.PHONY : src/engine/baseTypes/resources/external/Image.cpp.i
+
+src/engine/baseTypes/resources/external/Image.s: src/engine/baseTypes/resources/external/Image.cpp.s
+
+.PHONY : src/engine/baseTypes/resources/external/Image.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/resources/external/Image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.s
+.PHONY : src/engine/baseTypes/resources/external/Image.cpp.s
 
 src/engine/baseTypes/resources/external/TextFile.obj: src/engine/baseTypes/resources/external/TextFile.cpp.obj
 
@@ -427,9 +481,15 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/engine/baseTypes/containers/Image.obj
+	@echo ... src/engine/baseTypes/containers/Image.i
+	@echo ... src/engine/baseTypes/containers/Image.s
 	@echo ... src/engine/baseTypes/resource.obj
 	@echo ... src/engine/baseTypes/resource.i
 	@echo ... src/engine/baseTypes/resource.s
+	@echo ... src/engine/baseTypes/resources/external/Image.obj
+	@echo ... src/engine/baseTypes/resources/external/Image.i
+	@echo ... src/engine/baseTypes/resources/external/Image.s
 	@echo ... src/engine/baseTypes/resources/external/TextFile.obj
 	@echo ... src/engine/baseTypes/resources/external/TextFile.i
 	@echo ... src/engine/baseTypes/resources/external/TextFile.s

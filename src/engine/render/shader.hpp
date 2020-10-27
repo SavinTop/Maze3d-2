@@ -11,6 +11,7 @@
 class ShaderProgram : public Resource
 {
 public:
+	ShaderProgram();
 	ShaderProgram(const std::string VertexShaderPath, const std::string FragmentShaderPath, const std::string pname);
 	~ShaderProgram();
 
@@ -19,17 +20,19 @@ public:
 
 	void load() override;
 	void unload() override;
+	void setParams(const std::string VertexShaderPath, const std::string FragmentShaderPath, const std::string pname);
 
 	void bind();
 	void unbind();
 
-private:
-	TextFile_res VertexShaderFile;
-	TextFile_res FragmentShaderFile;
-	unsigned int m_vertexShader;
-	unsigned int m_fragmentShader;
-	unsigned int m_program;
 
-	void CreateShader(unsigned int Type, unsigned int& id, const char* source);
+private:
+	Resources::External::TextFile VertexShaderFile_;
+	Resources::External::TextFile FragmentShaderFile_;
+	unsigned int vertexShader_;
+	unsigned int fragmentShader_;
+	unsigned int program_;
+
+	void CreateShader(unsigned int Type, unsigned int& id, const std::string& code);
 	void CreateProgram();
 };

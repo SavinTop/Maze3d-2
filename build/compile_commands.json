@@ -1,8 +1,18 @@
 [
 {
   "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\containers\\Image.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\containers\\Image.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/containers/Image.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resource.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resource.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/resource.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\external\\Image.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\external\\Image.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/resources/external/Image.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",

@@ -2,31 +2,31 @@
 
 namespace FileLoad
 {
-    char *loadFile(const char* path, bool& succ)
+    std::string loadFile(const std::string& path, bool &succ)
     {
         std::streampos size;
-        char *memblock;
+        std::string out;
 
         std::ifstream file(path, std::ios::in | std::ios::binary | std::ios::ate);
         if (file.is_open())
         {
             size = file.tellg();
-            memblock = new char[size+1];
+            out.resize(size);
             file.seekg(0, std::ios::beg);
-            file.read(memblock, size);
+            file.read((char *)out.data(), size);
             file.close();
-            memblock[size] = 0;
             succ = true;
-            return memblock;
+            return out;
         }
         
         succ = false;
-        return 0;
+        return out;
     }
-    void freeMem(char *file)
-    {
-        if (file)
-            delete[] file;
-    }
+
+    //void freeMem(char *file)
+    //{
+    //    if (file)
+    //        delete[] file;
+    //}
 
 }; // namespace fileLoad
