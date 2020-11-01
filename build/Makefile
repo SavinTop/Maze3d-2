@@ -196,6 +196,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/engine/baseTypes/color.obj: src/engine/baseTypes/color.cpp.obj
+
+.PHONY : src/engine/baseTypes/color.obj
+
+# target to build an object file
+src/engine/baseTypes/color.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.obj
+.PHONY : src/engine/baseTypes/color.cpp.obj
+
+src/engine/baseTypes/color.i: src/engine/baseTypes/color.cpp.i
+
+.PHONY : src/engine/baseTypes/color.i
+
+# target to preprocess a source file
+src/engine/baseTypes/color.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.i
+.PHONY : src/engine/baseTypes/color.cpp.i
+
+src/engine/baseTypes/color.s: src/engine/baseTypes/color.cpp.s
+
+.PHONY : src/engine/baseTypes/color.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/color.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.s
+.PHONY : src/engine/baseTypes/color.cpp.s
+
 src/engine/baseTypes/containers/Image.obj: src/engine/baseTypes/containers/Image.cpp.obj
 
 .PHONY : src/engine/baseTypes/containers/Image.obj
@@ -223,32 +250,86 @@ src/engine/baseTypes/containers/Image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.s
 .PHONY : src/engine/baseTypes/containers/Image.cpp.s
 
-src/engine/baseTypes/resource.obj: src/engine/baseTypes/resource.cpp.obj
+src/engine/baseTypes/containers/mesh.obj: src/engine/baseTypes/containers/mesh.cpp.obj
 
-.PHONY : src/engine/baseTypes/resource.obj
+.PHONY : src/engine/baseTypes/containers/mesh.obj
 
 # target to build an object file
-src/engine/baseTypes/resource.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resource.cpp.obj
-.PHONY : src/engine/baseTypes/resource.cpp.obj
+src/engine/baseTypes/containers/mesh.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.obj
+.PHONY : src/engine/baseTypes/containers/mesh.cpp.obj
 
-src/engine/baseTypes/resource.i: src/engine/baseTypes/resource.cpp.i
+src/engine/baseTypes/containers/mesh.i: src/engine/baseTypes/containers/mesh.cpp.i
 
-.PHONY : src/engine/baseTypes/resource.i
+.PHONY : src/engine/baseTypes/containers/mesh.i
 
 # target to preprocess a source file
-src/engine/baseTypes/resource.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resource.cpp.i
-.PHONY : src/engine/baseTypes/resource.cpp.i
+src/engine/baseTypes/containers/mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.i
+.PHONY : src/engine/baseTypes/containers/mesh.cpp.i
 
-src/engine/baseTypes/resource.s: src/engine/baseTypes/resource.cpp.s
+src/engine/baseTypes/containers/mesh.s: src/engine/baseTypes/containers/mesh.cpp.s
 
-.PHONY : src/engine/baseTypes/resource.s
+.PHONY : src/engine/baseTypes/containers/mesh.s
 
 # target to generate assembly for a file
-src/engine/baseTypes/resource.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resource.cpp.s
-.PHONY : src/engine/baseTypes/resource.cpp.s
+src/engine/baseTypes/containers/mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.s
+.PHONY : src/engine/baseTypes/containers/mesh.cpp.s
+
+src/engine/baseTypes/resource/resource.obj: src/engine/baseTypes/resource/resource.cpp.obj
+
+.PHONY : src/engine/baseTypes/resource/resource.obj
+
+# target to build an object file
+src/engine/baseTypes/resource/resource.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.obj
+.PHONY : src/engine/baseTypes/resource/resource.cpp.obj
+
+src/engine/baseTypes/resource/resource.i: src/engine/baseTypes/resource/resource.cpp.i
+
+.PHONY : src/engine/baseTypes/resource/resource.i
+
+# target to preprocess a source file
+src/engine/baseTypes/resource/resource.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.i
+.PHONY : src/engine/baseTypes/resource/resource.cpp.i
+
+src/engine/baseTypes/resource/resource.s: src/engine/baseTypes/resource/resource.cpp.s
+
+.PHONY : src/engine/baseTypes/resource/resource.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/resource/resource.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.s
+.PHONY : src/engine/baseTypes/resource/resource.cpp.s
+
+src/engine/baseTypes/resource/resourceManager.obj: src/engine/baseTypes/resource/resourceManager.cpp.obj
+
+.PHONY : src/engine/baseTypes/resource/resourceManager.obj
+
+# target to build an object file
+src/engine/baseTypes/resource/resourceManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj
+.PHONY : src/engine/baseTypes/resource/resourceManager.cpp.obj
+
+src/engine/baseTypes/resource/resourceManager.i: src/engine/baseTypes/resource/resourceManager.cpp.i
+
+.PHONY : src/engine/baseTypes/resource/resourceManager.i
+
+# target to preprocess a source file
+src/engine/baseTypes/resource/resourceManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.i
+.PHONY : src/engine/baseTypes/resource/resourceManager.cpp.i
+
+src/engine/baseTypes/resource/resourceManager.s: src/engine/baseTypes/resource/resourceManager.cpp.s
+
+.PHONY : src/engine/baseTypes/resource/resourceManager.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/resource/resourceManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.s
+.PHONY : src/engine/baseTypes/resource/resourceManager.cpp.s
 
 src/engine/baseTypes/resources/external/Image.obj: src/engine/baseTypes/resources/external/Image.cpp.obj
 
@@ -304,59 +385,86 @@ src/engine/baseTypes/resources/external/TextFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.s
 .PHONY : src/engine/baseTypes/resources/external/TextFile.cpp.s
 
-src/engine/render/shader.obj: src/engine/render/shader.cpp.obj
+src/engine/baseTypes/resources/internal/OGL/mesh.obj: src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj
 
-.PHONY : src/engine/render/shader.obj
-
-# target to build an object file
-src/engine/render/shader.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/shader.cpp.obj
-.PHONY : src/engine/render/shader.cpp.obj
-
-src/engine/render/shader.i: src/engine/render/shader.cpp.i
-
-.PHONY : src/engine/render/shader.i
-
-# target to preprocess a source file
-src/engine/render/shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/shader.cpp.i
-.PHONY : src/engine/render/shader.cpp.i
-
-src/engine/render/shader.s: src/engine/render/shader.cpp.s
-
-.PHONY : src/engine/render/shader.s
-
-# target to generate assembly for a file
-src/engine/render/shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/shader.cpp.s
-.PHONY : src/engine/render/shader.cpp.s
-
-src/engine/render/texture.obj: src/engine/render/texture.cpp.obj
-
-.PHONY : src/engine/render/texture.obj
+.PHONY : src/engine/baseTypes/resources/internal/OGL/mesh.obj
 
 # target to build an object file
-src/engine/render/texture.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/texture.cpp.obj
-.PHONY : src/engine/render/texture.cpp.obj
+src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj
+.PHONY : src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj
 
-src/engine/render/texture.i: src/engine/render/texture.cpp.i
+src/engine/baseTypes/resources/internal/OGL/mesh.i: src/engine/baseTypes/resources/internal/OGL/mesh.cpp.i
 
-.PHONY : src/engine/render/texture.i
+.PHONY : src/engine/baseTypes/resources/internal/OGL/mesh.i
 
 # target to preprocess a source file
-src/engine/render/texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/texture.cpp.i
-.PHONY : src/engine/render/texture.cpp.i
+src/engine/baseTypes/resources/internal/OGL/mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.i
+.PHONY : src/engine/baseTypes/resources/internal/OGL/mesh.cpp.i
 
-src/engine/render/texture.s: src/engine/render/texture.cpp.s
+src/engine/baseTypes/resources/internal/OGL/mesh.s: src/engine/baseTypes/resources/internal/OGL/mesh.cpp.s
 
-.PHONY : src/engine/render/texture.s
+.PHONY : src/engine/baseTypes/resources/internal/OGL/mesh.s
 
 # target to generate assembly for a file
-src/engine/render/texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/texture.cpp.s
-.PHONY : src/engine/render/texture.cpp.s
+src/engine/baseTypes/resources/internal/OGL/mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.s
+.PHONY : src/engine/baseTypes/resources/internal/OGL/mesh.cpp.s
+
+src/engine/baseTypes/resources/internal/OGL/shader.obj: src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/shader.obj
+
+# target to build an object file
+src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj
+.PHONY : src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj
+
+src/engine/baseTypes/resources/internal/OGL/shader.i: src/engine/baseTypes/resources/internal/OGL/shader.cpp.i
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/shader.i
+
+# target to preprocess a source file
+src/engine/baseTypes/resources/internal/OGL/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.i
+.PHONY : src/engine/baseTypes/resources/internal/OGL/shader.cpp.i
+
+src/engine/baseTypes/resources/internal/OGL/shader.s: src/engine/baseTypes/resources/internal/OGL/shader.cpp.s
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/shader.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/resources/internal/OGL/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.s
+.PHONY : src/engine/baseTypes/resources/internal/OGL/shader.cpp.s
+
+src/engine/baseTypes/resources/internal/OGL/texture.obj: src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/texture.obj
+
+# target to build an object file
+src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj
+.PHONY : src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj
+
+src/engine/baseTypes/resources/internal/OGL/texture.i: src/engine/baseTypes/resources/internal/OGL/texture.cpp.i
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/texture.i
+
+# target to preprocess a source file
+src/engine/baseTypes/resources/internal/OGL/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.i
+.PHONY : src/engine/baseTypes/resources/internal/OGL/texture.cpp.i
+
+src/engine/baseTypes/resources/internal/OGL/texture.s: src/engine/baseTypes/resources/internal/OGL/texture.cpp.s
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/texture.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/resources/internal/OGL/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.s
+.PHONY : src/engine/baseTypes/resources/internal/OGL/texture.cpp.s
 
 src/engine/utilities/fileLoader.obj: src/engine/utilities/fileLoader.cpp.obj
 
@@ -481,24 +589,36 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/engine/baseTypes/color.obj
+	@echo ... src/engine/baseTypes/color.i
+	@echo ... src/engine/baseTypes/color.s
 	@echo ... src/engine/baseTypes/containers/Image.obj
 	@echo ... src/engine/baseTypes/containers/Image.i
 	@echo ... src/engine/baseTypes/containers/Image.s
-	@echo ... src/engine/baseTypes/resource.obj
-	@echo ... src/engine/baseTypes/resource.i
-	@echo ... src/engine/baseTypes/resource.s
+	@echo ... src/engine/baseTypes/containers/mesh.obj
+	@echo ... src/engine/baseTypes/containers/mesh.i
+	@echo ... src/engine/baseTypes/containers/mesh.s
+	@echo ... src/engine/baseTypes/resource/resource.obj
+	@echo ... src/engine/baseTypes/resource/resource.i
+	@echo ... src/engine/baseTypes/resource/resource.s
+	@echo ... src/engine/baseTypes/resource/resourceManager.obj
+	@echo ... src/engine/baseTypes/resource/resourceManager.i
+	@echo ... src/engine/baseTypes/resource/resourceManager.s
 	@echo ... src/engine/baseTypes/resources/external/Image.obj
 	@echo ... src/engine/baseTypes/resources/external/Image.i
 	@echo ... src/engine/baseTypes/resources/external/Image.s
 	@echo ... src/engine/baseTypes/resources/external/TextFile.obj
 	@echo ... src/engine/baseTypes/resources/external/TextFile.i
 	@echo ... src/engine/baseTypes/resources/external/TextFile.s
-	@echo ... src/engine/render/shader.obj
-	@echo ... src/engine/render/shader.i
-	@echo ... src/engine/render/shader.s
-	@echo ... src/engine/render/texture.obj
-	@echo ... src/engine/render/texture.i
-	@echo ... src/engine/render/texture.s
+	@echo ... src/engine/baseTypes/resources/internal/OGL/mesh.obj
+	@echo ... src/engine/baseTypes/resources/internal/OGL/mesh.i
+	@echo ... src/engine/baseTypes/resources/internal/OGL/mesh.s
+	@echo ... src/engine/baseTypes/resources/internal/OGL/shader.obj
+	@echo ... src/engine/baseTypes/resources/internal/OGL/shader.i
+	@echo ... src/engine/baseTypes/resources/internal/OGL/shader.s
+	@echo ... src/engine/baseTypes/resources/internal/OGL/texture.obj
+	@echo ... src/engine/baseTypes/resources/internal/OGL/texture.i
+	@echo ... src/engine/baseTypes/resources/internal/OGL/texture.s
 	@echo ... src/engine/utilities/fileLoader.obj
 	@echo ... src/engine/utilities/fileLoader.i
 	@echo ... src/engine/utilities/fileLoader.s

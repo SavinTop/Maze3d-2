@@ -1,13 +1,28 @@
 [
 {
   "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\color.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\color.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/color.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\containers\\Image.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\containers\\Image.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/containers/Image.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resource.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resource.cpp",
-  "file": "D:/21/Maze3d/src/engine/baseTypes/resource.cpp"
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\containers\\mesh.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\containers\\mesh.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/containers/mesh.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resource\\resource.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resource\\resource.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/resource/resource.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resource\\resourceManager.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resource\\resourceManager.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/resource/resourceManager.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
@@ -21,13 +36,18 @@
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\render\\shader.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\render\\shader.cpp",
-  "file": "D:/21/Maze3d/src/engine/render/shader.cpp"
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\mesh.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\mesh.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/mesh.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\render\\texture.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\render\\texture.cpp",
-  "file": "D:/21/Maze3d/src/engine/render/texture.cpp"
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\shader.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\shader.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/shader.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\texture.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\texture.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/texture.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",

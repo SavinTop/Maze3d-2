@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "baseTypes/resource.hpp"
+#include "baseTypes/resource/resource.hpp"
 #include "utilities/fileLoader.hpp"
 
-namespace Resources{
-namespace External{
+namespace res::ex{
+    
 class TextFile : public Resource{
     public:
     TextFile(const std::string& path);
@@ -20,6 +20,6 @@ class TextFile : public Resource{
     private:
         std::string text;
 };
-}
+
 }
 

@@ -1,30 +1,30 @@
 #pragma once
 
 #include <string>
-#include "baseTypes/resource.hpp"
+#include "baseTypes/resource/resource.hpp"
 #include "stb/stb_image.h"
+#include "baseTypes/containers/Image.hpp"
 
-namespace Resources{
-namespace External{
+namespace res::ex{
 
 class Image : public Resource{
 public:
-    Image(const std::string& path);
+    Image(const std::string& path, int channelCount = 0);
     Image();
 
     void load() override;
     void unload() override;
-    void setParams(const std::string& path);
+    void setParams(const std::string& path, int channelCount = 0);
 
+    Containers::Image& getContainer();
     unsigned char* data();
 
     int width();
     int height();
 
 private:
-    unsigned char* d_;
-    int width_;
-    int height_;
+    Containers::Image image;
+    int channelCount;
 };
 
-}}
+}

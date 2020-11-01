@@ -1,39 +1,57 @@
 #include "Image.hpp"
 
 
-Resources::External::Image::Image():Resource() {
+namespace res::ex{
+
+Image::Image():Resource() {
     
 }
 
-Resources::External::Image::Image(const std::string& path):Resource() {
-    setParams(path);
+Image::Image(const std::string& path, int channelCount):Resource() {
+    setParams(path, channelCount);
 }
 
-void Resources::External::Image::load() {
+void Image::load() {
     stbi_set_flip_vertically_on_load(true);
-	d_ = stbi_load(this->resName_.c_str(), &width_, &height_, NULL, STBI_rgb_alpha);
-    loaded = (bool)d_;
+    unsigned char* d = 0;
+    int width,height;
+    if(channelCount)
+	    d = stbi_load(this->resName_.c_str(), &width, &height, NULL, channelCount);
+    else
+        d = stbi_load(this->resName_.c_str(), &width, &height, &channelCount, NULL);
+    
+    if(d){
+        std::vector<unsigned char> trans(d, d+width*height*channelCount);
+        image.setData(trans, width, height, channelCount);
+        stbi_image_free(d);
+        loaded = true;
+    }else
+    loaded = false;
 }
 
-void Resources::External::Image::unload() {
-    if(d_)
-        stbi_image_free(d_);
-    d_ = 0;
+void Image::unload() {
+    image.clear();
 }
 
-void Resources::External::Image::setParams(const std::string& path) {
+void Image::setParams(const std::string& path, int channelCount) {
     this->resName_ = path;
+    this->channelCount = channelCount;
 }
 
-unsigned char* Resources::External::Image::data() {
-    return d_;
+unsigned char* Image::data() {
+    return image.getData().data();
 }
 
-int Resources::External::Image::width() {
-    return width_;
+int Image::width() {
+    return image.getWidth();
 }
 
-int Resources::External::Image::height() {
-    return height_;
+int Image::height() {
+    return image.getHeight();
 }
 
+Containers::Image& Image::getContainer() {
+    return image;
+}
+
+}

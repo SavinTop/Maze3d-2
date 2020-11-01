@@ -33,10 +33,7 @@ void GameProcess::Start()
 GameProcess::GameProcess(GLFWwindow* wnd) 
 : window(wnd)
 {
+    rm = new ResourceManager();
     currentScene = new TestScene(this);
     currentScene->start();
-    Resources::External::Image testImage{"wall.jpg"};
-    testImage.load();
-    Color::ColorStruct temp = Color::fromInt(*((int32_t*)testImage.data()));
-    std::cout<<(int)temp.r<<" "<<(int)temp.g<<" "<<(int)temp.b;
 }

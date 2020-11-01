@@ -4,6 +4,7 @@
 #include "GLFW/glfw3.h"
 #include "baseTypes/scene.hpp"
 #include "testScene.hpp"
+#include "baseTypes/resource/resourceManager.hpp"
 
 class GameProcess{
     public:
@@ -12,7 +13,10 @@ class GameProcess{
     void Init();
     void Start();
 
+    ResourceManager* rm;
+
     private:
         Scene* currentScene;
         GLFWwindow* window;
+        
 };

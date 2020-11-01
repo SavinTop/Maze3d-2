@@ -1,11 +1,9 @@
 #include "TextFile.hpp"
 
-namespace Resources{
-namespace External{
+namespace res::ex{
 
 TextFile::TextFile(const std::string& path):Resource()
 {
-    rs = ResourceSource::EXTERNAL;
     setParams(path);
 }
 
@@ -38,4 +36,4 @@ std::string& TextFile::data()
     return this->text;
 }
 
-}}
+}

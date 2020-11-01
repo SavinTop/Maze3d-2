@@ -28,38 +28,18 @@ void _CheckGLError(const char* file, int line)
 
 void TestScene::start() 
 {
-    std::cout<<"TestScene Started";
-    vertices = {
-     0.5f,  0.5f, 0.0f,  
-     0.5f, -0.5f, 0.0f,  
-    -0.5f, -0.5f, 0.0f,  
-    -0.5f,  0.5f, 0.0f    
-    };
-    unsigned int indices[] = { 
-    0, 1, 3,   
-    1, 2, 3    
-    }; 
-     glGenVertexArrays(1, &VAO); 
-     glBindVertexArray(VAO);
-     glGenBuffers(1, &VBO);
-     glBindBuffer(GL_ARRAY_BUFFER, VBO); 
-     glBufferData(GL_ARRAY_BUFFER, sizeof(float)*vertices.size(), vertices.data(), GL_STATIC_DRAW);
-     unsigned int EBO;
-     glGenBuffers(1, &EBO);
-     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW); 
-     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-     glEnableVertexAttribArray(0); 
+    std::cout<<"TestScene Started"<<std::endl; 
      program.subResources_.load();
      program.load();
+
      std::cout<<program.isLoaded();
+    std::cout<<"loading ended"<<std::endl;
 }
+
 
 void TestScene::update(float delta) 
 {
-    program.bind();
-    glBindVertexArray(VAO);
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 }
 
 ResourcePack TestScene::getResources() 
@@ -72,5 +52,8 @@ TestScene::TestScene(GameProcess* proc)
     :Scene(proc),
     program("shader.vert","shader.frag","basic program")
 {
-    
+    res::ogl::Texture* testTexture = proc->rm->createResource<res::ogl::Texture>(res::ogl::Texture("wall.jpg", res::ogl::TextureType::Diffuse, res::ogl::DefaultTextureInfo, "wallTexture"), LifeTime::Permanent);
+    auto temp = proc->rm->createResource<res::ex::Image>(res::ex::Image("wall.jpg"));
+    temp->load();
+    program.load();
 }
