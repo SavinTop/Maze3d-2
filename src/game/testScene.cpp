@@ -34,12 +34,43 @@ void TestScene::start()
 
      std::cout<<program.isLoaded();
     std::cout<<"loading ended"<<std::endl;
+
+    auto* tex = proc_->rm->createResource<>(res::ogl::Texture{"wall.jpg"});
+    tex->getImage().load();
+    tex->load();
+
+    std::vector<Containers::Vertex> vertices = {
+        Containers::Vertex(glm::vec3(-0.5, -0.5, 0.0), glm::vec3(), glm::vec2(0,0)),
+        Containers::Vertex(glm::vec3( 0.5, -0.5, 0.0), glm::vec3(), glm::vec2(1,0)),
+        Containers::Vertex(glm::vec3( 0.5,  0.5, 0.0), glm::vec3(), glm::vec2(1,1)),
+        Containers::Vertex(glm::vec3(-0.5,  0.5, 0.0), glm::vec3(), glm::vec2(0,1))
+    };
+
+    std::vector<unsigned> indices = {0,1,2 , 2,0,3};
+
+    Containers::Mesh mesh_C{vertices, indices, {tex}};
+
+    mesh = proc_->rm->createResource<>(res::ogl::Mesh(mesh_C));
+
+    mesh->load();
+    mesh->setRotation(glm::vec3(glm::radians(-45.0f),0,0));
+    mesh->setScale(glm::vec3(1));
 }
 
 
 void TestScene::update(float delta) 
 {
-    glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
+    program.bind();
+    unsigned viewId = program.getUniformLocation("view");
+    unsigned projectionId = program.getUniformLocation("projection");
+    glm::mat4 view = glm::mat4(1.0f);
+    view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f)); 
+    glm::mat4 projection(1); 
+    projection = glm::perspective(glm::radians(45.0f), 1.0f, 0.1f, 100.0f);
+    glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
+    glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
+    mesh->draw(program);
+    CheckGLError();
 }
 
 ResourcePack TestScene::getResources() 
@@ -52,8 +83,5 @@ TestScene::TestScene(GameProcess* proc)
     :Scene(proc),
     program("shader.vert","shader.frag","basic program")
 {
-    res::ogl::Texture* testTexture = proc->rm->createResource<res::ogl::Texture>(res::ogl::Texture("wall.jpg", res::ogl::TextureType::Diffuse, res::ogl::DefaultTextureInfo, "wallTexture"), LifeTime::Permanent);
-    auto temp = proc->rm->createResource<res::ex::Image>(res::ex::Image("wall.jpg"));
-    temp->load();
-    program.load();
+    
 }

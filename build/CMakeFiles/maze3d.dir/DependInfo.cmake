@@ -28,6 +28,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/mesh.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/shader.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/texture.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj"
+  "D:/21/Maze3d/src/engine/render/camera.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.obj"
+  "D:/21/Maze3d/src/engine/render/drawable.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.obj"
   "D:/21/Maze3d/src/engine/utilities/fileLoader.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.obj"
   "D:/21/Maze3d/src/game/gameprocess.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj"
   "D:/21/Maze3d/src/game/testScene.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj"

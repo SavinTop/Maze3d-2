@@ -46,7 +46,7 @@ ShaderProgram::~ShaderProgram(){}
 
 unsigned int ShaderProgram::getProgramID(){ return program_; }
 
-unsigned int ShaderProgram::getUniformLocation(const std::string& name)
+int ShaderProgram::getUniformLocation(const std::string& name)
 {
 	return glGetUniformLocation(program_, name.c_str());
 }

@@ -32,6 +32,10 @@ class Resource{
     Resource(const std::string& name, ResourceManager* rm = nullptr){this->resName_ = name; this->rm = rm;}
     virtual void load() {};
     virtual void unload() {};
+    void reload(){
+        unload();
+        load();
+    }
     virtual void InitializeSubResources() {};
     bool isLoaded(){return loaded;}
 

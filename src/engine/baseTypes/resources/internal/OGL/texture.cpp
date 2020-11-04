@@ -40,8 +40,10 @@ void Texture::load()
 
 		//glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, m_texinfo.anisotropy_val);
 
+		m_texinfo.channelCount = image->getChannelCount();
+
 		unsigned arr[] = {GL_RED, GL_RG, GL_RGB, GL_RGBA};
-		unsigned format = arr[m_texinfo.channelCount];
+		unsigned format = arr[m_texinfo.channelCount-1];
 
 		glTexImage2D(GL_TEXTURE_2D, 0, m_texinfo.internalType, image->width(), image->height(), 0, format, GL_UNSIGNED_BYTE, image->data());
 		glGenerateMipmap(GL_TEXTURE_2D);

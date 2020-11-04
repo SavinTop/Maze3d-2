@@ -12,32 +12,31 @@ void Mesh::setParams(const Containers::Mesh& meshContainer) {
     mesh = meshContainer;
 }
 
-void Mesh::draw(ShaderProgram& shader) {
+void Mesh::__draw(res::ogl::ShaderProgram& program){
     unsigned int diffuseNr = 1;
     unsigned int specularNr = 1;
-    /*
-    for(unsigned int i = 0; i < textures.size(); i++)
+    
+    for(unsigned int i = 0; i < mesh.textures.size(); i++)
     {
         std::string number;
         std::string name;
-        if(textures[i].getType() == TextureType::Diffuse)
+        if(mesh.textures[i]->getType() == TextureType::Diffuse)
         {
             number = std::to_string(diffuseNr++);
             name = "texture_diffuse";
         }
-        else if(textures[i].getType() == TextureType::Specular)
+        else if(mesh.textures[i]->getType() == TextureType::Specular)
         {
             number = std::to_string(specularNr++);
             name = "texture_specular";
         }
-        unsigned int id = shader.getUniformLocation(("material." + name + number));
+        int id = program.getUniformLocation((name + number));
         
         glUniform1i(id, i);
-        textures[i].bind(i);
+        mesh.textures[i]->bind(i);
     }
 
     glActiveTexture(GL_TEXTURE0);
-    */ //TODO FIX THIS SHIT
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, mesh.indices.size(), GL_UNSIGNED_INT, 0);
     glBindVertexArray(0);

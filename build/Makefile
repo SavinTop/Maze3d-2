@@ -466,6 +466,60 @@ src/engine/baseTypes/resources/internal/OGL/texture.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.s
 .PHONY : src/engine/baseTypes/resources/internal/OGL/texture.cpp.s
 
+src/engine/render/camera.obj: src/engine/render/camera.cpp.obj
+
+.PHONY : src/engine/render/camera.obj
+
+# target to build an object file
+src/engine/render/camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.obj
+.PHONY : src/engine/render/camera.cpp.obj
+
+src/engine/render/camera.i: src/engine/render/camera.cpp.i
+
+.PHONY : src/engine/render/camera.i
+
+# target to preprocess a source file
+src/engine/render/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.i
+.PHONY : src/engine/render/camera.cpp.i
+
+src/engine/render/camera.s: src/engine/render/camera.cpp.s
+
+.PHONY : src/engine/render/camera.s
+
+# target to generate assembly for a file
+src/engine/render/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.s
+.PHONY : src/engine/render/camera.cpp.s
+
+src/engine/render/drawable.obj: src/engine/render/drawable.cpp.obj
+
+.PHONY : src/engine/render/drawable.obj
+
+# target to build an object file
+src/engine/render/drawable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.obj
+.PHONY : src/engine/render/drawable.cpp.obj
+
+src/engine/render/drawable.i: src/engine/render/drawable.cpp.i
+
+.PHONY : src/engine/render/drawable.i
+
+# target to preprocess a source file
+src/engine/render/drawable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.i
+.PHONY : src/engine/render/drawable.cpp.i
+
+src/engine/render/drawable.s: src/engine/render/drawable.cpp.s
+
+.PHONY : src/engine/render/drawable.s
+
+# target to generate assembly for a file
+src/engine/render/drawable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.s
+.PHONY : src/engine/render/drawable.cpp.s
+
 src/engine/utilities/fileLoader.obj: src/engine/utilities/fileLoader.cpp.obj
 
 .PHONY : src/engine/utilities/fileLoader.obj
@@ -619,6 +673,12 @@ help:
 	@echo ... src/engine/baseTypes/resources/internal/OGL/texture.obj
 	@echo ... src/engine/baseTypes/resources/internal/OGL/texture.i
 	@echo ... src/engine/baseTypes/resources/internal/OGL/texture.s
+	@echo ... src/engine/render/camera.obj
+	@echo ... src/engine/render/camera.i
+	@echo ... src/engine/render/camera.s
+	@echo ... src/engine/render/drawable.obj
+	@echo ... src/engine/render/drawable.i
+	@echo ... src/engine/render/drawable.s
 	@echo ... src/engine/utilities/fileLoader.obj
 	@echo ... src/engine/utilities/fileLoader.i
 	@echo ... src/engine/utilities/fileLoader.s

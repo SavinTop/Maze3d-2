@@ -17,7 +17,7 @@ public:
 	~ShaderProgram();
 
 	unsigned int getProgramID();
-	unsigned int getUniformLocation(const std::string& name);
+	int getUniformLocation(const std::string& name);
 
 	void load() override;
 	void unload() override;

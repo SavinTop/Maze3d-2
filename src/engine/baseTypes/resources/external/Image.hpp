@@ -21,6 +21,7 @@ public:
 
     int width();
     int height();
+    int getChannelCount(){return channelCount;}
 
 private:
     Containers::Image image;
