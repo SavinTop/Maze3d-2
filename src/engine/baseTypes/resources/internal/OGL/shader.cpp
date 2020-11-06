@@ -12,11 +12,9 @@ ShaderProgram::ShaderProgram(const std::string VertexShaderPath, const std::stri
 }
 
 void ShaderProgram::load(){
-	if(loaded = subResources_.isLoaded()){
-		CreateShader(GL_VERTEX_SHADER, vertexShader_, this->VertexShaderFile_.data());
-		CreateShader(GL_FRAGMENT_SHADER, fragmentShader_, this->FragmentShaderFile_.data());
-		CreateProgram();
-	}
+	CreateShader(GL_VERTEX_SHADER, vertexShader_, this->VertexShaderFile_->data());
+	CreateShader(GL_FRAGMENT_SHADER, fragmentShader_, this->FragmentShaderFile_->data());
+	CreateProgram();
 }
 
 void ShaderProgram::unload(){
@@ -36,10 +34,17 @@ void ShaderProgram::unload(){
 
 void ShaderProgram::setParams(const std::string VertexShaderPath, const std::string FragmentShaderPath, const std::string pname) 
 {
-	this->VertexShaderFile_.setParams(VertexShaderPath);
-	this->FragmentShaderFile_.setParams(FragmentShaderPath);
+	this->vertexShaderPath = VertexShaderPath;
+	this->fragmentShaderPath = FragmentShaderPath;
 	this->resName_ = pname;
-	this->subResources_.setResources({&this->VertexShaderFile_, &this->FragmentShaderFile_});
+}
+
+void ShaderProgram::InitializeSubResources() 
+{
+	if(!rm) return;
+	this->FragmentShaderFile_ = rm->createResource<>(res::ex::TextFile(fragmentShaderPath), lt);
+	this->VertexShaderFile_ = rm->createResource<>(res::ex::TextFile(vertexShaderPath), lt);
+	this->subResources_.setResources({this->VertexShaderFile_, this->FragmentShaderFile_});
 }
 
 ShaderProgram::~ShaderProgram(){}

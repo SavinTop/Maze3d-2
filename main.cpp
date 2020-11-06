@@ -7,6 +7,7 @@
 
 const unsigned int SCR_WIDTH = 600;
 const unsigned int SCR_HEIGHT = 600;
+const bool fullScreen = true;
 
 int main()
 {
@@ -15,7 +16,18 @@ int main()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Maze3d", NULL, NULL);
+    GLFWwindow* window;
+
+    if(fullScreen)
+    {
+        int x,y,w,h;
+        glfwGetMonitorWorkarea(glfwGetPrimaryMonitor(), &x, &y, &w, &h);
+        window = glfwCreateWindow(w, h, "My Title", glfwGetPrimaryMonitor(), NULL);
+    }else{
+        window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Maze3d", NULL, NULL);
+    }
+
+
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;

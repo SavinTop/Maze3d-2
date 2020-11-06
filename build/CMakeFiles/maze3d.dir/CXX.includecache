@@ -1516,6 +1516,14 @@ baseTypes/resource/resource.hpp
 utilities/fileLoader.hpp
 ../src/engine/baseTypes/resources/external/utilities/fileLoader.hpp
 
+../src/engine/baseTypes/resources/internal/OGL/figures/plane.hpp
+baseTypes/resource/resource.hpp
+../src/engine/baseTypes/resources/internal/OGL/figures/baseTypes/resource/resource.hpp
+baseTypes/resources/internal/OGL/mesh.hpp
+-
+glm/glm.hpp
+-
+
 ../src/engine/baseTypes/resources/internal/OGL/glresources.hpp
 shader.hpp
 ../src/engine/baseTypes/resources/internal/OGL/shader.hpp
@@ -1523,6 +1531,8 @@ texture.hpp
 ../src/engine/baseTypes/resources/internal/OGL/texture.hpp
 mesh.hpp
 ../src/engine/baseTypes/resources/internal/OGL/mesh.hpp
+figures/plane.hpp
+../src/engine/baseTypes/resources/internal/OGL/figures/plane.hpp
 
 ../src/engine/baseTypes/resources/internal/OGL/mesh.hpp
 glm/glm.hpp
@@ -1555,6 +1565,8 @@ utilities/fileLoader.hpp
 ../src/engine/baseTypes/resources/internal/OGL/utilities/fileLoader.hpp
 baseTypes/resources/external/TextFile.hpp
 ../src/engine/baseTypes/resources/internal/OGL/baseTypes/resources/external/TextFile.hpp
+baseTypes/resource/resourceManager.hpp
+../src/engine/baseTypes/resources/internal/OGL/baseTypes/resource/resourceManager.hpp
 
 ../src/engine/baseTypes/resources/internal/OGL/texture.hpp
 stb/stb_image.h
@@ -1595,8 +1607,6 @@ GLFW/glfw3.h
 D:/21/Maze3d/src/game/GLFW/glfw3.h
 baseTypes/scene.hpp
 D:/21/Maze3d/src/game/baseTypes/scene.hpp
-testScene.hpp
-D:/21/Maze3d/src/game/testScene.hpp
 baseTypes/resource/resourceManager.hpp
 D:/21/Maze3d/src/game/baseTypes/resource/resourceManager.hpp
 

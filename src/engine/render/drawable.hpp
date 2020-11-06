@@ -8,6 +8,7 @@
 
 class Drawable{
 public:
+    Drawable();
     void draw(res::ogl::ShaderProgram& program);
 
     virtual void __draw(res::ogl::ShaderProgram& program){};
@@ -25,5 +26,5 @@ protected:
     glm::vec3 rotation;
     glm::vec3 scale;
     glm::mat4 model;
-    bool changed = true;
+    bool changed;
 };

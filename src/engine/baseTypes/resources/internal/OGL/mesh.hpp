@@ -11,7 +11,7 @@
 
 namespace res::ogl{
 
-class Mesh : public OpenGLResource, public Drawable {
+class Mesh : public OpenGLResource {
 public:
     Mesh();
     Mesh(const Containers::Mesh& meshContainer);
@@ -20,7 +20,7 @@ public:
     void unload() override;
 
     void setParams(const Containers::Mesh& meshContainer);
-    void __draw(res::ogl::ShaderProgram& program) override;
+    void draw(res::ogl::ShaderProgram& program);
 private:
 Containers::Mesh mesh;
 unsigned int VAO, VBO, EBO;

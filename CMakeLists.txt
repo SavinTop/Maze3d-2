@@ -8,7 +8,7 @@ file(GLOB_RECURSE TARGET_SRC
     "src/*.c"
 )
 
-include_directories("include/" "src/" "src/engine/")
+include_directories("include/" "src/" "src/engine/" "src/game")
 LINK_DIRECTORIES("libs/")
 
 SET(TARGET_SRC 

@@ -15,6 +15,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "../src"
   "../src/engine"
+  "../src/game"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/main.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/main.cpp.obj"
@@ -25,6 +26,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/engine/baseTypes/resource/resourceManager.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/external/Image.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/external/TextFile.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.obj"
+  "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/mesh.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/shader.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/texture.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj"
@@ -32,6 +34,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/engine/render/drawable.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.obj"
   "D:/21/Maze3d/src/engine/utilities/fileLoader.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.obj"
   "D:/21/Maze3d/src/game/gameprocess.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj"
+  "D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.obj"
   "D:/21/Maze3d/src/game/testScene.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -41,6 +44,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "../src"
   "../src/engine"
+  "../src/game"
   )
 
 # Targets to which this target links.

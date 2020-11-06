@@ -12,7 +12,7 @@ void Mesh::setParams(const Containers::Mesh& meshContainer) {
     mesh = meshContainer;
 }
 
-void Mesh::__draw(res::ogl::ShaderProgram& program){
+void Mesh::draw(res::ogl::ShaderProgram& program){
     unsigned int diffuseNr = 1;
     unsigned int specularNr = 1;
     

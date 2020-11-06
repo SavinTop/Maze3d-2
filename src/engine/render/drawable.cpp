@@ -12,9 +12,10 @@ void Drawable::updateModelMatrix()
 {
     if(!changed) return;
     model = glm::mat4(1);
-    model = glm::scale(model, this->scale);
-    model = glm::rotate(model, 1.0f, rotation);
+    //model = glm::rotate(model, glm::radians(1.0f), rotation);
+    model = glm::scale(model, scale);
     model = glm::translate(model, position);
+    changed = false;
 }
 
 glm::mat4& Drawable::getModelMatrix() 
@@ -24,25 +25,40 @@ glm::mat4& Drawable::getModelMatrix()
 
 void Drawable::setPosition(glm::vec3 position) 
 {
-    position = position;
+    changed = true;
+    this->position = position;
 }
 
 void Drawable::setRotation(glm::vec3 rotation) 
 {
-    rotation = rotation;
+    changed = true;
+    this->rotation = rotation;
 }
 
 void Drawable::setScale(glm::vec3 scale) 
 {
-    scale = scale;
+    changed = true;
+    this->scale = scale;
 }
 
 void Drawable::addPosition(glm::vec3 offset) 
 {
-    position+=offset;
+    changed = true;
+    this->position+=offset;
 }
 
 void Drawable::addRotation(glm::vec3 rotation) 
 {
-    rotation+=rotation;
+    changed = true;
+    this->rotation+=rotation;
+}
+
+Drawable::Drawable() 
+{
+    model = glm::mat4(1);
+    position = glm::vec3(0);
+    rotation = glm::vec3(0);
+    scale = glm::vec3(1);
+    changed = true;
+    updateModelMatrix();
 }

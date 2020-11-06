@@ -6,6 +6,7 @@
 #include <vector>
 #include "utilities/fileLoader.hpp"
 #include "baseTypes/resources/external/TextFile.hpp"
+#include "baseTypes/resource/resourceManager.hpp"
 
 namespace res::ogl{
 
@@ -23,11 +24,16 @@ public:
 	void unload() override;
 	void setParams(const std::string VertexShaderPath, const std::string FragmentShaderPath, const std::string pname);
 
+	virtual void InitializeSubResources();
+
 	void bind();
 	void unbind();
 private:
-	res::ex::TextFile VertexShaderFile_;
-	res::ex::TextFile FragmentShaderFile_;
+	res::ex::TextFile* VertexShaderFile_;
+	res::ex::TextFile* FragmentShaderFile_;
+	std::string vertexShaderPath;
+	std::string fragmentShaderPath;
+
 	unsigned int vertexShader_;
 	unsigned int fragmentShader_;
 	unsigned int program_;

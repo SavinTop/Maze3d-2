@@ -3,7 +3,6 @@
 #include "glad/glad.h"
 #include "GLFW/glfw3.h"
 #include "baseTypes/scene.hpp"
-#include "testScene.hpp"
 #include "baseTypes/resource/resourceManager.hpp"
 
 class GameProcess{
@@ -12,7 +11,7 @@ class GameProcess{
     void SetCurrentScene(Scene* scene);
     void Init();
     void Start();
-
+    GLFWwindow* getWnd();
     ResourceManager* rm;
 
     private:

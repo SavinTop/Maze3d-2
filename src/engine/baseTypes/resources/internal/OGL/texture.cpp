@@ -63,6 +63,7 @@ void Texture::InitializeSubResources()
 {
 	if(!rm) return;
 	image = rm->createResource<res::ex::Image>(res::ex::Image(path,  m_texinfo.channelCount), lt);
+	subResources_.setResources({image});
 }
 
 void Texture::setParams(const std::string& path,TextureType tt, const TextureInfo& texInfo, const std::string& name){
