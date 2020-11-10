@@ -4,6 +4,7 @@
 #include "GLFW/glfw3.h"
 #include "baseTypes/scene.hpp"
 #include "baseTypes/resource/resourceManager.hpp"
+#include <map>
 
 class GameProcess{
     public:

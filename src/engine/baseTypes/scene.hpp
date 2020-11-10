@@ -7,14 +7,15 @@ class GameProcess;
 class Scene{
 
 public:
-Scene(GameProcess* proc){proc_ = proc;};
+Scene(GameProcess* proc);
+virtual ~Scene();
 virtual void start() = 0;
 virtual void update(float delta) = 0;
 virtual void onDraw(float delta) = 0;
 virtual ResourcePack getResources() = 0;
 virtual void initResources() = 0;
-
 protected:
-    GameProcess* proc_;
+    GameProcess* proc;
     ResourceManager* rm;
+    std::string sceneName;
 };

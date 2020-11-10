@@ -8,6 +8,8 @@
 
 void GameProcess::SetCurrentScene(Scene* scene) 
 {
+    asm("nop");
+    delete currentScene;
     currentScene = scene;
     currentScene->start();
 }

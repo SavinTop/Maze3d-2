@@ -493,6 +493,33 @@ src/engine/baseTypes/resources/internal/OGL/texture.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.s
 .PHONY : src/engine/baseTypes/resources/internal/OGL/texture.cpp.s
 
+src/engine/baseTypes/scene.obj: src/engine/baseTypes/scene.cpp.obj
+
+.PHONY : src/engine/baseTypes/scene.obj
+
+# target to build an object file
+src/engine/baseTypes/scene.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj
+.PHONY : src/engine/baseTypes/scene.cpp.obj
+
+src/engine/baseTypes/scene.i: src/engine/baseTypes/scene.cpp.i
+
+.PHONY : src/engine/baseTypes/scene.i
+
+# target to preprocess a source file
+src/engine/baseTypes/scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.i
+.PHONY : src/engine/baseTypes/scene.cpp.i
+
+src/engine/baseTypes/scene.s: src/engine/baseTypes/scene.cpp.s
+
+.PHONY : src/engine/baseTypes/scene.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.s
+.PHONY : src/engine/baseTypes/scene.cpp.s
+
 src/engine/render/camera.obj: src/engine/render/camera.cpp.obj
 
 .PHONY : src/engine/render/camera.obj
@@ -730,6 +757,9 @@ help:
 	@echo ... src/engine/baseTypes/resources/internal/OGL/texture.obj
 	@echo ... src/engine/baseTypes/resources/internal/OGL/texture.i
 	@echo ... src/engine/baseTypes/resources/internal/OGL/texture.s
+	@echo ... src/engine/baseTypes/scene.obj
+	@echo ... src/engine/baseTypes/scene.i
+	@echo ... src/engine/baseTypes/scene.s
 	@echo ... src/engine/render/camera.obj
 	@echo ... src/engine/render/camera.i
 	@echo ... src/engine/render/camera.s

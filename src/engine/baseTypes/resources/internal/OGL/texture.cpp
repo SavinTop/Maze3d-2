@@ -59,11 +59,11 @@ void Texture::unload()
     loaded = false;
 }
 
-void Texture::InitializeSubResources() 
+void Texture::InitializeSubResources(std::string groupName) 
 {
 	if(!rm) return;
-	image = rm->createResource<res::ex::Image>(res::ex::Image(path,  m_texinfo.channelCount), lt);
-	subResources_.setResources({image});
+	image = rm->createResource<res::ex::Image>(res::ex::Image(path,  m_texinfo.channelCount),groupName);
+	subResources_.setResources({image.get()});
 }
 
 void Texture::setParams(const std::string& path,TextureType tt, const TextureInfo& texInfo, const std::string& name){

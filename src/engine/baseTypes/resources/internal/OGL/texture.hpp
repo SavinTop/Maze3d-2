@@ -45,7 +45,7 @@ public:
 
     void load() override;
     void unload() override;
-	void InitializeSubResources() override;
+	void InitializeSubResources(std::string groupName) override;
 
 	TextureType getType();
 
@@ -53,7 +53,7 @@ public:
 
 private:
     std::string path;
-	res::ex::Image* image;
+	std::shared_ptr<res::ex::Image> image;
 
 	TextureInfo m_texinfo;
 	unsigned int m_resourceId;

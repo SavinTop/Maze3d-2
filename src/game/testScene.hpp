@@ -21,9 +21,9 @@ void onDraw(float delta) override;
 ResourcePack getResources() override;
 void initResources() override;
 private:
-res::ogl::ShaderProgram* program;
-res::ogl::Mesh* mesh;
-res::ogl::Plane* testPlane;
-res::ogl::Texture* test;
+std::shared_ptr<res::ogl::ShaderProgram> program;
+std::shared_ptr<res::ogl::Mesh> mesh;
+std::shared_ptr<res::ogl::Plane> testPlane;
+std::shared_ptr<res::ogl::Texture> test;
 };
 

@@ -186,6 +186,8 @@ CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.obj
  D:/21/Maze3d/src/engine/baseTypes/resource/resource.cpp
  D:/21/Maze3d/src/engine/baseTypes/resource/resource.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj
+ ../src/engine/baseTypes/resource/resource.hpp
+ ../src/engine/baseTypes/scene.hpp
  D:/21/Maze3d/src/engine/baseTypes/resource/resource.hpp
  D:/21/Maze3d/src/engine/baseTypes/resource/resourceManager.cpp
  D:/21/Maze3d/src/engine/baseTypes/resource/resourceManager.hpp
@@ -650,6 +652,17 @@ CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.ob
  ../src/engine/baseTypes/resources/external/Image.hpp
  D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/texture.cpp
  D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/texture.hpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj
+ ../include/GLFW/glfw3.h
+ ../include/KHR/khrplatform.h
+ ../include/glad/glad.h
+ ../src/engine/baseTypes/resource/resource.hpp
+ ../src/engine/baseTypes/resource/resourceManager.hpp
+ ../src/engine/baseTypes/scene.hpp
+ ../src/game/gameprocess.hpp
+ D:/21/Maze3d/src/engine/baseTypes/resource/resource.hpp
+ D:/21/Maze3d/src/engine/baseTypes/scene.cpp
+ D:/21/Maze3d/src/engine/baseTypes/scene.hpp
 CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.obj
  ../include/KHR/khrplatform.h
  ../include/glad/glad.h

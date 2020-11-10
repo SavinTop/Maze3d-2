@@ -28,15 +28,14 @@ void _CheckGLError(const char* file, int line)
 
 void TestScene::start() 
 {
-    
 }
 
 
 void TestScene::update(float delta) 
 {
-    int state = glfwGetKey(proc_->getWnd(), GLFW_KEY_ESCAPE);
+    int state = glfwGetKey(proc->getWnd(), GLFW_KEY_ESCAPE);
     if(state == GLFW_PRESS)
-        glfwSetWindowShouldClose(proc_->getWnd(), true);
+        glfwSetWindowShouldClose(proc->getWnd(), true);
 }
 
 void TestScene::onDraw(float delta) 
@@ -60,19 +59,20 @@ void TestScene::onDraw(float delta)
 
 ResourcePack TestScene::getResources() 
 {
-    return ResourcePack({program, testPlane, test});
+    return ResourcePack({program.get(), testPlane.get(), test.get()});
 }
 
 void TestScene::initResources() 
 {
-    program = proc_->rm->createResource<>(res::ogl::ShaderProgram("data/shaders/basic/shader.vert","data/shaders/basic/shader.frag","basic program2"));
-    test = proc_->rm->createResource<>(res::ogl::Texture("wall.jpg"));
-    testPlane = proc_->rm->createResource<>(res::ogl::Plane(glm::vec3(), glm::vec2(2,2), {test}));
+    program = rm->createResource<>(res::ogl::ShaderProgram("data/shaders/basic/shader.vert","data/shaders/basic/shader.frag","basic program2"),sceneName);
+    test = rm->createResource<>(res::ogl::Texture("wall.jpg"),sceneName);
+    testPlane = rm->createResource<>(res::ogl::Plane(glm::vec3(), glm::vec2(2,2), {test.get()}),sceneName);
 }
 
 
 TestScene::TestScene(GameProcess* proc)
     :Scene(proc)
 {
-    
+    rm = proc->rm;
+    sceneName = "test_scene";
 }

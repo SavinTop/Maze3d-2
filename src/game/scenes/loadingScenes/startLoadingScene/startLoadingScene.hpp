@@ -22,8 +22,8 @@ void onDraw(float delta) override;
 ResourcePack getResources() override;
 void initResources() override;
 private:
-res::ogl::ShaderProgram* loadingShader;
-res::ogl::Plane* loadingPlane;
+std::shared_ptr<res::ogl::ShaderProgram> loadingShader;
+std::shared_ptr<res::ogl::Plane> loadingPlane;
 TestScene* nextScene;
 std::vector<Resource*> resourcesToLoad;
 unsigned currentIndex;

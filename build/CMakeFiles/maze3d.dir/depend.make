@@ -186,6 +186,8 @@ CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.obj: ../src/eng
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.obj: ../src/engine/baseTypes/resource/resource.hpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj: ../src/engine/baseTypes/resource/resource.hpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj: ../src/engine/baseTypes/scene.hpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj: ../src/engine/baseTypes/resource/resource.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj: ../src/engine/baseTypes/resource/resourceManager.cpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj: ../src/engine/baseTypes/resource/resourceManager.hpp
 
@@ -649,6 +651,17 @@ CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.ob
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj: ../src/engine/baseTypes/resources/external/Image.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj: ../src/engine/baseTypes/resources/internal/OGL/texture.cpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj: ../src/engine/baseTypes/resources/internal/OGL/texture.hpp
+
+CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: ../include/GLFW/glfw3.h
+CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: ../include/KHR/khrplatform.h
+CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: ../include/glad/glad.h
+CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: ../src/engine/baseTypes/resource/resource.hpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: ../src/engine/baseTypes/resource/resourceManager.hpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: ../src/engine/baseTypes/scene.hpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: ../src/game/gameprocess.hpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: ../src/engine/baseTypes/resource/resource.hpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: ../src/engine/baseTypes/scene.cpp
+CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: ../src/engine/baseTypes/scene.hpp
 
 CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.obj: ../include/KHR/khrplatform.h
 CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.obj: ../include/glad/glad.h

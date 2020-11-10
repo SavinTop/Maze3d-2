@@ -1,102 +1,107 @@
 [
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\color.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\color.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\color.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\color.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/color.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\containers\\Image.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\containers\\Image.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\containers\\Image.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\containers\\Image.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/containers/Image.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\containers\\mesh.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\containers\\mesh.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\containers\\mesh.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\containers\\mesh.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/containers/mesh.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resource\\resource.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resource\\resource.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resource\\resource.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resource\\resource.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/resource/resource.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resource\\resourceManager.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resource\\resourceManager.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resource\\resourceManager.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resource\\resourceManager.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/resource/resourceManager.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\external\\Image.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\external\\Image.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\external\\Image.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\external\\Image.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/resources/external/Image.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\external\\TextFile.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\external\\TextFile.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\external\\TextFile.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\external\\TextFile.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/resources/external/TextFile.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\figures\\plane.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\figures\\plane.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\figures\\plane.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\figures\\plane.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\mesh.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\mesh.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\mesh.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\mesh.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/mesh.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\shader.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\shader.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\shader.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\shader.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/shader.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\texture.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\texture.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\texture.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\texture.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/texture.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\render\\camera.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\render\\camera.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\scene.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\scene.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/scene.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\render\\camera.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\render\\camera.cpp",
   "file": "D:/21/Maze3d/src/engine/render/camera.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\render\\drawable.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\render\\drawable.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\render\\drawable.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\render\\drawable.cpp",
   "file": "D:/21/Maze3d/src/engine/render/drawable.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\utilities\\fileLoader.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\utilities\\fileLoader.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\utilities\\fileLoader.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\utilities\\fileLoader.cpp",
   "file": "D:/21/Maze3d/src/engine/utilities/fileLoader.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\gameprocess.cpp.obj -c D:\\21\\Maze3d\\src\\game\\gameprocess.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\game\\gameprocess.cpp.obj -c D:\\21\\Maze3d\\src\\game\\gameprocess.cpp",
   "file": "D:/21/Maze3d/src/game/gameprocess.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\loadingScenes\\startLoadingScene\\startLoadingScene.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\loadingScenes\\startLoadingScene\\startLoadingScene.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\loadingScenes\\startLoadingScene\\startLoadingScene.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\loadingScenes\\startLoadingScene\\startLoadingScene.cpp",
   "file": "D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\testScene.cpp.obj -c D:\\21\\Maze3d\\src\\game\\testScene.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\game\\testScene.cpp.obj -c D:\\21\\Maze3d\\src\\game\\testScene.cpp",
   "file": "D:/21/Maze3d/src/game/testScene.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/maze3d.dir/includes_C.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\glad.c.obj   -c D:\\21\\Maze3d\\src\\glad.c",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/maze3d.dir/includes_C.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\glad.c.obj   -c D:\\21\\Maze3d\\src\\glad.c",
   "file": "D:/21/Maze3d/src/glad.c"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/maze3d.dir/includes_C.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\include\\stb\\stb_image.c.obj   -c D:\\21\\Maze3d\\include\\stb\\stb_image.c",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/maze3d.dir/includes_C.rsp -g   -o CMakeFiles\\maze3d.dir\\include\\stb\\stb_image.c.obj   -c D:\\21\\Maze3d\\include\\stb\\stb_image.c",
   "file": "D:/21/Maze3d/include/stb/stb_image.c"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\main.cpp.obj -c D:\\21\\Maze3d\\main.cpp",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\main.cpp.obj -c D:\\21\\Maze3d\\main.cpp",
   "file": "D:/21/Maze3d/main.cpp"
 }
 ]

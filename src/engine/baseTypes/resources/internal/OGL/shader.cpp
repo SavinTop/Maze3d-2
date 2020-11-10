@@ -39,15 +39,13 @@ void ShaderProgram::setParams(const std::string VertexShaderPath, const std::str
 	this->resName_ = pname;
 }
 
-void ShaderProgram::InitializeSubResources() 
+void ShaderProgram::InitializeSubResources(std::string groupName) 
 {
 	if(!rm) return;
-	this->FragmentShaderFile_ = rm->createResource<>(res::ex::TextFile(fragmentShaderPath), lt);
-	this->VertexShaderFile_ = rm->createResource<>(res::ex::TextFile(vertexShaderPath), lt);
-	this->subResources_.setResources({this->VertexShaderFile_, this->FragmentShaderFile_});
+	this->FragmentShaderFile_ = rm->createResource<>(res::ex::TextFile(fragmentShaderPath), groupName);
+	this->VertexShaderFile_ = rm->createResource<>(res::ex::TextFile(vertexShaderPath), groupName);
+	this->subResources_.setResources({VertexShaderFile_.get(), FragmentShaderFile_.get()});
 }
-
-ShaderProgram::~ShaderProgram(){}
 
 unsigned int ShaderProgram::getProgramID(){ return program_; }
 

@@ -5,54 +5,54 @@
 #include <map>
 #include <stack>
 #include <string>
+#include <iostream>
+#include <functional>
 #include "resource.hpp"
 
-enum class LifeTime
-{
-    Permanent,
-    Scene,
-    Count
-};
-
-using resource_shared = std::shared_ptr<Resource *>;
+class Scene;
 
 class ResourceManager
 {
 public:
     bool has(const std::string &key);
 
-    template <class T>
-    T *createResource(const T &object, LifeTime lt = LifeTime::Scene)
-    {
-        T *out;
+    void __resourceDeleter(Resource* p);
 
-        std::string name = ((Resource)object).resName_;
+    template <class T>
+    std::shared_ptr<T> createResource(const T &object, std::string groupName = "general", std::string resname = "")
+    {
+        using namespace std::placeholders;
+        std::shared_ptr<T> out;
+        std::string name;
+        
+        name = resname.empty()?((Resource)object).resName_:resname;
 
         if (name.empty())
         {
-            out = new T();
+            out.reset(new T(), std::bind(ResourceManager::__resourceDeleter, this, _1));
         }
         else
         {
             auto it = resources.find(name);
             if (it != resources.end())
-                return (T *)(*it).second;
+                return std::static_pointer_cast<T>((*it).second.lock());
 
-            out = new T();
-            resources[name] = (Resource *)out;
-            if (lt == LifeTime::Scene)
-                tempResources.push(name);
+            out.reset(new T(), std::bind(ResourceManager::__resourceDeleter, this, _1));
+            resources[name] = out;
         }
         (*out) = object;
-        ((Resource *)out)->rm = this;
-        ((Resource *)out)->lt = lt;
-        ((Resource *)out)->InitializeSubResources();
+        ((Resource *)out.get())->rm = this;
+        ((Resource *)out.get())->InitializeSubResources(groupName);
+
+        if(!groupName.empty())
+            groups[groupName].push_back(std::static_pointer_cast<Resource>(out));
+
         return out;
     }
 
-    void deleteResource(Resource *ptr);
+    void clearGroup(std::string name);
 
 private:
-    std::map<std::string, Resource *> resources;
-    std::stack<std::string> tempResources;
+    std::map<std::string, std::weak_ptr<Resource>> resources;
+    std::map<std::string, std::vector<std::shared_ptr<Resource>>> groups;
 };

@@ -27,8 +27,8 @@ class Resource{
     public:
     ResourcePack subResources_;
     std::string resName_;
-    LifeTime lt;
     Resource(){ this->rm = nullptr;};
+    virtual ~Resource(){}
     Resource(const std::string& name, ResourceManager* rm = nullptr){this->resName_ = name; this->rm = rm;}
     virtual void load() {};
     virtual void unload() {};
@@ -36,7 +36,7 @@ class Resource{
         unload();
         load();
     }
-    virtual void InitializeSubResources() {};
+    virtual void InitializeSubResources(std::string groupName) {};
     bool isLoaded(){return loaded;}
 
     ResourceManager* rm;

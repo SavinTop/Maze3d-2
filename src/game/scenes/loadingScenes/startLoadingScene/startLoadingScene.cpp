@@ -7,9 +7,9 @@ using namespace std::chrono_literals;
 
 StartLoadingScene::StartLoadingScene(GameProcess* proc):Scene(proc)
 {
-    rm = proc->rm;
     nextScene = new TestScene(proc);
     currentIndex = 0;
+    sceneName = "start_loading_scene";
 }
 
 void StartLoadingScene::start() 
@@ -28,7 +28,7 @@ void StartLoadingScene::update(float delta)
 {
     if(currentIndex>=resourcesToLoad.size()){
         std::this_thread::sleep_for(1s);
-        proc_->SetCurrentScene(nextScene);
+        proc->SetCurrentScene(nextScene);
         return;
     }
     auto& t = resourcesToLoad[currentIndex];
@@ -54,7 +54,7 @@ void StartLoadingScene::onDraw(float delta)
 
 ResourcePack StartLoadingScene::getResources() 
 {
-    return ResourcePack({loadingShader, loadingPlane});
+    return ResourcePack({loadingShader.get(), loadingPlane.get()});
 }
 
 void StartLoadingScene::initResources() 
@@ -62,8 +62,8 @@ void StartLoadingScene::initResources()
     loadingShader = rm->createResource<>(
     res::ogl::ShaderProgram("data/shaders/startLoadingScreen.vert",
                             "data/shaders/startLoadingScreen.frag",
-                            "basic program"));
+                            "basic program"),sceneName);
     loadingPlane = rm->createResource<>(
-        res::ogl::Plane(glm::vec3(0, 0 , 0), glm::vec2(2, 0.5))
+        res::ogl::Plane(glm::vec3(0, 0 , 0), glm::vec2(2, 0.5)),sceneName
     );
 }

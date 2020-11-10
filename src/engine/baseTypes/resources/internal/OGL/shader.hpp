@@ -15,7 +15,6 @@ class ShaderProgram : public OpenGLResource
 public:
 	ShaderProgram();
 	ShaderProgram(const std::string VertexShaderPath, const std::string FragmentShaderPath, const std::string pname);
-	~ShaderProgram();
 
 	unsigned int getProgramID();
 	int getUniformLocation(const std::string& name);
@@ -24,13 +23,13 @@ public:
 	void unload() override;
 	void setParams(const std::string VertexShaderPath, const std::string FragmentShaderPath, const std::string pname);
 
-	virtual void InitializeSubResources();
+	virtual void InitializeSubResources(std::string groupName);
 
 	void bind();
 	void unbind();
 private:
-	res::ex::TextFile* VertexShaderFile_;
-	res::ex::TextFile* FragmentShaderFile_;
+	std::shared_ptr<res::ex::TextFile> VertexShaderFile_;
+	std::shared_ptr<res::ex::TextFile> FragmentShaderFile_;
 	std::string vertexShaderPath;
 	std::string fragmentShaderPath;
 
