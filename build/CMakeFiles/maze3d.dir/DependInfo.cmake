@@ -22,6 +22,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/engine/baseTypes/color.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/containers/Image.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/containers/mesh.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.obj"
+  "D:/21/Maze3d/src/engine/baseTypes/gui/button.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj"
+  "D:/21/Maze3d/src/engine/baseTypes/gui/fullscreenBox.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.obj"
+  "D:/21/Maze3d/src/engine/baseTypes/gui/gui.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/gui.cpp.obj"
+  "D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resource/resource.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resource/resourceManager.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/external/Image.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj"
@@ -36,7 +40,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/engine/utilities/fileLoader.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.obj"
   "D:/21/Maze3d/src/game/gameprocess.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj"
   "D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.obj"
-  "D:/21/Maze3d/src/game/testScene.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj"
+  "D:/21/Maze3d/src/game/scenes/menu/menu.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

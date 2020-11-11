@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "game/gameprocess.hpp"
+#include "baseTypes/gui/gui.hpp"
 
 const unsigned int SCR_WIDTH = 600;
 const unsigned int SCR_HEIGHT = 600;
@@ -43,6 +44,8 @@ int main()
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
     }
+
+    gui_init();
 
     GameProcess game{window};
     game.Start();

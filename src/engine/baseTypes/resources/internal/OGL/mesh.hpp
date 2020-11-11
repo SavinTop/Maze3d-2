@@ -21,6 +21,7 @@ public:
 
     void setParams(const Containers::Mesh& meshContainer);
     void draw(res::ogl::ShaderProgram& program);
+    void drawWithoutTextures();
 private:
 Containers::Mesh mesh;
 unsigned int VAO, VBO, EBO;

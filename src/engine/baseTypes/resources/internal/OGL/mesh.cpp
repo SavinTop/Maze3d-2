@@ -42,6 +42,13 @@ void Mesh::draw(res::ogl::ShaderProgram& program){
     glBindVertexArray(0);
 }
 
+void Mesh::drawWithoutTextures() 
+{
+    glBindVertexArray(VAO);
+    glDrawElements(GL_TRIANGLES, mesh.indices.size(), GL_UNSIGNED_INT, 0);
+    glBindVertexArray(0);
+}
+
 void Mesh::load(){
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);

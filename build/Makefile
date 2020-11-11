@@ -277,6 +277,114 @@ src/engine/baseTypes/containers/mesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.s
 .PHONY : src/engine/baseTypes/containers/mesh.cpp.s
 
+src/engine/baseTypes/gui/button.obj: src/engine/baseTypes/gui/button.cpp.obj
+
+.PHONY : src/engine/baseTypes/gui/button.obj
+
+# target to build an object file
+src/engine/baseTypes/gui/button.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj
+.PHONY : src/engine/baseTypes/gui/button.cpp.obj
+
+src/engine/baseTypes/gui/button.i: src/engine/baseTypes/gui/button.cpp.i
+
+.PHONY : src/engine/baseTypes/gui/button.i
+
+# target to preprocess a source file
+src/engine/baseTypes/gui/button.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.i
+.PHONY : src/engine/baseTypes/gui/button.cpp.i
+
+src/engine/baseTypes/gui/button.s: src/engine/baseTypes/gui/button.cpp.s
+
+.PHONY : src/engine/baseTypes/gui/button.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/gui/button.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.s
+.PHONY : src/engine/baseTypes/gui/button.cpp.s
+
+src/engine/baseTypes/gui/fullscreenBox.obj: src/engine/baseTypes/gui/fullscreenBox.cpp.obj
+
+.PHONY : src/engine/baseTypes/gui/fullscreenBox.obj
+
+# target to build an object file
+src/engine/baseTypes/gui/fullscreenBox.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.obj
+.PHONY : src/engine/baseTypes/gui/fullscreenBox.cpp.obj
+
+src/engine/baseTypes/gui/fullscreenBox.i: src/engine/baseTypes/gui/fullscreenBox.cpp.i
+
+.PHONY : src/engine/baseTypes/gui/fullscreenBox.i
+
+# target to preprocess a source file
+src/engine/baseTypes/gui/fullscreenBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.i
+.PHONY : src/engine/baseTypes/gui/fullscreenBox.cpp.i
+
+src/engine/baseTypes/gui/fullscreenBox.s: src/engine/baseTypes/gui/fullscreenBox.cpp.s
+
+.PHONY : src/engine/baseTypes/gui/fullscreenBox.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/gui/fullscreenBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.s
+.PHONY : src/engine/baseTypes/gui/fullscreenBox.cpp.s
+
+src/engine/baseTypes/gui/gui.obj: src/engine/baseTypes/gui/gui.cpp.obj
+
+.PHONY : src/engine/baseTypes/gui/gui.obj
+
+# target to build an object file
+src/engine/baseTypes/gui/gui.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/gui.cpp.obj
+.PHONY : src/engine/baseTypes/gui/gui.cpp.obj
+
+src/engine/baseTypes/gui/gui.i: src/engine/baseTypes/gui/gui.cpp.i
+
+.PHONY : src/engine/baseTypes/gui/gui.i
+
+# target to preprocess a source file
+src/engine/baseTypes/gui/gui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/gui.cpp.i
+.PHONY : src/engine/baseTypes/gui/gui.cpp.i
+
+src/engine/baseTypes/gui/gui.s: src/engine/baseTypes/gui/gui.cpp.s
+
+.PHONY : src/engine/baseTypes/gui/gui.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/gui/gui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/gui.cpp.s
+.PHONY : src/engine/baseTypes/gui/gui.cpp.s
+
+src/engine/baseTypes/gui/guiObject.obj: src/engine/baseTypes/gui/guiObject.cpp.obj
+
+.PHONY : src/engine/baseTypes/gui/guiObject.obj
+
+# target to build an object file
+src/engine/baseTypes/gui/guiObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.obj
+.PHONY : src/engine/baseTypes/gui/guiObject.cpp.obj
+
+src/engine/baseTypes/gui/guiObject.i: src/engine/baseTypes/gui/guiObject.cpp.i
+
+.PHONY : src/engine/baseTypes/gui/guiObject.i
+
+# target to preprocess a source file
+src/engine/baseTypes/gui/guiObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.i
+.PHONY : src/engine/baseTypes/gui/guiObject.cpp.i
+
+src/engine/baseTypes/gui/guiObject.s: src/engine/baseTypes/gui/guiObject.cpp.s
+
+.PHONY : src/engine/baseTypes/gui/guiObject.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/gui/guiObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.s
+.PHONY : src/engine/baseTypes/gui/guiObject.cpp.s
+
 src/engine/baseTypes/resource/resource.obj: src/engine/baseTypes/resource/resource.cpp.obj
 
 .PHONY : src/engine/baseTypes/resource/resource.obj
@@ -655,32 +763,32 @@ src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s
 .PHONY : src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s
 
-src/game/testScene.obj: src/game/testScene.cpp.obj
+src/game/scenes/menu/menu.obj: src/game/scenes/menu/menu.cpp.obj
 
-.PHONY : src/game/testScene.obj
+.PHONY : src/game/scenes/menu/menu.obj
 
 # target to build an object file
-src/game/testScene.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj
-.PHONY : src/game/testScene.cpp.obj
+src/game/scenes/menu/menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj
+.PHONY : src/game/scenes/menu/menu.cpp.obj
 
-src/game/testScene.i: src/game/testScene.cpp.i
+src/game/scenes/menu/menu.i: src/game/scenes/menu/menu.cpp.i
 
-.PHONY : src/game/testScene.i
+.PHONY : src/game/scenes/menu/menu.i
 
 # target to preprocess a source file
-src/game/testScene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/testScene.cpp.i
-.PHONY : src/game/testScene.cpp.i
+src/game/scenes/menu/menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.i
+.PHONY : src/game/scenes/menu/menu.cpp.i
 
-src/game/testScene.s: src/game/testScene.cpp.s
+src/game/scenes/menu/menu.s: src/game/scenes/menu/menu.cpp.s
 
-.PHONY : src/game/testScene.s
+.PHONY : src/game/scenes/menu/menu.s
 
 # target to generate assembly for a file
-src/game/testScene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/testScene.cpp.s
-.PHONY : src/game/testScene.cpp.s
+src/game/scenes/menu/menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.s
+.PHONY : src/game/scenes/menu/menu.cpp.s
 
 src/glad.obj: src/glad.c.obj
 
@@ -733,6 +841,18 @@ help:
 	@echo ... src/engine/baseTypes/containers/mesh.obj
 	@echo ... src/engine/baseTypes/containers/mesh.i
 	@echo ... src/engine/baseTypes/containers/mesh.s
+	@echo ... src/engine/baseTypes/gui/button.obj
+	@echo ... src/engine/baseTypes/gui/button.i
+	@echo ... src/engine/baseTypes/gui/button.s
+	@echo ... src/engine/baseTypes/gui/fullscreenBox.obj
+	@echo ... src/engine/baseTypes/gui/fullscreenBox.i
+	@echo ... src/engine/baseTypes/gui/fullscreenBox.s
+	@echo ... src/engine/baseTypes/gui/gui.obj
+	@echo ... src/engine/baseTypes/gui/gui.i
+	@echo ... src/engine/baseTypes/gui/gui.s
+	@echo ... src/engine/baseTypes/gui/guiObject.obj
+	@echo ... src/engine/baseTypes/gui/guiObject.i
+	@echo ... src/engine/baseTypes/gui/guiObject.s
 	@echo ... src/engine/baseTypes/resource/resource.obj
 	@echo ... src/engine/baseTypes/resource/resource.i
 	@echo ... src/engine/baseTypes/resource/resource.s
@@ -775,9 +895,9 @@ help:
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.obj
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.i
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.s
-	@echo ... src/game/testScene.obj
-	@echo ... src/game/testScene.i
-	@echo ... src/game/testScene.s
+	@echo ... src/game/scenes/menu/menu.obj
+	@echo ... src/game/scenes/menu/menu.i
+	@echo ... src/game/scenes/menu/menu.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s

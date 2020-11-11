@@ -1,5 +1,5 @@
 #include "startLoadingScene.hpp"
-#include "testScene.hpp"
+#include "scenes/menu/menu.hpp"
 
 #include <thread>
 
@@ -7,7 +7,7 @@ using namespace std::chrono_literals;
 
 StartLoadingScene::StartLoadingScene(GameProcess* proc):Scene(proc)
 {
-    nextScene = new TestScene(proc);
+    nextScene = new Menu(proc);
     currentIndex = 0;
     sceneName = "start_loading_scene";
 }

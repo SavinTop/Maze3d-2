@@ -11,7 +11,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-class TestScene;
+class Menu;
 
 class StartLoadingScene : public Scene{
 public:
@@ -24,7 +24,7 @@ void initResources() override;
 private:
 std::shared_ptr<res::ogl::ShaderProgram> loadingShader;
 std::shared_ptr<res::ogl::Plane> loadingPlane;
-TestScene* nextScene;
+Menu* nextScene;
 std::vector<Resource*> resourcesToLoad;
 unsigned currentIndex;
 };

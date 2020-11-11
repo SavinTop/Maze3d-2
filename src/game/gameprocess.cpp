@@ -3,7 +3,6 @@
 #include "baseTypes/resources/external/Image.hpp"
 #include "baseTypes/containers/Image.hpp"
 #include "baseTypes/color.hpp"
-#include "testScene.hpp"
 #include "scenes/loadingScenes/startLoadingScene/startLoadingScene.hpp"
 
 void GameProcess::SetCurrentScene(Scene* scene) 

@@ -11,7 +11,7 @@ void Drawable::draw(res::ogl::ShaderProgram& program)
 void Drawable::updateModelMatrix() 
 {
     if(!changed) return;
-    model = glm::mat4(1);
+    model = glm::mat4(1.0);
     //model = glm::rotate(model, glm::radians(1.0f), rotation);
     model = glm::scale(model, scale);
     model = glm::translate(model, position);
@@ -55,10 +55,9 @@ void Drawable::addRotation(glm::vec3 rotation)
 
 Drawable::Drawable() 
 {
-    model = glm::mat4(1);
+    model = glm::mat4(1.0);
     position = glm::vec3(0);
     rotation = glm::vec3(0);
     scale = glm::vec3(1);
     changed = true;
-    updateModelMatrix();
 }
