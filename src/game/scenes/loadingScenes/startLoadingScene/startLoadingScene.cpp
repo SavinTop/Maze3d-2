@@ -27,7 +27,6 @@ void StartLoadingScene::start()
 void StartLoadingScene::update(float delta) 
 {
     if(currentIndex>=resourcesToLoad.size()){
-        std::this_thread::sleep_for(1s);
         proc->SetCurrentScene(nextScene);
         return;
     }

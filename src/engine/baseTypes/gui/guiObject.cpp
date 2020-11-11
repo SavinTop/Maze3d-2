@@ -11,8 +11,8 @@ void GuiObject::setPosition(int x, int y)
 void GuiObject::setPosition(float x_coof, float y_coof) 
 {
     if(!parent) return;
-    this->x = parent->x+(int)(parent->w*x_coof);
-    this->y = parent->y+(int)(parent->h*y_coof);
+    this->x = parent->x+(int)(parent->w/2*x_coof);
+    this->y = parent->y+(int)(parent->h/2*y_coof);
     this->position = glm::vec3(x,y,0);
 }
 
@@ -31,11 +31,25 @@ void GuiObject::setSize(float w_coof, float h_coof)
     this->scale = glm::vec3(w,h,1);
 }
 
+void GuiObject::setParent(GuiObject* parent) 
+{
+    this->parent = parent;
+    if(this->parent)
+    {
+        parent->__addChild(this);
+    }
+}
+
+void GuiObject::setClickCallback(void (*clickCallback)(void)) 
+{
+    click = clickCallback;
+}
+
 GuiObject::GuiObject(GuiObject* parent, int x, int y, int w, int h) 
 {
     setPosition(x,y);
     setSize(w,h);
-    this->parent = parent;
+    setParent(parent);
 }
 
 void GuiObject::__addChild(GuiObject* child) 

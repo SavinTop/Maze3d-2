@@ -7,5 +7,5 @@ uniform vec4 color;
 
 void main()
 {
-    FragColor = vec4(1.0);//texture(texture_diffuse1, texC)*color;
+    FragColor = texture(texture_diffuse1, texC);
 }

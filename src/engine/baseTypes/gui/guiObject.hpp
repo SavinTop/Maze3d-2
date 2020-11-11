@@ -17,7 +17,9 @@ public:
 
     void setSize(int w, int h);
     void setSize(float w_coof, float h_coof);
-private:
+    void setParent(GuiObject* parent);
+    void setClickCallback(void (*clickCallback)(void));
+protected:
     int x,y;
     int w,h;
     GuiObject* parent;
