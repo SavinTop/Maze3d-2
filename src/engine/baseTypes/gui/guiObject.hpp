@@ -3,6 +3,7 @@
 #include <glm/glm.hpp>
 #include <vector>
 #include <render/drawable.hpp>
+#include <functional>
 
 class GuiObject:public Drawable{
 public:
@@ -18,12 +19,13 @@ public:
     void setSize(int w, int h);
     void setSize(float w_coof, float h_coof);
     void setParent(GuiObject* parent);
-    void setClickCallback(void (*clickCallback)(void));
+    void setClickCallback(std::function<void(void)> click);
+    std::vector<GuiObject*>& getChildArr();
 protected:
     int x,y;
     int w,h;
     GuiObject* parent;
     std::vector<GuiObject*> childArr;
     //callbacks
-    void (*click)(void);
+    std::function<void(void)> click;
 };

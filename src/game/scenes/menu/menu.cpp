@@ -28,12 +28,7 @@ void _CheckGLError(const char* file, int line)
 
 void Menu::start() 
 {
-    button = Button{idle.get(), active.get()};
-    glfwGetWindowSize(proc->getWnd(), &window_w, &window_h);
-    fbox = FullscreenBox(window_w, window_h);
-    button.setParent(&fbox);
-    button.setSize(0.3f,0.09f);
-    button.setPosition(0.0f,-0.5f);
+    menu->start();
 }
 
 void Menu::update(float delta) 
@@ -45,8 +40,8 @@ void Menu::update(float delta)
     double x,y;
 
     glfwGetCursorPos(proc->getWnd(),&x,&y);
-
-    this->fbox.__mouseMove(x,window_h-y);
+    bool lm = glfwGetMouseButton(proc->getWnd(), GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS;
+    menu->mouseInput(x,y,lm);
 }
 
 void Menu::onDraw(float delta) 
@@ -66,7 +61,9 @@ void Menu::onDraw(float delta)
     float color[] = {0,1,0,1};
     glUniform4fv(colorId, 1, color);
     //mesh->draw(program);
-    button.draw(*program);
+    for(auto el:menu->getElements())
+        el->draw(*program);
+    
     
     
     CheckGLError();
@@ -74,14 +71,16 @@ void Menu::onDraw(float delta)
 
 ResourcePack Menu::getResources() 
 {
-    return ResourcePack({program.get(), active.get(), idle.get()});
+    ResourcePack temp;
+    temp.setResources(menu->getResources().getRes());
+    temp.getRes().push_back(program.get());
+    return temp;
 }
 
 void Menu::initResources() 
 {
     program = rm->createResource<>(res::ogl::ShaderProgram("data/shaders/basic/shader.vert","data/shaders/basic/shader.frag","basic program2"),sceneName);
-    active = rm->createResource<>(res::ogl::Texture("data\\scenes\\mainMenu\\sprites\\buttons\\exit_active.png"),sceneName);
-    idle = rm->createResource<>(res::ogl::Texture("data\\scenes\\mainMenu\\sprites\\buttons\\exit_idle.png"),sceneName);
+    menu = rm->createResource<>(MenuGui(window_w, window_h, rm));
     //testPlane = rm->createResource<>(res::ogl::Plane(glm::vec3(200,200,0), glm::vec2(200,200), {test.get()}),sceneName);
 }
 
@@ -96,4 +95,5 @@ Menu::Menu(GameProcess* proc)
 {
     rm = proc->rm;
     sceneName = "test_scene";
+    glfwGetWindowSize(proc->getWnd(), &window_w, &window_h);
 }

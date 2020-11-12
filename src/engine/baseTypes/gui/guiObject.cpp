@@ -40,9 +40,14 @@ void GuiObject::setParent(GuiObject* parent)
     }
 }
 
-void GuiObject::setClickCallback(void (*clickCallback)(void)) 
+void GuiObject::setClickCallback(std::function<void(void)> click) 
 {
-    click = clickCallback;
+    this->click = click;
+}
+
+std::vector<GuiObject*>& GuiObject::getChildArr() 
+{
+    return childArr;
 }
 
 GuiObject::GuiObject(GuiObject* parent, int x, int y, int w, int h) 

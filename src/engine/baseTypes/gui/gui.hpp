@@ -1,4 +1,6 @@
 #pragma once
 
-void gui_init();
-unsigned int gui_getVAOid();
+#include "guiObject.hpp"
+#include "fullscreenBox.hpp"
+#include "button.hpp"
+#include "guiWindow.hpp"

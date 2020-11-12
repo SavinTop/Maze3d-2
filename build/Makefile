@@ -331,33 +331,6 @@ src/engine/baseTypes/gui/fullscreenBox.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.s
 .PHONY : src/engine/baseTypes/gui/fullscreenBox.cpp.s
 
-src/engine/baseTypes/gui/gui.obj: src/engine/baseTypes/gui/gui.cpp.obj
-
-.PHONY : src/engine/baseTypes/gui/gui.obj
-
-# target to build an object file
-src/engine/baseTypes/gui/gui.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/gui.cpp.obj
-.PHONY : src/engine/baseTypes/gui/gui.cpp.obj
-
-src/engine/baseTypes/gui/gui.i: src/engine/baseTypes/gui/gui.cpp.i
-
-.PHONY : src/engine/baseTypes/gui/gui.i
-
-# target to preprocess a source file
-src/engine/baseTypes/gui/gui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/gui.cpp.i
-.PHONY : src/engine/baseTypes/gui/gui.cpp.i
-
-src/engine/baseTypes/gui/gui.s: src/engine/baseTypes/gui/gui.cpp.s
-
-.PHONY : src/engine/baseTypes/gui/gui.s
-
-# target to generate assembly for a file
-src/engine/baseTypes/gui/gui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/gui.cpp.s
-.PHONY : src/engine/baseTypes/gui/gui.cpp.s
-
 src/engine/baseTypes/gui/guiObject.obj: src/engine/baseTypes/gui/guiObject.cpp.obj
 
 .PHONY : src/engine/baseTypes/gui/guiObject.obj
@@ -384,6 +357,60 @@ src/engine/baseTypes/gui/guiObject.s: src/engine/baseTypes/gui/guiObject.cpp.s
 src/engine/baseTypes/gui/guiObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.s
 .PHONY : src/engine/baseTypes/gui/guiObject.cpp.s
+
+src/engine/baseTypes/gui/guiWindow.obj: src/engine/baseTypes/gui/guiWindow.cpp.obj
+
+.PHONY : src/engine/baseTypes/gui/guiWindow.obj
+
+# target to build an object file
+src/engine/baseTypes/gui/guiWindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.obj
+.PHONY : src/engine/baseTypes/gui/guiWindow.cpp.obj
+
+src/engine/baseTypes/gui/guiWindow.i: src/engine/baseTypes/gui/guiWindow.cpp.i
+
+.PHONY : src/engine/baseTypes/gui/guiWindow.i
+
+# target to preprocess a source file
+src/engine/baseTypes/gui/guiWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.i
+.PHONY : src/engine/baseTypes/gui/guiWindow.cpp.i
+
+src/engine/baseTypes/gui/guiWindow.s: src/engine/baseTypes/gui/guiWindow.cpp.s
+
+.PHONY : src/engine/baseTypes/gui/guiWindow.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/gui/guiWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.s
+.PHONY : src/engine/baseTypes/gui/guiWindow.cpp.s
+
+src/engine/baseTypes/gui/justRect.obj: src/engine/baseTypes/gui/justRect.cpp.obj
+
+.PHONY : src/engine/baseTypes/gui/justRect.obj
+
+# target to build an object file
+src/engine/baseTypes/gui/justRect.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.obj
+.PHONY : src/engine/baseTypes/gui/justRect.cpp.obj
+
+src/engine/baseTypes/gui/justRect.i: src/engine/baseTypes/gui/justRect.cpp.i
+
+.PHONY : src/engine/baseTypes/gui/justRect.i
+
+# target to preprocess a source file
+src/engine/baseTypes/gui/justRect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.i
+.PHONY : src/engine/baseTypes/gui/justRect.cpp.i
+
+src/engine/baseTypes/gui/justRect.s: src/engine/baseTypes/gui/justRect.cpp.s
+
+.PHONY : src/engine/baseTypes/gui/justRect.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/gui/justRect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.s
+.PHONY : src/engine/baseTypes/gui/justRect.cpp.s
 
 src/engine/baseTypes/resource/resource.obj: src/engine/baseTypes/resource/resource.cpp.obj
 
@@ -790,6 +817,33 @@ src/game/scenes/menu/menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.s
 .PHONY : src/game/scenes/menu/menu.cpp.s
 
+src/game/scenes/menu/menuGui.obj: src/game/scenes/menu/menuGui.cpp.obj
+
+.PHONY : src/game/scenes/menu/menuGui.obj
+
+# target to build an object file
+src/game/scenes/menu/menuGui.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj
+.PHONY : src/game/scenes/menu/menuGui.cpp.obj
+
+src/game/scenes/menu/menuGui.i: src/game/scenes/menu/menuGui.cpp.i
+
+.PHONY : src/game/scenes/menu/menuGui.i
+
+# target to preprocess a source file
+src/game/scenes/menu/menuGui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.i
+.PHONY : src/game/scenes/menu/menuGui.cpp.i
+
+src/game/scenes/menu/menuGui.s: src/game/scenes/menu/menuGui.cpp.s
+
+.PHONY : src/game/scenes/menu/menuGui.s
+
+# target to generate assembly for a file
+src/game/scenes/menu/menuGui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.s
+.PHONY : src/game/scenes/menu/menuGui.cpp.s
+
 src/glad.obj: src/glad.c.obj
 
 .PHONY : src/glad.obj
@@ -847,12 +901,15 @@ help:
 	@echo ... src/engine/baseTypes/gui/fullscreenBox.obj
 	@echo ... src/engine/baseTypes/gui/fullscreenBox.i
 	@echo ... src/engine/baseTypes/gui/fullscreenBox.s
-	@echo ... src/engine/baseTypes/gui/gui.obj
-	@echo ... src/engine/baseTypes/gui/gui.i
-	@echo ... src/engine/baseTypes/gui/gui.s
 	@echo ... src/engine/baseTypes/gui/guiObject.obj
 	@echo ... src/engine/baseTypes/gui/guiObject.i
 	@echo ... src/engine/baseTypes/gui/guiObject.s
+	@echo ... src/engine/baseTypes/gui/guiWindow.obj
+	@echo ... src/engine/baseTypes/gui/guiWindow.i
+	@echo ... src/engine/baseTypes/gui/guiWindow.s
+	@echo ... src/engine/baseTypes/gui/justRect.obj
+	@echo ... src/engine/baseTypes/gui/justRect.i
+	@echo ... src/engine/baseTypes/gui/justRect.s
 	@echo ... src/engine/baseTypes/resource/resource.obj
 	@echo ... src/engine/baseTypes/resource/resource.i
 	@echo ... src/engine/baseTypes/resource/resource.s
@@ -898,6 +955,9 @@ help:
 	@echo ... src/game/scenes/menu/menu.obj
 	@echo ... src/game/scenes/menu/menu.i
 	@echo ... src/game/scenes/menu/menu.s
+	@echo ... src/game/scenes/menu/menuGui.obj
+	@echo ... src/game/scenes/menu/menuGui.i
+	@echo ... src/game/scenes/menu/menuGui.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s

@@ -6,6 +6,7 @@
 #include "baseTypes/color.hpp"
 #include <iostream>
 #include <vector>
+#include <functional>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -14,6 +15,7 @@
 #include "baseTypes/gui/button.hpp"
 #include "baseTypes/gui/fullscreenBox.hpp"
 
+#include "menuGui.hpp"
 
 class Menu : public Scene{
 public:
@@ -31,14 +33,10 @@ std::shared_ptr<res::ogl::ShaderProgram> program;
 std::shared_ptr<res::ogl::ShaderProgram> rectProgram;
 std::shared_ptr<res::ogl::Mesh> mesh;
 std::shared_ptr<res::ogl::Plane> testPlane;
-std::shared_ptr<res::ogl::Texture> idle;
-std::shared_ptr<res::ogl::Texture> active;
+
+std::shared_ptr<MenuGui> menu;
 
 int window_w;
 int window_h;
-
-//menu test
-FullscreenBox fbox;
-Button button;
 };
 

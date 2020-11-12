@@ -5,7 +5,7 @@
 
 class FullscreenBox : public GuiObject{
 public:
-    FullscreenBox(int window_w, int window_h);
+    FullscreenBox(GuiObject* parent, int window_w, int window_h);
     FullscreenBox();
 
     void __leftMouseBtnDown(int x, int y) override;

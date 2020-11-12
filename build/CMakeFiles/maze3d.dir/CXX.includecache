@@ -1483,8 +1483,8 @@ guiObject.hpp
 ../src/engine/baseTypes/gui/guiObject.hpp
 render/drawable.hpp
 ../src/engine/baseTypes/gui/render/drawable.hpp
-gui.hpp
-../src/engine/baseTypes/gui/gui.hpp
+justRect.hpp
+../src/engine/baseTypes/gui/justRect.hpp
 baseTypes/resources/internal/OGL/texture.hpp
 ../src/engine/baseTypes/gui/baseTypes/resources/internal/OGL/texture.hpp
 
@@ -1495,6 +1495,14 @@ baseTypes/resources/internal/OGL/glresources.hpp
 ../src/engine/baseTypes/gui/baseTypes/resources/internal/OGL/glresources.hpp
 
 ../src/engine/baseTypes/gui/gui.hpp
+guiObject.hpp
+../src/engine/baseTypes/gui/guiObject.hpp
+fullscreenBox.hpp
+../src/engine/baseTypes/gui/fullscreenBox.hpp
+button.hpp
+../src/engine/baseTypes/gui/button.hpp
+guiWindow.hpp
+../src/engine/baseTypes/gui/guiWindow.hpp
 
 ../src/engine/baseTypes/gui/guiObject.hpp
 glm/glm.hpp
@@ -1503,6 +1511,14 @@ vector
 -
 render/drawable.hpp
 -
+functional
+-
+
+../src/engine/baseTypes/gui/guiWindow.hpp
+guiObject.hpp
+../src/engine/baseTypes/gui/guiObject.hpp
+
+../src/engine/baseTypes/gui/justRect.hpp
 
 ../src/engine/baseTypes/resource/resource.hpp
 vector
@@ -1655,6 +1671,8 @@ iostream
 -
 vector
 -
+functional
+-
 glm/glm.hpp
 -
 glm/gtc/matrix_transform.hpp
@@ -1665,6 +1683,14 @@ baseTypes/gui/button.hpp
 ../src/game/scenes/menu/baseTypes/gui/button.hpp
 baseTypes/gui/fullscreenBox.hpp
 ../src/game/scenes/menu/baseTypes/gui/fullscreenBox.hpp
+menuGui.hpp
+../src/game/scenes/menu/menuGui.hpp
+
+../src/game/scenes/menu/menuGui.hpp
+baseTypes/gui/gui.hpp
+../src/game/scenes/menu/baseTypes/gui/gui.hpp
+baseTypes/resource/resource.hpp
+../src/game/scenes/menu/baseTypes/resource/resource.hpp
 
 D:/21/Maze3d/main.cpp
 glad/glad.h
@@ -1678,36 +1704,6 @@ D:/21/Maze3d/game/gameprocess.hpp
 baseTypes/gui/gui.hpp
 D:/21/Maze3d/baseTypes/gui/gui.hpp
 
-D:/21/Maze3d/src/engine/baseTypes/gui/button.cpp
-button.hpp
-D:/21/Maze3d/src/engine/baseTypes/gui/button.hpp
-
-D:/21/Maze3d/src/engine/baseTypes/gui/button.hpp
-guiObject.hpp
-D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.hpp
-render/drawable.hpp
-D:/21/Maze3d/src/engine/baseTypes/gui/render/drawable.hpp
-gui.hpp
-D:/21/Maze3d/src/engine/baseTypes/gui/gui.hpp
-baseTypes/resources/internal/OGL/texture.hpp
-D:/21/Maze3d/src/engine/baseTypes/gui/baseTypes/resources/internal/OGL/texture.hpp
-
-D:/21/Maze3d/src/engine/baseTypes/gui/fullscreenBox.cpp
-fullscreenBox.hpp
-D:/21/Maze3d/src/engine/baseTypes/gui/fullscreenBox.hpp
-
-D:/21/Maze3d/src/engine/baseTypes/gui/fullscreenBox.hpp
-guiObject.hpp
-D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.hpp
-baseTypes/resources/internal/OGL/glresources.hpp
-D:/21/Maze3d/src/engine/baseTypes/gui/baseTypes/resources/internal/OGL/glresources.hpp
-
-D:/21/Maze3d/src/engine/baseTypes/gui/gui.hpp
-
-D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.cpp
-guiObject.hpp
-D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.hpp
-
 D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.hpp
 glm/glm.hpp
 -
@@ -1715,6 +1711,16 @@ vector
 -
 render/drawable.hpp
 -
+functional
+-
+
+D:/21/Maze3d/src/engine/baseTypes/gui/guiWindow.cpp
+guiWindow.hpp
+D:/21/Maze3d/src/engine/baseTypes/gui/guiWindow.hpp
+
+D:/21/Maze3d/src/engine/baseTypes/gui/guiWindow.hpp
+guiObject.hpp
+D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.hpp
 
 D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp
 startLoadingScene.hpp
@@ -1759,6 +1765,8 @@ iostream
 -
 vector
 -
+functional
+-
 glm/glm.hpp
 -
 glm/gtc/matrix_transform.hpp
@@ -1769,4 +1777,16 @@ baseTypes/gui/button.hpp
 D:/21/Maze3d/src/game/scenes/menu/baseTypes/gui/button.hpp
 baseTypes/gui/fullscreenBox.hpp
 D:/21/Maze3d/src/game/scenes/menu/baseTypes/gui/fullscreenBox.hpp
+menuGui.hpp
+D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
+
+D:/21/Maze3d/src/game/scenes/menu/menuGui.cpp
+menuGui.hpp
+D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
+
+D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
+baseTypes/gui/gui.hpp
+D:/21/Maze3d/src/game/scenes/menu/baseTypes/gui/gui.hpp
+baseTypes/resource/resource.hpp
+D:/21/Maze3d/src/game/scenes/menu/baseTypes/resource/resource.hpp
 

@@ -26,13 +26,18 @@
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\gui\\gui.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\gui\\gui.cpp",
-  "file": "D:/21/Maze3d/src/engine/baseTypes/gui/gui.cpp"
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\gui\\guiObject.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\gui\\guiObject.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\gui\\guiObject.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\gui\\guiObject.cpp",
-  "file": "D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.cpp"
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\gui\\guiWindow.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\gui\\guiWindow.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/gui/guiWindow.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\gui\\justRect.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\gui\\justRect.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/gui/justRect.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
@@ -108,6 +113,11 @@
   "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\menu\\menu.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\menu\\menu.cpp",
   "file": "D:/21/Maze3d/src/game/scenes/menu/menu.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\menu\\menuGui.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\menu\\menuGui.cpp",
+  "file": "D:/21/Maze3d/src/game/scenes/menu/menuGui.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",

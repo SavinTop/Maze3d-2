@@ -6,12 +6,11 @@ Button::Button():GuiObject(nullptr)
     click = nullptr;
 }
 
-Button::Button(res::ogl::Texture* idleTexture, res::ogl::Texture* mouseHoverTexture):GuiObject(nullptr)
+Button::Button(GuiObject* parent, res::ogl::Texture* idleTexture, res::ogl::Texture* mouseHoverTexture):GuiObject(parent)
 {
     this->idleTexture = idleTexture;
     this->mouseHoverTexture = mouseHoverTexture;
     this->currentTexture = idleTexture;
-    click = nullptr;
 }
 
 void Button::__draw(res::ogl::ShaderProgram &program) 
