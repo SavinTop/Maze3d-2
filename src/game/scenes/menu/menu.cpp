@@ -29,6 +29,7 @@ void _CheckGLError(const char* file, int line)
 void Menu::start() 
 {
     menu->start();
+    menu->setExitButtonClickCallBack(std::bind(&Menu::exitClicked, this));
 }
 
 void Menu::update(float delta) 

@@ -41,8 +41,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/engine/utilities/fileLoader.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.obj"
   "D:/21/Maze3d/src/game/gameprocess.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj"
   "D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.obj"
+  "D:/21/Maze3d/src/game/scenes/menu/endlessWindow.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj"
+  "D:/21/Maze3d/src/game/scenes/menu/mainWindow.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj"
   "D:/21/Maze3d/src/game/scenes/menu/menu.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj"
   "D:/21/Maze3d/src/game/scenes/menu/menuGui.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj"
+  "D:/21/Maze3d/src/game/scenes/menu/resourceMenuGui.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -20,6 +20,8 @@ public:
     void setSize(float w_coof, float h_coof);
     void setParent(GuiObject* parent);
     void setClickCallback(std::function<void(void)> click);
+    int width();
+    int height();
     std::vector<GuiObject*>& getChildArr();
 protected:
     int x,y;

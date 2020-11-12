@@ -3,14 +3,12 @@
 
 void MenuGui::load() 
 {
-    this->exit_active->unload();
-    this->exit_idle->unload();
+    r_pack.load();
 }
 
 void MenuGui::unload() 
 {
-    this->exit_active->load();
-    this->exit_idle->load();
+    r_pack.unload();
 }
 
 void MenuGui::mouseInput(int x, int y, bool lb) 
@@ -19,17 +17,6 @@ void MenuGui::mouseInput(int x, int y, bool lb)
     currentWindow->__mouseMove(x,h-y);
     if(lb)
         currentWindow->__leftMouseBtnDown(x,h-y);
-}
-
-void MenuGui::InitializeSubResources(std::string groupName) 
-{
-    this->exit_idle = rm->createResource(res::ogl::Texture(spriteDirectory+"buttons\\exit_idle.png"));
-    this->exit_active = rm->createResource(res::ogl::Texture(spriteDirectory+"buttons\\exit_active.png"));
-}
-
-ResourcePack MenuGui::getResources() 
-{
-    return ResourcePack({exit_active.get(), exit_idle.get()});
 }
 
 std::vector<Drawable*> MenuGui::getElements() 
@@ -52,19 +39,9 @@ std::vector<Drawable*> MenuGui::getDrawableChildrenRecurs(GuiObject* curr)
     return temp;
 }
 
-void MenuGui::initMain() 
+void MenuGui::back_click() 
 {
-    main = GuiWindow(w,h);
-    main_fbox = FullscreenBox(nullptr, w, h);
-    main_exit_button = Button(nullptr, exit_idle.get(), exit_active.get());
-
-    main_fbox.setParent(&main);
-    main_exit_button.setParent(&main_fbox);
-
-    main_exit_button.setSize(0.3f,0.09f);
-    main_exit_button.setPosition(0.0f,-0.5f);
-    auto temp = getDrawableChildrenRecurs(&main);
-    main.setDrawableChildArr(temp);
+    currentWindow = &main;
 }
 
 MenuGui::MenuGui(int w, int h, ResourceManager* rm) 
@@ -78,6 +55,7 @@ MenuGui::MenuGui(int w, int h, ResourceManager* rm)
 void MenuGui::start() 
 {
     initMain();
+    initEndless();
     currentWindow = &main;
 }
 

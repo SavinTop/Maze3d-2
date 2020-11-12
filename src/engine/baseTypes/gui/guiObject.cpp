@@ -45,6 +45,16 @@ void GuiObject::setClickCallback(std::function<void(void)> click)
     this->click = click;
 }
 
+int GuiObject::width() 
+{
+    return w;
+}
+
+int GuiObject::height() 
+{
+    return h;
+}
+
 std::vector<GuiObject*>& GuiObject::getChildArr() 
 {
     return childArr;

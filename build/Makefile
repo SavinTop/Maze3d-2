@@ -790,6 +790,60 @@ src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s
 .PHONY : src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s
 
+src/game/scenes/menu/endlessWindow.obj: src/game/scenes/menu/endlessWindow.cpp.obj
+
+.PHONY : src/game/scenes/menu/endlessWindow.obj
+
+# target to build an object file
+src/game/scenes/menu/endlessWindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj
+.PHONY : src/game/scenes/menu/endlessWindow.cpp.obj
+
+src/game/scenes/menu/endlessWindow.i: src/game/scenes/menu/endlessWindow.cpp.i
+
+.PHONY : src/game/scenes/menu/endlessWindow.i
+
+# target to preprocess a source file
+src/game/scenes/menu/endlessWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.i
+.PHONY : src/game/scenes/menu/endlessWindow.cpp.i
+
+src/game/scenes/menu/endlessWindow.s: src/game/scenes/menu/endlessWindow.cpp.s
+
+.PHONY : src/game/scenes/menu/endlessWindow.s
+
+# target to generate assembly for a file
+src/game/scenes/menu/endlessWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.s
+.PHONY : src/game/scenes/menu/endlessWindow.cpp.s
+
+src/game/scenes/menu/mainWindow.obj: src/game/scenes/menu/mainWindow.cpp.obj
+
+.PHONY : src/game/scenes/menu/mainWindow.obj
+
+# target to build an object file
+src/game/scenes/menu/mainWindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj
+.PHONY : src/game/scenes/menu/mainWindow.cpp.obj
+
+src/game/scenes/menu/mainWindow.i: src/game/scenes/menu/mainWindow.cpp.i
+
+.PHONY : src/game/scenes/menu/mainWindow.i
+
+# target to preprocess a source file
+src/game/scenes/menu/mainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.i
+.PHONY : src/game/scenes/menu/mainWindow.cpp.i
+
+src/game/scenes/menu/mainWindow.s: src/game/scenes/menu/mainWindow.cpp.s
+
+.PHONY : src/game/scenes/menu/mainWindow.s
+
+# target to generate assembly for a file
+src/game/scenes/menu/mainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.s
+.PHONY : src/game/scenes/menu/mainWindow.cpp.s
+
 src/game/scenes/menu/menu.obj: src/game/scenes/menu/menu.cpp.obj
 
 .PHONY : src/game/scenes/menu/menu.obj
@@ -843,6 +897,33 @@ src/game/scenes/menu/menuGui.s: src/game/scenes/menu/menuGui.cpp.s
 src/game/scenes/menu/menuGui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.s
 .PHONY : src/game/scenes/menu/menuGui.cpp.s
+
+src/game/scenes/menu/resourceMenuGui.obj: src/game/scenes/menu/resourceMenuGui.cpp.obj
+
+.PHONY : src/game/scenes/menu/resourceMenuGui.obj
+
+# target to build an object file
+src/game/scenes/menu/resourceMenuGui.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj
+.PHONY : src/game/scenes/menu/resourceMenuGui.cpp.obj
+
+src/game/scenes/menu/resourceMenuGui.i: src/game/scenes/menu/resourceMenuGui.cpp.i
+
+.PHONY : src/game/scenes/menu/resourceMenuGui.i
+
+# target to preprocess a source file
+src/game/scenes/menu/resourceMenuGui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.i
+.PHONY : src/game/scenes/menu/resourceMenuGui.cpp.i
+
+src/game/scenes/menu/resourceMenuGui.s: src/game/scenes/menu/resourceMenuGui.cpp.s
+
+.PHONY : src/game/scenes/menu/resourceMenuGui.s
+
+# target to generate assembly for a file
+src/game/scenes/menu/resourceMenuGui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.s
+.PHONY : src/game/scenes/menu/resourceMenuGui.cpp.s
 
 src/glad.obj: src/glad.c.obj
 
@@ -952,12 +1033,21 @@ help:
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.obj
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.i
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.s
+	@echo ... src/game/scenes/menu/endlessWindow.obj
+	@echo ... src/game/scenes/menu/endlessWindow.i
+	@echo ... src/game/scenes/menu/endlessWindow.s
+	@echo ... src/game/scenes/menu/mainWindow.obj
+	@echo ... src/game/scenes/menu/mainWindow.i
+	@echo ... src/game/scenes/menu/mainWindow.s
 	@echo ... src/game/scenes/menu/menu.obj
 	@echo ... src/game/scenes/menu/menu.i
 	@echo ... src/game/scenes/menu/menu.s
 	@echo ... src/game/scenes/menu/menuGui.obj
 	@echo ... src/game/scenes/menu/menuGui.i
 	@echo ... src/game/scenes/menu/menuGui.s
+	@echo ... src/game/scenes/menu/resourceMenuGui.obj
+	@echo ... src/game/scenes/menu/resourceMenuGui.i
+	@echo ... src/game/scenes/menu/resourceMenuGui.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s
