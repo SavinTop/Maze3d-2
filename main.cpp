@@ -4,7 +4,7 @@
 #include <iostream>
 
 #include "game/gameprocess.hpp"
-#include "baseTypes/gui/gui.hpp"
+#include "baseTypes/gui/gui.hpp"  
 
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
@@ -45,7 +45,11 @@ int main()
         return -1;
     }
 
-    gui_init();
+    glEnable(GL_CULL_FACE);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+    init_justRect();
 
     GameProcess game{window};
     game.Start();

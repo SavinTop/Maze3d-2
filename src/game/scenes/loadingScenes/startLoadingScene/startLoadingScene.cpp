@@ -5,38 +5,41 @@
 
 using namespace std::chrono_literals;
 
-StartLoadingScene::StartLoadingScene(GameProcess* proc):Scene(proc)
+StartLoadingScene::StartLoadingScene(GameProcess *proc) : Scene(proc)
 {
     nextScene = new Menu(proc);
     currentIndex = 0;
     sceneName = "start_loading_scene";
 }
 
-void StartLoadingScene::start() 
+void StartLoadingScene::start()
 {
     nextScene->initResources();
     auto temp = nextScene->getResources().getRes();
-    for(auto& el:temp){
+    for (auto &el : temp)
+    {
         auto subRes = el->subResources_.getRes();
-        for(auto& subel:subRes)
+        for (auto &subel : subRes)
             resourcesToLoad.push_back(subel);
         resourcesToLoad.push_back(el);
     }
+
 }
 
-void StartLoadingScene::update(float delta) 
+void StartLoadingScene::update(float delta)
 {
-    if(currentIndex>=resourcesToLoad.size()){
+    if (currentIndex >= resourcesToLoad.size())
+    {
         proc->SetCurrentScene(nextScene);
         return;
     }
-    auto& t = resourcesToLoad[currentIndex];
-    std::cout<<t->resName_<<std::endl;
+    auto &t = resourcesToLoad[currentIndex];
+    std::cout << t->resName_ << std::endl;
     t->load();
     currentIndex++;
 }
 
-void StartLoadingScene::onDraw(float delta) 
+void StartLoadingScene::onDraw(float delta)
 {
     glClear(GL_COLOR_BUFFER_BIT);
     loadingShader->bind();
@@ -47,22 +50,22 @@ void StartLoadingScene::onDraw(float delta)
     //glUniform1f(loadingShader->getUniformLocation("loadingProgress"), (float)currentIndex/resourcesToLoad.size());
     glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
-    loadingPlane->setScale(glm::vec3((float)currentIndex/resourcesToLoad.size(), 1,1));
+    loadingPlane->setScale(glm::vec3((float)currentIndex / resourcesToLoad.size(), 1, 1));
     loadingPlane->draw(*loadingShader);
 }
 
-ResourcePack StartLoadingScene::getResources() 
+ResourcePack StartLoadingScene::getResources()
 {
     return ResourcePack({loadingShader.get(), loadingPlane.get()});
 }
 
-void StartLoadingScene::initResources() 
+void StartLoadingScene::initResources()
 {
     loadingShader = rm->createResource<>(
-    res::ogl::ShaderProgram("data/shaders/startLoadingScreen.vert",
-                            "data/shaders/startLoadingScreen.frag",
-                            "basic program"),sceneName);
+        res::ogl::ShaderProgram("data/shaders/startLoadingScreen.vert",
+                                "data/shaders/startLoadingScreen.frag",
+                                "basic program"),
+        sceneName);
     loadingPlane = rm->createResource<>(
-        res::ogl::Plane(glm::vec3(0, 0 , 0), glm::vec2(2, 0.5)),sceneName
-    );
+        res::ogl::Plane(glm::vec3(0, 0, 0), glm::vec2(2, 0.5)), sceneName);
 }

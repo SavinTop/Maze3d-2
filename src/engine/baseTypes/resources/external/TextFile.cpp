@@ -15,7 +15,7 @@ TextFile::TextFile() :Resource()
 void TextFile::load() 
 {
     bool succ = false;
-    this->text = FileLoad::loadFile(this->resName_, succ);
+    this->text = FileLoad::loadTextFile(this->resName_, succ);
 
     this->loaded = succ;
 }

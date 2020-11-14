@@ -16,6 +16,7 @@
 #include "baseTypes/gui/fullscreenBox.hpp"
 
 #include "menuGui.hpp"
+#include "baseTypes/gui/basicTextRender.hpp"
 
 class Menu : public Scene{
 public:
@@ -38,5 +39,6 @@ std::shared_ptr<MenuGui> menu;
 
 int window_w;
 int window_h;
+
 };
 

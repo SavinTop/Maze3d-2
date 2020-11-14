@@ -8,6 +8,8 @@
 #include "baseTypes/resources/external/TextFile.hpp"
 #include "baseTypes/resource/resourceManager.hpp"
 
+#include "baseTypes/oglWrappers/shader.hpp"
+
 namespace res::ogl{
 
 class ShaderProgram : public OpenGLResource
@@ -27,18 +29,14 @@ public:
 
 	void bind();
 	void unbind();
+
+	oglw::Shader& getProgram();
 private:
 	std::shared_ptr<res::ex::TextFile> VertexShaderFile_;
 	std::shared_ptr<res::ex::TextFile> FragmentShaderFile_;
 	std::string vertexShaderPath;
 	std::string fragmentShaderPath;
-
-	unsigned int vertexShader_;
-	unsigned int fragmentShader_;
-	unsigned int program_;
-
-	void CreateShader(unsigned int Type, unsigned int& id, const std::string& code);
-	void CreateProgram();
+	oglw::Shader program;
 };
 
 }

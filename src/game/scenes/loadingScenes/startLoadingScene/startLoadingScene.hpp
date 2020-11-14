@@ -11,6 +11,9 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+//TODO temp
+#include "baseTypes/gui/basicTextRender.hpp"
+
 class Menu;
 
 class StartLoadingScene : public Scene{
@@ -26,5 +29,6 @@ std::shared_ptr<res::ogl::ShaderProgram> loadingShader;
 std::shared_ptr<res::ogl::Plane> loadingPlane;
 Menu* nextScene;
 std::vector<Resource*> resourcesToLoad;
+res::ogl::Texture testTexture;
 unsigned currentIndex;
 };

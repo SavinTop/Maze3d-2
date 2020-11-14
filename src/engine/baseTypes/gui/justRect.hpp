@@ -1,4 +1,4 @@
 #pragma once
 
-void gui_init();
+void init_justRect();
 unsigned int gui_getVAOid();

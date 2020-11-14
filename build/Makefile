@@ -277,6 +277,33 @@ src/engine/baseTypes/containers/mesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.s
 .PHONY : src/engine/baseTypes/containers/mesh.cpp.s
 
+src/engine/baseTypes/gui/basicTextRender.obj: src/engine/baseTypes/gui/basicTextRender.cpp.obj
+
+.PHONY : src/engine/baseTypes/gui/basicTextRender.obj
+
+# target to build an object file
+src/engine/baseTypes/gui/basicTextRender.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.obj
+.PHONY : src/engine/baseTypes/gui/basicTextRender.cpp.obj
+
+src/engine/baseTypes/gui/basicTextRender.i: src/engine/baseTypes/gui/basicTextRender.cpp.i
+
+.PHONY : src/engine/baseTypes/gui/basicTextRender.i
+
+# target to preprocess a source file
+src/engine/baseTypes/gui/basicTextRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.i
+.PHONY : src/engine/baseTypes/gui/basicTextRender.cpp.i
+
+src/engine/baseTypes/gui/basicTextRender.s: src/engine/baseTypes/gui/basicTextRender.cpp.s
+
+.PHONY : src/engine/baseTypes/gui/basicTextRender.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/gui/basicTextRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.s
+.PHONY : src/engine/baseTypes/gui/basicTextRender.cpp.s
+
 src/engine/baseTypes/gui/button.obj: src/engine/baseTypes/gui/button.cpp.obj
 
 .PHONY : src/engine/baseTypes/gui/button.obj
@@ -411,6 +438,33 @@ src/engine/baseTypes/gui/justRect.s: src/engine/baseTypes/gui/justRect.cpp.s
 src/engine/baseTypes/gui/justRect.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.s
 .PHONY : src/engine/baseTypes/gui/justRect.cpp.s
+
+src/engine/baseTypes/oglWrappers/shader.obj: src/engine/baseTypes/oglWrappers/shader.cpp.obj
+
+.PHONY : src/engine/baseTypes/oglWrappers/shader.obj
+
+# target to build an object file
+src/engine/baseTypes/oglWrappers/shader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.obj
+.PHONY : src/engine/baseTypes/oglWrappers/shader.cpp.obj
+
+src/engine/baseTypes/oglWrappers/shader.i: src/engine/baseTypes/oglWrappers/shader.cpp.i
+
+.PHONY : src/engine/baseTypes/oglWrappers/shader.i
+
+# target to preprocess a source file
+src/engine/baseTypes/oglWrappers/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.i
+.PHONY : src/engine/baseTypes/oglWrappers/shader.cpp.i
+
+src/engine/baseTypes/oglWrappers/shader.s: src/engine/baseTypes/oglWrappers/shader.cpp.s
+
+.PHONY : src/engine/baseTypes/oglWrappers/shader.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/oglWrappers/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.s
+.PHONY : src/engine/baseTypes/oglWrappers/shader.cpp.s
 
 src/engine/baseTypes/resource/resource.obj: src/engine/baseTypes/resource/resource.cpp.obj
 
@@ -976,6 +1030,9 @@ help:
 	@echo ... src/engine/baseTypes/containers/mesh.obj
 	@echo ... src/engine/baseTypes/containers/mesh.i
 	@echo ... src/engine/baseTypes/containers/mesh.s
+	@echo ... src/engine/baseTypes/gui/basicTextRender.obj
+	@echo ... src/engine/baseTypes/gui/basicTextRender.i
+	@echo ... src/engine/baseTypes/gui/basicTextRender.s
 	@echo ... src/engine/baseTypes/gui/button.obj
 	@echo ... src/engine/baseTypes/gui/button.i
 	@echo ... src/engine/baseTypes/gui/button.s
@@ -991,6 +1048,9 @@ help:
 	@echo ... src/engine/baseTypes/gui/justRect.obj
 	@echo ... src/engine/baseTypes/gui/justRect.i
 	@echo ... src/engine/baseTypes/gui/justRect.s
+	@echo ... src/engine/baseTypes/oglWrappers/shader.obj
+	@echo ... src/engine/baseTypes/oglWrappers/shader.i
+	@echo ... src/engine/baseTypes/oglWrappers/shader.s
 	@echo ... src/engine/baseTypes/resource/resource.obj
 	@echo ... src/engine/baseTypes/resource/resource.i
 	@echo ... src/engine/baseTypes/resource/resource.s
