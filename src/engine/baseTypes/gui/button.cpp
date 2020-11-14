@@ -13,7 +13,7 @@ Button::Button(GuiObject* parent, res::ogl::Texture* idleTexture, res::ogl::Text
     this->currentTexture = idleTexture;
 }
 
-void Button::__draw(res::ogl::ShaderProgram &program) 
+void Button::__draw(oglw::Shader &program) 
 {
     if(currentTexture)
         this->currentTexture->bind(0);

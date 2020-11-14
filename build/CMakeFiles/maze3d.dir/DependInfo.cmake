@@ -28,6 +28,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/gui/guiWindow.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/gui/justRect.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.obj"
+  "D:/21/Maze3d/src/engine/baseTypes/gui/label.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/oglWrappers/shader.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resource/resource.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resource/resourceManager.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj"

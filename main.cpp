@@ -8,7 +8,7 @@
 
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
-const bool fullScreen = true;
+const bool fullScreen = false;
 
 int main()
 {

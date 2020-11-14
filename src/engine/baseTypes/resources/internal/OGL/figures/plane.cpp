@@ -48,7 +48,7 @@ namespace res::ogl
         mesh_.setParams(mesh);
     }
     
-    void Plane::__draw(ShaderProgram& program) 
+    void Plane::__draw(oglw::Shader& program) 
     {
         mesh_.draw(program);
     }

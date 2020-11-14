@@ -9,7 +9,7 @@ Shader::Shader()
 
 Shader::Shader(const std::string VertexShaderText, const std::string FragmentShaderText) 
 {
-    setParams(vertexShaderText, fragmentShaderText);
+    setParams(VertexShaderText, FragmentShaderText);
 }
 
 unsigned int Shader::getProgramID() 

@@ -21,4 +21,6 @@ struct Character {
 int guiText_init(int w, int h, std::string path);
 void guiText_loadRangeOfCharacters(int from, int to);
 void guiText_renderText(oglw::Shader &s, std::string text, float x, float y, float scale, glm::vec3 color);
+int guiText_getFaceHeight();
+std::vector<Character> guiText_getCharacters(std::string text);
 oglw::Shader& guiText_getTextShader();

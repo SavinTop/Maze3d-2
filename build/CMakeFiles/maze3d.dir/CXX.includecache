@@ -1491,6 +1491,8 @@ glad/glad.h
 -
 string
 -
+vector
+-
 map
 -
 glm/glm.hpp
@@ -1525,6 +1527,8 @@ button.hpp
 ../src/engine/baseTypes/gui/button.hpp
 guiWindow.hpp
 ../src/engine/baseTypes/gui/guiWindow.hpp
+label.hpp
+../src/engine/baseTypes/gui/label.hpp
 
 ../src/engine/baseTypes/gui/guiObject.hpp
 glm/glm.hpp
@@ -1541,6 +1545,16 @@ guiObject.hpp
 ../src/engine/baseTypes/gui/guiObject.hpp
 
 ../src/engine/baseTypes/gui/justRect.hpp
+
+../src/engine/baseTypes/gui/label.hpp
+guiObject.hpp
+../src/engine/baseTypes/gui/guiObject.hpp
+basicTextRender.hpp
+../src/engine/baseTypes/gui/basicTextRender.hpp
+
+../src/engine/baseTypes/oglWrappers/oglw.h
+shader.hpp
+../src/engine/baseTypes/oglWrappers/shader.hpp
 
 ../src/engine/baseTypes/oglWrappers/shader.hpp
 glad/glad.h
@@ -1675,6 +1689,8 @@ glm/gtc/matrix_transform.hpp
 -
 glm/gtc/type_ptr.hpp
 -
+baseTypes/oglWrappers/oglw.h
+../src/engine/render/baseTypes/oglWrappers/oglw.h
 
 ../src/engine/utilities/fileLoader.hpp
 fstream

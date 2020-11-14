@@ -115,6 +115,23 @@ void guiText_renderText(oglw::Shader &s, std::string text, float x, float y, flo
     glBindTexture(GL_TEXTURE_2D, 0);
 }
 
+int guiText_getFaceHeight() 
+{
+    return (face->size->metrics.ascender - face->size->metrics.descender) >> 6;
+}
+
+std::vector<Character> guiText_getCharacters(std::string text) 
+{
+    std::vector<Character> out;
+    out.resize(text.length());
+    std::string::const_iterator c;
+    for (c = text.begin(); c != text.end(); c++)
+    {
+        out.push_back(Characters[*c]); 
+    }
+    return out;
+}
+
 oglw::Shader& guiText_getTextShader() 
 {
     return shader;

@@ -439,6 +439,33 @@ src/engine/baseTypes/gui/justRect.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.s
 .PHONY : src/engine/baseTypes/gui/justRect.cpp.s
 
+src/engine/baseTypes/gui/label.obj: src/engine/baseTypes/gui/label.cpp.obj
+
+.PHONY : src/engine/baseTypes/gui/label.obj
+
+# target to build an object file
+src/engine/baseTypes/gui/label.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.obj
+.PHONY : src/engine/baseTypes/gui/label.cpp.obj
+
+src/engine/baseTypes/gui/label.i: src/engine/baseTypes/gui/label.cpp.i
+
+.PHONY : src/engine/baseTypes/gui/label.i
+
+# target to preprocess a source file
+src/engine/baseTypes/gui/label.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.i
+.PHONY : src/engine/baseTypes/gui/label.cpp.i
+
+src/engine/baseTypes/gui/label.s: src/engine/baseTypes/gui/label.cpp.s
+
+.PHONY : src/engine/baseTypes/gui/label.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/gui/label.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.s
+.PHONY : src/engine/baseTypes/gui/label.cpp.s
+
 src/engine/baseTypes/oglWrappers/shader.obj: src/engine/baseTypes/oglWrappers/shader.cpp.obj
 
 .PHONY : src/engine/baseTypes/oglWrappers/shader.obj
@@ -1048,6 +1075,9 @@ help:
 	@echo ... src/engine/baseTypes/gui/justRect.obj
 	@echo ... src/engine/baseTypes/gui/justRect.i
 	@echo ... src/engine/baseTypes/gui/justRect.s
+	@echo ... src/engine/baseTypes/gui/label.obj
+	@echo ... src/engine/baseTypes/gui/label.i
+	@echo ... src/engine/baseTypes/gui/label.s
 	@echo ... src/engine/baseTypes/oglWrappers/shader.obj
 	@echo ... src/engine/baseTypes/oglWrappers/shader.i
 	@echo ... src/engine/baseTypes/oglWrappers/shader.s

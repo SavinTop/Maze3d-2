@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.obj"
+  "CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj"

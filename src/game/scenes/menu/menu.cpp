@@ -30,8 +30,10 @@ void Menu::start()
 {
     menu->start();
     menu->setExitButtonClickCallBack(std::bind(&Menu::exitClicked, this));
-    guiText_init(0,glm::min(window_h,window_w)*0.1,"data\\fonts\\VCR_OSD_MONO.ttf");
+    guiText_init(0,glm::min(window_h,window_w)*0.1,"data\\fonts\\steelfis.ttf");
     guiText_loadRangeOfCharacters(0,129);
+    testLabel.setPosition(20,20);
+    testLabel.setSize(300,100);
 }
 
 void Menu::update(float delta) 
@@ -40,12 +42,16 @@ void Menu::update(float delta)
     if(state == GLFW_PRESS)
         glfwSetWindowShouldClose(proc->getWnd(), true);
 
+    
+
     double x,y;
 
     glfwGetCursorPos(proc->getWnd(),&x,&y);
     bool lm = glfwGetMouseButton(proc->getWnd(), GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS;
     menu->mouseInput(x,y,lm);
 }
+
+std::string text = "";
 
 void Menu::onDraw(float delta) 
 {
@@ -61,20 +67,23 @@ void Menu::onDraw(float delta)
     projection = glm::ortho(0.0f,(float)window_w,0.0f,(float)window_h,0.0f,100.0f);
     glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
-    float color[] = {0,1,0,1};
-    glUniform4fv(colorId, 1, color);
+
     //mesh->draw(program);
     for(auto el:menu->getElements())
-        el->draw(*program);
+        el->draw(program->getProgram());
+
+    
 
     program->unbind();
+    __asm("nop");
 
     auto& s = guiText_getTextShader();
     s.bind();
     projectionId = s.getUniformLocation("projection");
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
-    guiText_renderText(s, "100", 0,0, 1,glm::vec3(1.0));
-
+    testLabel.setText(text);
+    testLabel.draw(s);
+    
     CheckGLError();
 }
 

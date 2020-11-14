@@ -20,7 +20,7 @@ public:
     void unload() override;
 
     void setParams(const Containers::Mesh& meshContainer);
-    void draw(res::ogl::ShaderProgram& program);
+    void draw(oglw::Shader& program);
     void drawWithoutTextures();
 private:
 Containers::Mesh mesh;

@@ -1,6 +1,6 @@
 #include "drawable.hpp"
 
-void Drawable::draw(res::ogl::ShaderProgram& program) 
+void Drawable::draw(oglw::Shader& program) 
 {
     updateModelMatrix();
     unsigned id = program.getUniformLocation("model");

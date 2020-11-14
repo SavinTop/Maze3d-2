@@ -4,3 +4,4 @@
 #include "fullscreenBox.hpp"
 #include "button.hpp"
 #include "guiWindow.hpp"
+#include "label.hpp"

@@ -51,7 +51,7 @@ void StartLoadingScene::onDraw(float delta)
     glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
     loadingPlane->setScale(glm::vec3((float)currentIndex / resourcesToLoad.size(), 1, 1));
-    loadingPlane->draw(*loadingShader);
+    loadingPlane->draw(loadingShader->getProgram());
 }
 
 ResourcePack StartLoadingScene::getResources()

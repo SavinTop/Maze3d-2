@@ -17,7 +17,7 @@ public:
     void setParams(glm::vec3 position, glm::vec2 size, std::vector<Texture*>& textures);
     void setParams(Containers::Mesh& mesh);
 
-    void __draw(ShaderProgram& program) override;
+    void __draw(oglw::Shader& program) override;
 private:
     Mesh mesh_;
     glm::vec2 size;

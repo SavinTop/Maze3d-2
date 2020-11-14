@@ -5,13 +5,14 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include "baseTypes/oglWrappers/oglw.h"
 
 class Drawable{
 public:
     Drawable();
-    void draw(res::ogl::ShaderProgram& program);
+    void draw(oglw::Shader& program);
 
-    virtual void __draw(res::ogl::ShaderProgram& program){};
+    virtual void __draw(oglw::Shader& program){};
     void updateModelMatrix();
     glm::mat4& getModelMatrix();
 

@@ -40,5 +40,6 @@ std::shared_ptr<MenuGui> menu;
 int window_w;
 int window_h;
 
+Label testLabel;
 };
 
