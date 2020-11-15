@@ -223,6 +223,7 @@ CMakeFiles/maze3d.dir/main.cpp.obj
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
+ ../src/engine/baseTypes/gui/textAlign.hpp
  ../src/engine/baseTypes/oglWrappers/oglw.h
  ../src/engine/baseTypes/oglWrappers/shader.hpp
  ../src/engine/baseTypes/resource/resource.hpp
@@ -1641,6 +1642,7 @@ CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.obj
  D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.hpp
  D:/21/Maze3d/src/engine/baseTypes/gui/label.cpp
  D:/21/Maze3d/src/engine/baseTypes/gui/label.hpp
+ D:/21/Maze3d/src/engine/baseTypes/gui/textAlign.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.obj
  ../include/KHR/khrplatform.h
  ../include/glad/glad.h
@@ -2951,6 +2953,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadi
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
+ ../src/engine/baseTypes/gui/textAlign.hpp
  ../src/engine/baseTypes/oglWrappers/oglw.h
  ../src/engine/baseTypes/oglWrappers/shader.hpp
  ../src/engine/baseTypes/resource/resource.hpp
@@ -3184,6 +3187,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
+ ../src/engine/baseTypes/gui/textAlign.hpp
  ../src/engine/baseTypes/oglWrappers/oglw.h
  ../src/engine/baseTypes/oglWrappers/shader.hpp
  ../src/engine/baseTypes/resource/resource.hpp
@@ -3413,6 +3417,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
+ ../src/engine/baseTypes/gui/textAlign.hpp
  ../src/engine/baseTypes/oglWrappers/oglw.h
  ../src/engine/baseTypes/oglWrappers/shader.hpp
  ../src/engine/baseTypes/resource/resource.hpp
@@ -3644,6 +3649,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
+ ../src/engine/baseTypes/gui/textAlign.hpp
  ../src/engine/baseTypes/oglWrappers/oglw.h
  ../src/engine/baseTypes/oglWrappers/shader.hpp
  ../src/engine/baseTypes/resource/resource.hpp
@@ -3876,6 +3882,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
+ ../src/engine/baseTypes/gui/textAlign.hpp
  ../src/engine/baseTypes/oglWrappers/oglw.h
  ../src/engine/baseTypes/oglWrappers/shader.hpp
  ../src/engine/baseTypes/resource/resource.hpp
@@ -4105,6 +4112,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
+ ../src/engine/baseTypes/gui/textAlign.hpp
  ../src/engine/baseTypes/oglWrappers/oglw.h
  ../src/engine/baseTypes/oglWrappers/shader.hpp
  ../src/engine/baseTypes/resource/resource.hpp

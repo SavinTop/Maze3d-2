@@ -15,7 +15,7 @@ struct Character {
     unsigned int textureID;  
     glm::ivec2   Size;       
     glm::ivec2   Bearing;    
-    unsigned int Advance;    
+    long int Advance;    
 };
 
 int guiText_init(int w, int h, std::string path);

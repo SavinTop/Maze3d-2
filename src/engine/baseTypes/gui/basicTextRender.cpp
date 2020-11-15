@@ -69,7 +69,7 @@ void guiText_loadRangeOfCharacters(int from, int to)
         glm::ivec2(face->glyph->bitmap_left, face->glyph->bitmap_top),
         face->glyph->advance.x
     };
-    Characters.insert(std::pair<char, Character>(c, character));
+    Characters.insert(std::pair<int, Character>(c, character));
     }
 }
 

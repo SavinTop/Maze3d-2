@@ -9,12 +9,13 @@ public:
     MenuGui(int w, int h, ResourceManager* rm);
 
     void start();
+    void draw();
     void load() override;
 	void unload() override;
     void mouseInput(int x, int y, bool lb);
 
 	virtual void InitializeSubResources(std::string groupName);
-    ResourcePack getResources();
+    ResourcePack& getResources();
     std::vector<Drawable*> getElements();
     std::vector<Drawable*> getDrawableChildrenRecurs(GuiObject* curr);
     void initMain();
@@ -27,6 +28,8 @@ public:
     void back_click();
 
 private:
+    Label testlabel;
+
     GuiWindow* currentWindow;
     GuiWindow main;
     GuiWindow endless;
@@ -54,4 +57,6 @@ private:
     std::shared_ptr<res::ogl::Texture> endless_active;
     std::shared_ptr<res::ogl::Texture> back_idle;
     std::shared_ptr<res::ogl::Texture> back_active;
+
+    std::shared_ptr<res::ogl::ShaderProgram> guiShader;
 };

@@ -28,12 +28,10 @@ void _CheckGLError(const char* file, int line)
 
 void Menu::start() 
 {
-    menu->start();
-    menu->setExitButtonClickCallBack(std::bind(&Menu::exitClicked, this));
     guiText_init(0,glm::min(window_h,window_w)*0.1,"data\\fonts\\steelfis.ttf");
     guiText_loadRangeOfCharacters(0,129);
-    testLabel.setPosition(20,20);
-    testLabel.setSize(300,100);
+    menu->start();
+    menu->setExitButtonClickCallBack(std::bind(&Menu::exitClicked, this));
 }
 
 void Menu::update(float delta) 
@@ -56,33 +54,7 @@ std::string text = "";
 void Menu::onDraw(float delta) 
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    program->bind();
-    unsigned viewId = program->getUniformLocation("view");
-    unsigned projectionId = program->getUniformLocation("projection");
-    unsigned modelId = program->getUniformLocation("model");
-    unsigned colorId = program->getUniformLocation("color");
-    glm::mat4 view = glm::mat4(1.0f);
-    //view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f)); 
-    glm::mat4 projection(1); 
-    projection = glm::ortho(0.0f,(float)window_w,0.0f,(float)window_h,0.0f,100.0f);
-    glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
-    glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
-
-    //mesh->draw(program);
-    for(auto el:menu->getElements())
-        el->draw(program->getProgram());
-
-    
-
-    program->unbind();
-    __asm("nop");
-
-    auto& s = guiText_getTextShader();
-    s.bind();
-    projectionId = s.getUniformLocation("projection");
-    glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
-    testLabel.setText(text);
-    testLabel.draw(s);
+    menu->draw();
     
     CheckGLError();
 }
