@@ -1491,6 +1491,10 @@ render/drawable.hpp
 -
 functional
 -
+guiShaderType.hpp
+../src/engine/baseTypes/gui/guiShaderType.hpp
+
+../src/engine/baseTypes/gui/guiShaderType.hpp
 
 ../src/engine/baseTypes/gui/guiWindow.hpp
 guiObject.hpp
@@ -1650,7 +1654,7 @@ fstream
 vector
 -
 
-D:/21/Maze3d/src/game/scenes/menu/menuGui.cpp
+D:/21/Maze3d/src/game/scenes/menu/endlessWindow.cpp
 menuGui.hpp
 D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
 

@@ -15,5 +15,8 @@ private:
     std::vector<Character> textCharacters;
     glm::vec4 textBox;
     textAlign ta;
+    float maxHeight;
+    float textWidth;
     int calculateWidth();
+    int calculateHeight();
 };

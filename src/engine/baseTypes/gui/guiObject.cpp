@@ -55,6 +55,11 @@ int GuiObject::height()
     return h;
 }
 
+guiShaderType GuiObject::getShaderType() 
+{
+    return shaderType;
+}
+
 std::vector<GuiObject*>& GuiObject::getChildArr() 
 {
     return childArr;
@@ -65,6 +70,7 @@ GuiObject::GuiObject(GuiObject* parent, int x, int y, int w, int h)
     setPosition(x,y);
     setSize(w,h);
     setParent(parent);
+    shaderType = guiShaderType::textureShader;
 }
 
 void GuiObject::__addChild(GuiObject* child) 

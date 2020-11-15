@@ -10,12 +10,12 @@ GuiWindow::GuiWindow(int w, int h):GuiObject(nullptr)
     setSize(w,h);
 }
 
-void GuiWindow::setDrawableChildArr(std::vector<Drawable*>& drawableChildArr) 
+void GuiWindow::setDrawableChildArr(std::vector<GuiObject*>& drawableChildArr) 
 {
     this->drawableChildArr = drawableChildArr;
 }
 
-std::vector<Drawable*>& GuiWindow::getDrawableChildArr() 
+std::vector<GuiObject*>& GuiWindow::getDrawableChildArr() 
 {
     return this->drawableChildArr;
 }

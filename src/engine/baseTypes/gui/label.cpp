@@ -4,6 +4,8 @@ void Label::setText(std::string text)
 {
     this->text = text;
     textCharacters = guiText_getCharacters(text);
+    maxHeight = calculateHeight();
+    textWidth = calculateWidth()>>6;
 }
 
 void Label::setTextAlign(textAlign ta) 
@@ -13,12 +15,10 @@ void Label::setTextAlign(textAlign ta)
 
 void Label::__draw(oglw::Shader &program) 
 {
-    float maxheight = guiText_getFaceHeight();
-    float textWidth = calculateWidth()>>6;
-    float scaleH = (float)this->h/maxheight;
+    float scaleH = (float)this->h/maxHeight;
     float scaleW = (float)this->w/textWidth;
     float scale = glm::min(scaleH,scaleW);
-    float tx = x-(float)w/2, ty = y-(float)h/2;
+    float tx = x-(float)w/2, ty = y-maxHeight*scale/2;
 
     if(ta == textAlign::Right){
         tx = tx+w-textWidth*scale;
@@ -38,7 +38,17 @@ int Label::calculateWidth()
     return tempWidth;
 }
 
+int Label::calculateHeight() 
+{   
+    if(!textCharacters.size()) return 0;
+    int tempHeight = textCharacters[0].Size.y;
+    for(auto& el:textCharacters)
+        if(el.Size.y>tempHeight) tempHeight = el.Size.y;
+    return tempHeight;
+}
+
 Label::Label() : GuiObject(nullptr)
 {
     ta = textAlign::Center;
+    shaderType = guiShaderType::textShader;
 }

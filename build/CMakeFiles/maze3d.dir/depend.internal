@@ -220,6 +220,7 @@ CMakeFiles/maze3d.dir/main.cpp.obj
  ../src/engine/baseTypes/gui/fullscreenBox.hpp
  ../src/engine/baseTypes/gui/gui.hpp
  ../src/engine/baseTypes/gui/guiObject.hpp
+ ../src/engine/baseTypes/gui/guiShaderType.hpp
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
@@ -778,6 +779,7 @@ CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj
  D:/21/Maze3d/src/engine/baseTypes/gui/button.cpp
  D:/21/Maze3d/src/engine/baseTypes/gui/button.hpp
  D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.hpp
+ D:/21/Maze3d/src/engine/baseTypes/gui/guiShaderType.hpp
  D:/21/Maze3d/src/engine/baseTypes/gui/justRect.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.obj
  ../include/KHR/khrplatform.h
@@ -999,6 +1001,7 @@ CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.obj
  D:/21/Maze3d/src/engine/baseTypes/gui/fullscreenBox.cpp
  D:/21/Maze3d/src/engine/baseTypes/gui/fullscreenBox.hpp
  D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.hpp
+ D:/21/Maze3d/src/engine/baseTypes/gui/guiShaderType.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.obj
  ../include/KHR/khrplatform.h
  ../include/glad/glad.h
@@ -1210,6 +1213,7 @@ CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.obj
  ../src/engine/utilities/fileLoader.hpp
  D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.cpp
  D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.hpp
+ D:/21/Maze3d/src/engine/baseTypes/gui/guiShaderType.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.obj
  ../include/KHR/khrplatform.h
  ../include/glad/glad.h
@@ -1420,6 +1424,7 @@ CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.obj
  ../src/engine/render/drawable.hpp
  ../src/engine/utilities/fileLoader.hpp
  D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.hpp
+ D:/21/Maze3d/src/engine/baseTypes/gui/guiShaderType.hpp
  D:/21/Maze3d/src/engine/baseTypes/gui/guiWindow.cpp
  D:/21/Maze3d/src/engine/baseTypes/gui/guiWindow.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.obj
@@ -1640,6 +1645,7 @@ CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.obj
  ../src/engine/utilities/fileLoader.hpp
  D:/21/Maze3d/src/engine/baseTypes/gui/basicTextRender.hpp
  D:/21/Maze3d/src/engine/baseTypes/gui/guiObject.hpp
+ D:/21/Maze3d/src/engine/baseTypes/gui/guiShaderType.hpp
  D:/21/Maze3d/src/engine/baseTypes/gui/label.cpp
  D:/21/Maze3d/src/engine/baseTypes/gui/label.hpp
  D:/21/Maze3d/src/engine/baseTypes/gui/textAlign.hpp
@@ -2950,6 +2956,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadi
  ../src/engine/baseTypes/gui/fullscreenBox.hpp
  ../src/engine/baseTypes/gui/gui.hpp
  ../src/engine/baseTypes/gui/guiObject.hpp
+ ../src/engine/baseTypes/gui/guiShaderType.hpp
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
@@ -3184,6 +3191,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj
  ../src/engine/baseTypes/gui/fullscreenBox.hpp
  ../src/engine/baseTypes/gui/gui.hpp
  ../src/engine/baseTypes/gui/guiObject.hpp
+ ../src/engine/baseTypes/gui/guiShaderType.hpp
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
@@ -3414,6 +3422,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj
  ../src/engine/baseTypes/gui/fullscreenBox.hpp
  ../src/engine/baseTypes/gui/gui.hpp
  ../src/engine/baseTypes/gui/guiObject.hpp
+ ../src/engine/baseTypes/gui/guiShaderType.hpp
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
@@ -3646,6 +3655,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj
  ../src/engine/baseTypes/gui/fullscreenBox.hpp
  ../src/engine/baseTypes/gui/gui.hpp
  ../src/engine/baseTypes/gui/guiObject.hpp
+ ../src/engine/baseTypes/gui/guiShaderType.hpp
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
@@ -3879,6 +3889,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj
  ../src/engine/baseTypes/gui/fullscreenBox.hpp
  ../src/engine/baseTypes/gui/gui.hpp
  ../src/engine/baseTypes/gui/guiObject.hpp
+ ../src/engine/baseTypes/gui/guiShaderType.hpp
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp
@@ -4109,6 +4120,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj
  ../src/engine/baseTypes/gui/fullscreenBox.hpp
  ../src/engine/baseTypes/gui/gui.hpp
  ../src/engine/baseTypes/gui/guiObject.hpp
+ ../src/engine/baseTypes/gui/guiShaderType.hpp
  ../src/engine/baseTypes/gui/guiWindow.hpp
  ../src/engine/baseTypes/gui/justRect.hpp
  ../src/engine/baseTypes/gui/label.hpp

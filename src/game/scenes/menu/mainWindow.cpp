@@ -24,7 +24,7 @@ void MenuGui::initMain()
     main_timed_button.setPosition(0.0f,0.0f);
     main_timed_button.setClickCallback(std::bind(&MenuGui::timedClick, this));
 
-    auto temp = getDrawableChildrenRecurs(&main);
+    auto temp = getChildrenRecurs(&main);
     main.setDrawableChildArr(temp);
 }
 

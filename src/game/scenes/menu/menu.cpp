@@ -28,7 +28,7 @@ void _CheckGLError(const char* file, int line)
 
 void Menu::start() 
 {
-    guiText_init(0,glm::min(window_h,window_w)*0.1,"data\\fonts\\steelfis.ttf");
+    guiText_init(0,glm::min(window_h,window_w)*0.2,"data\\fonts\\steelfis.ttf");
     guiText_loadRangeOfCharacters(0,129);
     menu->start();
     menu->setExitButtonClickCallBack(std::bind(&Menu::exitClicked, this));

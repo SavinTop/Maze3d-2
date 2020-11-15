@@ -16,8 +16,8 @@ public:
 
 	virtual void InitializeSubResources(std::string groupName);
     ResourcePack& getResources();
-    std::vector<Drawable*> getElements();
-    std::vector<Drawable*> getDrawableChildrenRecurs(GuiObject* curr);
+    std::vector<GuiObject*> getElements();
+    std::vector<GuiObject*> getChildrenRecurs(GuiObject* curr);
     void initMain();
     void initEndless();
     void setExitButtonClickCallBack(std::function<void(void)> click);
@@ -27,9 +27,10 @@ public:
 
     void back_click();
 
-private:
-    Label testlabel;
+    void endless_leftArrowClick();
+    void endless_rightArrowClick();
 
+private:
     GuiWindow* currentWindow;
     GuiWindow main;
     GuiWindow endless;
@@ -46,6 +47,10 @@ private:
 
     FullscreenBox endless_fbox;
     Button endless_back_button;
+    Button endless_leftArrow;
+    Button endless_rightArrow;
+    Label endless_startLevel;
+    int endless_startLevel_value;
     
     Button timed_back_button;
 
@@ -58,5 +63,14 @@ private:
     std::shared_ptr<res::ogl::Texture> back_idle;
     std::shared_ptr<res::ogl::Texture> back_active;
 
+    //arrows
+
+    std::shared_ptr<res::ogl::Texture> leftArrow_idle;
+    std::shared_ptr<res::ogl::Texture> leftArrow_active;
+    std::shared_ptr<res::ogl::Texture> rightArrow_idle;
+    std::shared_ptr<res::ogl::Texture> rightArrow_active;
+
     std::shared_ptr<res::ogl::ShaderProgram> guiShader;
+
+    bool lastMouseLeftButton;
 };

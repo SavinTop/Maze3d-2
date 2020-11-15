@@ -4,6 +4,7 @@
 #include <vector>
 #include <render/drawable.hpp>
 #include <functional>
+#include "guiShaderType.hpp"
 
 class GuiObject:public Drawable{
 public:
@@ -22,6 +23,7 @@ public:
     void setClickCallback(std::function<void(void)> click);
     int width();
     int height();
+    guiShaderType getShaderType();
     std::vector<GuiObject*>& getChildArr();
 protected:
     int x,y;
@@ -30,4 +32,5 @@ protected:
     std::vector<GuiObject*> childArr;
     //callbacks
     std::function<void(void)> click;
+    guiShaderType shaderType;
 };
