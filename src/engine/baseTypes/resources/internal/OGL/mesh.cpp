@@ -13,6 +13,7 @@ void Mesh::setParams(const Containers::Mesh& meshContainer) {
 }
 
 void Mesh::draw(oglw::Shader& program){
+    __deb();
     unsigned int diffuseNr = 1;
     unsigned int specularNr = 1;
     
@@ -20,6 +21,8 @@ void Mesh::draw(oglw::Shader& program){
     {
         std::string number;
         std::string name;
+        __deb();
+        
         if(mesh.textures[i]->getType() == TextureType::Diffuse)
         {
             number = std::to_string(diffuseNr++);
@@ -30,6 +33,7 @@ void Mesh::draw(oglw::Shader& program){
             number = std::to_string(specularNr++);
             name = "texture_specular";
         }
+        __deb();
         int id = program.getUniformLocation((name + number));
         
         glUniform1i(id, i);
@@ -40,6 +44,7 @@ void Mesh::draw(oglw::Shader& program){
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, mesh.indices.size(), GL_UNSIGNED_INT, 0);
     glBindVertexArray(0);
+    __deb();
 }
 
 void Mesh::drawWithoutTextures() 
@@ -50,6 +55,7 @@ void Mesh::drawWithoutTextures()
 }
 
 void Mesh::load(){
+    if(loaded) return;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
     glGenBuffers(1, &EBO);

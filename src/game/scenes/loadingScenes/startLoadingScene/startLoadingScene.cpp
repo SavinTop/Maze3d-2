@@ -50,13 +50,11 @@ void StartLoadingScene::onDraw(float delta)
     //glUniform1f(loadingShader->getUniformLocation("loadingProgress"), (float)currentIndex/resourcesToLoad.size());
     glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
-    loadingPlane->setScale(glm::vec3((float)currentIndex / resourcesToLoad.size(), 1, 1));
-    loadingPlane->draw(loadingShader->getProgram());
 }
 
 ResourcePack StartLoadingScene::getResources()
 {
-    return ResourcePack({loadingShader.get(), loadingPlane.get()});
+    return ResourcePack({loadingShader.get()});
 }
 
 void StartLoadingScene::initResources()
@@ -66,6 +64,4 @@ void StartLoadingScene::initResources()
                                 "data/shaders/startLoadingScreen.frag",
                                 "basic program"),
         sceneName);
-    loadingPlane = rm->createResource<>(
-        res::ogl::Plane(glm::vec3(0, 0, 0), glm::vec2(2, 0.5)), sceneName);
 }

@@ -76,13 +76,18 @@
 },
 {
   "directory": "D:/21/Maze3d/build",
-  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\figures\\plane.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\figures\\plane.cpp",
-  "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp"
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\external\\model.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\external\\model.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/resources/external/model.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\mesh.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\mesh.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/mesh.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\model.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\model.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/model.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
@@ -123,6 +128,11 @@
   "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\loadingScenes\\startLoadingScene\\startLoadingScene.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\loadingScenes\\startLoadingScene\\startLoadingScene.cpp",
   "file": "D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -g   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\maze\\maze.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\maze\\maze.cpp",
+  "file": "D:/21/Maze3d/src/game/scenes/maze/maze.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",

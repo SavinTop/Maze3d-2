@@ -26,7 +26,6 @@ ResourcePack getResources() override;
 void initResources() override;
 private:
 std::shared_ptr<res::ogl::ShaderProgram> loadingShader;
-std::shared_ptr<res::ogl::Plane> loadingPlane;
 Menu* nextScene;
 std::vector<Resource*> resourcesToLoad;
 res::ogl::Texture testTexture;

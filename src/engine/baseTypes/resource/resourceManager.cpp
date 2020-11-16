@@ -10,9 +10,19 @@ void ResourceManager::clearGroup(std::string name)
 
 void ResourceManager::__resourceDeleter(Resource* p) 
 {
-    std::cout<<p->resName_<<" deleted\n";
-    if(!p->resName_.empty())
-        resources.erase(p->resName_);
-    p->unload();
+    std::string name = p->resName_;
+    
+    if(p->isLoaded())
+        p->unload();
     delete p;
+
+    if(!name.empty())
+    {
+        std::cout<<name<<" deleted\n";
+        resources.erase(name);
+    }
+    else
+    {
+        std::cout<<"NONAME"<<" deleted\n";
+    }
 }

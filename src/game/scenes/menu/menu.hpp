@@ -18,6 +18,8 @@
 #include "menuGui.hpp"
 #include "baseTypes/gui/basicTextRender.hpp"
 
+#include "game/scenes/maze/maze.hpp"
+
 class Menu : public Scene{
 public:
 Menu(GameProcess* proc);
@@ -30,11 +32,6 @@ void initResources() override;
 void exitClicked();
 
 private:
-std::shared_ptr<res::ogl::ShaderProgram> program;
-std::shared_ptr<res::ogl::ShaderProgram> rectProgram;
-std::shared_ptr<res::ogl::Mesh> mesh;
-std::shared_ptr<res::ogl::Plane> testPlane;
-
 std::shared_ptr<MenuGui> menu;
 
 int window_w;

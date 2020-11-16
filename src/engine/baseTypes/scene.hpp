@@ -14,6 +14,7 @@ virtual void update(float delta) = 0;
 virtual void onDraw(float delta) = 0;
 virtual ResourcePack getResources() = 0;
 virtual void initResources() = 0;
+std::string& getName(){return sceneName;};
 protected:
     GameProcess* proc;
     ResourceManager* rm;

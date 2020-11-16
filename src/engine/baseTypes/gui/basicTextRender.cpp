@@ -5,6 +5,7 @@ static FT_Face face;
 static oglw::Shader shader;
 static unsigned VAO, VBO;
 static std::map<int, Character> Characters;
+static std::string fontPath;
 
 int guiText_init(int w, int h, std::string path) 
 {
@@ -17,12 +18,12 @@ int guiText_init(int w, int h, std::string path)
     return -2;
     }
     FT_Set_Pixel_Sizes(face, w, h); 
-    bool succ;
+    bool succ = false;
     auto vs = FileLoad::loadTextFile("data\\shaders\\basicText\\basic.vert", succ);
     auto fs = FileLoad::loadTextFile("data\\shaders\\basicText\\basic.frag", succ);
     shader.setParams(vs,fs);
     shader.load();
-
+    
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
     glBindVertexArray(VAO);
@@ -31,7 +32,8 @@ int guiText_init(int w, int h, std::string path)
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(float), 0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
-    glBindVertexArray(0);     
+    glBindVertexArray(0);    
+    return 0;
 }
 
 void guiText_loadRangeOfCharacters(int from, int to) 

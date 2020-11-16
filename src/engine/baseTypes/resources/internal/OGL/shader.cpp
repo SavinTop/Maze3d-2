@@ -9,6 +9,7 @@ ShaderProgram::ShaderProgram(const std::string VertexShaderPath, const std::stri
 }
 
 void ShaderProgram::load(){
+	if(loaded) return;
 	program.setParams(VertexShaderFile_->data(), FragmentShaderFile_->data());
 	program.load();
 	loaded = true;

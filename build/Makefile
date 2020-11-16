@@ -601,32 +601,32 @@ src/engine/baseTypes/resources/external/TextFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.s
 .PHONY : src/engine/baseTypes/resources/external/TextFile.cpp.s
 
-src/engine/baseTypes/resources/internal/OGL/figures/plane.obj: src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.obj
+src/engine/baseTypes/resources/external/model.obj: src/engine/baseTypes/resources/external/model.cpp.obj
 
-.PHONY : src/engine/baseTypes/resources/internal/OGL/figures/plane.obj
+.PHONY : src/engine/baseTypes/resources/external/model.obj
 
 # target to build an object file
-src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.obj
-.PHONY : src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.obj
+src/engine/baseTypes/resources/external/model.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.obj
+.PHONY : src/engine/baseTypes/resources/external/model.cpp.obj
 
-src/engine/baseTypes/resources/internal/OGL/figures/plane.i: src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.i
+src/engine/baseTypes/resources/external/model.i: src/engine/baseTypes/resources/external/model.cpp.i
 
-.PHONY : src/engine/baseTypes/resources/internal/OGL/figures/plane.i
+.PHONY : src/engine/baseTypes/resources/external/model.i
 
 # target to preprocess a source file
-src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.i
-.PHONY : src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.i
+src/engine/baseTypes/resources/external/model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.i
+.PHONY : src/engine/baseTypes/resources/external/model.cpp.i
 
-src/engine/baseTypes/resources/internal/OGL/figures/plane.s: src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.s
+src/engine/baseTypes/resources/external/model.s: src/engine/baseTypes/resources/external/model.cpp.s
 
-.PHONY : src/engine/baseTypes/resources/internal/OGL/figures/plane.s
+.PHONY : src/engine/baseTypes/resources/external/model.s
 
 # target to generate assembly for a file
-src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.s
-.PHONY : src/engine/baseTypes/resources/internal/OGL/figures/plane.cpp.s
+src/engine/baseTypes/resources/external/model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.s
+.PHONY : src/engine/baseTypes/resources/external/model.cpp.s
 
 src/engine/baseTypes/resources/internal/OGL/mesh.obj: src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj
 
@@ -654,6 +654,33 @@ src/engine/baseTypes/resources/internal/OGL/mesh.s: src/engine/baseTypes/resourc
 src/engine/baseTypes/resources/internal/OGL/mesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.s
 .PHONY : src/engine/baseTypes/resources/internal/OGL/mesh.cpp.s
+
+src/engine/baseTypes/resources/internal/OGL/model.obj: src/engine/baseTypes/resources/internal/OGL/model.cpp.obj
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/model.obj
+
+# target to build an object file
+src/engine/baseTypes/resources/internal/OGL/model.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.obj
+.PHONY : src/engine/baseTypes/resources/internal/OGL/model.cpp.obj
+
+src/engine/baseTypes/resources/internal/OGL/model.i: src/engine/baseTypes/resources/internal/OGL/model.cpp.i
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/model.i
+
+# target to preprocess a source file
+src/engine/baseTypes/resources/internal/OGL/model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.i
+.PHONY : src/engine/baseTypes/resources/internal/OGL/model.cpp.i
+
+src/engine/baseTypes/resources/internal/OGL/model.s: src/engine/baseTypes/resources/internal/OGL/model.cpp.s
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/model.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/resources/internal/OGL/model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.s
+.PHONY : src/engine/baseTypes/resources/internal/OGL/model.cpp.s
 
 src/engine/baseTypes/resources/internal/OGL/shader.obj: src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj
 
@@ -870,6 +897,33 @@ src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.s: src/game/sc
 src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s
 .PHONY : src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s
+
+src/game/scenes/maze/maze.obj: src/game/scenes/maze/maze.cpp.obj
+
+.PHONY : src/game/scenes/maze/maze.obj
+
+# target to build an object file
+src/game/scenes/maze/maze.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj
+.PHONY : src/game/scenes/maze/maze.cpp.obj
+
+src/game/scenes/maze/maze.i: src/game/scenes/maze/maze.cpp.i
+
+.PHONY : src/game/scenes/maze/maze.i
+
+# target to preprocess a source file
+src/game/scenes/maze/maze.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.i
+.PHONY : src/game/scenes/maze/maze.cpp.i
+
+src/game/scenes/maze/maze.s: src/game/scenes/maze/maze.cpp.s
+
+.PHONY : src/game/scenes/maze/maze.s
+
+# target to generate assembly for a file
+src/game/scenes/maze/maze.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.s
+.PHONY : src/game/scenes/maze/maze.cpp.s
 
 src/game/scenes/menu/endlessWindow.obj: src/game/scenes/menu/endlessWindow.cpp.obj
 
@@ -1093,12 +1147,15 @@ help:
 	@echo ... src/engine/baseTypes/resources/external/TextFile.obj
 	@echo ... src/engine/baseTypes/resources/external/TextFile.i
 	@echo ... src/engine/baseTypes/resources/external/TextFile.s
-	@echo ... src/engine/baseTypes/resources/internal/OGL/figures/plane.obj
-	@echo ... src/engine/baseTypes/resources/internal/OGL/figures/plane.i
-	@echo ... src/engine/baseTypes/resources/internal/OGL/figures/plane.s
+	@echo ... src/engine/baseTypes/resources/external/model.obj
+	@echo ... src/engine/baseTypes/resources/external/model.i
+	@echo ... src/engine/baseTypes/resources/external/model.s
 	@echo ... src/engine/baseTypes/resources/internal/OGL/mesh.obj
 	@echo ... src/engine/baseTypes/resources/internal/OGL/mesh.i
 	@echo ... src/engine/baseTypes/resources/internal/OGL/mesh.s
+	@echo ... src/engine/baseTypes/resources/internal/OGL/model.obj
+	@echo ... src/engine/baseTypes/resources/internal/OGL/model.i
+	@echo ... src/engine/baseTypes/resources/internal/OGL/model.s
 	@echo ... src/engine/baseTypes/resources/internal/OGL/shader.obj
 	@echo ... src/engine/baseTypes/resources/internal/OGL/shader.i
 	@echo ... src/engine/baseTypes/resources/internal/OGL/shader.s
@@ -1123,6 +1180,9 @@ help:
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.obj
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.i
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.s
+	@echo ... src/game/scenes/maze/maze.obj
+	@echo ... src/game/scenes/maze/maze.i
+	@echo ... src/game/scenes/maze/maze.s
 	@echo ... src/game/scenes/menu/endlessWindow.obj
 	@echo ... src/game/scenes/menu/endlessWindow.i
 	@echo ... src/game/scenes/menu/endlessWindow.s

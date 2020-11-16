@@ -66,7 +66,7 @@ void MenuGui::draw()
     auto &textShader = guiText_getTextShader();
     
     guiShaderType last = guiShaderType::Nope;
-    oglw::Shader* currShader;
+    oglw::Shader* currShader = &textShader;
 
     for (auto el : getElements())
     {

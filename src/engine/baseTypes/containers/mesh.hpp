@@ -3,6 +3,7 @@
 #include "baseTypes/resources/internal/OGL/texture.hpp"
 #include <vector>
 #include <glm/glm.hpp>
+#include <memory>
 
 namespace Containers{
 
@@ -23,12 +24,12 @@ struct Vertex{
 class Mesh{
 public:
     Mesh();
-    Mesh(const std::vector<Vertex>& vertices, const std::vector<unsigned int>& indices, const std::vector<res::ogl::Texture*>& textures);
-    void setParams(const std::vector<Vertex>& vertices, const std::vector<unsigned int>& indices, const std::vector<res::ogl::Texture*>& textures);
+    Mesh(const std::vector<Vertex>& vertices, const std::vector<unsigned int>& indices, const std::vector<std::shared_ptr<res::ogl::Texture>>& textures);
+    void setParams(const std::vector<Vertex>& vertices, const std::vector<unsigned int>& indices, const std::vector<std::shared_ptr<res::ogl::Texture>>& textures);
 
     std::vector<Vertex> vertices;
     std::vector<unsigned int> indices;
-    std::vector<res::ogl::Texture*> textures;
+    std::vector<std::shared_ptr<res::ogl::Texture>> textures;
 };
 
 }

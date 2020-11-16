@@ -29,6 +29,7 @@ TextureType Texture::getType(){
 
 void Texture::load() 
 {
+	if(loaded) return;
 	if (image->isLoaded())
 	{
 		glGenTextures(1, &m_resourceId);
@@ -53,6 +54,7 @@ void Texture::load()
 
 void Texture::unload() 
 {
+	if(!loaded) return;
     if(m_resourceId)
 		glDeleteTextures(1, &m_resourceId);
 	m_resourceId = 0;

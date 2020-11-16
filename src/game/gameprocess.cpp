@@ -7,10 +7,10 @@
 
 void GameProcess::SetCurrentScene(Scene* scene) 
 {
-    asm("nop");
     delete currentScene;
     currentScene = scene;
     currentScene->start();
+    std::cout<<"current scene set on: "<<currentScene->getName()<<"\n";
 }
 
 void GameProcess::Init() 
@@ -24,6 +24,7 @@ void GameProcess::Start()
     double lastUpdate = glfwGetTime();
     while (!glfwWindowShouldClose(window))
     {
+        glClear(GL_COLOR_BUFFER_BIT);
         double currUpdate = glfwGetTime();
         currentScene->update(currUpdate-lastUpdate);
         lastUpdate = currUpdate;

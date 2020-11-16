@@ -8,6 +8,7 @@
 #include <stddef.h>
 #include "baseTypes/containers/mesh.hpp"
 #include "render/drawable.hpp"
+#include "utilities/debug.hpp"
 
 namespace res::ogl{
 

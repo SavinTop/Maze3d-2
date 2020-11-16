@@ -40,8 +40,6 @@ void Menu::update(float delta)
     if(state == GLFW_PRESS)
         glfwSetWindowShouldClose(proc->getWnd(), true);
 
-    
-
     double x,y;
 
     glfwGetCursorPos(proc->getWnd(),&x,&y);
@@ -53,7 +51,6 @@ std::string text = "";
 
 void Menu::onDraw(float delta) 
 {
-    glClear(GL_COLOR_BUFFER_BIT);
     menu->draw();
     
     CheckGLError();
@@ -63,20 +60,22 @@ ResourcePack Menu::getResources()
 {
     ResourcePack temp;
     temp.setResources(menu->getResources().getRes());
-    temp.getRes().push_back(program.get());
     return temp;
 }
 
 void Menu::initResources() 
 {
-    program = rm->createResource<>(res::ogl::ShaderProgram("data/shaders/basic/shader.vert","data/shaders/basic/shader.frag","basic program2"),sceneName);
-    menu = rm->createResource<>(MenuGui(window_w, window_h, rm));
+    menu = rm->createResource<>(MenuGui(window_w, window_h, rm),sceneName);
     //testPlane = rm->createResource<>(res::ogl::Plane(glm::vec3(200,200,0), glm::vec2(200,200), {test.get()}),sceneName);
 }
 
 void Menu::exitClicked() 
 {
-    glfwSetWindowShouldClose(proc->getWnd(), true);
+    //glfwSetWindowShouldClose(proc->getWnd(), true);
+    auto temp = new mazeScene(proc);
+    temp->initResources();
+    temp->getResources().load();
+    proc->SetCurrentScene(temp);
 }
 
 
@@ -84,6 +83,6 @@ Menu::Menu(GameProcess* proc)
     :Scene(proc)
 {
     rm = proc->rm;
-    sceneName = "test_scene";
+    sceneName = "menu_scene";
     glfwGetWindowSize(proc->getWnd(), &window_w, &window_h);
 }
