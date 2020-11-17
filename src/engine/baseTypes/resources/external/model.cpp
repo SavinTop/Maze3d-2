@@ -128,12 +128,8 @@ std::vector<std::shared_ptr<res::ogl::Texture>> Model::loadMaterialTextures(aiMa
         mat->GetTexture(type, i, &str);
         std::string texturePath(str.C_Str());
         texturePath = directory+"\\"+texturePath;
-
-        std::shared_ptr<res::ogl::Texture> texture;
-        texture = rm->createResource(res::ogl::Texture(texturePath, tt,res::ogl::DefaultTextureInfo, "texture::"+texturePath), groupName);
-        if(!texture->isLoaded())
-            texture->load();
-        textures.push_back(texture);
+        
+        textures.push_back(rm->createResource(res::ogl::Texture(texturePath, tt,res::ogl::DefaultTextureInfo, "TextureIn::"+texturePath), groupName));
     }
     return textures;
 }

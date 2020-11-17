@@ -23,6 +23,8 @@ public:
     void setParams(const Containers::Mesh& meshContainer);
     void draw(oglw::Shader& program);
     void drawWithoutTextures();
+
+    void InitializeSubResources(std::string groupName) override;
 private:
 Containers::Mesh mesh;
 unsigned int VAO, VBO, EBO;

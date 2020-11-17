@@ -1,31 +1,5 @@
 #include "menu.hpp"
 
-void _CheckGLError(const char* file, int line);
-
-#define CheckGLError() _CheckGLError(__FILE__, __LINE__)
-
-void _CheckGLError(const char* file, int line)
-{
-    GLenum err ( glGetError() );
-
-    while ( err != GL_NO_ERROR )
-    {
-        std::string error;
-        switch ( err )
-        {
-            case GL_INVALID_OPERATION:  error="INVALID_OPERATION";      break;
-            case GL_INVALID_ENUM:       error="INVALID_ENUM";           break;
-            case GL_INVALID_VALUE:      error="INVALID_VALUE";          break;
-            case GL_OUT_OF_MEMORY:      error="OUT_OF_MEMORY";          break;
-            case GL_INVALID_FRAMEBUFFER_OPERATION:  error="INVALID_FRAMEBUFFER_OPERATION";  break;
-        }
-        std::cout << "GL_" << error.c_str() <<" - " << file << ":" << line << std::endl;
-        err = glGetError();
-    }
-
-    return;
-}
-
 void Menu::start() 
 {
     guiText_init(0,glm::min(window_h,window_w)*0.2,"data\\fonts\\steelfis.ttf");
@@ -74,7 +48,12 @@ void Menu::exitClicked()
     //glfwSetWindowShouldClose(proc->getWnd(), true);
     auto temp = new mazeScene(proc);
     temp->initResources();
-    temp->getResources().load();
+    auto tempVec = temp->getResources();
+    for(auto& el:tempVec.getRes())
+    {
+        el->subResources_.load();
+        el->load();
+    }
     proc->SetCurrentScene(temp);
 }
 

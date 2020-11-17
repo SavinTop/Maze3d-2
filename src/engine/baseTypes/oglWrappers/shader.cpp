@@ -41,6 +41,7 @@ void Shader::unload()
 	vertexShader_ = 0;
 	fragmentShader_ = 0;
 	program_ = 0;
+	loaded = false;
 }
 
 void Shader::setParams(const std::string VertexShaderText, const std::string FragmentShaderText) 
@@ -106,9 +107,10 @@ void Shader::CreateProgram()
 		glDeleteProgram(program_);
 		glDeleteShader(vertexShader_);
 		glDeleteShader(fragmentShader_);
-
+		loaded = false;
 		return;
 	}
+	loaded = true;
 }
 
 }

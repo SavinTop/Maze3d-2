@@ -48,6 +48,7 @@ public:
 	void InitializeSubResources(std::string groupName) override;
 
 	TextureType getType();
+	unsigned getId(){return m_resourceId;};
 
 	res::ex::Image& getImage();
 

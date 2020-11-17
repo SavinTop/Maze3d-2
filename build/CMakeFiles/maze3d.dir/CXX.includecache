@@ -1860,6 +1860,14 @@ string
 resource/resource.hpp
 ../src/engine/baseTypes/resource/resource.hpp
 
+../src/engine/render/camera.hpp
+glad/glad.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+
 ../src/engine/render/drawable.hpp
 baseTypes/resources/internal/OGL/shader.hpp
 ../src/engine/render/baseTypes/resources/internal/OGL/shader.hpp
@@ -1876,6 +1884,8 @@ baseTypes/oglWrappers/oglw.h
 
 ../src/engine/utilities/debug.hpp
 iostream
+-
+glad/glad.h
 -
 
 ../src/engine/utilities/fileLoader.hpp
@@ -1919,4 +1929,6 @@ glm/gtc/type_ptr.hpp
 -
 baseTypes/resources/internal/OGL/glresources.hpp
 D:/21/Maze3d/src/game/scenes/maze/baseTypes/resources/internal/OGL/glresources.hpp
+render/camera.hpp
+D:/21/Maze3d/src/game/scenes/maze/render/camera.hpp
 

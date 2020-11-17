@@ -5,6 +5,8 @@
 #include "baseTypes/color.hpp"
 #include "scenes/loadingScenes/startLoadingScene/startLoadingScene.hpp"
 
+const int maxFps = 120;
+
 void GameProcess::SetCurrentScene(Scene* scene) 
 {
     delete currentScene;
@@ -30,10 +32,12 @@ void GameProcess::Start()
         lastUpdate = currUpdate;
 
         double currDraw = glfwGetTime();
-        currentScene->onDraw(currDraw-lastDraw);
-        lastDraw = currDraw;
+        if(currDraw-lastDraw>1.0f/maxFps){
+            currentScene->onDraw(currDraw-lastDraw);
+            lastDraw = currDraw;
+            glfwSwapBuffers(window);
+        }
 
-        glfwSwapBuffers(window);
         glfwPollEvents();
     }
 }

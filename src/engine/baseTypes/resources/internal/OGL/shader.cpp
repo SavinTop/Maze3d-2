@@ -12,12 +12,12 @@ void ShaderProgram::load(){
 	if(loaded) return;
 	program.setParams(VertexShaderFile_->data(), FragmentShaderFile_->data());
 	program.load();
-	loaded = true;
+	loaded = program.isLoaded();
 }
 
 void ShaderProgram::unload(){
 	program.unload();
-	loaded = false;
+	loaded = program.isLoaded();
 }
 
 void ShaderProgram::setParams(const std::string VertexShaderPath, const std::string FragmentShaderPath, const std::string pname) 

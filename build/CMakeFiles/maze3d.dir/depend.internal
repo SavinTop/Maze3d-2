@@ -3378,6 +3378,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadi
  ../src/engine/baseTypes/resources/internal/OGL/shader.hpp
  ../src/engine/baseTypes/resources/internal/OGL/texture.hpp
  ../src/engine/baseTypes/scene.hpp
+ ../src/engine/render/camera.hpp
  ../src/engine/render/drawable.hpp
  ../src/engine/utilities/debug.hpp
  ../src/engine/utilities/fileLoader.hpp
@@ -3636,6 +3637,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj
  ../src/engine/baseTypes/resources/internal/OGL/shader.hpp
  ../src/engine/baseTypes/resources/internal/OGL/texture.hpp
  ../src/engine/baseTypes/scene.hpp
+ ../src/engine/render/camera.hpp
  ../src/engine/render/drawable.hpp
  ../src/engine/utilities/debug.hpp
  ../src/engine/utilities/fileLoader.hpp
@@ -4429,6 +4431,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj
  ../src/engine/baseTypes/resources/internal/OGL/shader.hpp
  ../src/engine/baseTypes/resources/internal/OGL/texture.hpp
  ../src/engine/baseTypes/scene.hpp
+ ../src/engine/render/camera.hpp
  ../src/engine/render/drawable.hpp
  ../src/engine/utilities/debug.hpp
  ../src/engine/utilities/fileLoader.hpp

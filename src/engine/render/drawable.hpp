@@ -17,11 +17,10 @@ public:
     glm::mat4& getModelMatrix();
 
     void setPosition(glm::vec3 position);
-    void setRotation(glm::vec3 rotation);
+    void setRotation(glm::vec3 vector);
     void setScale(glm::vec3 scale);
 
     void addPosition(glm::vec3 offset);
-    void addRotation(glm::vec3 rotation);
 protected:
     glm::vec3 position;
     glm::vec3 rotation;

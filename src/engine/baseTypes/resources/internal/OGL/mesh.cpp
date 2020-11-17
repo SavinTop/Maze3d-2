@@ -33,9 +33,9 @@ void Mesh::draw(oglw::Shader& program){
         }
         
         int id = program.getUniformLocation((name + number));
-        
-        glUniform1i(id, i);
-        mesh.textures[i]->bind(i);
+        //glUniform1i(id, i);
+        //mesh.textures[i]->bind(i);
+        //TODO fix
     }
 
     glActiveTexture(GL_TEXTURE0);
@@ -49,6 +49,11 @@ void Mesh::drawWithoutTextures()
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, mesh.indices.size(), GL_UNSIGNED_INT, 0);
     glBindVertexArray(0);
+}
+
+void Mesh::InitializeSubResources(std::string groupName) 
+{
+
 }
 
 void Mesh::load(){
@@ -76,6 +81,7 @@ void Mesh::load(){
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Containers::Vertex), (void*)offsetof(Containers::Vertex, texCoords));
 
     glBindVertexArray(0);
+    
     loaded = true;
 }
 

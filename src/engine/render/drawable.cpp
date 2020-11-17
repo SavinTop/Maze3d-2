@@ -29,10 +29,10 @@ void Drawable::setPosition(glm::vec3 position)
     this->position = position;
 }
 
-void Drawable::setRotation(glm::vec3 rotation) 
+void Drawable::setRotation(glm::vec3 vector) 
 {
     changed = true;
-    this->rotation = rotation;
+    rotation = vector;
 }
 
 void Drawable::setScale(glm::vec3 scale) 
@@ -45,12 +45,6 @@ void Drawable::addPosition(glm::vec3 offset)
 {
     changed = true;
     this->position+=offset;
-}
-
-void Drawable::addRotation(glm::vec3 rotation) 
-{
-    changed = true;
-    this->rotation+=rotation;
 }
 
 Drawable::Drawable() 

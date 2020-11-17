@@ -10,6 +10,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include "baseTypes/resources/internal/OGL/glresources.hpp"
+#include "render/camera.hpp"
 
 class mazeScene : public Scene{
     public:
@@ -22,6 +23,7 @@ class mazeScene : public Scene{
     private:
     std::shared_ptr<res::ogl::Model> model;
     std::shared_ptr<res::ogl::ShaderProgram> program;
+    std::shared_ptr<res::ogl::Texture> tempTexture;
 
     int window_w;
     int window_h;

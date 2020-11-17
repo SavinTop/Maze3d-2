@@ -22,7 +22,10 @@ public:
 
 	void bind();
 	void unbind();
+
+	bool isLoaded() {return loaded;};
 private:
+	bool loaded = false;
 	std::string vertexShaderText;
 	std::string fragmentShaderText;
 
