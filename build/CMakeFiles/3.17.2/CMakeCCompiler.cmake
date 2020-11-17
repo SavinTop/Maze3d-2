@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "D:/CodeBlocks/MinGW/bin/x86_64-w64-mingw32-gcc.exe")
+set(CMAKE_C_COMPILER "D:/CodeBlocks/MinGW/bin/gcc.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_COMPILER_VERSION "8.1.0")
