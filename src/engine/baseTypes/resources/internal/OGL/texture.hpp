@@ -22,7 +22,7 @@ struct TextureInfo
 	TextureInfo() {};
 
 	TextureInfo(unsigned int type, unsigned int min, unsigned int mag, unsigned int wraps, unsigned int wrapt, unsigned int aniso, unsigned int channelC)
-		:min_filter(min), mag_filter(mag), wrap_s(wraps), wrap_t(wrapt), anisotropy_val(aniso), internalType(type),channelCount(channelCount)
+		:min_filter(min), mag_filter(mag), wrap_s(wraps), wrap_t(wrapt), anisotropy_val(aniso), internalType(type),channelCount(channelC)
 	{}
     
 };

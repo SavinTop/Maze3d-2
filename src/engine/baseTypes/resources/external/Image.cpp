@@ -4,7 +4,7 @@
 namespace res::ex{
 
 Image::Image():Resource() {
-    
+    channelCount = 0;
 }
 
 Image::Image(const std::string& path, int channelCount):Resource() {

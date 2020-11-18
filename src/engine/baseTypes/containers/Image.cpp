@@ -8,6 +8,8 @@ Containers::Image::Image(unsigned w, unsigned h) {
 }
 
 void Containers::Image::setSize(unsigned w, unsigned h) {
+    this->width = w;
+    this->height = h;
     data.resize(w*h*channelCount);
 }
 

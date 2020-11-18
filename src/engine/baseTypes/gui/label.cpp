@@ -40,11 +40,7 @@ int Label::calculateWidth()
 
 int Label::calculateHeight() 
 {   
-    if(!textCharacters.size()) return 0;
-    int tempHeight = textCharacters[0].Size.y;
-    for(auto& el:textCharacters)
-        if(el.Size.y>tempHeight) tempHeight = el.Size.y;
-    return tempHeight;
+    return (*std::max_element(textCharacters.begin(), textCharacters.end(),[](Character el1, Character el2){return el1.Size.y<el2.Size.y;})).Size.y;
 }
 
 Label::Label() : GuiObject(nullptr)

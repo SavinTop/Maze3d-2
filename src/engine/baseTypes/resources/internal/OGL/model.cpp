@@ -29,11 +29,11 @@ namespace res::ogl{
             {
                 if(!subElement.get())
                 {
-                    //std::cout<<__LINE__<<" nullptr texture lol?"<<'\n';
+                    std::cout<<__LINE__<<" nullptr texture lol?"<<'\n';
                     continue;
                 }
+                subElement->getImage().load();
                 subElement->load();
-                //std::cout<<__LINE__<<subElement->resName_<<'\n';
             }
                 
             this->meshes.push_back(el);

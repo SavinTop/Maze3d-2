@@ -17,6 +17,7 @@ void Mesh::draw(oglw::Shader& program){
     unsigned int specularNr = 1;
     for(unsigned int i = 0; i < mesh.textures.size(); i++)
     {
+        glActiveTexture(GL_TEXTURE0+i);
         if(!mesh.textures[i].get()) continue;
         std::string number;
         std::string name;
@@ -33,9 +34,8 @@ void Mesh::draw(oglw::Shader& program){
         }
         
         int id = program.getUniformLocation((name + number));
-        //glUniform1i(id, i);
-        //mesh.textures[i]->bind(i);
-        //TODO fix
+        glUniform1i(id, i);
+        mesh.textures[i]->bind(i);
     }
 
     glActiveTexture(GL_TEXTURE0);

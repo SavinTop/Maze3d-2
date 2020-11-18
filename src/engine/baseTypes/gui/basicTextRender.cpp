@@ -83,7 +83,7 @@ void guiText_renderText(oglw::Shader &s, std::string text, float x, float y, flo
     glBindVertexArray(VAO);
 
     std::string::const_iterator c;
-    for (c = text.begin(); c != text.end(); c++)
+    for (c = text.begin(); c != text.end(); ++c)
     {
         Character ch = Characters[*c];
 
@@ -127,7 +127,7 @@ std::vector<Character> guiText_getCharacters(std::string text)
     std::vector<Character> out;
     out.resize(text.length());
     std::string::const_iterator c;
-    for (c = text.begin(); c != text.end(); c++)
+    for (c = text.begin(); c != text.end(); ++c)
     {
         out.push_back(Characters[*c]); 
     }

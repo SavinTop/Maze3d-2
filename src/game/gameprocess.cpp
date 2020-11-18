@@ -6,6 +6,7 @@
 #include "scenes/loadingScenes/startLoadingScene/startLoadingScene.hpp"
 
 const int maxFps = 120;
+const int PPS = 50;
 
 void GameProcess::SetCurrentScene(Scene* scene) 
 {
@@ -24,12 +25,19 @@ void GameProcess::Start()
 {
     double lastDraw = glfwGetTime();
     double lastUpdate = glfwGetTime();
+    double lastPhys = glfwGetTime();
     while (!glfwWindowShouldClose(window))
     {
         glClear(GL_COLOR_BUFFER_BIT);
         double currUpdate = glfwGetTime();
         currentScene->update(currUpdate-lastUpdate);
         lastUpdate = currUpdate;
+
+        double currPhys = glfwGetTime();
+        if(currPhys-lastPhys>1.0f/PPS){
+            currentScene->physTick(currPhys-lastPhys);
+            lastPhys = currPhys;
+        }
 
         double currDraw = glfwGetTime();
         if(currDraw-lastDraw>1.0f/maxFps){

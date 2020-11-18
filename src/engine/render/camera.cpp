@@ -32,6 +32,23 @@ void Camera::addRotation(float yaw, float pitch, bool constrainPitch)
         updateCameraVectors();
 }
 
+void Camera::setRotation(float yaw, float pitch) 
+{
+    Yaw   = yaw;
+    Pitch = pitch;
+    updateCameraVectors();
+}
+
+void Camera::setPos(glm::vec3 position) 
+{
+    this->position = position;
+}
+
+void Camera::setFront(glm::vec3 front) 
+{
+    this->front = front;
+}
+
 void Camera::updateCameraVectors() 
 {
     glm::vec3 _front;

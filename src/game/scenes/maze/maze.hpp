@@ -18,12 +18,14 @@ class mazeScene : public Scene{
     void start() override;
     void update(float delta) override;
     void onDraw(float delta) override;
+    void physTick(float delta) override;
     ResourcePack getResources() override;
     void initResources() override;
     private:
     std::shared_ptr<res::ogl::Model> model;
     std::shared_ptr<res::ogl::ShaderProgram> program;
     std::shared_ptr<res::ogl::Texture> tempTexture;
+    Camera cam;
 
     int window_w;
     int window_h;

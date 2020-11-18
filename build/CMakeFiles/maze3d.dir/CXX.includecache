@@ -294,6 +294,12 @@ assimp/vector3.h
 cmath
 -
 
+../include/freetype/config/ftheader.h
+
+../include/ft2build.h
+freetype/config/ftheader.h
+-
+
 ../include/glad/glad.h
 KHR/khrplatform.h
 -
@@ -1716,6 +1722,24 @@ glm/glm.hpp
 memory
 -
 
+../src/engine/baseTypes/gui/basicTextRender.hpp
+ft2build.h
+-
+glad/glad.h
+-
+string
+-
+vector
+-
+map
+-
+glm/glm.hpp
+-
+baseTypes/oglWrappers/shader.hpp
+-
+utilities/fileLoader.hpp
+-
+
 ../src/engine/baseTypes/oglWrappers/oglw.h
 shader.hpp
 ../src/engine/baseTypes/oglWrappers/shader.hpp
@@ -1860,14 +1884,6 @@ string
 resource/resource.hpp
 ../src/engine/baseTypes/resource/resource.hpp
 
-../src/engine/render/camera.hpp
-glad/glad.h
--
-glm/glm.hpp
--
-glm/gtc/matrix_transform.hpp
--
-
 ../src/engine/render/drawable.hpp
 baseTypes/resources/internal/OGL/shader.hpp
 ../src/engine/render/baseTypes/resources/internal/OGL/shader.hpp
@@ -1894,29 +1910,39 @@ fstream
 vector
 -
 
-../src/game/gameprocess.hpp
+D:/21/Maze3d/src/game/gameprocess.cpp
+gameprocess.hpp
+D:/21/Maze3d/src/game/gameprocess.hpp
+baseTypes/resources/external/TextFile.hpp
+D:/21/Maze3d/src/game/baseTypes/resources/external/TextFile.hpp
+baseTypes/resources/external/Image.hpp
+D:/21/Maze3d/src/game/baseTypes/resources/external/Image.hpp
+baseTypes/containers/Image.hpp
+D:/21/Maze3d/src/game/baseTypes/containers/Image.hpp
+baseTypes/color.hpp
+D:/21/Maze3d/src/game/baseTypes/color.hpp
+scenes/loadingScenes/startLoadingScene/startLoadingScene.hpp
+D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.hpp
+
+D:/21/Maze3d/src/game/gameprocess.hpp
 glad/glad.h
-../src/game/glad/glad.h
+D:/21/Maze3d/src/game/glad/glad.h
 GLFW/glfw3.h
-../src/game/GLFW/glfw3.h
+D:/21/Maze3d/src/game/GLFW/glfw3.h
 baseTypes/scene.hpp
-../src/game/baseTypes/scene.hpp
+D:/21/Maze3d/src/game/baseTypes/scene.hpp
 baseTypes/resource/resourceManager.hpp
-../src/game/baseTypes/resource/resourceManager.hpp
+D:/21/Maze3d/src/game/baseTypes/resource/resourceManager.hpp
 map
 -
 
-D:/21/Maze3d/src/game/scenes/maze/maze.cpp
-maze.hpp
-D:/21/Maze3d/src/game/scenes/maze/maze.hpp
-
-D:/21/Maze3d/src/game/scenes/maze/maze.hpp
+D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.hpp
 baseTypes/resources/internal/OGL/glresources.hpp
-D:/21/Maze3d/src/game/scenes/maze/baseTypes/resources/internal/OGL/glresources.hpp
+D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/baseTypes/resources/internal/OGL/glresources.hpp
 gameprocess.hpp
-D:/21/Maze3d/src/game/scenes/maze/gameprocess.hpp
+D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/gameprocess.hpp
 baseTypes/color.hpp
-D:/21/Maze3d/src/game/scenes/maze/baseTypes/color.hpp
+D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/baseTypes/color.hpp
 iostream
 -
 vector
@@ -1927,8 +1953,6 @@ glm/gtc/matrix_transform.hpp
 -
 glm/gtc/type_ptr.hpp
 -
-baseTypes/resources/internal/OGL/glresources.hpp
-D:/21/Maze3d/src/game/scenes/maze/baseTypes/resources/internal/OGL/glresources.hpp
-render/camera.hpp
-D:/21/Maze3d/src/game/scenes/maze/render/camera.hpp
+baseTypes/gui/basicTextRender.hpp
+D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/baseTypes/gui/basicTextRender.hpp
 

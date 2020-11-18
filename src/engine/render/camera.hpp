@@ -14,6 +14,9 @@ void moveStraight(float coof);
 void moveSideways(float coof);
 
 void addRotation(float yaw, float pitch, bool constrainPitch = true);
+void setRotation(float yaw, float pitch);
+void setPos(glm::vec3 position);
+void setFront(glm::vec3 front);
 
 private:
     glm::vec3 position;

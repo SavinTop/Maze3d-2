@@ -2,21 +2,20 @@
 
 void mazeScene::start()
 {
-
+    cam.moveStraight(-15);
+    cam.moveSideways(-5);
+    glfwSetCursorPos(proc->getWnd(), window_w/2.0f, window_h/2.0f);
 }
 
 void mazeScene::update(float delta)
 {
-    //std::cout<<model->resName_<<"\n";
-    __asm("nop");
+    int state = glfwGetKey(proc->getWnd(), GLFW_KEY_ESCAPE);
+    if(state == GLFW_PRESS)
+        glfwSetWindowShouldClose(proc->getWnd(), true);
 }
 
 void mazeScene::onDraw(float delta)
 {
-    Camera cam;
-    cam.moveStraight(-15);
-    cam.moveSideways(-6);
-    cam.addRotation(45,0);
     program->bind();
     unsigned viewId = program->getUniformLocation("view");
     unsigned projectionId = program->getUniformLocation("projection");
@@ -28,9 +27,28 @@ void mazeScene::onDraw(float delta)
     projection = glm::perspective(glm::radians(45.0f), (float)window_w/window_h, 0.1f, 100.0f);
     glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
-    tempTexture->bind(0);
+    //tempTexture->bind(0);
     model->draw(program->getProgram());
     CheckGLError();
+}
+
+void mazeScene::physTick(float delta) 
+{
+    double xpos, ypos;
+    glfwGetCursorPos(proc->getWnd(), &xpos, &ypos);
+
+    cam.addRotation(-(window_w/2.0f-xpos)*delta*10, (window_h/2.0f-ypos)*delta*10);
+
+    glfwSetCursorPos(proc->getWnd(), window_w/2.0f, window_h/2.0f);
+
+    if(glfwGetKey(proc->getWnd(), GLFW_KEY_W)==GLFW_PRESS)
+        cam.moveStraight(delta*10);
+    if(glfwGetKey(proc->getWnd(), GLFW_KEY_S)==GLFW_PRESS)
+        cam.moveStraight(-delta*10);
+    if(glfwGetKey(proc->getWnd(), GLFW_KEY_D)==GLFW_PRESS)
+        cam.moveSideways(delta*10);
+    if(glfwGetKey(proc->getWnd(), GLFW_KEY_A)==GLFW_PRESS)
+        cam.moveSideways(-delta*10);
 }
 
 ResourcePack mazeScene::getResources()

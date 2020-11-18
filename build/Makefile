@@ -871,6 +871,87 @@ src/game/gameprocess.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.s
 .PHONY : src/game/gameprocess.cpp.s
 
+src/game/maze_things/legacy/MazeBuilder.obj: src/game/maze_things/legacy/MazeBuilder.cpp.obj
+
+.PHONY : src/game/maze_things/legacy/MazeBuilder.obj
+
+# target to build an object file
+src/game/maze_things/legacy/MazeBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.obj
+.PHONY : src/game/maze_things/legacy/MazeBuilder.cpp.obj
+
+src/game/maze_things/legacy/MazeBuilder.i: src/game/maze_things/legacy/MazeBuilder.cpp.i
+
+.PHONY : src/game/maze_things/legacy/MazeBuilder.i
+
+# target to preprocess a source file
+src/game/maze_things/legacy/MazeBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.i
+.PHONY : src/game/maze_things/legacy/MazeBuilder.cpp.i
+
+src/game/maze_things/legacy/MazeBuilder.s: src/game/maze_things/legacy/MazeBuilder.cpp.s
+
+.PHONY : src/game/maze_things/legacy/MazeBuilder.s
+
+# target to generate assembly for a file
+src/game/maze_things/legacy/MazeBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.s
+.PHONY : src/game/maze_things/legacy/MazeBuilder.cpp.s
+
+src/game/maze_things/legacy/MazeMapGenerator.obj: src/game/maze_things/legacy/MazeMapGenerator.cpp.obj
+
+.PHONY : src/game/maze_things/legacy/MazeMapGenerator.obj
+
+# target to build an object file
+src/game/maze_things/legacy/MazeMapGenerator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.obj
+.PHONY : src/game/maze_things/legacy/MazeMapGenerator.cpp.obj
+
+src/game/maze_things/legacy/MazeMapGenerator.i: src/game/maze_things/legacy/MazeMapGenerator.cpp.i
+
+.PHONY : src/game/maze_things/legacy/MazeMapGenerator.i
+
+# target to preprocess a source file
+src/game/maze_things/legacy/MazeMapGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.i
+.PHONY : src/game/maze_things/legacy/MazeMapGenerator.cpp.i
+
+src/game/maze_things/legacy/MazeMapGenerator.s: src/game/maze_things/legacy/MazeMapGenerator.cpp.s
+
+.PHONY : src/game/maze_things/legacy/MazeMapGenerator.s
+
+# target to generate assembly for a file
+src/game/maze_things/legacy/MazeMapGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.s
+.PHONY : src/game/maze_things/legacy/MazeMapGenerator.cpp.s
+
+src/game/maze_things/legacy/ObjectMazeBuilder.obj: src/game/maze_things/legacy/ObjectMazeBuilder.cpp.obj
+
+.PHONY : src/game/maze_things/legacy/ObjectMazeBuilder.obj
+
+# target to build an object file
+src/game/maze_things/legacy/ObjectMazeBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.obj
+.PHONY : src/game/maze_things/legacy/ObjectMazeBuilder.cpp.obj
+
+src/game/maze_things/legacy/ObjectMazeBuilder.i: src/game/maze_things/legacy/ObjectMazeBuilder.cpp.i
+
+.PHONY : src/game/maze_things/legacy/ObjectMazeBuilder.i
+
+# target to preprocess a source file
+src/game/maze_things/legacy/ObjectMazeBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.i
+.PHONY : src/game/maze_things/legacy/ObjectMazeBuilder.cpp.i
+
+src/game/maze_things/legacy/ObjectMazeBuilder.s: src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s
+
+.PHONY : src/game/maze_things/legacy/ObjectMazeBuilder.s
+
+# target to generate assembly for a file
+src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s
+.PHONY : src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s
+
 src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.obj: src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.obj
 
 .PHONY : src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.obj
@@ -1177,6 +1258,15 @@ help:
 	@echo ... src/game/gameprocess.obj
 	@echo ... src/game/gameprocess.i
 	@echo ... src/game/gameprocess.s
+	@echo ... src/game/maze_things/legacy/MazeBuilder.obj
+	@echo ... src/game/maze_things/legacy/MazeBuilder.i
+	@echo ... src/game/maze_things/legacy/MazeBuilder.s
+	@echo ... src/game/maze_things/legacy/MazeMapGenerator.obj
+	@echo ... src/game/maze_things/legacy/MazeMapGenerator.i
+	@echo ... src/game/maze_things/legacy/MazeMapGenerator.s
+	@echo ... src/game/maze_things/legacy/ObjectMazeBuilder.obj
+	@echo ... src/game/maze_things/legacy/ObjectMazeBuilder.i
+	@echo ... src/game/maze_things/legacy/ObjectMazeBuilder.s
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.obj
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.i
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.s

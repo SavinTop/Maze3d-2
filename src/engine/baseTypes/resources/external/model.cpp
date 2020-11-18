@@ -121,7 +121,7 @@ Containers::Mesh Model::processMesh(aiMesh *mesh, const aiScene *scene)
 std::vector<std::shared_ptr<res::ogl::Texture>> Model::loadMaterialTextures(aiMaterial *mat, aiTextureType type, res::ogl::TextureType tt) 
 {
     std::vector<std::shared_ptr<res::ogl::Texture>> textures;
-    textures.resize(mat->GetTextureCount(type));
+    textures.reserve(mat->GetTextureCount(type));
     for(unsigned i=0;i<mat->GetTextureCount(type);i++)
     {
         aiString str;
@@ -129,7 +129,7 @@ std::vector<std::shared_ptr<res::ogl::Texture>> Model::loadMaterialTextures(aiMa
         std::string texturePath(str.C_Str());
         texturePath = directory+"\\"+texturePath;
         
-        textures.push_back(rm->createResource(res::ogl::Texture(texturePath, tt,res::ogl::DefaultTextureInfo, "TextureIn::"+texturePath), groupName));
+        textures.emplace_back(rm->createResource(res::ogl::Texture(texturePath, tt,res::ogl::DefaultTextureInfo, "TextureIn::"+texturePath), groupName));
     }
     return textures;
 }

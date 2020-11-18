@@ -11,7 +11,7 @@ void Drawable::draw(oglw::Shader& program)
 void Drawable::updateModelMatrix() 
 {
     if(!changed) return;
-    model = glm::mat4(1.0);
+    model = glm::mat4{1.0};
     //model = glm::rotate(model, glm::radians(1.0f), rotation);
     model = glm::translate(model, position);
     model = glm::scale(model, scale);

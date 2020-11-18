@@ -3,6 +3,7 @@
 #include "guiObject.hpp"
 #include "basicTextRender.hpp"
 #include "textAlign.hpp"
+#include <algorithm>
 
 class Label : public GuiObject{
 public:
