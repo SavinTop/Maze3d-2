@@ -37,6 +37,7 @@ class Resource{
         load();
     }
     virtual void InitializeSubResources(std::string groupName) {};
+    void setLoaded(bool val){loaded = val;}
     bool isLoaded(){return loaded;}
 
     ResourceManager* rm;

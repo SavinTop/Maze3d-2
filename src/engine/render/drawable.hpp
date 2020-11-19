@@ -17,7 +17,7 @@ public:
     glm::mat4& getModelMatrix();
 
     void setPosition(glm::vec3 position);
-    void setRotation(glm::vec3 vector);
+    void setRotation(float angle, glm::vec3 vector);
     void setScale(glm::vec3 scale);
 
     void addPosition(glm::vec3 offset);
@@ -26,5 +26,6 @@ protected:
     glm::vec3 rotation;
     glm::vec3 scale;
     glm::mat4 model;
+    float angle;
     bool changed;
 };

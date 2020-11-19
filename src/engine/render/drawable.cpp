@@ -12,7 +12,7 @@ void Drawable::updateModelMatrix()
 {
     if(!changed) return;
     model = glm::mat4{1.0};
-    //model = glm::rotate(model, glm::radians(1.0f), rotation);
+    model = glm::rotate(model, glm::radians(angle), rotation);
     model = glm::translate(model, position);
     model = glm::scale(model, scale);
     changed = false;
@@ -29,10 +29,11 @@ void Drawable::setPosition(glm::vec3 position)
     this->position = position;
 }
 
-void Drawable::setRotation(glm::vec3 vector) 
+void Drawable::setRotation(float angle, glm::vec3 vector) 
 {
     changed = true;
     rotation = vector;
+    this->angle = angle;
 }
 
 void Drawable::setScale(glm::vec3 scale) 
@@ -51,7 +52,8 @@ Drawable::Drawable()
 {
     model = glm::mat4(1.0);
     position = glm::vec3(0);
-    rotation = glm::vec3(0);
+    rotation = glm::vec3(1);
     scale = glm::vec3(1);
     changed = true;
+    angle = 0;
 }

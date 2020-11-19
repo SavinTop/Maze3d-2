@@ -54,7 +54,7 @@ void Menu::exitClicked()
         el->subResources_.load();
         el->load();
     }
-    proc->SetCurrentScene(temp);
+    proc->ChangeScene(temp);
 }
 
 

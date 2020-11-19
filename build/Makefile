@@ -817,6 +817,33 @@ src/engine/render/drawable.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.s
 .PHONY : src/engine/render/drawable.cpp.s
 
+src/engine/render/drawableHolder.obj: src/engine/render/drawableHolder.cpp.obj
+
+.PHONY : src/engine/render/drawableHolder.obj
+
+# target to build an object file
+src/engine/render/drawableHolder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.obj
+.PHONY : src/engine/render/drawableHolder.cpp.obj
+
+src/engine/render/drawableHolder.i: src/engine/render/drawableHolder.cpp.i
+
+.PHONY : src/engine/render/drawableHolder.i
+
+# target to preprocess a source file
+src/engine/render/drawableHolder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.i
+.PHONY : src/engine/render/drawableHolder.cpp.i
+
+src/engine/render/drawableHolder.s: src/engine/render/drawableHolder.cpp.s
+
+.PHONY : src/engine/render/drawableHolder.s
+
+# target to generate assembly for a file
+src/engine/render/drawableHolder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.s
+.PHONY : src/engine/render/drawableHolder.cpp.s
+
 src/engine/utilities/fileLoader.obj: src/engine/utilities/fileLoader.cpp.obj
 
 .PHONY : src/engine/utilities/fileLoader.obj
@@ -1252,6 +1279,9 @@ help:
 	@echo ... src/engine/render/drawable.obj
 	@echo ... src/engine/render/drawable.i
 	@echo ... src/engine/render/drawable.s
+	@echo ... src/engine/render/drawableHolder.obj
+	@echo ... src/engine/render/drawableHolder.i
+	@echo ... src/engine/render/drawableHolder.s
 	@echo ... src/engine/utilities/fileLoader.obj
 	@echo ... src/engine/utilities/fileLoader.i
 	@echo ... src/engine/utilities/fileLoader.s

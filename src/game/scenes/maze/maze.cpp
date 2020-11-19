@@ -2,9 +2,11 @@
 
 void mazeScene::start()
 {
-    cam.moveStraight(-15);
+    cam.moveStraight(-30);
     cam.moveSideways(-5);
     glfwSetCursorPos(proc->getWnd(), window_w/2.0f, window_h/2.0f);
+    maze.buildMaze();
+    omm.init(maze, DrawableHolder(rootWallModel.get()), DrawableHolder(lineWallModel.get()),DrawableHolder(rootWallModel.get()));
 }
 
 void mazeScene::update(float delta)
@@ -27,8 +29,12 @@ void mazeScene::onDraw(float delta)
     projection = glm::perspective(glm::radians(45.0f), (float)window_w/window_h, 0.1f, 100.0f);
     glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
-    //tempTexture->bind(0);
-    model->draw(program->getProgram());
+    
+    for(int i=0;i<omm.height();i++)
+        for(int j=0;j<omm.width();j++)
+            omm.get(j,i)->model.draw(program->getProgram());
+    //lineWallModel->draw(program->getProgram());
+    
     CheckGLError();
 }
 
@@ -53,17 +59,18 @@ void mazeScene::physTick(float delta)
 
 ResourcePack mazeScene::getResources()
 {
-    return ResourcePack({model.get(), program.get(), tempTexture.get()});
+    return ResourcePack({rootWallModel.get(),lineWallModel.get(), program.get()});
 }
 
 void mazeScene::initResources()
 {
-    model = rm->createResource(res::ogl::Model("data\\models\\threeUnitWall.obj"), sceneName, "test Model");
+    rootWallModel = rm->createResource(res::ogl::Model("data\\models\\oneUnitWall.obj"), sceneName, "rootWallModel");
+    lineWallModel = rm->createResource(res::ogl::Model("data\\models\\threeUnitWall.obj"), sceneName, "lineWallModel");
     program = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\basic\\shader.vert", "data\\shaders\\basic\\shader.frag", "basicShader"), sceneName);
-    tempTexture = rm->createResource(res::ogl::Texture("data\\models\\Wall_Stone_017_BaseColor.jpg"));
 }
 
-mazeScene::mazeScene(GameProcess* proc) : Scene(proc)
+mazeScene::mazeScene(GameProcess* proc) : 
+Scene(proc), maze(5,5)
 {
     sceneName = "maze_scene";
     glfwGetWindowSize(proc->getWnd(), &window_w, &window_h);

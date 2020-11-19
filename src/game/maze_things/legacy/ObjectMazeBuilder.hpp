@@ -4,6 +4,7 @@
 
 #include <glm/glm.hpp>
 #include "MazeBuilder.hpp"
+#include "render/drawableHolder.hpp"
 //#include "Object3d.h"
 //#include "LOG.h"
 
@@ -15,7 +16,7 @@ enum wallType
 struct mazeObject
 {
 	bool inescapable = false;
-	//Object3d model;
+	DrawableHolder model;
 	wallType wt;
 	glm::ivec4 fw;
 	glm::ivec4 sw;
@@ -24,13 +25,14 @@ struct mazeObject
 class ObjectMazeMap
 {
 public:
-
-	ObjectMazeMap(MazeBuilder& maze);
+	ObjectMazeMap();
+	ObjectMazeMap(MazeBuilder& maze, DrawableHolder rootWall, DrawableHolder lineWall, DrawableHolder cornerWall);
 
 	mazeObject* get(int x, int y);
 
 	unsigned int width();
 	unsigned int height();
+	void init(MazeBuilder& maze, DrawableHolder rootWall, DrawableHolder lineWall, DrawableHolder cornerWall);
 
 private:
 

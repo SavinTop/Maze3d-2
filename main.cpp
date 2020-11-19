@@ -8,7 +8,7 @@
 
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
-const bool fullScreen = true;
+const bool fullScreen = false;
 
 int main()
 {
@@ -16,6 +16,7 @@ int main()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_DEPTH_BITS,32);
 
     GLFWwindow* window;
 
@@ -27,7 +28,6 @@ int main()
     }else{
         window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Maze3d", NULL, NULL);
     }
-
 
     if (window == NULL)
     {
@@ -48,6 +48,8 @@ int main()
     glEnable(GL_CULL_FACE);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glEnable(GL_DEPTH_TEST);
+    glDepthFunc(GL_LESS);
 
     init_justRect();
 

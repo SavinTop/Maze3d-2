@@ -6,7 +6,7 @@
 #include "scenes/loadingScenes/startLoadingScene/startLoadingScene.hpp"
 
 const int maxFps = 120;
-const int PPS = 50;
+const int PPS = 100;
 
 void GameProcess::SetCurrentScene(Scene* scene) 
 {
@@ -14,6 +14,11 @@ void GameProcess::SetCurrentScene(Scene* scene)
     currentScene = scene;
     currentScene->start();
     std::cout<<"current scene set on: "<<currentScene->getName()<<"\n";
+}
+
+void GameProcess::ChangeScene(Scene* scene) 
+{
+    nextScene = scene;
 }
 
 void GameProcess::Init() 
@@ -28,8 +33,8 @@ void GameProcess::Start()
     double lastPhys = glfwGetTime();
     while (!glfwWindowShouldClose(window))
     {
-        glClear(GL_COLOR_BUFFER_BIT);
         double currUpdate = glfwGetTime();
+        
         currentScene->update(currUpdate-lastUpdate);
         lastUpdate = currUpdate;
 
@@ -41,12 +46,17 @@ void GameProcess::Start()
 
         double currDraw = glfwGetTime();
         if(currDraw-lastDraw>1.0f/maxFps){
-            currentScene->onDraw(currDraw-lastDraw);
-            lastDraw = currDraw;
-            glfwSwapBuffers(window);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        currentScene->onDraw(currDraw-lastDraw);
+        lastDraw = currDraw;
+        glfwSwapBuffers(window);
         }
 
         glfwPollEvents();
+        if(nextScene){
+            SetCurrentScene(nextScene);
+            nextScene = nullptr;
+        }
     }
 }
 
@@ -68,4 +78,5 @@ GameProcess::GameProcess(GLFWwindow* wnd)
         el->load();
     }
     currentScene->start();
+    nextScene = nullptr;
 }

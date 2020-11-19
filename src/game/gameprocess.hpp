@@ -10,6 +10,7 @@ class GameProcess{
     public:
     GameProcess(GLFWwindow* wnd);
     void SetCurrentScene(Scene* scene);
+    void ChangeScene(Scene* scene);
     void Init();
     void Start();
     GLFWwindow* getWnd();
@@ -17,6 +18,7 @@ class GameProcess{
 
     private:
         Scene* currentScene;
+        Scene* nextScene;
         GLFWwindow* window;
         
 };

@@ -11,6 +11,9 @@
 #include <glm/gtc/type_ptr.hpp>
 #include "baseTypes/resources/internal/OGL/glresources.hpp"
 #include "render/camera.hpp"
+#include "maze_things/legacy/MazeMapGenerator.hpp"
+#include "maze_things/legacy/ObjectMazeBuilder.hpp"
+#include "baseTypes/gui/gui.hpp"
 
 class mazeScene : public Scene{
     public:
@@ -22,11 +25,17 @@ class mazeScene : public Scene{
     ResourcePack getResources() override;
     void initResources() override;
     private:
-    std::shared_ptr<res::ogl::Model> model;
+    std::shared_ptr<res::ogl::Model> lineWallModel;
+    std::shared_ptr<res::ogl::Model> rootWallModel;
     std::shared_ptr<res::ogl::ShaderProgram> program;
     std::shared_ptr<res::ogl::Texture> tempTexture;
     Camera cam;
 
     int window_w;
     int window_h;
+
+    MazeMapGenerator _mapGenerator;
+    MazeBuilder maze;
+    ObjectMazeMap omm;
+    Button tempButton;
 };

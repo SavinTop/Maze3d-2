@@ -9,7 +9,8 @@
 
 struct intVec2
 {
-	intVec2(int x, int y)
+
+	intVec2(int x = 0, int y = 0)
 	{
 		this->x = x;
 		this->y = y;
@@ -26,11 +27,14 @@ struct intVec2
 class MazeBuilder
 {
 public:
+	MazeBuilder(){}
 	MazeBuilder(int w, int h);
 	~MazeBuilder();
 
 	//void RebuildMaze();
+	void setParams(int w, int h);
 	void getWalls(bool** &vWalls, bool** &hWalls, int &width, int &height);
+	void buildMaze();
 
 private:
 	int m_width, m_height;
@@ -42,6 +46,6 @@ private:
 	std::stack<intVec2> m_stack;
 	intVec2 m_currentPosition;
 
-	void buildMaze();
+	
 	bool canGo(intVec2);
 };

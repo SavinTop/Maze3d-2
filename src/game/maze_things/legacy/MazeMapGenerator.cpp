@@ -55,3 +55,23 @@ int MazeMapGenerator::getHeight()
 {
 	return m_height;
 }
+MazeMapGenerator::MazeMapGenerator() 
+{
+    m_data = 0;
+}
+
+MazeMapGenerator::MazeMapGenerator(MazeMapGenerator&& move) 
+{
+    this->m_data = move.m_data;
+    this->m_height = move.m_height;
+    this->m_width = move.m_width;
+    move.m_data = 0;
+}
+
+MazeMapGenerator::MazeMapGenerator(MazeMapGenerator& copy) 
+{
+    this->m_height = copy.m_height;
+    this->m_width = copy.m_width;
+    this->m_data = new unsigned char[(m_width+1)*(m_height+1)*3]();
+    memcpy(this->m_data, copy.m_data, (m_width+1)*(m_height+1)*3);
+}

@@ -116,6 +116,11 @@
 },
 {
   "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\render\\drawableHolder.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\render\\drawableHolder.cpp",
+  "file": "D:/21/Maze3d/src/engine/render/drawableHolder.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\utilities\\fileLoader.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\utilities\\fileLoader.cpp",
   "file": "D:/21/Maze3d/src/engine/utilities/fileLoader.cpp"
 },

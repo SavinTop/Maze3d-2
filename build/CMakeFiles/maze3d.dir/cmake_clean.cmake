@@ -24,6 +24,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.obj"
+  "CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.obj"
