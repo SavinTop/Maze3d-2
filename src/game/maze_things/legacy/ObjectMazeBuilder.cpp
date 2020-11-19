@@ -18,7 +18,7 @@ unsigned int ObjectMazeMap::height()
 
 void ObjectMazeMap::init(MazeBuilder& maze, DrawableHolder rootWall, DrawableHolder lineWall, DrawableHolder cornerWall) 
 {
-	const int wallOffset = 3*2;
+	const int wallOffset = 4*2;
 
 	bool** v_walls;
 	bool** h_walls;
@@ -42,7 +42,8 @@ void ObjectMazeMap::init(MazeBuilder& maze, DrawableHolder rootWall, DrawableHol
 			{
 				if (h_walls[x][y] && v_walls[x][y])
 				{
-					m_map[x][y].model = rootWall;
+					m_map[x][y].model = cornerWall;
+					m_map[x][y].model.setRotation(-90, glm::vec3(0,1,0));
 					m_map[x][y].model.setPosition(glm::vec3(x * wallOffset, 0, y * wallOffset));
 					m_map[x][y].wt = Corner;
 					m_map[x][y].fw = { x * 3, y * 3, x * 3 + 3, y * 3 + 1 };
@@ -52,22 +53,28 @@ void ObjectMazeMap::init(MazeBuilder& maze, DrawableHolder rootWall, DrawableHol
 				{
 					if (h_walls[x][y])
 					{
-						m_map[x][y].model = rootWall;
-						m_map[x][y].model.setPosition(glm::vec3(x * wallOffset, 0, y * wallOffset));
+						m_map[x][y].model = lineWall;
+						m_map[x][y].model.setRotation(90, glm::vec3(0,1,0));
+						m_map[x][y].model.setPosition(glm::vec3(x * wallOffset+3, 0, y * wallOffset));
 						m_map[x][y].wt = Horizontal;
 						m_map[x][y].fw = { x * 3, y * 3, x * 3 + 3, y * 3 + 1 };
 					}
 					if (v_walls[x][y])
 					{
-						m_map[x][y].model = rootWall;
+						m_map[x][y].model = lineWall;
 						//m_map[x][y].model.setPosition(glm::vec3(x * 3 + 1, 0, y * 3));
-						m_map[x][y].model.setPosition(glm::vec3(x * wallOffset, 0, y * wallOffset));
+						m_map[x][y].model.setPosition(glm::vec3(x * wallOffset, 0, y * wallOffset+3));
 						m_map[x][y].wt = Vertical;
 						m_map[x][y].fw = { x * 3, y * 3, x * 3 + 1, y * 3 + 3 };
 					}
 				}
 			}
 		}
+}
+
+std::vector<std::vector<mazeObject>>& ObjectMazeMap::getMap() 
+{
+	return m_map;
 }
 
 ObjectMazeMap::ObjectMazeMap(MazeBuilder& maze, DrawableHolder rootWall, DrawableHolder lineWall, DrawableHolder cornerWall) 

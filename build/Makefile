@@ -979,6 +979,33 @@ src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s
 .PHONY : src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s
 
+src/game/player/player.obj: src/game/player/player.cpp.obj
+
+.PHONY : src/game/player/player.obj
+
+# target to build an object file
+src/game/player/player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj
+.PHONY : src/game/player/player.cpp.obj
+
+src/game/player/player.i: src/game/player/player.cpp.i
+
+.PHONY : src/game/player/player.i
+
+# target to preprocess a source file
+src/game/player/player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/player/player.cpp.i
+.PHONY : src/game/player/player.cpp.i
+
+src/game/player/player.s: src/game/player/player.cpp.s
+
+.PHONY : src/game/player/player.s
+
+# target to generate assembly for a file
+src/game/player/player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/player/player.cpp.s
+.PHONY : src/game/player/player.cpp.s
+
 src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.obj: src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.obj
 
 .PHONY : src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.obj
@@ -1032,6 +1059,33 @@ src/game/scenes/maze/maze.s: src/game/scenes/maze/maze.cpp.s
 src/game/scenes/maze/maze.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.s
 .PHONY : src/game/scenes/maze/maze.cpp.s
+
+src/game/scenes/maze/mazeGui.obj: src/game/scenes/maze/mazeGui.cpp.obj
+
+.PHONY : src/game/scenes/maze/mazeGui.obj
+
+# target to build an object file
+src/game/scenes/maze/mazeGui.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.obj
+.PHONY : src/game/scenes/maze/mazeGui.cpp.obj
+
+src/game/scenes/maze/mazeGui.i: src/game/scenes/maze/mazeGui.cpp.i
+
+.PHONY : src/game/scenes/maze/mazeGui.i
+
+# target to preprocess a source file
+src/game/scenes/maze/mazeGui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.i
+.PHONY : src/game/scenes/maze/mazeGui.cpp.i
+
+src/game/scenes/maze/mazeGui.s: src/game/scenes/maze/mazeGui.cpp.s
+
+.PHONY : src/game/scenes/maze/mazeGui.s
+
+# target to generate assembly for a file
+src/game/scenes/maze/mazeGui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.s
+.PHONY : src/game/scenes/maze/mazeGui.cpp.s
 
 src/game/scenes/menu/endlessWindow.obj: src/game/scenes/menu/endlessWindow.cpp.obj
 
@@ -1297,12 +1351,18 @@ help:
 	@echo ... src/game/maze_things/legacy/ObjectMazeBuilder.obj
 	@echo ... src/game/maze_things/legacy/ObjectMazeBuilder.i
 	@echo ... src/game/maze_things/legacy/ObjectMazeBuilder.s
+	@echo ... src/game/player/player.obj
+	@echo ... src/game/player/player.i
+	@echo ... src/game/player/player.s
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.obj
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.i
 	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.s
 	@echo ... src/game/scenes/maze/maze.obj
 	@echo ... src/game/scenes/maze/maze.i
 	@echo ... src/game/scenes/maze/maze.s
+	@echo ... src/game/scenes/maze/mazeGui.obj
+	@echo ... src/game/scenes/maze/mazeGui.i
+	@echo ... src/game/scenes/maze/mazeGui.s
 	@echo ... src/game/scenes/menu/endlessWindow.obj
 	@echo ... src/game/scenes/menu/endlessWindow.i
 	@echo ... src/game/scenes/menu/endlessWindow.s

@@ -12,9 +12,9 @@ void Drawable::updateModelMatrix()
 {
     if(!changed) return;
     model = glm::mat4{1.0};
-    model = glm::rotate(model, glm::radians(angle), rotation);
     model = glm::translate(model, position);
     model = glm::scale(model, scale);
+    model = glm::rotate(model, glm::radians(angle), rotation);
     changed = false;
 }
 

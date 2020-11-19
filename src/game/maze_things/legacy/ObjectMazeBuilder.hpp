@@ -33,7 +33,7 @@ public:
 	unsigned int width();
 	unsigned int height();
 	void init(MazeBuilder& maze, DrawableHolder rootWall, DrawableHolder lineWall, DrawableHolder cornerWall);
-
+	std::vector<std::vector<mazeObject>>& getMap();
 private:
 
 	std::vector<std::vector<mazeObject>> m_map;

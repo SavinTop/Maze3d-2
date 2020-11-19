@@ -17,6 +17,7 @@ void addRotation(float yaw, float pitch, bool constrainPitch = true);
 void setRotation(float yaw, float pitch);
 void setPos(glm::vec3 position);
 void setFront(glm::vec3 front);
+glm::vec3 getPos(){return position;}
 
 private:
     glm::vec3 position;

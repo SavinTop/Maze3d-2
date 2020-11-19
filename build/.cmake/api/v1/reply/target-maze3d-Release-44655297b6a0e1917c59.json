@@ -116,11 +116,13 @@
 				66,
 				68,
 				70,
-				71,
 				72,
 				74,
+				75,
 				76,
-				79
+				78,
+				80,
+				83
 			]
 		},
 		{
@@ -152,8 +154,8 @@
 			"language" : "C",
 			"sourceIndexes" : 
 			[
-				77,
-				78
+				81,
+				82
 			]
 		}
 	],
@@ -263,13 +265,15 @@
 				66,
 				68,
 				70,
-				71,
 				72,
 				74,
+				75,
 				76,
-				77,
 				78,
-				79
+				80,
+				81,
+				82,
+				83
 			]
 		},
 		{
@@ -315,8 +319,10 @@
 				65,
 				67,
 				69,
+				71,
 				73,
-				75
+				77,
+				79
 			]
 		}
 	],
@@ -684,6 +690,17 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "src/game/player/player.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/game/player/player.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -701,6 +718,17 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/game/scenes/maze/maze.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/game/scenes/maze/mazeGui.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/game/scenes/maze/mazeGui.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{

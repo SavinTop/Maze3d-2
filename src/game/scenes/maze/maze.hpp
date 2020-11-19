@@ -14,6 +14,8 @@
 #include "maze_things/legacy/MazeMapGenerator.hpp"
 #include "maze_things/legacy/ObjectMazeBuilder.hpp"
 #include "baseTypes/gui/gui.hpp"
+#include "player/player.hpp"
+#include "mazeGui.hpp"
 
 class mazeScene : public Scene{
     public:
@@ -27,9 +29,10 @@ class mazeScene : public Scene{
     private:
     std::shared_ptr<res::ogl::Model> lineWallModel;
     std::shared_ptr<res::ogl::Model> rootWallModel;
+    std::shared_ptr<res::ogl::Model> cornerWallModel;
     std::shared_ptr<res::ogl::ShaderProgram> program;
     std::shared_ptr<res::ogl::Texture> tempTexture;
-    Camera cam;
+    Player player;
 
     int window_w;
     int window_h;
@@ -37,5 +40,6 @@ class mazeScene : public Scene{
     MazeMapGenerator _mapGenerator;
     MazeBuilder maze;
     ObjectMazeMap omm;
-    Button tempButton;
+    std::shared_ptr<MazeGui> menu;
+
 };

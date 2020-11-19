@@ -146,6 +146,11 @@
 },
 {
   "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\player\\player.cpp.obj -c D:\\21\\Maze3d\\src\\game\\player\\player.cpp",
+  "file": "D:/21/Maze3d/src/game/player/player.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\loadingScenes\\startLoadingScene\\startLoadingScene.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\loadingScenes\\startLoadingScene\\startLoadingScene.cpp",
   "file": "D:/21/Maze3d/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp"
 },
@@ -153,6 +158,11 @@
   "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\maze\\maze.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\maze\\maze.cpp",
   "file": "D:/21/Maze3d/src/game/scenes/maze/maze.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\maze\\mazeGui.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\maze\\mazeGui.cpp",
+  "file": "D:/21/Maze3d/src/game/scenes/maze/mazeGui.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",
