@@ -5,7 +5,7 @@
 #include "baseTypes/color.hpp"
 #include "scenes/loadingScenes/startLoadingScene/startLoadingScene.hpp"
 
-const int maxFps = 200;
+const int maxFps = 120;
 const int PPS = 100;
 
 void GameProcess::SetCurrentScene(Scene* scene) 
@@ -46,7 +46,7 @@ void GameProcess::Start()
 
         double currDraw = glfwGetTime();
         if(currDraw-lastDraw>1.0f/maxFps){
-        glClearColor(0.0,0.0,0.5,1.0);
+        glClearColor(52.9/100,80.8/100,92.2/100,1.0);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         currentScene->onDraw(currDraw-lastDraw);
         lastDraw = currDraw;

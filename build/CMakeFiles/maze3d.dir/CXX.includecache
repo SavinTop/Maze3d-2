@@ -2022,6 +2022,10 @@ MazeBuilder.hpp
 render/drawableHolder.hpp
 ../src/game/maze_things/legacy/render/drawableHolder.hpp
 
+../src/game/maze_things/utils/collisionChecker.hpp
+glm/glm.hpp
+-
+
 ../src/game/player/player.hpp
 render/camera.hpp
 -
@@ -2061,6 +2065,8 @@ player/player.hpp
 D:/21/Maze3d/src/game/scenes/maze/player/player.hpp
 mazeGui.hpp
 D:/21/Maze3d/src/game/scenes/maze/mazeGui.hpp
+maze_things/utils/collisionChecker.hpp
+D:/21/Maze3d/src/game/scenes/maze/maze_things/utils/collisionChecker.hpp
 
 D:/21/Maze3d/src/game/scenes/maze/mazeGui.hpp
 baseTypes/gui/gui.hpp

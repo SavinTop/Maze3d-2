@@ -17,8 +17,11 @@ class GameProcess{
     ResourceManager* rm;
 
     private:
-        Scene* currentScene;
-        Scene* nextScene;
-        GLFWwindow* window;
+
+    void cursor_position_callback(GLFWwindow* w, double xpos, double ypos);
+
+    Scene* currentScene;
+    Scene* nextScene;
+    GLFWwindow* window;
         
 };

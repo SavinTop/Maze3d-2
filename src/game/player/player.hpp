@@ -13,6 +13,7 @@ public:
     Camera& getCamera();
     void setFixedZ(bool val);
     bool getFixedZ(){return fixedZ;}
+    void setPosition(glm::vec3 pos);
 private:
     Camera cam;
     bool fixedZ;

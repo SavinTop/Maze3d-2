@@ -28,6 +28,11 @@ void Player::setFixedZ(bool val)
     fixedZ = val;
 }
 
+void Player::setPosition(glm::vec3 pos) 
+{
+    cam.setPos(pos);
+}
+
 Player::Player(glm::vec3 position) 
 {
     fixedZ = false;

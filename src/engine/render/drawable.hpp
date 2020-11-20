@@ -21,6 +21,8 @@ public:
     void setScale(glm::vec3 scale);
 
     void addPosition(glm::vec3 offset);
+
+    glm::vec3 getPosition();
 protected:
     glm::vec3 position;
     glm::vec3 rotation;

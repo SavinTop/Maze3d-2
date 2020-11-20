@@ -48,6 +48,11 @@ void Drawable::addPosition(glm::vec3 offset)
     this->position+=offset;
 }
 
+glm::vec3 Drawable::getPosition() 
+{
+    return position;
+}
+
 Drawable::Drawable() 
 {
     model = glm::mat4(1.0);

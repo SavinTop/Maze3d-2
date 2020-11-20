@@ -16,6 +16,7 @@
 #include "baseTypes/gui/gui.hpp"
 #include "player/player.hpp"
 #include "mazeGui.hpp"
+#include "maze_things/utils/collisionChecker.hpp"
 
 class mazeScene : public Scene{
     public:
@@ -27,6 +28,8 @@ class mazeScene : public Scene{
     ResourcePack getResources() override;
     void initResources() override;
     private:
+    mazeObject* checkCollision(ObjectMazeMap& omm, glm::ivec2 sector, glm::vec4 playerRect);
+
     std::shared_ptr<res::ogl::Model> lineWallModel;
     std::shared_ptr<res::ogl::Model> rootWallModel;
     std::shared_ptr<res::ogl::Model> cornerWallModel;

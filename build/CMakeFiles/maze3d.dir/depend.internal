@@ -3983,6 +3983,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadi
  ../src/game/maze_things/legacy/MazeBuilder.hpp
  ../src/game/maze_things/legacy/MazeMapGenerator.hpp
  ../src/game/maze_things/legacy/ObjectMazeBuilder.hpp
+ ../src/game/maze_things/utils/collisionChecker.hpp
  ../src/game/player/player.hpp
  ../src/game/scenes/maze/maze.hpp
  ../src/game/scenes/maze/mazeGui.hpp
@@ -4260,6 +4261,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj
  ../src/game/maze_things/legacy/MazeBuilder.hpp
  ../src/game/maze_things/legacy/MazeMapGenerator.hpp
  ../src/game/maze_things/legacy/ObjectMazeBuilder.hpp
+ ../src/game/maze_things/utils/collisionChecker.hpp
  ../src/game/player/player.hpp
  D:/21/Maze3d/src/game/scenes/maze/maze.cpp
  D:/21/Maze3d/src/game/scenes/maze/maze.hpp
@@ -5323,6 +5325,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj
  ../src/game/maze_things/legacy/MazeBuilder.hpp
  ../src/game/maze_things/legacy/MazeMapGenerator.hpp
  ../src/game/maze_things/legacy/ObjectMazeBuilder.hpp
+ ../src/game/maze_things/utils/collisionChecker.hpp
  ../src/game/player/player.hpp
  ../src/game/scenes/maze/maze.hpp
  ../src/game/scenes/maze/mazeGui.hpp
