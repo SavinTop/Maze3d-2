@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.obj"
+  "CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.obj"
+  "CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj"

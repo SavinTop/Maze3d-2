@@ -27,6 +27,7 @@ class mazeScene : public Scene{
     void physTick(float delta) override;
     ResourcePack getResources() override;
     void initResources() override;
+    void mouseMove(double xpos, double ypos) override;
     private:
     mazeObject* checkCollision(ObjectMazeMap& omm, glm::ivec2 sector, glm::vec4 playerRect);
 
@@ -35,6 +36,10 @@ class mazeScene : public Scene{
     std::shared_ptr<res::ogl::Model> cornerWallModel;
     std::shared_ptr<res::ogl::ShaderProgram> program;
     std::shared_ptr<res::ogl::Texture> tempTexture;
+
+    std::shared_ptr<res::ogl::CubemapTexture> cmt;
+    std::shared_ptr<res::ogl::ShaderProgram> skyboxProgram;
+    std::shared_ptr<res::ogl::CubemapModel> cmo;
     Player player;
 
     int window_w;
@@ -45,4 +50,5 @@ class mazeScene : public Scene{
     ObjectMazeMap omm;
     std::shared_ptr<MazeGui> menu;
 
+    float lastMouseInput;
 };

@@ -628,6 +628,60 @@ src/engine/baseTypes/resources/external/model.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.s
 .PHONY : src/engine/baseTypes/resources/external/model.cpp.s
 
+src/engine/baseTypes/resources/internal/OGL/cubemapModel.obj: src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.obj
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/cubemapModel.obj
+
+# target to build an object file
+src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.obj
+.PHONY : src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.obj
+
+src/engine/baseTypes/resources/internal/OGL/cubemapModel.i: src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.i
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/cubemapModel.i
+
+# target to preprocess a source file
+src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.i
+.PHONY : src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.i
+
+src/engine/baseTypes/resources/internal/OGL/cubemapModel.s: src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.s
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/cubemapModel.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.s
+.PHONY : src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.s
+
+src/engine/baseTypes/resources/internal/OGL/cubemapTexture.obj: src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.obj
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/cubemapTexture.obj
+
+# target to build an object file
+src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.obj
+.PHONY : src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.obj
+
+src/engine/baseTypes/resources/internal/OGL/cubemapTexture.i: src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.i
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/cubemapTexture.i
+
+# target to preprocess a source file
+src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.i
+.PHONY : src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.i
+
+src/engine/baseTypes/resources/internal/OGL/cubemapTexture.s: src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.s
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/cubemapTexture.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.s
+.PHONY : src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.s
+
 src/engine/baseTypes/resources/internal/OGL/mesh.obj: src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj
 
 .PHONY : src/engine/baseTypes/resources/internal/OGL/mesh.obj
@@ -1312,6 +1366,12 @@ help:
 	@echo ... src/engine/baseTypes/resources/external/model.obj
 	@echo ... src/engine/baseTypes/resources/external/model.i
 	@echo ... src/engine/baseTypes/resources/external/model.s
+	@echo ... src/engine/baseTypes/resources/internal/OGL/cubemapModel.obj
+	@echo ... src/engine/baseTypes/resources/internal/OGL/cubemapModel.i
+	@echo ... src/engine/baseTypes/resources/internal/OGL/cubemapModel.s
+	@echo ... src/engine/baseTypes/resources/internal/OGL/cubemapTexture.obj
+	@echo ... src/engine/baseTypes/resources/internal/OGL/cubemapTexture.i
+	@echo ... src/engine/baseTypes/resources/internal/OGL/cubemapTexture.s
 	@echo ... src/engine/baseTypes/resources/internal/OGL/mesh.obj
 	@echo ... src/engine/baseTypes/resources/internal/OGL/mesh.i
 	@echo ... src/engine/baseTypes/resources/internal/OGL/mesh.s

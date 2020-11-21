@@ -8,6 +8,7 @@
 
 class GameProcess{
     public:
+    GameProcess(){};
     GameProcess(GLFWwindow* wnd);
     void SetCurrentScene(Scene* scene);
     void ChangeScene(Scene* scene);
@@ -16,9 +17,9 @@ class GameProcess{
     GLFWwindow* getWnd();
     ResourceManager* rm;
 
-    private:
+    void cursor_position_callback(double xpos, double ypos);
 
-    void cursor_position_callback(GLFWwindow* w, double xpos, double ypos);
+    private:
 
     Scene* currentScene;
     Scene* nextScene;

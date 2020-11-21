@@ -15,6 +15,7 @@ virtual void onDraw(float delta) = 0;
 virtual void physTick(float delta){};
 virtual ResourcePack getResources() = 0;
 virtual void initResources() = 0;
+virtual void mouseMove(double xpos, double ypos){};
 std::string& getName(){return sceneName;};
 protected:
     GameProcess* proc;

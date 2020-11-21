@@ -6,9 +6,26 @@
 #include "game/gameprocess.hpp"
 #include "baseTypes/gui/gui.hpp"  
 
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
-const bool fullScreen = false;
+static GameProcess game;
+
+static const unsigned int SCR_WIDTH = 800;
+static const unsigned int SCR_HEIGHT = 600;
+static const bool fullScreen = true;
+
+static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+	
+}
+
+static void character_callback(GLFWwindow* window, unsigned int codepoint)
+{
+	
+}
+
+static void cursor_position_callback(GLFWwindow* window, double xpos, double ypos)
+{
+	game.cursor_position_callback(xpos,ypos);
+}
 
 int main()
 {
@@ -37,6 +54,10 @@ int main()
     }
     glfwMakeContextCurrent(window);
 
+    glfwSetKeyCallback(window, key_callback);
+	glfwSetCursorPosCallback(window, cursor_position_callback);
+	//glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+	glfwSetCharCallback(window, character_callback);
     glfwSwapInterval(0);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -53,7 +74,8 @@ int main()
 
     init_justRect();
 
-    GameProcess game{window};
+    game = GameProcess(window);
+    game.Init();
     game.Start();
     
     glfwTerminate();

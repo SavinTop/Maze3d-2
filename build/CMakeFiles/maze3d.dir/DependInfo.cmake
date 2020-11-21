@@ -35,6 +35,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/engine/baseTypes/resources/external/Image.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/external/TextFile.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/external/model.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.obj"
+  "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.obj"
+  "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/mesh.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/model.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.obj"
   "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/shader.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj"

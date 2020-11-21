@@ -81,6 +81,16 @@
 },
 {
   "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\cubemapModel.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\cubemapModel.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\cubemapTexture.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\cubemapTexture.cpp",
+  "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\engine\\baseTypes\\resources\\internal\\OGL\\mesh.cpp.obj -c D:\\21\\Maze3d\\src\\engine\\baseTypes\\resources\\internal\\OGL\\mesh.cpp",
   "file": "D:/21/Maze3d/src/engine/baseTypes/resources/internal/OGL/mesh.cpp"
 },

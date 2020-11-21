@@ -7,6 +7,7 @@
 
 const int maxFps = 120;
 const int PPS = 100;
+const int UPS = 120;
 
 void GameProcess::SetCurrentScene(Scene* scene) 
 {
@@ -23,7 +24,17 @@ void GameProcess::ChangeScene(Scene* scene)
 
 void GameProcess::Init() 
 {
-    
+    rm = new ResourceManager();
+    currentScene = new StartLoadingScene(this);
+    currentScene->initResources();
+    auto temp = currentScene->getResources();
+    for(auto& el:temp.getRes())
+    {
+        el->subResources_.load();
+        el->load();
+    }
+    currentScene->start();
+    nextScene = nullptr;
 }
 
 void GameProcess::Start() 
@@ -34,9 +45,10 @@ void GameProcess::Start()
     while (!glfwWindowShouldClose(window))
     {
         double currUpdate = glfwGetTime();
-        
+        if(currUpdate-lastUpdate>1.0f/UPS){
         currentScene->update(currUpdate-lastUpdate);
         lastUpdate = currUpdate;
+        }
 
         double currPhys = glfwGetTime();
         if(currPhys-lastPhys>1.0f/PPS){
@@ -46,7 +58,7 @@ void GameProcess::Start()
 
         double currDraw = glfwGetTime();
         if(currDraw-lastDraw>1.0f/maxFps){
-        glClearColor(52.9/100,80.8/100,92.2/100,1.0);
+        glClearColor(0.5,0.8,0.9,1.0);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         currentScene->onDraw(currDraw-lastDraw);
         lastDraw = currDraw;
@@ -66,18 +78,14 @@ GLFWwindow* GameProcess::getWnd()
     return window;
 }
 
+void GameProcess::cursor_position_callback(double xpos, double ypos) 
+{
+    if(currentScene)
+        currentScene->mouseMove(xpos,ypos);
+}
+
 GameProcess::GameProcess(GLFWwindow* wnd) 
 : window(wnd)
 {
-    rm = new ResourceManager();
-    currentScene = new StartLoadingScene(this);
-    currentScene->initResources();
-    auto temp = currentScene->getResources();
-    for(auto& el:temp.getRes())
-    {
-        el->subResources_.load();
-        el->load();
-    }
-    currentScene->start();
-    nextScene = nullptr;
+    
 }

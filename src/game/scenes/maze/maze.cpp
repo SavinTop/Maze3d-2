@@ -23,6 +23,7 @@ void mazeScene::onDraw(float delta)
     program->bind();
     unsigned viewId = program->getUniformLocation("view");
     unsigned projectionId = program->getUniformLocation("projection");
+    unsigned lightId = program->getUniformLocation("lightPos");
     glm::mat4 view = glm::mat4(1.0f);
     view = player.getCamera().getViewMatrix();
     glm::mat4 projection(1);
@@ -37,27 +38,32 @@ void mazeScene::onDraw(float delta)
 
     auto playerPos = player.getCamera().getPos()/8.0f;
 
+    glm::vec3 sunPos{0,30,0};
+
+    glUniform3fv(lightId, 1,  glm::value_ptr(sunPos));
+
     for(int i=playerPos.z-5;i<=playerPos.z+5;i++)
         for(int j=playerPos.x-5;j<=playerPos.x+5;j++)
             if(auto t = omm.get(j,i))
                 t->model.draw(program->getProgram());
 
-    menu->draw();
+    glDepthFunc(GL_LEQUAL);
+    skyboxProgram->bind();
+    glUniform1i(skyboxProgram->getUniformLocation("skybox"), 0);
+    viewId = skyboxProgram->getUniformLocation("view");
+    projectionId = skyboxProgram->getUniformLocation("projection");
+    view = glm::mat4(glm::mat3(player.getCamera().getViewMatrix()));
+    glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
+    glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
+    cmo->draw(skyboxProgram->getProgram());
+    glDepthFunc(GL_LESS);
+    //menu->draw();
     CheckGLError();
 }
 
 void mazeScene::physTick(float delta) 
 {
     const float collBox = 0.2;
-
-    double xpos, ypos;
-    glfwGetCursorPos(proc->getWnd(), &xpos, &ypos);
-
-    glm::vec2 mouseInputOffsets{-(window_w/2.0f-xpos)*delta*10, (window_h/2.0f-ypos)*delta*10};
-
-    player.mouseOffsetInput(mouseInputOffsets.x, mouseInputOffsets.y);
-
-    glfwSetCursorPos(proc->getWnd(), window_w/2.0f, window_h/2.0f);
 
     glm::vec3 lastPlayerPos = player.getCamera().getPos();
 
@@ -90,11 +96,9 @@ void mazeScene::physTick(float delta)
         auto ty = checkCollision(omm, sector, getPointCollBox(fixedY));
         if(!tx || ty){
             tempPos.x = fixedX.x; 
-            std::cout<<"x fixed\n";
         }
         if(!ty || tx){
             tempPos.z = fixedY.z;
-            std::cout<<"y fixed\n";
         }
         
         player.setPosition(tempPos);
@@ -105,7 +109,7 @@ ResourcePack mazeScene::getResources()
 {
     ResourcePack temp;
     temp.setResources(menu->getResources().getRes());
-    temp.getRes().assign({cornerWallModel.get(), rootWallModel.get(),lineWallModel.get(), program.get()});
+    temp.getRes().assign({cornerWallModel.get(), rootWallModel.get(),lineWallModel.get(), program.get(), cmt.get(), skyboxProgram.get(), cmo.get()});
     return temp;
 }
 
@@ -116,6 +120,23 @@ void mazeScene::initResources()
     rootWallModel = rm->createResource(res::ogl::Model("data\\models\\oneUnitWall.obj"), sceneName, "rootWallModel");
     lineWallModel = rm->createResource(res::ogl::Model("data\\models\\threeUnitWall.obj"), sceneName, "lineWallModel");
     program = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\basic\\shader.vert", "data\\shaders\\basic\\shader.frag", "basicShader"), sceneName);
+    cmt = rm->createResource(res::ogl::CubemapTexture({
+        "data\\skybox\\right.jpg",
+        "data\\skybox\\left.jpg",
+        "data\\skybox\\top.jpg",
+        "data\\skybox\\bottom.jpg",
+        "data\\skybox\\front.jpg",
+        "data\\skybox\\back.jpg",
+    }), sceneName, "skyboxTexture");
+    skyboxProgram = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\skybox\\skybox.vert", "data\\shaders\\skybox\\skybox.frag", "skyboxShader"), sceneName);
+    cmo = rm->createResource(res::ogl::CubemapModel(cmt), sceneName);
+}
+
+void mazeScene::mouseMove(double xpos, double ypos) 
+{
+    const float SENSITIVTY = 0.07f;
+    glfwSetCursorPos(proc->getWnd(), window_w / 2, window_h / 2);
+	player.mouseOffsetInput((xpos  - window_w / 2.0f)*SENSITIVTY, (window_h / 2.0f - ypos)*SENSITIVTY);
 }
 
 mazeObject* mazeScene::checkCollision(ObjectMazeMap& omm, glm::ivec2 sector, glm::vec4 playerRect) 
@@ -144,4 +165,6 @@ Scene(proc), maze(10,10)
 {
     sceneName = "maze_scene";
     glfwGetWindowSize(proc->getWnd(), &window_w, &window_h);
+    lastMouseInput = glfwGetTime();
+    glfwSetInputMode(proc->getWnd(), GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 }
