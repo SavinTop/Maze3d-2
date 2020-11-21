@@ -17,7 +17,6 @@ void Mesh::draw(oglw::Shader& program){
     unsigned int specularNr = 1;
     for(unsigned int i = 0; i < mesh.textures.size(); i++)
     {
-        glActiveTexture(GL_TEXTURE0+i);
         if(!mesh.textures[i].get()) continue;
         std::string number;
         std::string name;
@@ -32,10 +31,19 @@ void Mesh::draw(oglw::Shader& program){
             number = std::to_string(specularNr++);
             name = "texture_specular";
         }
+        else if(mesh.textures[i]->getType() == TextureType::Normal)
+        {
+            number = std::to_string(specularNr++);
+            name = "texture_normal";
+        }
         
         int id = program.getUniformLocation((name + number));
-        glUniform1i(id, i);
-        mesh.textures[i]->bind(i);
+        if(id>0)
+        {
+            glUniform1i(id, i);
+            mesh.textures[i]->bind(i);
+        }
+        
     }
 
     glActiveTexture(GL_TEXTURE0);
@@ -79,6 +87,12 @@ void Mesh::load(){
     
     glEnableVertexAttribArray(2);	
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Containers::Vertex), (void*)offsetof(Containers::Vertex, texCoords));
+
+    glEnableVertexAttribArray(3);	
+    glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, sizeof(Containers::Vertex), (void*)offsetof(Containers::Vertex, Tangent));
+    
+    glEnableVertexAttribArray(4);	
+    glVertexAttribPointer(4, 3, GL_FLOAT, GL_FALSE, sizeof(Containers::Vertex), (void*)offsetof(Containers::Vertex, Bitangent));
 
     glBindVertexArray(0);
     

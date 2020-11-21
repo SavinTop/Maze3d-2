@@ -81,6 +81,17 @@ Containers::Mesh Model::processMesh(aiMesh *mesh, const aiScene *scene)
             vertex.normal = vector;
         }
 
+        if(mesh->HasTangentsAndBitangents()){
+            vector.x = mesh->mBitangents[i].x;
+            vector.y = mesh->mBitangents[i].y;
+            vector.z = mesh->mBitangents[i].z;
+            vertex.Bitangent = vector;
+            vector.x = mesh->mTangents[i].x;
+            vector.y = mesh->mTangents[i].y;
+            vector.z = mesh->mTangents[i].z;
+            vertex.Tangent = vector;
+        }
+
         if(mesh->mTextureCoords[0]){
             glm::vec2 vec;
             vec.x = mesh->mTextureCoords[0][i].x;

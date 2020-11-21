@@ -31,21 +31,26 @@ void mazeScene::onDraw(float delta)
     glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
 
-    // for(int i=0;i<omm.height();i++)
-    //     for(int j=0;j<omm.width();j++)
-    //         if(auto t = omm.get(j,i))
-    //             t->model.draw(program->getProgram());
-
     auto playerPos = player.getCamera().getPos()/8.0f;
 
     glm::vec3 sunPos{0,30,0};
 
-    glUniform3fv(lightId, 1,  glm::value_ptr(sunPos));
+    //glUniform3fv(lightId, 1,  glm::value_ptr(sunPos));
+    glUniform3fv(lightId, 1,  glm::value_ptr(player.getCamera().getPos()));
+    
+    glUniform3fv(program->getUniformLocation("viewPos"), 1, glm::value_ptr(player.getCamera().getPos()));
 
-    for(int i=playerPos.z-5;i<=playerPos.z+5;i++)
-        for(int j=playerPos.x-5;j<=playerPos.x+5;j++)
+    for(int i=0;i<omm.height();i++)
+        for(int j=0;j<omm.width();j++)
             if(auto t = omm.get(j,i))
                 t->model.draw(program->getProgram());
+
+    
+
+    // for(int i=playerPos.z-5;i<=playerPos.z+5;i++)
+    //     for(int j=playerPos.x-5;j<=playerPos.x+5;j++)
+    //         if(auto t = omm.get(j,i))
+    //             t->model.draw(program->getProgram());
 
     glDepthFunc(GL_LEQUAL);
     skyboxProgram->bind();
@@ -109,7 +114,8 @@ ResourcePack mazeScene::getResources()
 {
     ResourcePack temp;
     temp.setResources(menu->getResources().getRes());
-    temp.getRes().assign({cornerWallModel.get(), rootWallModel.get(),lineWallModel.get(), program.get(), cmt.get(), skyboxProgram.get(), cmo.get()});
+    temp.getRes().assign({cornerWallModel.get(), rootWallModel.get(),
+    lineWallModel.get(), program.get(), cmt.get(), skyboxProgram.get(), cmo.get()});
     return temp;
 }
 
@@ -161,7 +167,7 @@ mazeObject* mazeScene::checkCollision(ObjectMazeMap& omm, glm::ivec2 sector, glm
 }
 
 mazeScene::mazeScene(GameProcess* proc) : 
-Scene(proc), maze(10,10)
+Scene(proc), maze(5,5)
 {
     sceneName = "maze_scene";
     glfwGetWindowSize(proc->getWnd(), &window_w, &window_h);

@@ -14,10 +14,12 @@ struct Vertex{
     glm::vec3 Tangent;
     glm::vec3 Bitangent;
     Vertex(){}
-    Vertex(const glm::vec3& pos, const glm::vec3& normal, const glm::vec2& texCoords){
+    Vertex(const glm::vec3& pos, const glm::vec3& normal, const glm::vec2& texCoords, glm::vec3& Tangent, glm::vec3& Bitangent){
         this->pos = pos;
         this->normal = normal;
         this->texCoords = texCoords;
+        this->Tangent = Tangent;
+        this->Bitangent = Bitangent;
     }
 };
 

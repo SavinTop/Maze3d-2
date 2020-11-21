@@ -35,7 +35,7 @@ class mazeScene : public Scene{
     std::shared_ptr<res::ogl::Model> rootWallModel;
     std::shared_ptr<res::ogl::Model> cornerWallModel;
     std::shared_ptr<res::ogl::ShaderProgram> program;
-    std::shared_ptr<res::ogl::Texture> tempTexture;
+    std::shared_ptr<res::ogl::Texture> testNormalMap;
 
     std::shared_ptr<res::ogl::CubemapTexture> cmt;
     std::shared_ptr<res::ogl::ShaderProgram> skyboxProgram;
