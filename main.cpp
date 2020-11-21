@@ -74,6 +74,11 @@ int main()
 
     init_justRect();
 
+    int window_w, window_h;
+    glfwGetWindowSize(window, &window_w, &window_h);
+    guiText_init(0,glm::min(window_h,window_w)*0.2,"data\\fonts\\steelfis.ttf");
+    guiText_loadRangeOfCharacters(0,200);
+
     game = GameProcess(window);
     game.Init();
     game.Start();

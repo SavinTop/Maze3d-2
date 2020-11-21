@@ -72,14 +72,19 @@ void mazeScene::physTick(float delta)
 
     glm::vec3 lastPlayerPos = player.getCamera().getPos();
 
+    float playerSpeed = 10;
+
+    if(glfwGetKey(proc->getWnd(), GLFW_KEY_LEFT_SHIFT)==GLFW_PRESS)
+        playerSpeed*=2;
+
     if(glfwGetKey(proc->getWnd(), GLFW_KEY_W)==GLFW_PRESS)
-        player.moveStraight(delta*10);
+        player.moveStraight(delta*playerSpeed);
     if(glfwGetKey(proc->getWnd(), GLFW_KEY_S)==GLFW_PRESS)
-        player.moveStraight(-delta*10);
+        player.moveStraight(-delta*playerSpeed);
     if(glfwGetKey(proc->getWnd(), GLFW_KEY_D)==GLFW_PRESS)
-        player.moveSideways(delta*10);
+        player.moveSideways(delta*playerSpeed);
     if(glfwGetKey(proc->getWnd(), GLFW_KEY_A)==GLFW_PRESS)
-        player.moveSideways(-delta*10);
+        player.moveSideways(-delta*playerSpeed);
 
     if(glfwGetKey(proc->getWnd(), GLFW_KEY_F)==GLFW_PRESS)
         player.setFixedZ(!player.getFixedZ());
@@ -135,7 +140,7 @@ void mazeScene::initResources()
         "data\\skybox\\back.jpg",
     }), sceneName, "skyboxTexture");
     skyboxProgram = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\skybox\\skybox.vert", "data\\shaders\\skybox\\skybox.frag", "skyboxShader"), sceneName);
-    cmo = rm->createResource(res::ogl::CubemapModel(cmt), sceneName);
+    cmo = rm->createResource(res::ogl::CubemapModel(cmt), sceneName, "Skybox model");
 }
 
 void mazeScene::mouseMove(double xpos, double ypos) 
@@ -167,10 +172,9 @@ mazeObject* mazeScene::checkCollision(ObjectMazeMap& omm, glm::ivec2 sector, glm
 }
 
 mazeScene::mazeScene(GameProcess* proc) : 
-Scene(proc), maze(5,5)
+Scene(proc), maze(10,10)
 {
     sceneName = "maze_scene";
     glfwGetWindowSize(proc->getWnd(), &window_w, &window_h);
-    lastMouseInput = glfwGetTime();
     glfwSetInputMode(proc->getWnd(), GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 }

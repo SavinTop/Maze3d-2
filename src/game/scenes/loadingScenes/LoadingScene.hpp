@@ -1,8 +1,7 @@
 #pragma once
 
-
+#include "baseTypes/scene.hpp"
 #include "baseTypes/resources/internal/OGL/glresources.hpp"
-#include "gameprocess.hpp"
 #include "baseTypes/color.hpp"
 #include <iostream>
 #include <vector>
@@ -13,12 +12,13 @@
 
 //TODO temp
 #include "baseTypes/gui/basicTextRender.hpp"
+#include "baseTypes/gui/gui.hpp"
 
-class Menu;
+class GameProcess;
 
-class StartLoadingScene : public Scene{
+class LoadingScene : public Scene{
 public:
-StartLoadingScene(GameProcess* proc);
+LoadingScene(GameProcess* proc, Scene* nextScene);
 void start() override;
 void update(float delta) override;
 void onDraw(float delta) override;
@@ -26,8 +26,15 @@ ResourcePack getResources() override;
 void initResources() override;
 private:
 std::shared_ptr<res::ogl::ShaderProgram> loadingShader;
-Menu* nextScene;
+Scene* nextScene;
 std::vector<Resource*> resourcesToLoad;
-res::ogl::Texture testTexture;
+
+LoadingBar lb;
+FullscreenBox fsb;
+Label lbl;
+
+int window_w;
+int window_h;
+
 unsigned currentIndex;
 };

@@ -39,7 +39,7 @@ int Label::calculateWidth()
 }
 
 int Label::calculateHeight() 
-{   
+{   if(textCharacters.empty()) return 0;
     return (*std::max_element(textCharacters.begin(), textCharacters.end(),[](Character el1, Character el2){return el1.Size.y<el2.Size.y;})).Size.y;
 }
 

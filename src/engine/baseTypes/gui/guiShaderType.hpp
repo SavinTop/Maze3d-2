@@ -1,5 +1,5 @@
 #pragma once
 
 enum class guiShaderType{
-    textureShader, textShader, Nope
+    textureShader, textShader, justColorShader , COUNT
 };

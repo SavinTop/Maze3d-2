@@ -5,3 +5,4 @@
 #include "button.hpp"
 #include "guiWindow.hpp"
 #include "label.hpp"
+#include "loadingBar.hpp"

@@ -2,7 +2,6 @@
 
 #include "baseTypes/scene.hpp"
 #include "baseTypes/resources/internal/OGL/glresources.hpp"
-#include "gameprocess.hpp"
 #include "baseTypes/color.hpp"
 #include <iostream>
 #include <vector>
@@ -19,6 +18,9 @@
 #include "baseTypes/gui/basicTextRender.hpp"
 
 #include "game/scenes/maze/maze.hpp"
+#include "scenes/loadingScenes/LoadingScene.hpp"
+
+class GameProcess;
 
 class Menu : public Scene{
 public:

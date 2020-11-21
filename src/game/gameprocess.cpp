@@ -3,7 +3,8 @@
 #include "baseTypes/resources/external/Image.hpp"
 #include "baseTypes/containers/Image.hpp"
 #include "baseTypes/color.hpp"
-#include "scenes/loadingScenes/startLoadingScene/startLoadingScene.hpp"
+#include "scenes/loadingScenes/LoadingScene.hpp"
+#include "scenes/menu/menu.hpp"
 
 const int maxFps = 120;
 const int PPS = 100;
@@ -25,7 +26,7 @@ void GameProcess::ChangeScene(Scene* scene)
 void GameProcess::Init() 
 {
     rm = new ResourceManager();
-    currentScene = new StartLoadingScene(this);
+    currentScene = new LoadingScene(this, new Menu(this));
     currentScene->initResources();
     auto temp = currentScene->getResources();
     for(auto& el:temp.getRes())
@@ -58,7 +59,6 @@ void GameProcess::Start()
 
         double currDraw = glfwGetTime();
         if(currDraw-lastDraw>1.0f/maxFps){
-        glClearColor(0.5,0.8,0.9,1.0);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         currentScene->onDraw(currDraw-lastDraw);
         lastDraw = currDraw;

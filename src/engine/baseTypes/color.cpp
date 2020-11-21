@@ -13,6 +13,7 @@ namespace Color{
             this->b = b;
             this->a = a;
         }
+
     };
 
     ColorStruct fromInt(int32_t color){
@@ -27,4 +28,13 @@ namespace Color{
     int32_t rgba(const ColorStruct& clr){
         return *((int32_t*)&clr);
     };
+    
+    glm::vec4 getOglColor(int32_t color) 
+    {
+        float R = ((unsigned char*)&color)[0] / 255.0f;
+        float G = ((unsigned char*)&color)[1] / 255.0f;
+        float B = ((unsigned char*)&color)[2] / 255.0f;
+        float A = ((unsigned char*)&color)[3] / 255.0f;
+        return glm::vec4(R,G,B,A);
+    }
 }

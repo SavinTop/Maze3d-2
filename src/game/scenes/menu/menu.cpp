@@ -2,8 +2,6 @@
 
 void Menu::start() 
 {
-    guiText_init(0,glm::min(window_h,window_w)*0.2,"data\\fonts\\steelfis.ttf");
-    guiText_loadRangeOfCharacters(0,129);
     menu->start();
     menu->setExitButtonClickCallBack(std::bind(&Menu::exitClicked, this));
 }
@@ -46,15 +44,15 @@ void Menu::initResources()
 void Menu::exitClicked() 
 {
     //glfwSetWindowShouldClose(proc->getWnd(), true);
-    auto temp = new mazeScene(proc);
-    temp->initResources();
-    auto tempVec = temp->getResources();
-    for(auto& el:tempVec.getRes())
+    auto next = new LoadingScene(proc, new mazeScene(proc));
+    next->initResources();
+    auto temp = next->getResources();
+    for(auto& el:temp.getRes())
     {
         el->subResources_.load();
         el->load();
     }
-    proc->ChangeScene(temp);
+    proc->ChangeScene(next);
 }
 
 

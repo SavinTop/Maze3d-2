@@ -466,6 +466,33 @@ src/engine/baseTypes/gui/label.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.s
 .PHONY : src/engine/baseTypes/gui/label.cpp.s
 
+src/engine/baseTypes/gui/loadingBar.obj: src/engine/baseTypes/gui/loadingBar.cpp.obj
+
+.PHONY : src/engine/baseTypes/gui/loadingBar.obj
+
+# target to build an object file
+src/engine/baseTypes/gui/loadingBar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/loadingBar.cpp.obj
+.PHONY : src/engine/baseTypes/gui/loadingBar.cpp.obj
+
+src/engine/baseTypes/gui/loadingBar.i: src/engine/baseTypes/gui/loadingBar.cpp.i
+
+.PHONY : src/engine/baseTypes/gui/loadingBar.i
+
+# target to preprocess a source file
+src/engine/baseTypes/gui/loadingBar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/loadingBar.cpp.i
+.PHONY : src/engine/baseTypes/gui/loadingBar.cpp.i
+
+src/engine/baseTypes/gui/loadingBar.s: src/engine/baseTypes/gui/loadingBar.cpp.s
+
+.PHONY : src/engine/baseTypes/gui/loadingBar.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/gui/loadingBar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/loadingBar.cpp.s
+.PHONY : src/engine/baseTypes/gui/loadingBar.cpp.s
+
 src/engine/baseTypes/oglWrappers/shader.obj: src/engine/baseTypes/oglWrappers/shader.cpp.obj
 
 .PHONY : src/engine/baseTypes/oglWrappers/shader.obj
@@ -1060,32 +1087,32 @@ src/game/player/player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/player/player.cpp.s
 .PHONY : src/game/player/player.cpp.s
 
-src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.obj: src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.obj
+src/game/scenes/loadingScenes/LoadingScene.obj: src/game/scenes/loadingScenes/LoadingScene.cpp.obj
 
-.PHONY : src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.obj
+.PHONY : src/game/scenes/loadingScenes/LoadingScene.obj
 
 # target to build an object file
-src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.obj
-.PHONY : src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.obj
+src/game/scenes/loadingScenes/LoadingScene.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj
+.PHONY : src/game/scenes/loadingScenes/LoadingScene.cpp.obj
 
-src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.i: src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.i
+src/game/scenes/loadingScenes/LoadingScene.i: src/game/scenes/loadingScenes/LoadingScene.cpp.i
 
-.PHONY : src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.i
+.PHONY : src/game/scenes/loadingScenes/LoadingScene.i
 
 # target to preprocess a source file
-src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.i
-.PHONY : src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.i
+src/game/scenes/loadingScenes/LoadingScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.i
+.PHONY : src/game/scenes/loadingScenes/LoadingScene.cpp.i
 
-src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.s: src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s
+src/game/scenes/loadingScenes/LoadingScene.s: src/game/scenes/loadingScenes/LoadingScene.cpp.s
 
-.PHONY : src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.s
+.PHONY : src/game/scenes/loadingScenes/LoadingScene.s
 
 # target to generate assembly for a file
-src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s
-.PHONY : src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.cpp.s
+src/game/scenes/loadingScenes/LoadingScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.s
+.PHONY : src/game/scenes/loadingScenes/LoadingScene.cpp.s
 
 src/game/scenes/maze/maze.obj: src/game/scenes/maze/maze.cpp.obj
 
@@ -1348,6 +1375,9 @@ help:
 	@echo ... src/engine/baseTypes/gui/label.obj
 	@echo ... src/engine/baseTypes/gui/label.i
 	@echo ... src/engine/baseTypes/gui/label.s
+	@echo ... src/engine/baseTypes/gui/loadingBar.obj
+	@echo ... src/engine/baseTypes/gui/loadingBar.i
+	@echo ... src/engine/baseTypes/gui/loadingBar.s
 	@echo ... src/engine/baseTypes/oglWrappers/shader.obj
 	@echo ... src/engine/baseTypes/oglWrappers/shader.i
 	@echo ... src/engine/baseTypes/oglWrappers/shader.s
@@ -1414,9 +1444,9 @@ help:
 	@echo ... src/game/player/player.obj
 	@echo ... src/game/player/player.i
 	@echo ... src/game/player/player.s
-	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.obj
-	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.i
-	@echo ... src/game/scenes/loadingScenes/startLoadingScene/startLoadingScene.s
+	@echo ... src/game/scenes/loadingScenes/LoadingScene.obj
+	@echo ... src/game/scenes/loadingScenes/LoadingScene.i
+	@echo ... src/game/scenes/loadingScenes/LoadingScene.s
 	@echo ... src/game/scenes/maze/maze.obj
 	@echo ... src/game/scenes/maze/maze.i
 	@echo ... src/game/scenes/maze/maze.s
