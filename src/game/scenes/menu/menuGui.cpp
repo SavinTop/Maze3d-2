@@ -2,12 +2,12 @@
 
 void MenuGui::load()
 {
-    r_pack.load();
+    
 }
 
 void MenuGui::unload()
 {
-    r_pack.unload();
+    
 }
 
 void MenuGui::mouseInput(int x, int y, bool lb)

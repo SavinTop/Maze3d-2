@@ -18,16 +18,12 @@ void MenuGui::InitializeSubResources(std::string groupName)
     this->rightArrow_active = rm->createResource(Texture(spriteDirectory+"buttons\\rightArrow_active.png"),groupName);
 
     this->guiShader = rm->createResource(ShaderProgram("data\\shaders\\basicGui\\basic.vert","data\\shaders\\basicGui\\basic.frag", "guiProgram"),groupName);
-}
 
-ResourcePack& MenuGui::getResources() 
-{
-    r_pack = ResourcePack({exit_active.get(), exit_idle.get(),
+    this->subResources_.setResources({exit_active.get(), exit_idle.get(),
     endless_active.get(), endless_idle.get(),
     timed_active.get(), timed_idle.get(),
     back_active.get(), back_idle.get(),
     leftArrow_active.get(), leftArrow_idle.get(),
     rightArrow_active.get(), rightArrow_idle.get(),
     guiShader.get()});
-    return r_pack;
 }

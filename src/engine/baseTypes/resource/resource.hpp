@@ -51,3 +51,5 @@ public:
     OpenGLResource() : Resource(){};
     OpenGLResource(const std::string& name, ResourceManager* rm = nullptr){this->resName_ = name; this->rm = rm;}
 };
+
+ResourcePack getResourcesRecursively(Resource* res);

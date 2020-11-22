@@ -18,8 +18,8 @@ void ResourceManager::__resourceDeleter(Resource* p)
 
     if(!name.empty())
     {
+        if(resources.erase(name))
         std::cout<<name<<" deleted\n";
-        resources.erase(name);
     }
     else
     {

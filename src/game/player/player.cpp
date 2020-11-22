@@ -4,8 +4,11 @@
 void Player::moveStraight(float coof) 
 {
     cam.moveStraight(coof);
-    if(fixedZ)
+    if(cam.fixed_z)
+    {
         cam.setPos(cam.getPos()*glm::vec3(1,0,1));
+    }
+        
 }
 
 void Player::moveSideways(float coof) 
@@ -25,7 +28,7 @@ Camera& Player::getCamera()
 
 void Player::setFixedZ(bool val) 
 {
-    fixedZ = val;
+    cam.fixed_z = val;
 }
 
 void Player::setPosition(glm::vec3 pos) 
@@ -35,6 +38,5 @@ void Player::setPosition(glm::vec3 pos)
 
 Player::Player(glm::vec3 position) 
 {
-    fixedZ = false;
     cam.setPos(position);
 }

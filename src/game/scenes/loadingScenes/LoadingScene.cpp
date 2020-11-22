@@ -29,11 +29,8 @@ void LoadingScene::start()
     auto temp = nextScene->getResources().getRes();
     for (auto &el : temp)
     {
-        el->InitializeSubResources(nextScene->getName());
-        auto subRes = el->subResources_.getRes();
-        for (auto &subel : subRes)
-            resourcesToLoad.push_back(subel);
-        resourcesToLoad.push_back(el);
+        auto tempRes = getResourcesRecursively(el);
+        resourcesToLoad.insert(resourcesToLoad.end(), tempRes.getRes().begin(), tempRes.getRes().end());
     }
 }
 
@@ -45,7 +42,6 @@ void LoadingScene::update(float delta)
         return;
     }
     auto &t = resourcesToLoad[currentIndex];
-    std::cout << t->resName_ << std::endl;
     t->load();
     currentIndex++;
     if(!t->resName_.empty())

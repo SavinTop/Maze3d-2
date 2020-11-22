@@ -8,6 +8,9 @@ glm::mat4 Camera::getViewMatrix()
 
 void Camera::moveStraight(float coof) 
 {
+    if(fixed_z)
+    this->position += glm::normalize(this->front*glm::vec3(1,0,1))*coof;
+    else
     this->position += this->front*coof;
 }
 

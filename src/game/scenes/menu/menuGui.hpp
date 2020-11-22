@@ -15,7 +15,6 @@ public:
     void mouseInput(int x, int y, bool lb);
 
 	virtual void InitializeSubResources(std::string groupName);
-    ResourcePack& getResources();
     std::vector<GuiObject*> getElements();
     std::vector<GuiObject*> getChildrenRecurs(GuiObject* curr);
     void initMain();
@@ -37,8 +36,6 @@ private:
     int w,h;
     ResourceManager* rm;
     std::string spriteDirectory = "data\\scenes\\mainMenu\\sprites\\";
-    
-    ResourcePack r_pack;
 
     FullscreenBox main_fbox;
     Button main_exit_button;

@@ -45,3 +45,15 @@ std::vector<Resource*>& ResourcePack::getRes()
 {
     return this->resources_;
 }
+
+ResourcePack getResourcesRecursively(Resource* res) 
+{
+    ResourcePack temp;
+    for(auto& el:res->subResources_.getRes()){
+        auto temp_ = getResourcesRecursively(el);
+        temp.getRes().reserve(temp_.getRes().size()+temp.getRes().size());
+        temp.getRes().insert(temp.getRes().end(), temp_.getRes().begin(), temp_.getRes().end());
+    }
+    temp.getRes().push_back(res);
+    return temp;
+}

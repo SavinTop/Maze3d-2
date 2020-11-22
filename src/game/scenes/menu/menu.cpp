@@ -30,14 +30,12 @@ void Menu::onDraw(float delta)
 
 ResourcePack Menu::getResources() 
 {
-    ResourcePack temp;
-    temp.setResources(menu->getResources().getRes());
-    return temp;
+    return ResourcePack({menu.get()});
 }
 
 void Menu::initResources() 
 {
-    menu = rm->createResource<>(MenuGui(window_w, window_h, rm),sceneName);
+    menu = rm->createResource<>(MenuGui(window_w, window_h, rm),sceneName, "mainmenugui");
     //testPlane = rm->createResource<>(res::ogl::Plane(glm::vec3(200,200,0), glm::vec2(200,200), {test.get()}),sceneName);
 }
 

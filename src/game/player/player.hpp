@@ -12,9 +12,8 @@ public:
     void mouseOffsetInput(float yaw, float pitch, bool constrainPitch = true);
     Camera& getCamera();
     void setFixedZ(bool val);
-    bool getFixedZ(){return fixedZ;}
+    bool getFixedZ(){return cam.fixed_z;}
     void setPosition(glm::vec3 pos);
 private:
     Camera cam;
-    bool fixedZ;
 };

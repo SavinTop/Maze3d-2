@@ -18,6 +18,9 @@ void setRotation(float yaw, float pitch);
 void setPos(glm::vec3 position);
 void setFront(glm::vec3 front);
 glm::vec3 getPos(){return position;}
+glm::vec3 getFront(){return front;}
+
+bool fixed_z = true;
 
 private:
     glm::vec3 position;
@@ -27,6 +30,6 @@ private:
     glm::vec3 worldUp;
     float Yaw;
     float Pitch;
-
+    
     void updateCameraVectors();
 };

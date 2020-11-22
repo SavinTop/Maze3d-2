@@ -10,7 +10,13 @@ static GameProcess game;
 
 static const unsigned int SCR_WIDTH = 800;
 static const unsigned int SCR_HEIGHT = 600;
-static const bool fullScreen = true;
+static const bool def_fullScreen = false;
+
+struct{
+    bool fullscreen = def_fullScreen;
+    int window_w = SCR_WIDTH;
+    int window_h = SCR_HEIGHT;
+}commandLineSettings;
 
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
@@ -27,8 +33,27 @@ static void cursor_position_callback(GLFWwindow* window, double xpos, double ypo
 	game.cursor_position_callback(xpos,ypos);
 }
 
-int main()
+int main(int argc, char **argv)
 {
+    for(int i=1;i<argc;i++)
+    {
+        if(!strcmp(argv[i],"-fullscreen"))
+            commandLineSettings.fullscreen = true;
+        else if(!strcmp(argv[i],"-windowed"))
+            commandLineSettings.fullscreen = false;
+        else if(!strcmp(argv[i],"-window_w") && i<argc-1)
+            {
+                int val = atoi(argv[++i]);
+                commandLineSettings.window_w = val;
+                
+            }
+        else if(!strcmp(argv[i],"-window_h") && i<argc-1)
+            {
+                int val = atoi(argv[++i]);
+                commandLineSettings.window_h = val;
+            }
+    }
+
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
@@ -37,13 +62,13 @@ int main()
 
     GLFWwindow* window;
 
-    if(fullScreen)
+    if(commandLineSettings.fullscreen)
     {
         int x,y,w,h;
         glfwGetMonitorWorkarea(glfwGetPrimaryMonitor(), &x, &y, &w, &h);
         window = glfwCreateWindow(w, h, "My Title", glfwGetPrimaryMonitor(), NULL);
     }else{
-        window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Maze3d", NULL, NULL);
+        window = glfwCreateWindow(commandLineSettings.window_w, commandLineSettings.window_h, "Maze3d", NULL, NULL);
     }
 
     if (window == NULL)

@@ -5,13 +5,31 @@ in vec2 texC;
 in vec3 normal;
 in vec3 fragPos;
 in mat3 TBN;
+in vec4 FragPosLightSpace;
 
 uniform sampler2D texture_diffuse1;
 uniform sampler2D texture_specular1;
 uniform sampler2D texture_normal1;
+uniform sampler2D shadowMap;
 
-uniform vec3 lightPos;
+uniform vec3 lightDir;
 uniform vec3 viewPos;
+
+float ShadowCalculation(vec4 fragPosLightSpace)
+{
+    // perform perspective divide
+    vec3 projCoords = fragPosLightSpace.xyz / fragPosLightSpace.w;
+    // transform to [0,1] range
+    projCoords = projCoords * 0.5 + 0.5;
+    // get closest depth value from light's perspective (using [0,1] range fragPosLight as coords)
+    float closestDepth = texture(shadowMap, projCoords.xy).r; 
+    // get depth of current fragment from light's perspective
+    float currentDepth = projCoords.z;
+    // check whether current frag pos is in shadow
+    float shadow = currentDepth > closestDepth  ? 1.0 : 0.0;
+
+    return shadow;
+}  
 
 void main()
 {
@@ -20,7 +38,7 @@ void main()
     tnormal = normalize(TBN * tnormal);
 
     const float specularStrength = 0.5;
-    vec3 lightDir = normalize(lightPos - fragPos);
+    //vec3 lightDir = normalize(lightPos - fragPos);
     vec3 norm = normalize(tnormal);
 
     vec3 viewDir = normalize(viewPos - fragPos);
@@ -32,6 +50,7 @@ void main()
     float diff = max(dot(norm,lightDir),0.0);
 
     float ambient = 0.2;
-    float result = (ambient+diff+specular);
+    float shadow = ShadowCalculation(FragPosLightSpace);  
+    float result = (ambient+ (1.0 - shadow) *(diff+specular));
     FragColor = texture(texture_diffuse1, texC)* vec4(vec3(result),1.0);
 }
