@@ -27,7 +27,7 @@ struct TextureInfo
     
 };
 
-static TextureInfo DefaultTextureInfo{GL_RGBA, GL_NEAREST, GL_NEAREST, GL_REPEAT, GL_REPEAT, 8, 4};
+static TextureInfo DefaultTextureInfo{GL_RGBA, GL_LINEAR, GL_LINEAR, GL_REPEAT, GL_REPEAT, 8, 4};
 
 enum class TextureType{
 	Diffuse, Specular, Normal, Height
