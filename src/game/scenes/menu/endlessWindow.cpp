@@ -8,6 +8,7 @@ void MenuGui::initEndless()
     endless_back_button = Button(nullptr, back_idle.get(), back_active.get());
     endless_leftArrow = Button(nullptr, leftArrow_idle.get(), leftArrow_active.get());
     endless_rightArrow = Button(nullptr, rightArrow_idle.get(), rightArrow_active.get());
+    endless_start_button = Button(nullptr, start_idle.get(), start_active.get());
     endless_startLevel = Label();
 
     endless_back_button.setParent(&endless_fbox);
@@ -32,6 +33,10 @@ void MenuGui::initEndless()
     endless_startLevel.setText("5");
 
     endless_startLevel_value = 5;
+
+    endless_start_button.setParent(&endless_fbox);
+    endless_start_button.setSize(0.3f,0.09f);
+    endless_start_button.setPosition(0.0f,-0.6f);
 
     auto temp = getChildrenRecurs(&endless);
     endless.setDrawableChildArr(temp);

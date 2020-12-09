@@ -12,6 +12,7 @@ const int UPS = 120;
 
 void GameProcess::SetCurrentScene(Scene* scene) 
 {
+    pause = false;
     delete currentScene;
     currentScene = scene;
     currentScene->start();
@@ -52,13 +53,14 @@ void GameProcess::Start()
         }
 
         double currPhys = glfwGetTime();
-        if(currPhys-lastPhys>1.0f/PPS){
+        if(!pause && currPhys-lastPhys>1.0f/PPS){
             currentScene->physTick(currPhys-lastPhys);
             lastPhys = currPhys;
         }
 
         double currDraw = glfwGetTime();
         if(currDraw-lastDraw>1.0f/maxFps){
+        glClearColor(0.9,0.9,0.9,1.0);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         currentScene->onDraw(currDraw-lastDraw);
         lastDraw = currDraw;
@@ -73,6 +75,11 @@ void GameProcess::Start()
     }
 }
 
+void GameProcess::SetPause(bool val) 
+{
+    pause = val;
+}
+
 GLFWwindow* GameProcess::getWnd() 
 {
     return window;
@@ -84,8 +91,14 @@ void GameProcess::cursor_position_callback(double xpos, double ypos)
         currentScene->mouseMove(xpos,ypos);
 }
 
+void GameProcess::mouse_button_callback(double xpos, double ypos, int mb, int action) 
+{
+    if(currentScene)
+        currentScene->mouseDown(xpos,ypos,mb, action);
+}
+
 GameProcess::GameProcess(GLFWwindow* wnd) 
 : window(wnd)
 {
-    
+    pause = false;
 }

@@ -27,7 +27,7 @@ void Label::__draw(oglw::Shader &program)
         tx = tx+(w-textWidth*scale)/2.0f;
     }
 
-    guiText_renderText(program, text, tx,ty,scale,glm::vec3(1.0));
+    guiText_renderText(program, text, tx,ty,scale,glm::vec3(0.0));
 }
 
 int Label::calculateWidth() 

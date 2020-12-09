@@ -4,6 +4,7 @@ void Menu::start()
 {
     menu->start();
     menu->setExitButtonClickCallBack(std::bind(&Menu::exitClicked, this));
+    menu->setEndlessStartButtonClickCallBack(std::bind(&Menu::endless_start_clicked, this));
 }
 
 void Menu::update(float delta) 
@@ -11,12 +12,6 @@ void Menu::update(float delta)
     int state = glfwGetKey(proc->getWnd(), GLFW_KEY_ESCAPE);
     if(state == GLFW_PRESS)
         glfwSetWindowShouldClose(proc->getWnd(), true);
-
-    double x,y;
-
-    glfwGetCursorPos(proc->getWnd(),&x,&y);
-    bool lm = glfwGetMouseButton(proc->getWnd(), GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS;
-    menu->mouseInput(x,y,lm);
 }
 
 std::string text = "";
@@ -39,10 +34,27 @@ void Menu::initResources()
     //testPlane = rm->createResource<>(res::ogl::Plane(glm::vec3(200,200,0), glm::vec2(200,200), {test.get()}),sceneName);
 }
 
+void Menu::mouseDown(double xpos, double ypos, int mb, int action) 
+{
+    bool lm = mb==GLFW_MOUSE_BUTTON_LEFT && action==GLFW_RELEASE;
+    if(lm)
+        menu->mouseInput(xpos,ypos,lm);
+        menu->mouseInput(xpos,ypos,false);
+}
+
+void Menu::mouseMove(double xpos, double ypos) 
+{
+    menu->mouseInput(xpos,ypos,false);
+}
+
 void Menu::exitClicked() 
 {
-    //glfwSetWindowShouldClose(proc->getWnd(), true);
-    auto next = new LoadingScene(proc, new mazeScene(proc));
+    glfwSetWindowShouldClose(proc->getWnd(), true);
+}
+
+void Menu::endless_start_clicked() 
+{
+    auto next = new LoadingScene(proc, new mazeScene(proc, menu->get_endless_lvl()));
     next->initResources();
     auto temp = next->getResources();
     for(auto& el:temp.getRes())

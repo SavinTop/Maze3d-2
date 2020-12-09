@@ -15,7 +15,7 @@ LoadingScene::LoadingScene(GameProcess *proc, Scene* nextScene) : Scene(proc)
     lb.setParent(&fsb);
     lb.setPosition(0.0f,0.0f);
     lb.setSize(0.25f, 0.03f);
-    lb.setColor(Color::rgba(255,255,255,255));
+    lb.setColor(Color::rgba(0,0,0,255));
     
     lbl.setParent(&fsb);
     lbl.setPosition(0.0f,-0.03f*2);
@@ -67,7 +67,7 @@ void LoadingScene::onDraw(float delta)
     textProgram.bind();
     projectionId = textProgram.getUniformLocation("projection");
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
-    lbl.draw(textProgram);
+    //lbl.draw(textProgram);
 
 }
 

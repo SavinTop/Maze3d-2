@@ -42,14 +42,11 @@ unsigned Containers::Image::getHeight() {
     return height;
 }
 
-void Containers::Image::clear() {
-    data.clear();    
+int Containers::Image::getChannelCount() 
+{
+    return this->channelCount;
 }
 
-namespace Containers
-{
-    int Image::getChannelCount() 
-    {
-        
-    }
+void Containers::Image::clear() {
+    data.clear();    
 }

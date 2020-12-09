@@ -28,6 +28,13 @@ static void character_callback(GLFWwindow* window, unsigned int codepoint)
 	
 }
 
+void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
+{
+    double x,y;
+    glfwGetCursorPos(window,&x,&y);
+    game.mouse_button_callback(x,y,button, action);
+}
+
 static void cursor_position_callback(GLFWwindow* window, double xpos, double ypos)
 {
 	game.cursor_position_callback(xpos,ypos);
@@ -81,6 +88,7 @@ int main(int argc, char **argv)
 
     glfwSetKeyCallback(window, key_callback);
 	glfwSetCursorPosCallback(window, cursor_position_callback);
+    glfwSetMouseButtonCallback(window, mouse_button_callback);
 	//glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 	glfwSetCharCallback(window, character_callback);
     glfwSwapInterval(0);

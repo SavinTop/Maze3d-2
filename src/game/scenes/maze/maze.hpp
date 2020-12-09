@@ -22,7 +22,8 @@
 
 class mazeScene : public Scene{
     public:
-    mazeScene(GameProcess* proc);
+    mazeScene(GameProcess* proc, int maze_size);
+    ~mazeScene();
     void start() override;
     void update(float delta) override;
     void onDraw(float delta) override;
@@ -30,7 +31,6 @@ class mazeScene : public Scene{
     ResourcePack getResources() override;
     void initResources() override;
     void mouseMove(double xpos, double ypos) override;
-    void tempGenerateShadowMap();
     private:
     std::shared_ptr<res::ogl::Model> lineWallModel;
     std::shared_ptr<res::ogl::Model> rootWallModel;
@@ -51,6 +51,7 @@ class mazeScene : public Scene{
     MazeMapGenerator _mapGenerator;
     MazeBuilder maze;
     ObjectMazeMap omm;
+    std::shared_ptr<res::ogl::Texture> maze_texture;
     std::shared_ptr<MazeGui> menu;
     Camera topDownView;
 

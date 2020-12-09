@@ -14,9 +14,8 @@ void MenuGui::mouseInput(int x, int y, bool lb)
 {
     if (!currentWindow) return;
     currentWindow->__mouseMove(x, h - y);
-    if (lb && lb!=lastMouseLeftButton)
+    if (lb)
         currentWindow->__leftMouseBtnDown(x, h - y);
-    lastMouseLeftButton = lb;
 }
 
 std::vector<GuiObject *> MenuGui::getElements()
@@ -39,6 +38,11 @@ std::vector<GuiObject *> MenuGui::getChildrenRecurs(GuiObject *curr)
         temp.insert(temp.end(), conc.begin(), conc.end());
     }
     return temp;
+}
+
+void MenuGui::setEndlessStartButtonClickCallBack(std::function<void(void)> click) 
+{
+    endless_start_button.setClickCallback(click);
 }
 
 void MenuGui::back_click()

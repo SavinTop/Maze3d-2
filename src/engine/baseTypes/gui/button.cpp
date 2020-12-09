@@ -17,7 +17,6 @@ void Button::__draw(oglw::Shader &program)
 {
     if(currentTexture)
         this->currentTexture->bind(0);
-    glUniform1i(program.getUniformLocation("texture_diffuse1"),0);
     glBindVertexArray(gui_getVAOid());
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }

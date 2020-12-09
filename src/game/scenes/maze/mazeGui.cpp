@@ -3,8 +3,9 @@
 
 void MazeGui::start() 
 {
+    initBeg();
     initDebug();
-    currentWindow = &debug;
+    currentWindow = &beg;
 }
 
 void MazeGui::draw() 
@@ -67,7 +68,6 @@ void MazeGui::initDebug()
     debug = GuiWindow(w,h);
     debug_fbox = FullscreenBox(nullptr,w,h);
     debug_fbox.setParent(&debug);
-    debug_fbox.setPosition(debug_fbox.width()/2,h/2);
 
     debug_playerX.setParent(&debug_fbox);
     debug_playerX.setPosition(-0.8f, 0.9f);
@@ -83,10 +83,32 @@ void MazeGui::initDebug()
     debug.setDrawableChildArr(temp);
 }
 
+void MazeGui::initBeg() 
+{
+    beg = GuiWindow(w,h);
+    beg_fbox = FullscreenBox(nullptr,w,h);
+    beg_fbox.setParent(&beg);
+
+    const float downSpace = 0.1;
+
+    beg_mazemap_test = Button(nullptr,  beg_mazemap_tex.get(), beg_mazemap_tex.get());
+    beg_mazemap_test.setParent(&beg_fbox);
+    beg_mazemap_test.setPosition(0.0f,0.0f+downSpace);
+    beg_mazemap_test.setSize(1.0f-downSpace,1.0f-downSpace);
+
+    auto temp = getChildrenRecurs(&beg);
+    beg.setDrawableChildArr(temp);
+}
+
 void MazeGui::debug_setDebugPlayerPos(float x, float y) 
 {
     debug_playerX.setText("x: "+std::to_string(x));
     debug_playerY.setText("y: "+std::to_string(y));
+}
+
+void MazeGui::setMazeMap(std::shared_ptr<res::ogl::Texture> mazeTexture) 
+{
+    beg_mazemap_tex = mazeTexture;
 }
 
 void MazeGui::InitializeSubResources(std::string groupName) 
@@ -133,4 +155,8 @@ MazeGui::MazeGui(int w, int h, ResourceManager* rm)
     this->h = h;
     this->rm = rm;
     currentWindow = nullptr;
+}
+
+MazeGui::~MazeGui() 
+{
 }

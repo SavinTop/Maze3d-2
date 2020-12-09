@@ -27,7 +27,7 @@ struct TextureInfo
     
 };
 
-static TextureInfo DefaultTextureInfo{GL_RGBA, GL_LINEAR, GL_LINEAR, GL_REPEAT, GL_REPEAT, 8, 4};
+static const TextureInfo DefaultTextureInfo(GL_RGBA, GL_LINEAR, GL_LINEAR, GL_REPEAT, GL_REPEAT, 8, 4);
 
 enum class TextureType{
 	Diffuse, Specular, Normal, Height
@@ -37,11 +37,13 @@ class Texture : public OpenGLResource
 {
 public:
 	Texture(const std::string& path, TextureType tt = TextureType::Diffuse, const TextureInfo& texInfo = DefaultTextureInfo, const std::string& name = "");
+	Texture(const Containers::Image& img, TextureType tt = TextureType::Diffuse, const TextureInfo& texInfo = DefaultTextureInfo, const std::string& name = "");
 	Texture();
 
 	void bind(unsigned int imgIndex);
 	void unbind();
 	void setParams(const std::string& path, TextureType tt = TextureType::Diffuse, const TextureInfo& texInfo = DefaultTextureInfo, const std::string& name = "");
+	void setParams(const Containers::Image& img, TextureType tt = TextureType::Diffuse, const TextureInfo& texInfo = DefaultTextureInfo, const std::string& name = "");
 
     void load() override;
     void unload() override;
@@ -55,6 +57,7 @@ public:
 private:
     std::string path;
 	std::shared_ptr<res::ex::Image> image;
+	Containers::Image internalImage;
 
 	TextureInfo m_texinfo;
 	unsigned int m_resourceId;

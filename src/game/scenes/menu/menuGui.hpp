@@ -20,7 +20,9 @@ public:
     void initMain();
     void initEndless();
     void setExitButtonClickCallBack(std::function<void(void)> click);
-    
+    void setEndlessStartButtonClickCallBack(std::function<void(void)> click);
+    int get_endless_lvl(){return endless_startLevel_value;}
+
     void endlessClick();
     void timedClick();
 
@@ -46,6 +48,7 @@ private:
     Button endless_back_button;
     Button endless_leftArrow;
     Button endless_rightArrow;
+    Button endless_start_button;
     Label endless_startLevel;
     int endless_startLevel_value;
     
@@ -59,6 +62,8 @@ private:
     std::shared_ptr<res::ogl::Texture> endless_active;
     std::shared_ptr<res::ogl::Texture> back_idle;
     std::shared_ptr<res::ogl::Texture> back_active;
+    std::shared_ptr<res::ogl::Texture> start_idle;
+    std::shared_ptr<res::ogl::Texture> start_active;
 
     //arrows
 
