@@ -9,14 +9,14 @@ void mazeScene::start()
     player.setFixedZ(true);
     player.setPosition(glm::vec3(3, 0, 3));
     player.mouseOffsetInput(-240, 0);
-    floor.setParams(glm::vec2(50 * 8, 50 * 8), {floorTexture, floorTextureNormal});
-    floor.setPosition(glm::vec3(50 * 8 / 2.0, -3, 50 * 8 / 2.0));
-    floor.load();
     glfwSetCursorPos(proc->getWnd(), window_w / 2.0f, window_h / 2.0f);
     maze.buildMaze();
     omm.init(maze, DrawableHolder(rootWallModel.get()), DrawableHolder(lineWallModel.get()), DrawableHolder(cornerWallModel.get()));
-    rth = RaytracingHandler(40,&omm);
-
+    rth = RaytracingHandler(90,&omm);
+    int maze_size = omm.width();
+    floor.setParams(glm::vec2(maze_size * 8-6, maze_size * 8-6), {floorTexture, floorTextureNormal});
+    floor.setPosition(glm::vec3(maze_size * 8 / 2.0-4, -3, maze_size * 8 / 2.0-4));
+    floor.load();
      //MazeMapGenerator mmg{maze};
     
      //std::vector<unsigned char> image_data;
@@ -89,7 +89,7 @@ void mazeScene::onDraw(float delta)
 
     for(auto& el:rth.getCollidedSectors())
     {
-        const int sector_size = 2;
+        const int sector_size = 1;
         glm::ivec2 sector{el.first, el.second};
         for(int i=sector.y-sector_size;i<=sector.y+sector_size;i++)
                 for(int j=sector.x-sector_size;j<=sector.x+sector_size;j++)

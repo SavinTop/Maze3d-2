@@ -56,7 +56,7 @@ void Texture::load()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, m_texinfo.wrap_s);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, m_texinfo.wrap_t);
 
-		//glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, m_texinfo.anisotropy_val);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, m_texinfo.anisotropy_val);
 
 	m_texinfo.channelCount = tempImg->getChannelCount();
 

@@ -37,7 +37,7 @@ void main()
     tnormal = normalize(tnormal * 2.0 - 1.0);
     tnormal = normalize(TBN * tnormal);
 
-    const float specularStrength = 0.9;
+    const float specularStrength = 1.0;
     //vec3 lightDir = normalize(lightPos - fragPos);
     vec3 norm = normalize(tnormal);
 
@@ -49,7 +49,7 @@ void main()
 
     float diff = max(dot(norm,lightDir),0.0);
 
-    float ambient = 0.2;
+    float ambient = 0.4;
     float shadow = 0.0;//ShadowCalculation(FragPosLightSpace);  
     float result = (ambient+ (1.0 - shadow) *(diff+specular));
     FragColor = texture(texture_diffuse1, texC)* vec4(vec3(result),1.0);

@@ -18,14 +18,16 @@ void RaytracingHandler::recalculate(float fov, glm::vec2 camPos, float camDir)
         auto& curr = rays[i];
         curr.start = camPos;
         curr.currPos = camPos;
-        curr.end = glm::vec2(cos(dir)*1000,sin(dir)*1000);
-        curr.step = glm::vec2(cos(dir)*6,sin(dir)*6);
+        curr.end = camPos+glm::vec2(cos(dir)*1000,sin(dir)*1000);
+        curr.step = glm::vec2(cos(dir)*8,sin(dir)*8);
         curr.collapsed = false;
     }
 
     bool allRaysCollapsed = false;
-    while(!allRaysCollapsed)
+    int counter = 0;
+    while(!allRaysCollapsed && counter<1000)
     {
+        counter++;
         allRaysCollapsed = true;
         for(int i=0;i<ray_count;i++)
         {
