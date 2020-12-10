@@ -2072,6 +2072,22 @@ glm/glm.hpp
 maze_things/legacy/ObjectMazeBuilder.hpp
 ../src/game/maze_things/utils/maze_things/legacy/ObjectMazeBuilder.hpp
 
+../src/game/maze_things/utils/coloredMapGenerator.hpp
+baseTypes/color.hpp
+../src/game/maze_things/utils/baseTypes/color.hpp
+baseTypes/containers/Image.hpp
+../src/game/maze_things/utils/baseTypes/containers/Image.hpp
+maze_things/legacy/MazeBuilder.hpp
+../src/game/maze_things/utils/maze_things/legacy/MazeBuilder.hpp
+
+../src/game/maze_things/utils/raytracingHandler.hpp
+collisionChecker.hpp
+../src/game/maze_things/utils/collisionChecker.hpp
+maze_things/legacy/ObjectMazeBuilder.hpp
+../src/game/maze_things/utils/maze_things/legacy/ObjectMazeBuilder.hpp
+set
+-
+
 ../src/game/player/player.hpp
 render/camera.hpp
 -
@@ -2135,6 +2151,8 @@ maze_things/floor/floorModel.hpp
 ../src/game/scenes/maze/maze_things/floor/floorModel.hpp
 scenes/loadingScenes/LoadingScene.hpp
 ../src/game/scenes/maze/scenes/loadingScenes/LoadingScene.hpp
+maze_things/utils/raytracingHandler.hpp
+../src/game/scenes/maze/maze_things/utils/raytracingHandler.hpp
 
 ../src/game/scenes/maze/mazeGui.hpp
 baseTypes/gui/gui.hpp
@@ -2208,6 +2226,24 @@ D:/21/Maze3d/src/game/baseTypes/resource/resourceManager.hpp
 map
 -
 
+D:/21/Maze3d/src/game/maze_things/utils/collisionChecker.hpp
+glm/glm.hpp
+-
+maze_things/legacy/ObjectMazeBuilder.hpp
+D:/21/Maze3d/src/game/maze_things/utils/maze_things/legacy/ObjectMazeBuilder.hpp
+
+D:/21/Maze3d/src/game/maze_things/utils/raytracingHandler.cpp
+raytracingHandler.hpp
+D:/21/Maze3d/src/game/maze_things/utils/raytracingHandler.hpp
+
+D:/21/Maze3d/src/game/maze_things/utils/raytracingHandler.hpp
+collisionChecker.hpp
+D:/21/Maze3d/src/game/maze_things/utils/collisionChecker.hpp
+maze_things/legacy/ObjectMazeBuilder.hpp
+D:/21/Maze3d/src/game/maze_things/utils/maze_things/legacy/ObjectMazeBuilder.hpp
+set
+-
+
 D:/21/Maze3d/src/game/scenes/loadingScenes/LoadingScene.cpp
 LoadingScene.hpp
 D:/21/Maze3d/src/game/scenes/loadingScenes/LoadingScene.hpp
@@ -2243,6 +2279,8 @@ maze.hpp
 D:/21/Maze3d/src/game/scenes/maze/maze.hpp
 scenes/menu/menu.hpp
 D:/21/Maze3d/src/game/scenes/maze/scenes/menu/menu.hpp
+maze_things/utils/coloredMapGenerator.hpp
+D:/21/Maze3d/src/game/scenes/maze/maze_things/utils/coloredMapGenerator.hpp
 
 D:/21/Maze3d/src/game/scenes/maze/maze.hpp
 baseTypes/resources/internal/OGL/glresources.hpp
@@ -2281,20 +2319,18 @@ maze_things/floor/floorModel.hpp
 D:/21/Maze3d/src/game/scenes/maze/maze_things/floor/floorModel.hpp
 scenes/loadingScenes/LoadingScene.hpp
 D:/21/Maze3d/src/game/scenes/maze/scenes/loadingScenes/LoadingScene.hpp
+maze_things/utils/raytracingHandler.hpp
+D:/21/Maze3d/src/game/scenes/maze/maze_things/utils/raytracingHandler.hpp
+
+D:/21/Maze3d/src/game/scenes/maze/maze.res.cpp
+maze.hpp
+D:/21/Maze3d/src/game/scenes/maze/maze.hpp
 
 D:/21/Maze3d/src/game/scenes/maze/mazeGui.hpp
 baseTypes/gui/gui.hpp
 D:/21/Maze3d/src/game/scenes/maze/baseTypes/gui/gui.hpp
 baseTypes/resource/resource.hpp
 D:/21/Maze3d/src/game/scenes/maze/baseTypes/resource/resource.hpp
-
-D:/21/Maze3d/src/game/scenes/menu/endlessWindow.cpp
-menuGui.hpp
-D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
-
-D:/21/Maze3d/src/game/scenes/menu/mainWindow.cpp
-menuGui.hpp
-D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
 
 D:/21/Maze3d/src/game/scenes/menu/menu.cpp
 menu.hpp
@@ -2332,17 +2368,9 @@ D:/21/Maze3d/src/game/scenes/menu/game/scenes/maze/maze.hpp
 scenes/loadingScenes/LoadingScene.hpp
 D:/21/Maze3d/src/game/scenes/menu/scenes/loadingScenes/LoadingScene.hpp
 
-D:/21/Maze3d/src/game/scenes/menu/menuGui.cpp
-menuGui.hpp
-D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
-
 D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
 baseTypes/gui/gui.hpp
 D:/21/Maze3d/src/game/scenes/menu/baseTypes/gui/gui.hpp
 baseTypes/resource/resource.hpp
 D:/21/Maze3d/src/game/scenes/menu/baseTypes/resource/resource.hpp
-
-D:/21/Maze3d/src/game/scenes/menu/resourceMenuGui.cpp
-menuGui.hpp
-D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
 

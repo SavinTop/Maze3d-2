@@ -14,7 +14,7 @@ LoadingScene::LoadingScene(GameProcess *proc, Scene* nextScene) : Scene(proc)
     fsb = FullscreenBox(nullptr, window_w, window_h);
     lb.setParent(&fsb);
     lb.setPosition(0.0f,0.0f);
-    lb.setSize(0.25f, 0.03f);
+    lb.setSize(0.5f, 0.03f);
     lb.setColor(Color::rgba(0,0,0,255));
     
     lbl.setParent(&fsb);
@@ -47,6 +47,8 @@ void LoadingScene::update(float delta)
     if(!t->resName_.empty())
     lbl.setText(t->resName_);
     lb.setProgress((float)currentIndex/resourcesToLoad.size());
+    //unsigned char c = (unsigned char)(lb.getProgress()/2*255);
+    //lb.setColor(Color::rgba(c,c,c,255));
 }
 
 void LoadingScene::onDraw(float delta)

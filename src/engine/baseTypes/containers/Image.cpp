@@ -14,13 +14,13 @@ void Containers::Image::setSize(unsigned w, unsigned h) {
 }
 
 unsigned char* Containers::Image::getPixel(unsigned x, unsigned y) {
-    return &data[((height-y)*width+x)*channelCount];
+    return &data[((height-y-1)*width+x)*channelCount];
 }
 
 void Containers::Image::setPixel(unsigned x, unsigned y, int32_t color) {
-    auto start = ((height-y)*width+x)*channelCount;
-    for(auto i = start;i<start+channelCount;i++)
-        data[i] = ((unsigned char*)&color)[i];
+    auto start = ((height-y-1)*width+x)*channelCount;
+    for(int i = start, c=0;i<start+channelCount;i++,c++)
+        data[i] = ((unsigned char*)&color)[channelCount-c-1];
 }
 
 std::vector<unsigned char>& Containers::Image::getData() {

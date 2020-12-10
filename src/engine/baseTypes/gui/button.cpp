@@ -35,8 +35,13 @@ void Button::__mouseMove(int x, int y)
     if(idleTexture && mouseHoverTexture)
     {
         if(x>this->x-w/2 && x<this->x+w/2 && y>this->y-h/2 && y<this->y+h/2)
-        currentTexture = mouseHoverTexture;
+        {
+            currentTexture = mouseHoverTexture;
+        }
         else
-        currentTexture = idleTexture;
+        {
+            currentTexture = idleTexture;
+        }
+        
     }
 }

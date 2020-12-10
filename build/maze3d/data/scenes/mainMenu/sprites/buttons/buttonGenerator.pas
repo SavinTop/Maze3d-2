@@ -1,7 +1,7 @@
 ﻿uses ABCObjects, graphabc, System.Windows.Forms,System.Drawing;
 
-var idle_back_color := rgb(30,30,30);
-var active_back_color := rgb(75,75,75);
+var idle_back_color := rgb(25,25,25);
+var active_back_color := rgb(65,65,65);
 
 const idle_font_color = clwhite;
 const active_font_color = clwhite;
@@ -12,10 +12,10 @@ procedure generate_arrow_btn(name:string;text_color:color; back_color:color; t:s
 begin
 var butt:=new RectangleABC(0,0,101,101);
 butt.Bordered:=false;
-butt.FontName:='steelfish';
+//butt.FontName:='steelfish';
 butt.TextScale := 1.0;
 butt.FontColor := text_color;
-if dir='l' then butt.Text := '<-' else butt.Text := '->';
+if dir='l' then butt.Text := '<' else butt.Text := '>';
 butt.Color:=back_color;
 butt.RedrawNow();
 var Bm := new Bitmap(100, 100); 

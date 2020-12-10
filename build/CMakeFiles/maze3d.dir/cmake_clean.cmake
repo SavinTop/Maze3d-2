@@ -34,6 +34,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.obj"
+  "CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.obj"
+  "CMakeFiles/maze3d.dir/src/game/maze_things/utils/raytracingHandler.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj"

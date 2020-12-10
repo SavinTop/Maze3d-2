@@ -52,6 +52,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/game/maze_things/legacy/MazeBuilder.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.obj"
   "D:/21/Maze3d/src/game/maze_things/legacy/MazeMapGenerator.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.obj"
   "D:/21/Maze3d/src/game/maze_things/legacy/ObjectMazeBuilder.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.obj"
+  "D:/21/Maze3d/src/game/maze_things/utils/coloredMapGenerator.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.obj"
+  "D:/21/Maze3d/src/game/maze_things/utils/raytracingHandler.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/raytracingHandler.cpp.obj"
   "D:/21/Maze3d/src/game/player/player.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj"
   "D:/21/Maze3d/src/game/scenes/loadingScenes/LoadingScene.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj"
   "D:/21/Maze3d/src/game/scenes/maze/maze.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj"

@@ -1,0 +1,137 @@
+Структура папок тома Savin
+Серийный номер тома: 0C1B-5F1A
+D:.
+|   filetree.txt
+|   glad.c
+|   
++---engine
+|   +---baseTypes
+|   |   |   color.cpp
+|   |   |   color.hpp
+|   |   |   scene.cpp
+|   |   |   scene.hpp
+|   |   |   script.hpp
+|   |   |   
+|   |   +---containers
+|   |   |       Image.cpp
+|   |   |       Image.hpp
+|   |   |       mesh.cpp
+|   |   |       mesh.hpp
+|   |   |       
+|   |   +---gui
+|   |   |       basicTextRender.cpp
+|   |   |       basicTextRender.hpp
+|   |   |       button.cpp
+|   |   |       button.hpp
+|   |   |       fullscreenBox.cpp
+|   |   |       fullscreenBox.hpp
+|   |   |       gui.hpp
+|   |   |       guiObject.cpp
+|   |   |       guiObject.hpp
+|   |   |       guiShaderType.hpp
+|   |   |       guiWindow.cpp
+|   |   |       guiWindow.hpp
+|   |   |       justRect.cpp
+|   |   |       justRect.hpp
+|   |   |       label.cpp
+|   |   |       label.hpp
+|   |   |       loadingBar.cpp
+|   |   |       loadingBar.hpp
+|   |   |       textAlign.hpp
+|   |   |       
+|   |   +---oglWrappers
+|   |   |       oglw.h
+|   |   |       shader.cpp
+|   |   |       shader.hpp
+|   |   |       
+|   |   +---resource
+|   |   |       resource.cpp
+|   |   |       resource.hpp
+|   |   |       resourceManager.cpp
+|   |   |       resourceManager.hpp
+|   |   |       
+|   |   \---resources
+|   |       +---external
+|   |       |       Image.cpp
+|   |       |       Image.hpp
+|   |       |       model.cpp
+|   |       |       model.hpp
+|   |       |       TextFile.cpp
+|   |       |       TextFile.hpp
+|   |       |       
+|   |       \---internal
+|   |           \---OGL
+|   |                   cubemapModel.cpp
+|   |                   cubemapModel.hpp
+|   |                   cubemapTexture.cpp
+|   |                   cubemapTexture.hpp
+|   |                   glresources.hpp
+|   |                   mesh.cpp
+|   |                   mesh.hpp
+|   |                   model.cpp
+|   |                   model.hpp
+|   |                   shader.cpp
+|   |                   shader.hpp
+|   |                   texture.cpp
+|   |                   texture.hpp
+|   |                   
+|   +---render
+|   |       camera.cpp
+|   |       camera.hpp
+|   |       drawable.cpp
+|   |       drawable.hpp
+|   |       drawableHolder.cpp
+|   |       drawableHolder.hpp
+|   |       
+|   \---utilities
+|           debug.hpp
+|           fileLoader.cpp
+|           fileLoader.hpp
+|           
+\---game
+    |   gameprocess.cpp
+    |   gameprocess.hpp
+    |   game_scene_enum.hpp
+    |   
+    +---maze_things
+    |   +---floor
+    |   |       floorModel.cpp
+    |   |       floorModel.hpp
+    |   |       
+    |   +---legacy
+    |   |       MazeBuilder.cpp
+    |   |       MazeBuilder.hpp
+    |   |       MazeMapGenerator.cpp
+    |   |       MazeMapGenerator.hpp
+    |   |       ObjectMazeBuilder.cpp
+    |   |       ObjectMazeBuilder.hpp
+    |   |       
+    |   \---utils
+    |           collisionChecker.hpp
+    |           
+    +---player
+    |       player.cpp
+    |       player.hpp
+    |       
+    \---scenes
+        +---loadingScenes
+        |   |   LoadingScene.cpp
+        |   |   LoadingScene.hpp
+        |   |   
+        |   \---temp
+        +---maze
+        |       maze.cpp
+        |       maze.hpp
+        |       maze.res.cpp
+        |       mazeGui.cpp
+        |       mazeGui.hpp
+        |       
+        \---menu
+                endlessWindow.cpp
+                mainWindow.cpp
+                menu.cpp
+                menu.hpp
+                menuGui.cpp
+                menuGui.hpp
+                resourceMenuGui.cpp
+                

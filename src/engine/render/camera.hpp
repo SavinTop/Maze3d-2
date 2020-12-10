@@ -21,6 +21,8 @@ glm::vec3 getPos(){return position;}
 glm::vec3 getFront(){return front;}
 
 bool fixed_z = true;
+float Yaw;
+float Pitch;
 
 private:
     glm::vec3 position;
@@ -28,8 +30,6 @@ private:
     glm::vec3 up;
     glm::vec3 right;
     glm::vec3 worldUp;
-    float Yaw;
-    float Pitch;
     
     void updateCameraVectors();
 };

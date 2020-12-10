@@ -28,7 +28,7 @@ private:
     std::vector<unsigned char> data;
     unsigned width;
     unsigned height;
-    int channelCount;
+    int channelCount = 4;
 };
 
 }

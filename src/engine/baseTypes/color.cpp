@@ -36,7 +36,6 @@ namespace Color{
         float G = ((unsigned char*)&color)[2] / 255.0f;
         float B = ((unsigned char*)&color)[1] / 255.0f;
         float A = ((unsigned char*)&color)[0] / 255.0f;
-        std::cout<<R<<G<<B<<A<<std::endl;
         return glm::vec4(R,G,B,A);
     }
 }

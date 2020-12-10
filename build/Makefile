@@ -1087,6 +1087,60 @@ src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s
 .PHONY : src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s
 
+src/game/maze_things/utils/coloredMapGenerator.obj: src/game/maze_things/utils/coloredMapGenerator.cpp.obj
+
+.PHONY : src/game/maze_things/utils/coloredMapGenerator.obj
+
+# target to build an object file
+src/game/maze_things/utils/coloredMapGenerator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.obj
+.PHONY : src/game/maze_things/utils/coloredMapGenerator.cpp.obj
+
+src/game/maze_things/utils/coloredMapGenerator.i: src/game/maze_things/utils/coloredMapGenerator.cpp.i
+
+.PHONY : src/game/maze_things/utils/coloredMapGenerator.i
+
+# target to preprocess a source file
+src/game/maze_things/utils/coloredMapGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.i
+.PHONY : src/game/maze_things/utils/coloredMapGenerator.cpp.i
+
+src/game/maze_things/utils/coloredMapGenerator.s: src/game/maze_things/utils/coloredMapGenerator.cpp.s
+
+.PHONY : src/game/maze_things/utils/coloredMapGenerator.s
+
+# target to generate assembly for a file
+src/game/maze_things/utils/coloredMapGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.s
+.PHONY : src/game/maze_things/utils/coloredMapGenerator.cpp.s
+
+src/game/maze_things/utils/raytracingHandler.obj: src/game/maze_things/utils/raytracingHandler.cpp.obj
+
+.PHONY : src/game/maze_things/utils/raytracingHandler.obj
+
+# target to build an object file
+src/game/maze_things/utils/raytracingHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/raytracingHandler.cpp.obj
+.PHONY : src/game/maze_things/utils/raytracingHandler.cpp.obj
+
+src/game/maze_things/utils/raytracingHandler.i: src/game/maze_things/utils/raytracingHandler.cpp.i
+
+.PHONY : src/game/maze_things/utils/raytracingHandler.i
+
+# target to preprocess a source file
+src/game/maze_things/utils/raytracingHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/raytracingHandler.cpp.i
+.PHONY : src/game/maze_things/utils/raytracingHandler.cpp.i
+
+src/game/maze_things/utils/raytracingHandler.s: src/game/maze_things/utils/raytracingHandler.cpp.s
+
+.PHONY : src/game/maze_things/utils/raytracingHandler.s
+
+# target to generate assembly for a file
+src/game/maze_things/utils/raytracingHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/raytracingHandler.cpp.s
+.PHONY : src/game/maze_things/utils/raytracingHandler.cpp.s
+
 src/game/player/player.obj: src/game/player/player.cpp.obj
 
 .PHONY : src/game/player/player.obj
@@ -1498,6 +1552,12 @@ help:
 	@echo ... src/game/maze_things/legacy/ObjectMazeBuilder.obj
 	@echo ... src/game/maze_things/legacy/ObjectMazeBuilder.i
 	@echo ... src/game/maze_things/legacy/ObjectMazeBuilder.s
+	@echo ... src/game/maze_things/utils/coloredMapGenerator.obj
+	@echo ... src/game/maze_things/utils/coloredMapGenerator.i
+	@echo ... src/game/maze_things/utils/coloredMapGenerator.s
+	@echo ... src/game/maze_things/utils/raytracingHandler.obj
+	@echo ... src/game/maze_things/utils/raytracingHandler.i
+	@echo ... src/game/maze_things/utils/raytracingHandler.s
 	@echo ... src/game/player/player.obj
 	@echo ... src/game/player/player.i
 	@echo ... src/game/player/player.s

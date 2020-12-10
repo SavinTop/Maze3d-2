@@ -19,6 +19,7 @@
 #include "maze_things/utils/collisionChecker.hpp"
 #include "maze_things/floor/floorModel.hpp"
 #include "scenes/loadingScenes/LoadingScene.hpp"
+#include "maze_things/utils/raytracingHandler.hpp"
 
 class mazeScene : public Scene{
     public:
@@ -57,6 +58,8 @@ class mazeScene : public Scene{
 
     float lastMouseInput;
     float fov;
+
+    RaytracingHandler rth;
 
     //TODO do it fine, not like this
     unsigned int depthMapFBO;
