@@ -13,9 +13,9 @@ void mazeScene::start()
     glfwSetCursorPos(proc->getWnd(), window_w / 2.0f, window_h / 2.0f);
     maze.buildMaze();
     omm.init(maze, DrawableHolder(rootWallModel.get()), DrawableHolder(lineWallModel.get()), DrawableHolder(cornerWallModel.get()));
-    rth = RaycastingHandler(30,&omm);
+    rth = RaycastingHandler(50,&omm);
     int maze_size = omm.width();
-    floor.setParams(glm::vec2(maze_size * 8-6, maze_size * 8-6), {floorTexture, floorTextureNormal});
+    floor.setParams(glm::vec2(maze_size * 8-6+300, maze_size * 8-6+300), {floorTexture, floorTextureNormal});
     floor.setPosition(glm::vec3(maze_size * 8 / 2.0-4, -3, maze_size * 8 / 2.0-4));
     floor.load();
      //MazeMapGenerator mmg{maze};
@@ -75,15 +75,15 @@ void mazeScene::onDraw(float delta)
     glm::mat4 view = glm::mat4(1.0f);
     view = player.getCamera().getViewMatrix();
     glm::mat4 projection(1);
-    projection = glm::perspective(glm::radians(fov), (float)window_w / window_h, 0.1f, 150.0f);
+    projection = glm::perspective(glm::radians(fov), (float)window_w / window_h, 0.1f, 600.0f);
     glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
 
     auto playerPos = player.getCamera().getPos() / 8.0f;
     CheckGLError();
 
-    glm::vec3 sunPos{-0.462, 0.376, -0.802};
-    glUniform3fv(lightDirId, 1, glm::value_ptr(sunPos));
+    glm::vec3 lightDir = glm::normalize(lightPosition-floor.getPosition());
+    glUniform3fv(lightDirId, 1, glm::value_ptr(lightDir));
 
     glUniform3fv(program->getUniformLocation("viewPos"), 1, glm::value_ptr(player.getCamera().getPos()));
 
@@ -128,7 +128,7 @@ void mazeScene::onDraw(float delta)
     //menu->draw();
     
     depthMapProgram->bind();
-    //drawBasicTexturedRect(glm::vec4(0,0,1.0,1.0), shadow_h.depthMapTex_, depthMapProgram->getProgram());
+    drawBasicTexturedRect(glm::vec4(-0.5,-0.5,0.3,0.3*(float)window_w/window_h), shadow_h.depthMapTex_, depthMapProgram->getProgram());
     //drawBasicTexturedRect(glm::vec4(0,0,1.0,1.0), maze_texture->getId(), depthMapProgram->getProgram());
     
     CheckGLError();
@@ -201,12 +201,16 @@ void mazeScene::mouseMove(double xpos, double ypos)
 
 void mazeScene::calcShadows() 
 {
+    glCullFace(GL_FRONT);
     shadow_h.gl_init(maze_size_, 20);
     shadowProgram->bind();
     unsigned int lsm_id = shadowProgram->getUniformLocation("lightSpaceMatrix");
 
-    glm::mat4 lightProjection = glm::ortho(-50.0f, 50.0f, -50.0f, 50.0f, 1.0f, 100.0f);
-    glm::mat4 lightView = glm::lookAt(glm::vec3(-15.0f, 15.0f, -15.0f), 
+    float width = maze_size_*6;
+    float height = maze_size_*4;
+
+    glm::mat4 lightProjection = glm::ortho(-width, width, -height, height, 1.0f, 500.0f);
+    glm::mat4 lightView = glm::lookAt(lightPosition, 
                                   floor.getPosition(), 
                                   glm::vec3( 0.0f, 1.0f,  0.0f)); 
     lightSpaceMatrix = lightProjection * lightView; 
@@ -215,9 +219,12 @@ void mazeScene::calcShadows()
     for(int i=0;i<omm.height();i++)
         for(int j=0;j<omm.width();j++)
             omm.get(j,i)->model.draw(shadowProgram->getProgram());
+
+
     floor.draw(shadowProgram->getProgram());
     shadow_h.end(window_w, window_h);
     CheckGLError();
+    glCullFace(GL_BACK);
 }
 
 mazeScene::mazeScene(GameProcess *proc, int maze_size) : 

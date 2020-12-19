@@ -50,6 +50,7 @@ void Mesh::draw(oglw::Shader& program){
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, mesh.indices.size(), GL_UNSIGNED_INT, 0);
     glBindVertexArray(0);
+    glBindTexture(GL_TEXTURE_2D, 0);
 }
 
 void Mesh::drawWithoutTextures() 

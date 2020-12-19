@@ -66,7 +66,9 @@ void ObjectMazeMap::init(MazeBuilder& maze, DrawableHolder rootWall, DrawableHol
 						m_map[x][y].wt = Vertical;
 						m_map[x][y].fw = { x * wallOffset-1, y * wallOffset-1, x * wallOffset + 1, y * wallOffset + wallOffset };
 					}
+					
 				}
+
 			}
 		}
 }

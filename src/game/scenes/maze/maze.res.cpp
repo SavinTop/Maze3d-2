@@ -5,7 +5,7 @@ ResourcePack mazeScene::getResources()
     ResourcePack temp;
     temp.setResources(menu->getResources().getRes());
     temp.getRes().insert(temp.getRes().begin(),{cornerWallModel.get(), rootWallModel.get(),
-                          lineWallModel.get(), program.get(), cmt.get(), skyboxProgram.get(), cmo.get(),
+                          lineWallModel.get(),xmasTreeModel.get(), program.get(), cmt.get(), skyboxProgram.get(), cmo.get(),
                           floorTexture.get(), floorTextureNormal.get(), shadowProgram.get(),depthMapProgram.get()});
     return temp;
 }
@@ -16,6 +16,7 @@ void mazeScene::initResources()
     cornerWallModel = rm->createResource(res::ogl::Model("data\\models\\cornerWall.obj"), sceneName, "cornerWallModel");
     rootWallModel = rm->createResource(res::ogl::Model("data\\models\\oneUnitWall.obj"), sceneName, "rootWallModel");
     lineWallModel = rm->createResource(res::ogl::Model("data\\models\\threeUnitWall.obj"), sceneName, "lineWallModel");
+    xmasTreeModel = rm->createResource(res::ogl::Model("data\\models\\xmas-tree\\12150_Christmas_Tree_V2_L2.obj"), sceneName, "xmastreemodel");
     program = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\basic\\shader.vert", "data\\shaders\\basic\\shader.frag", "basicShader"), sceneName);
     cmt = rm->createResource(res::ogl::CubemapTexture({
                                  "data\\skybox\\right.jpg",

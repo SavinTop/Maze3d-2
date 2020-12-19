@@ -38,6 +38,7 @@ class mazeScene : public Scene{
     std::shared_ptr<res::ogl::Model> lineWallModel;
     std::shared_ptr<res::ogl::Model> rootWallModel;
     std::shared_ptr<res::ogl::Model> cornerWallModel;
+    std::shared_ptr<res::ogl::Model> xmasTreeModel;
     FloorModel floor;
     std::shared_ptr<res::ogl::Texture> floorTexture;
     std::shared_ptr<res::ogl::Texture> floorTextureNormal;
@@ -70,4 +71,6 @@ class mazeScene : public Scene{
     std::shared_ptr<res::ogl::ShaderProgram> shadowProgram;
     std::shared_ptr<res::ogl::ShaderProgram> depthMapProgram;
     glm::mat4 lightSpaceMatrix;
+
+    glm::vec3 lightPosition = glm::vec3(-5.0f, 15.0f, -10.0f);
 };

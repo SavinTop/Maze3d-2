@@ -6,7 +6,7 @@
 #include "scenes/loadingScenes/LoadingScene.hpp"
 #include "scenes/menu/menu.hpp"
 
-const int maxFps = 200;
+const int maxFps = 150;
 const int PPS = 100;
 const int UPS = 120;
 
