@@ -6,3 +6,5 @@
 #include "guiWindow.hpp"
 #include "label.hpp"
 #include "loadingBar.hpp"
+#include "basicTextRender.hpp"
+#include "basicTexturedRect.hpp"

@@ -5,7 +5,7 @@ void MazeGui::start()
 {
     initBeg();
     initDebug();
-    currentWindow = &debug;
+    currentWindow = &beg;
 }
 
 void MazeGui::draw() 

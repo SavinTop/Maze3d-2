@@ -1,8 +1,8 @@
 Структура папок тома Savin
 Серийный номер тома: 0C1B-5F1A
 D:.
-|   filetree.txt
 |   glad.c
+|   tree.txt
 |   
 +---engine
 |   +---baseTypes
@@ -108,6 +108,10 @@ D:.
     |   |       
     |   \---utils
     |           collisionChecker.hpp
+    |           coloredMapGenerator.cpp
+    |           coloredMapGenerator.hpp
+    |           raytracingHandler.cpp
+    |           raytracingHandler.hpp
     |           
     +---player
     |       player.cpp

@@ -44,14 +44,14 @@ void MenuGui::initEndless()
 
 void MenuGui::endless_leftArrowClick() 
 {
-    if(endless_startLevel_value<=1) return;
-    endless_startLevel_value-=1;
+    if(endless_startLevel_value<=5) return;
+    endless_startLevel_value-=5;
     endless_startLevel.setText(std::to_string(endless_startLevel_value));
 }
 
 void MenuGui::endless_rightArrowClick() 
 {
     if(endless_startLevel_value>=100) return;
-    endless_startLevel_value+=1;
+    endless_startLevel_value+=5;
     endless_startLevel.setText(std::to_string(endless_startLevel_value));
 }

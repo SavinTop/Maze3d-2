@@ -19,7 +19,8 @@
 #include "maze_things/utils/collisionChecker.hpp"
 #include "maze_things/floor/floorModel.hpp"
 #include "scenes/loadingScenes/LoadingScene.hpp"
-#include "maze_things/utils/raytracingHandler.hpp"
+#include "maze_things/utils/raycastingHandler.hpp"
+#include "maze_things/utils/shadowHandler.hpp"
 
 class mazeScene : public Scene{
     public:
@@ -32,6 +33,7 @@ class mazeScene : public Scene{
     ResourcePack getResources() override;
     void initResources() override;
     void mouseMove(double xpos, double ypos) override;
+    void calcShadows();
     private:
     std::shared_ptr<res::ogl::Model> lineWallModel;
     std::shared_ptr<res::ogl::Model> rootWallModel;
@@ -59,11 +61,13 @@ class mazeScene : public Scene{
     float lastMouseInput;
     float fov;
 
-    RaytracingHandler rth;
+    int maze_size_;
+
+    RaycastingHandler rth;
+    ShadowHandler shadow_h;
 
     //TODO do it fine, not like this
-    unsigned int depthMapFBO;
-    unsigned int depthMap;
     std::shared_ptr<res::ogl::ShaderProgram> shadowProgram;
+    std::shared_ptr<res::ogl::ShaderProgram> depthMapProgram;
     glm::mat4 lightSpaceMatrix;
 };

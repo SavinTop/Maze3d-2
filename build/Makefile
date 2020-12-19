@@ -925,6 +925,33 @@ src/engine/render/drawableHolder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.s
 .PHONY : src/engine/render/drawableHolder.cpp.s
 
+src/engine/render/easyLineRender.obj: src/engine/render/easyLineRender.cpp.obj
+
+.PHONY : src/engine/render/easyLineRender.obj
+
+# target to build an object file
+src/engine/render/easyLineRender.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/easyLineRender.cpp.obj
+.PHONY : src/engine/render/easyLineRender.cpp.obj
+
+src/engine/render/easyLineRender.i: src/engine/render/easyLineRender.cpp.i
+
+.PHONY : src/engine/render/easyLineRender.i
+
+# target to preprocess a source file
+src/engine/render/easyLineRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/easyLineRender.cpp.i
+.PHONY : src/engine/render/easyLineRender.cpp.i
+
+src/engine/render/easyLineRender.s: src/engine/render/easyLineRender.cpp.s
+
+.PHONY : src/engine/render/easyLineRender.s
+
+# target to generate assembly for a file
+src/engine/render/easyLineRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/render/easyLineRender.cpp.s
+.PHONY : src/engine/render/easyLineRender.cpp.s
+
 src/engine/utilities/fileLoader.obj: src/engine/utilities/fileLoader.cpp.obj
 
 .PHONY : src/engine/utilities/fileLoader.obj
@@ -1114,32 +1141,59 @@ src/game/maze_things/utils/coloredMapGenerator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.s
 .PHONY : src/game/maze_things/utils/coloredMapGenerator.cpp.s
 
-src/game/maze_things/utils/raytracingHandler.obj: src/game/maze_things/utils/raytracingHandler.cpp.obj
+src/game/maze_things/utils/raycastingHandler.obj: src/game/maze_things/utils/raycastingHandler.cpp.obj
 
-.PHONY : src/game/maze_things/utils/raytracingHandler.obj
+.PHONY : src/game/maze_things/utils/raycastingHandler.obj
 
 # target to build an object file
-src/game/maze_things/utils/raytracingHandler.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/raytracingHandler.cpp.obj
-.PHONY : src/game/maze_things/utils/raytracingHandler.cpp.obj
+src/game/maze_things/utils/raycastingHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj
+.PHONY : src/game/maze_things/utils/raycastingHandler.cpp.obj
 
-src/game/maze_things/utils/raytracingHandler.i: src/game/maze_things/utils/raytracingHandler.cpp.i
+src/game/maze_things/utils/raycastingHandler.i: src/game/maze_things/utils/raycastingHandler.cpp.i
 
-.PHONY : src/game/maze_things/utils/raytracingHandler.i
+.PHONY : src/game/maze_things/utils/raycastingHandler.i
 
 # target to preprocess a source file
-src/game/maze_things/utils/raytracingHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/raytracingHandler.cpp.i
-.PHONY : src/game/maze_things/utils/raytracingHandler.cpp.i
+src/game/maze_things/utils/raycastingHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.i
+.PHONY : src/game/maze_things/utils/raycastingHandler.cpp.i
 
-src/game/maze_things/utils/raytracingHandler.s: src/game/maze_things/utils/raytracingHandler.cpp.s
+src/game/maze_things/utils/raycastingHandler.s: src/game/maze_things/utils/raycastingHandler.cpp.s
 
-.PHONY : src/game/maze_things/utils/raytracingHandler.s
+.PHONY : src/game/maze_things/utils/raycastingHandler.s
 
 # target to generate assembly for a file
-src/game/maze_things/utils/raytracingHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/raytracingHandler.cpp.s
-.PHONY : src/game/maze_things/utils/raytracingHandler.cpp.s
+src/game/maze_things/utils/raycastingHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.s
+.PHONY : src/game/maze_things/utils/raycastingHandler.cpp.s
+
+src/game/maze_things/utils/shadowHandler.obj: src/game/maze_things/utils/shadowHandler.cpp.obj
+
+.PHONY : src/game/maze_things/utils/shadowHandler.obj
+
+# target to build an object file
+src/game/maze_things/utils/shadowHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj
+.PHONY : src/game/maze_things/utils/shadowHandler.cpp.obj
+
+src/game/maze_things/utils/shadowHandler.i: src/game/maze_things/utils/shadowHandler.cpp.i
+
+.PHONY : src/game/maze_things/utils/shadowHandler.i
+
+# target to preprocess a source file
+src/game/maze_things/utils/shadowHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.i
+.PHONY : src/game/maze_things/utils/shadowHandler.cpp.i
+
+src/game/maze_things/utils/shadowHandler.s: src/game/maze_things/utils/shadowHandler.cpp.s
+
+.PHONY : src/game/maze_things/utils/shadowHandler.s
+
+# target to generate assembly for a file
+src/game/maze_things/utils/shadowHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.s
+.PHONY : src/game/maze_things/utils/shadowHandler.cpp.s
 
 src/game/player/player.obj: src/game/player/player.cpp.obj
 
@@ -1534,6 +1588,9 @@ help:
 	@echo ... src/engine/render/drawableHolder.obj
 	@echo ... src/engine/render/drawableHolder.i
 	@echo ... src/engine/render/drawableHolder.s
+	@echo ... src/engine/render/easyLineRender.obj
+	@echo ... src/engine/render/easyLineRender.i
+	@echo ... src/engine/render/easyLineRender.s
 	@echo ... src/engine/utilities/fileLoader.obj
 	@echo ... src/engine/utilities/fileLoader.i
 	@echo ... src/engine/utilities/fileLoader.s
@@ -1555,9 +1612,12 @@ help:
 	@echo ... src/game/maze_things/utils/coloredMapGenerator.obj
 	@echo ... src/game/maze_things/utils/coloredMapGenerator.i
 	@echo ... src/game/maze_things/utils/coloredMapGenerator.s
-	@echo ... src/game/maze_things/utils/raytracingHandler.obj
-	@echo ... src/game/maze_things/utils/raytracingHandler.i
-	@echo ... src/game/maze_things/utils/raytracingHandler.s
+	@echo ... src/game/maze_things/utils/raycastingHandler.obj
+	@echo ... src/game/maze_things/utils/raycastingHandler.i
+	@echo ... src/game/maze_things/utils/raycastingHandler.s
+	@echo ... src/game/maze_things/utils/shadowHandler.obj
+	@echo ... src/game/maze_things/utils/shadowHandler.i
+	@echo ... src/game/maze_things/utils/shadowHandler.s
 	@echo ... src/game/player/player.obj
 	@echo ... src/game/player/player.i
 	@echo ... src/game/player/player.s

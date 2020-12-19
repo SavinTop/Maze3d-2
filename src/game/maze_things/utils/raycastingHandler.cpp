@@ -1,13 +1,13 @@
-#include "raytracingHandler.hpp"
+#include "raycastingHandler.hpp"
 
-RaytracingHandler::RaytracingHandler(int ray_count, ObjectMazeMap* mmp) 
+RaycastingHandler::RaycastingHandler(int ray_count, ObjectMazeMap* mmp) 
 {
     this->ray_count = ray_count;
     this->mmp = mmp;
     this->rays.resize(ray_count);
 }
 
-void RaytracingHandler::recalculate(float fov, glm::vec2 camPos, float camDir) 
+void RaycastingHandler::recalculate(float fov, glm::vec2 camPos, float camDir) 
 {
     collidedSectors.clear();
     fov = glm::half_pi<float>()+0.5;
@@ -47,9 +47,9 @@ void RaytracingHandler::recalculate(float fov, glm::vec2 camPos, float camDir)
                         collided |= lineRect(curr.start.x, curr.start.y, curr.end.x, curr.end.y, sw.x, sw.y,abs(sw.x-sw.z),abs(sw.y-sw.w));
                     if(collided)
                     {
-                        collidedSectors.insert(std::make_pair<int,int>((int)sector.x, (int)sector.y));
                         curr.collapsed = true;
                     }
+                    collidedSectors.insert(std::make_pair<int,int>((int)sector.x, (int)sector.y));
                 }
             curr.currPos+=curr.step;
             allRaysCollapsed = false;

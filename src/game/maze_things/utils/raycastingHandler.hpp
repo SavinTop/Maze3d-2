@@ -12,10 +12,10 @@ struct ray_params{
     bool collapsed;
 };
 
-class RaytracingHandler{
+class RaycastingHandler{
 public:
-    RaytracingHandler(int ray_count, ObjectMazeMap* mmp);
-    RaytracingHandler(){};
+    RaycastingHandler(int ray_count, ObjectMazeMap* mmp);
+    RaycastingHandler(){};
     void recalculate(float fov, glm::vec2 camPos, float camDir);
     std::set<std::pair<int, int>>& getCollidedSectors(){return collidedSectors;};
 private:
