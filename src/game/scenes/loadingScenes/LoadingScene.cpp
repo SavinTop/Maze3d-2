@@ -47,8 +47,8 @@ void LoadingScene::update(float delta)
     if(!t->resName_.empty())
     lbl.setText(t->resName_);
     lb.setProgress((float)currentIndex/resourcesToLoad.size());
-    //unsigned char c = (unsigned char)(lb.getProgress()/2*255);
-    //lb.setColor(Color::rgba(c,c,c,255));
+    unsigned char c = (unsigned char)(lb.getProgress()/2*255);
+    lb.setColor(Color::rgba(c,c,c,255));
 }
 
 void LoadingScene::onDraw(float delta)
@@ -70,7 +70,6 @@ void LoadingScene::onDraw(float delta)
     projectionId = textProgram.getUniformLocation("projection");
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
     //lbl.draw(textProgram);
-
 }
 
 ResourcePack LoadingScene::getResources()

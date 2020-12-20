@@ -5,7 +5,7 @@ ResourcePack mazeScene::getResources()
     ResourcePack temp;
     temp.setResources(menu->getResources().getRes());
     temp.getRes().insert(temp.getRes().begin(),{cornerWallModel.get(), rootWallModel.get(),
-                          lineWallModel.get(),xmasTreeModel.get(), program.get(), cmt.get(), skyboxProgram.get(), cmo.get(),
+                          lineWallModel.get(), program.get(), cmt.get(), skyboxProgram.get(), cmo.get(),
                           floorTexture.get(), floorTextureNormal.get(), shadowProgram.get(),depthMapProgram.get()});
     return temp;
 }

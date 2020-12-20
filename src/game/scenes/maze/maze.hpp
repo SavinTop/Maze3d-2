@@ -33,6 +33,8 @@ class mazeScene : public Scene{
     ResourcePack getResources() override;
     void initResources() override;
     void mouseMove(double xpos, double ypos) override;
+    void mouseDown(double xpos, double ypos, int mb, int action) override;
+    void okClicked();
     void calcShadows();
     private:
     std::shared_ptr<res::ogl::Model> lineWallModel;
@@ -72,5 +74,7 @@ class mazeScene : public Scene{
     std::shared_ptr<res::ogl::ShaderProgram> depthMapProgram;
     glm::mat4 lightSpaceMatrix;
 
-    glm::vec3 lightPosition = glm::vec3(-5.0f, 15.0f, -10.0f);
+    glm::vec3 lightPosition = glm::vec3(-4.0f, 15.0f, -10.0f);
+
+    std::set<std::pair<int,int>> loadedSectors;
 };

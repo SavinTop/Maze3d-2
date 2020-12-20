@@ -21,15 +21,17 @@ void initBeg();
 void debug_setDebugPlayerPos(float x, float y);
 
 void setMazeMap(std::shared_ptr<res::ogl::Texture> mazeTexture);
+void setOkCallback(std::function<void(void)> click);
 
 virtual void InitializeSubResources(std::string groupName);
 ResourcePack& getResources();
 std::vector<GuiObject*> getElements();
 std::vector<GuiObject*> getChildrenRecurs(GuiObject* curr);
+
+GuiWindow* currentWindow;
 private:
     int w,h;
     ResourceManager* rm;
-    GuiWindow* currentWindow;
     FullscreenBox debug_fbox;
 
     GuiWindow debug;
@@ -41,8 +43,13 @@ private:
     GuiWindow beg;
     FullscreenBox beg_fbox;
     Button beg_mazemap_test;
+    Button beg_ok;
+    std::shared_ptr<res::ogl::Texture> beg_ok_active;
+    std::shared_ptr<res::ogl::Texture> beg_ok_idle;
     std::shared_ptr<res::ogl::Texture> beg_mazemap_tex;
+
 
     ResourcePack r_pack;
     std::shared_ptr<res::ogl::ShaderProgram> guiShader;
+    std::string spriteDirectory = "data\\scenes\\mainMenu\\sprites\\";
 };

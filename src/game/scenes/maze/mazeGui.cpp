@@ -60,7 +60,10 @@ void MazeGui::unload()
 
 void MazeGui::mouseInput(int x, int y, bool lb) 
 {
-    
+    if (!currentWindow) return;
+    currentWindow->__mouseMove(x, h - y);
+    if (lb)
+        currentWindow->__leftMouseBtnDown(x, h - y);
 }
 
 void MazeGui::initDebug() 
@@ -89,12 +92,18 @@ void MazeGui::initBeg()
     beg_fbox = FullscreenBox(nullptr,w,h);
     beg_fbox.setParent(&beg);
 
-    const float downSpace = 0.1;
+    const float downSpace = 0.15;
 
     beg_mazemap_test = Button(nullptr,  beg_mazemap_tex.get(), beg_mazemap_tex.get());
     beg_mazemap_test.setParent(&beg_fbox);
     beg_mazemap_test.setPosition(0.0f,0.0f+downSpace);
+    beg_mazemap_test.setRotation(180, glm::vec3(0,0,1));
     beg_mazemap_test.setSize(1.0f-downSpace,1.0f-downSpace);
+
+    beg_ok = Button(nullptr, beg_ok_idle.get(), beg_ok_active.get());
+    beg_ok.setParent(&beg_fbox);
+    beg_ok.setSize(0.3f,0.09f);
+    beg_ok.setPosition(0.0f,-0.85f);
 
     auto temp = getChildrenRecurs(&beg);
     beg.setDrawableChildArr(temp);
@@ -111,14 +120,21 @@ void MazeGui::setMazeMap(std::shared_ptr<res::ogl::Texture> mazeTexture)
     beg_mazemap_tex = mazeTexture;
 }
 
+void MazeGui::setOkCallback(std::function<void(void)> click) 
+{
+    beg_ok.setClickCallback(click);
+}
+
 void MazeGui::InitializeSubResources(std::string groupName) 
 {
     this->guiShader = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\basicGui\\basic.vert","data\\shaders\\basicGui\\basic.frag", "guiProgram"),groupName);
+    this->beg_ok_idle = rm->createResource(res::ogl::Texture(spriteDirectory+"buttons\\ok_idle.png"),groupName);
+    this->beg_ok_active = rm->createResource(res::ogl::Texture(spriteDirectory+"buttons\\ok_active.png"),groupName);
 }
 
 ResourcePack& MazeGui::getResources() 
 {
-    r_pack = ResourcePack({guiShader.get()});
+    r_pack = ResourcePack({guiShader.get(), beg_ok_active.get(), beg_ok_idle.get()});
     return r_pack;
 }
 

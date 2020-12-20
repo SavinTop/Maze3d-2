@@ -25,7 +25,7 @@ void RaycastingHandler::recalculate(float fov, glm::vec2 camPos, float camDir)
 
     bool allRaysCollapsed = false;
     int counter = 0;
-    while(!allRaysCollapsed && counter<1000)
+    while(!allRaysCollapsed && counter<20)
     {
         counter++;
         allRaysCollapsed = true;

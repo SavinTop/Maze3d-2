@@ -20,6 +20,7 @@ struct mazeObject
 	wallType wt;
 	glm::ivec4 fw;
 	glm::ivec4 sw;
+	glm::ivec2 sector10;
 };
 
 class ObjectMazeMap
