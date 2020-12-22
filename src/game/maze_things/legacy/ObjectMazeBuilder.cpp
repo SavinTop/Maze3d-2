@@ -73,8 +73,6 @@ void ObjectMazeMap::init(MazeBuilder& maze, DrawableHolder rootWall, DrawableHol
 			m_map[x][y].sector10 = glm::ivec2(x/10,y/10);
 			 
 		}
-
-	m_map[mazeW-2][mazeH-1].model.setPosition(glm::vec3((mazeW-2) * wallOffset+3, 6, (mazeH-1) * wallOffset));
 }
 
 std::vector<std::vector<mazeObject>>& ObjectMazeMap::getMap() 

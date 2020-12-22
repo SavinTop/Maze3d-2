@@ -123,7 +123,7 @@ Containers::Mesh Model::processMesh(aiMesh *mesh, const aiScene *scene)
     std::vector<std::shared_ptr<Texture>> normalMaps = loadMaterialTextures(material, aiTextureType_HEIGHT, TextureType::Normal);
     textures.insert(textures.end(), normalMaps.begin(), normalMaps.end());
         // 4. height maps
-    std::vector<std::shared_ptr<Texture>> heightMaps = loadMaterialTextures(material, aiTextureType_AMBIENT, TextureType::Height);
+    std::vector<std::shared_ptr<Texture>> heightMaps = loadMaterialTextures(material, aiTextureType_AMBIENT_OCCLUSION, TextureType::Height);
     textures.insert(textures.end(), heightMaps.begin(), heightMaps.end());
 
     return Containers::Mesh(vertices, indices, textures);

@@ -1,0 +1,148 @@
+Date : 2020-12-21 15:14:51
+Directory : d:\21\Maze3d\src
+Total : 101 files,  5753 codes, 55 comments, 977 blanks, all 6785 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |        100 |      3,983 |         30 |        930 |      4,943 |
+| C        |          1 |      1,770 |         25 |         47 |      1,842 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                        | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                           |        101 |      5,753 |         55 |        977 |      6,785 |
+| engine                                                                      |         66 |      2,198 |         12 |        551 |      2,761 |
+| engine\baseTypes                                                            |         55 |      1,906 |          7 |        485 |      2,398 |
+| engine\baseTypes\containers                                                 |          4 |        113 |          0 |         32 |        145 |
+| engine\baseTypes\gui                                                        |         20 |        545 |          1 |        113 |        659 |
+| engine\baseTypes\oglWrappers                                                |          3 |        123 |          0 |         36 |        159 |
+| engine\baseTypes\resource                                                   |          4 |        170 |          0 |         39 |        209 |
+| engine\baseTypes\resources                                                  |         19 |        867 |          6 |        242 |      1,115 |
+| engine\baseTypes\resources\external                                         |          6 |        261 |          4 |         79 |        344 |
+| engine\baseTypes\resources\internal                                         |         13 |        606 |          2 |        163 |        771 |
+| engine\baseTypes\resources\internal\OGL                                     |         13 |        606 |          2 |        163 |        771 |
+| engine\render                                                               |          8 |        221 |          0 |         50 |        271 |
+| engine\utilities                                                            |          3 |         71 |          5 |         16 |         92 |
+| game                                                                        |         34 |      1,785 |         18 |        379 |      2,182 |
+| game\maze_things                                                            |         15 |        637 |          3 |        137 |        777 |
+| game\maze_things\floor                                                      |          2 |         75 |          0 |         21 |         96 |
+| game\maze_things\legacy                                                     |          6 |        336 |          3 |         79 |        418 |
+| game\maze_things\utils                                                      |          7 |        226 |          0 |         37 |        263 |
+| game\player                                                                 |          2 |         48 |          0 |         14 |         62 |
+| game\scenes                                                                 |         14 |        979 |         15 |        208 |      1,202 |
+| game\scenes\loadingScenes                                                   |          2 |        105 |          2 |         20 |        127 |
+| game\scenes\maze                                                            |          5 |        509 |         10 |        103 |        622 |
+| game\scenes\menu                                                            |          7 |        365 |          3 |         85 |        453 |
++-----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                    | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| d:\21\Maze3d\src\engine\baseTypes\color.cpp                                 | C++      |         34 |          0 |          7 |         41 |
+| d:\21\Maze3d\src\engine\baseTypes\color.hpp                                 | C++      |         10 |          0 |          7 |         17 |
+| d:\21\Maze3d\src\engine\baseTypes\containers\Image.cpp                      | C++      |         41 |          0 |         12 |         53 |
+| d:\21\Maze3d\src\engine\baseTypes\containers\Image.hpp                      | C++      |         24 |          0 |         10 |         34 |
+| d:\21\Maze3d\src\engine\baseTypes\containers\mesh.cpp                       | C++      |         17 |          0 |          4 |         21 |
+| d:\21\Maze3d\src\engine\baseTypes\containers\mesh.hpp                       | C++      |         31 |          0 |          6 |         37 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\basicTextRender.cpp                   | C++      |        119 |          0 |         23 |        142 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\basicTextRender.hpp                   | C++      |         22 |          0 |          4 |         26 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\basicTexturedRect.hpp                 | C++      |         18 |          0 |          2 |         20 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\button.cpp                            | C++      |         41 |          0 |          7 |         48 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\button.hpp                            | C++      |         17 |          0 |          4 |         21 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\fullscreenBox.cpp                     | C++      |         22 |          0 |          6 |         28 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\fullscreenBox.hpp                     | C++      |         11 |          0 |          4 |         15 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\gui.hpp                               | C++      |          9 |          0 |          1 |         10 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\guiObject.cpp                         | C++      |         66 |          0 |         14 |         80 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\guiObject.hpp                         | C++      |         30 |          1 |          5 |         36 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\guiShaderType.hpp                     | C++      |          4 |          0 |          1 |          5 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\guiWindow.cpp                         | C++      |         26 |          0 |          7 |         33 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\guiWindow.hpp                         | C++      |         13 |          0 |          3 |         16 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\justRect.cpp                          | C++      |         36 |          0 |         11 |         47 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\justRect.hpp                          | C++      |          3 |          0 |          1 |          4 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\label.cpp                             | C++      |         42 |          0 |          9 |         51 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\label.hpp                             | C++      |         21 |          0 |          2 |         23 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\loadingBar.cpp                        | C++      |         26 |          0 |          6 |         32 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\loadingBar.hpp                        | C++      |         15 |          0 |          2 |         17 |
+| d:\21\Maze3d\src\engine\baseTypes\gui\textAlign.hpp                         | C++      |          4 |          0 |          1 |          5 |
+| d:\21\Maze3d\src\engine\baseTypes\oglWrappers\oglw.h                        | C++      |          2 |          0 |          1 |          3 |
+| d:\21\Maze3d\src\engine\baseTypes\oglWrappers\shader.cpp                    | C++      |         91 |          0 |         25 |        116 |
+| d:\21\Maze3d\src\engine\baseTypes\oglWrappers\shader.hpp                    | C++      |         30 |          0 |         10 |         40 |
+| d:\21\Maze3d\src\engine\baseTypes\resource\resource.cpp                     | C++      |         50 |          0 |          9 |         59 |
+| d:\21\Maze3d\src\engine\baseTypes\resource\resource.hpp                     | C++      |         46 |          0 |          9 |         55 |
+| d:\21\Maze3d\src\engine\baseTypes\resource\resourceManager.cpp              | C++      |         23 |          0 |          6 |         29 |
+| d:\21\Maze3d\src\engine\baseTypes\resource\resourceManager.hpp              | C++      |         51 |          0 |         15 |         66 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\external\Image.cpp              | C++      |         44 |          0 |         13 |         57 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\external\Image.hpp              | C++      |         23 |          0 |          8 |         31 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\external\TextFile.cpp           | C++      |         29 |          0 |         10 |         39 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\external\TextFile.hpp           | C++      |         17 |          0 |          9 |         26 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\external\model.cpp              | C++      |        119 |          4 |         30 |        153 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\external\model.hpp              | C++      |         29 |          0 |          9 |         38 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp   | C++      |         88 |          0 |         17 |        105 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapModel.hpp   | C++      |         21 |          0 |          6 |         27 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp | C++      |         69 |          0 |         12 |         81 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.hpp | C++      |         22 |          0 |          7 |         29 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\glresources.hpp    | C++      |          7 |          0 |          1 |          8 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\mesh.cpp           | C++      |         87 |          0 |         25 |        112 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\mesh.hpp           | C++      |         26 |          0 |          7 |         33 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\model.cpp          | C++      |         50 |          2 |         11 |         63 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\model.hpp          | C++      |         20 |          0 |          7 |         27 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\shader.cpp         | C++      |         52 |          0 |         15 |         67 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\shader.hpp         | C++      |         32 |          0 |         10 |         42 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\texture.cpp        | C++      |         82 |          0 |         28 |        110 |
+| d:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\texture.hpp        | C++      |         50 |          0 |         17 |         67 |
+| d:\21\Maze3d\src\engine\baseTypes\scene.cpp                                 | C++      |         11 |          0 |          4 |         15 |
+| d:\21\Maze3d\src\engine\baseTypes\scene.hpp                                 | C++      |         21 |          0 |          4 |         25 |
+| d:\21\Maze3d\src\engine\baseTypes\script.hpp                                | C++      |         12 |          0 |          1 |         13 |
+| d:\21\Maze3d\src\engine\render\camera.cpp                                   | C++      |         61 |          0 |         13 |         74 |
+| d:\21\Maze3d\src\engine\render\camera.hpp                                   | C++      |         27 |          0 |          8 |         35 |
+| d:\21\Maze3d\src\engine\render\drawable.cpp                                 | C++      |         55 |          0 |         10 |         65 |
+| d:\21\Maze3d\src\engine\render\drawable.hpp                                 | C++      |         27 |          0 |          6 |         33 |
+| d:\21\Maze3d\src\engine\render\drawableHolder.cpp                           | C++      |         18 |          0 |          5 |         23 |
+| d:\21\Maze3d\src\engine\render\drawableHolder.hpp                           | C++      |         12 |          0 |          2 |         14 |
+| d:\21\Maze3d\src\engine\render\easyLineRender.cpp                           | C++      |         17 |          0 |          4 |         21 |
+| d:\21\Maze3d\src\engine\render\easyLineRender.hpp                           | C++      |          4 |          0 |          2 |          6 |
+| d:\21\Maze3d\src\engine\utilities\debug.hpp                                 | C++      |         24 |          0 |          6 |         30 |
+| d:\21\Maze3d\src\engine\utilities\fileLoader.cpp                            | C++      |         40 |          5 |          8 |         53 |
+| d:\21\Maze3d\src\engine\utilities\fileLoader.hpp                            | C++      |          7 |          0 |          2 |          9 |
+| d:\21\Maze3d\src\game\game_scene_enum.hpp                                   | C++      |          4 |          0 |          1 |          5 |
+| d:\21\Maze3d\src\game\gameprocess.cpp                                       | C++      |         91 |          0 |         14 |        105 |
+| d:\21\Maze3d\src\game\gameprocess.hpp                                       | C++      |         26 |          0 |          5 |         31 |
+| d:\21\Maze3d\src\game\maze_things\floor\floorModel.cpp                      | C++      |         60 |          0 |         17 |         77 |
+| d:\21\Maze3d\src\game\maze_things\floor\floorModel.hpp                      | C++      |         15 |          0 |          4 |         19 |
+| d:\21\Maze3d\src\game\maze_things\legacy\MazeBuilder.cpp                    | C++      |        107 |          0 |         24 |        131 |
+| d:\21\Maze3d\src\game\maze_things\legacy\MazeBuilder.hpp                    | C++      |         38 |          1 |         12 |         51 |
+| d:\21\Maze3d\src\game\maze_things\legacy\MazeMapGenerator.cpp               | C++      |         64 |          0 |         14 |         78 |
+| d:\21\Maze3d\src\game\maze_things\legacy\MazeMapGenerator.hpp               | C++      |         19 |          0 |          6 |         25 |
+| d:\21\Maze3d\src\game\maze_things\legacy\ObjectMazeBuilder.cpp              | C++      |         77 |          0 |         15 |         92 |
+| d:\21\Maze3d\src\game\maze_things\legacy\ObjectMazeBuilder.hpp              | C++      |         31 |          2 |          8 |         41 |
+| d:\21\Maze3d\src\game\maze_things\utils\collisionChecker.hpp                | C++      |         49 |          0 |         10 |         59 |
+| d:\21\Maze3d\src\game\maze_things\utils\coloredMapGenerator.cpp             | C++      |         33 |          0 |          9 |         42 |
+| d:\21\Maze3d\src\game\maze_things\utils\coloredMapGenerator.hpp             | C++      |         11 |          0 |          2 |         13 |
+| d:\21\Maze3d\src\game\maze_things\utils\raycastingHandler.cpp               | C++      |         55 |          0 |          4 |         59 |
+| d:\21\Maze3d\src\game\maze_things\utils\raycastingHandler.hpp               | C++      |         23 |          0 |          3 |         26 |
+| d:\21\Maze3d\src\game\maze_things\utils\shadowHandler.cpp                   | C++      |         41 |          0 |          7 |         48 |
+| d:\21\Maze3d\src\game\maze_things\utils\shadowHandler.hpp                   | C++      |         14 |          0 |          2 |         16 |
+| d:\21\Maze3d\src\game\player\player.cpp                                     | C++      |         33 |          0 |         10 |         43 |
+| d:\21\Maze3d\src\game\player\player.hpp                                     | C++      |         15 |          0 |          4 |         19 |
+| d:\21\Maze3d\src\game\scenes\loadingScenes\LoadingScene.cpp                 | C++      |         74 |          1 |         12 |         87 |
+| d:\21\Maze3d\src\game\scenes\loadingScenes\LoadingScene.hpp                 | C++      |         31 |          1 |          8 |         40 |
+| d:\21\Maze3d\src\game\scenes\maze\maze.cpp                                  | C++      |        221 |          8 |         42 |        271 |
+| d:\21\Maze3d\src\game\scenes\maze\maze.hpp                                  | C++      |         67 |          1 |         13 |         81 |
+| d:\21\Maze3d\src\game\scenes\maze\maze.res.cpp                              | C++      |         34 |          0 |          2 |         36 |
+| d:\21\Maze3d\src\game\scenes\maze\mazeGui.cpp                               | C++      |        145 |          1 |         33 |        179 |
+| d:\21\Maze3d\src\game\scenes\maze\mazeGui.hpp                               | C++      |         42 |          0 |         13 |         55 |
+| d:\21\Maze3d\src\game\scenes\menu\endlessWindow.cpp                         | C++      |         47 |          0 |         10 |         57 |
+| d:\21\Maze3d\src\game\scenes\menu\mainWindow.cpp                            | C++      |         34 |          0 |         10 |         44 |
+| d:\21\Maze3d\src\game\scenes\menu\menu.cpp                                  | C++      |         61 |          1 |         14 |         76 |
+| d:\21\Maze3d\src\game\scenes\menu\menu.hpp                                  | C++      |         35 |          0 |         12 |         47 |
+| d:\21\Maze3d\src\game\scenes\menu\menuGui.cpp                               | C++      |        100 |          1 |         19 |        120 |
+| d:\21\Maze3d\src\game\scenes\menu\menuGui.hpp                               | C++      |         61 |          1 |         16 |         78 |
+| d:\21\Maze3d\src\game\scenes\menu\resourceMenuGui.cpp                       | C++      |         27 |          0 |          4 |         31 |
+| d:\21\Maze3d\src\glad.c                                                     | C        |      1,770 |         25 |         47 |      1,842 |
+| Total                                                                       |          |      5,753 |         55 |        977 |      6,785 |
++-----------------------------------------------------------------------------+----------+------------+------------+------------+------------+

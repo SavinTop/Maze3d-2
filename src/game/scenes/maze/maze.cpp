@@ -81,20 +81,31 @@ void mazeScene::onDraw(float delta)
     auto playerPos = player.getCamera().getPos() / 8.0f;
     CheckGLError();
 
-    glm::vec3 lightDir = glm::normalize(lightPosition - floor.getPosition());
+    glm::vec3 lightDir = glm::normalize(lightPosition*(float)(maze_size_ / 5) - floor.getPosition());
     glUniform3fv(lightDirId, 1, glm::value_ptr(lightDir));
 
     glUniform3fv(program->getUniformLocation("viewPos"), 1, glm::value_ptr(player.getCamera().getPos()));
 
     glUniform1i(shadowMapid, 5);
     glActiveTexture(GL_TEXTURE0 + 5);
-    glBindTexture(GL_TEXTURE_2D, shadow_h.depthMapTex_);
+    auto& sett = cheatCode_h.getSettings();
+    if(sett.shadows || sett.epilepsyShadows && sett.ep_shadow_state%2)
+    {
+        glUniform1i(program->getUniformLocation("showShadows"), 1);
+        glBindTexture(GL_TEXTURE_2D, shadow_h.depthMapTex_);
+        glUniformMatrix4fv(lightspacematrixid, 1, false, glm::value_ptr(lightSpaceMatrix));
+    }else{
+        glUniform1i(program->getUniformLocation("showShadows"), 0);
+        glBindTexture(GL_TEXTURE_2D, 0);
+    }
+    sett.ep_shadow_state++;
 
-    glUniformMatrix4fv(lightspacematrixid, 1, false, glm::value_ptr(lightSpaceMatrix));
+    glUniform1i(program->getUniformLocation("showLight"), sett.light);
 
     glm::vec2 real_pp{player.getCamera().getPos().x, player.getCamera().getPos().z};
     float angle = glm::radians(player.getCamera().Yaw);
 
+    if(sett.walls){
     rth.recalculate(glm::radians(fov), real_pp, angle);
 
     for (auto &el : rth.getCollidedSectors())
@@ -109,9 +120,12 @@ void mazeScene::onDraw(float delta)
                     t->model.draw(program->getProgram());
                 }
     }
+    }
 
-    floor.draw(program->getProgram());
+    if(sett.floor)
+        floor.draw(program->getProgram());
 
+    if(sett.skybox){
     glDepthFunc(GL_LEQUAL);
     skyboxProgram->bind();
     glUniform1i(skyboxProgram->getUniformLocation("skybox"), 0);
@@ -123,6 +137,7 @@ void mazeScene::onDraw(float delta)
     glBindTexture(GL_TEXTURE_2D, shadow_h.depthMapTex_);
     cmo->draw(skyboxProgram->getProgram());
     glDepthFunc(GL_LESS);
+    }
     menu->draw();
 
     depthMapProgram->bind();
@@ -134,6 +149,7 @@ void mazeScene::onDraw(float delta)
 
 void mazeScene::physTick(float delta)
 {
+    auto& sett = cheatCode_h.getSettings();
     const float collBox = 0.2;
 
     glm::vec3 lastPlayerPos = player.getCamera().getPos();
@@ -157,8 +173,7 @@ void mazeScene::physTick(float delta)
     if (glfwGetKey(proc->getWnd(), GLFW_KEY_A) == GLFW_PRESS)
         player.moveSideways(-delta * playerSpeed);
 
-    if (glfwGetKey(proc->getWnd(), GLFW_KEY_F) == GLFW_PRESS)
-        player.setFixedZ(!player.getFixedZ());
+    player.setFixedZ(!sett.noclip);
 
     auto getPointCollBox = [&collBox](glm::vec3 pos) {
         return glm::vec4{pos.x - collBox, pos.z - collBox, pos.x + collBox, pos.z + collBox};
@@ -170,7 +185,7 @@ void mazeScene::physTick(float delta)
     glm::vec3 tempPos = playerPos;
     auto t = checkCollision(omm, sector, getPointCollBox(tempPos));
 
-    if (t && playerPos.y < 4)
+    if (!sett.noclip && t && playerPos.y < 4)
     {
         auto fixedX = tempPos * glm::vec3(0, 1, 1) + glm::vec3(lastPlayerPos.x, 0, 0);
         auto tx = checkCollision(omm, sector, getPointCollBox(fixedX));
@@ -218,6 +233,11 @@ void mazeScene::mouseDown(double xpos, double ypos, int mb, int action)
     if(lm)
         menu->mouseInput(xpos,ypos,lm);
         menu->mouseInput(xpos,ypos,false);
+}
+
+void mazeScene::charInput(unsigned int character) 
+{
+    cheatCode_h.charInput(character);
 }
 
 void mazeScene::okClicked() 

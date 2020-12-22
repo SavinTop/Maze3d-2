@@ -17,6 +17,7 @@ virtual ResourcePack getResources() = 0;
 virtual void initResources() = 0;
 virtual void mouseMove(double xpos, double ypos){};
 virtual void mouseDown(double xpos, double ypos, int mb, int action){};
+virtual void charInput(unsigned int character){};
 std::string& getName(){return sceneName;};
 protected:
     GameProcess* proc;

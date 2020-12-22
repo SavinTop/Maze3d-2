@@ -97,6 +97,12 @@ void GameProcess::mouse_button_callback(double xpos, double ypos, int mb, int ac
         currentScene->mouseDown(xpos,ypos,mb, action);
 }
 
+void GameProcess::char_input_callback(GLFWwindow* window, unsigned int codepoint) 
+{
+    if(currentScene)
+        currentScene->charInput(codepoint);
+}
+
 GameProcess::GameProcess(GLFWwindow* wnd) 
 : window(wnd)
 {

@@ -1,0 +1,247 @@
+[33mcommit d1ab8ba3137af957d34510acd01756f2747cdaa5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sun Dec 20 16:10:42 2020 +0300
+
+    tam taram
+
+[33mcommit 0378b69d4522146bd0517f4a019ac87b52b9364b[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sat Dec 19 19:04:29 2020 +0300
+
+    not bad shadows
+
+[33mcommit c51334b11373d3eed4c1fea96e74f1b559bf0dd4[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sat Dec 19 16:28:02 2020 +0300
+
+    broken shadows
+
+[33mcommit 998466bbf3e14068194f3e8f925ddc55922167ce[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Thu Dec 10 21:58:52 2020 +0300
+
+    bla bla
+
+[33mcommit de4b06c23d3c63f66df7610238a845f3e63f5a78[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Thu Dec 10 16:52:59 2020 +0300
+
+    raytracing;)
+
+[33mcommit 929c757647caaf6a122c56d28a2b438058a579f2[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Wed Dec 9 17:41:25 2020 +0300
+
+    yes
+
+[33mcommit 974290fb437d61f64f5946bfafa5a77814afbfac[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Tue Nov 24 16:14:56 2020 +0300
+
+    just updates
+
+[33mcommit d3ba8842f85b4a284078b4d8342de40b63d63daa[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sun Nov 22 16:55:12 2020 +0300
+
+    floor and shadows added, shadow dont working, i will fix it soon
+
+[33mcommit 3bbffed6c9566947f1e54f697aa886fa92500e08[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sat Nov 21 16:42:56 2020 +0300
+
+    loading screens now working fine
+
+[33mcommit 564924dfe08b1b9bbba0ad5d40493bfed2c7143d[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sat Nov 21 14:20:13 2020 +0300
+
+    specular light, normal maps - love ya learnopengl
+
+[33mcommit 34418a974a01c44a0c1e19dcb9fab5fddbbdc8d6[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sat Nov 21 12:03:18 2020 +0300
+
+    skybox is here, thanks to learnopengl.com
+
+[33mcommit 71b6a339730904800a59d4ed1e92398429d960bd[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Fri Nov 20 14:27:53 2020 +0300
+
+    collision check added
+
+[33mcommit 69b1a35b48f1ac85baa1ea14a330e42bb71f9754[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Thu Nov 19 15:03:40 2020 +0300
+
+    maze looks fine
+
+[33mcommit 692bd6ef3b3899311669b44f0e7e4b4867fe93e5[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Thu Nov 19 12:16:57 2020 +0300
+
+    almost nothing new
+
+[33mcommit e27b6408d1d93474ad48a39da80bece66a098ce5[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Wed Nov 18 13:27:50 2020 +0300
+
+    ...
+
+[33mcommit bad01d623e61eca42b28b0bffc9c813b3cbd93c4[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Tue Nov 17 17:45:23 2020 +0300
+
+    some walls and new bugs
+
+[33mcommit 57c31ab5a8b6bbd8b3d640f2a46c33e4b22fabdc[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Tue Nov 17 10:42:01 2020 +0300
+
+    hmmm...
+
+[33mcommit 8597fe12f7acf25ab6453e5328ba0dae046dbe3f[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Mon Nov 16 16:27:04 2020 +0300
+
+    vs code lagging as fuck, model loading added, but still work lil messy
+
+[33mcommit 9c53ac8bdab00ea8ab2fd1b4b6108129b19e2cc4[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sun Nov 15 13:39:16 2020 +0300
+
+    label finally here
+
+[33mcommit 3bfd34c8ccad92b94d8710e18c6d81bfc283fed9[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sun Nov 15 11:58:14 2020 +0300
+
+    ...
+
+[33mcommit f833fc9474021fee1a0741fc0dec7380d7a2d16f[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sat Nov 14 16:13:28 2020 +0300
+
+    add label, almost working right)
+
+[33mcommit 23f102056d3621f9b5a381782c58766c7945a280[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sat Nov 14 14:15:51 2020 +0300
+
+    add text rendering
+
+[33mcommit f5608c0aa293c68cda14d45b41eaa8a9a48fdc77[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Thu Nov 12 13:51:07 2020 +0300
+
+    almost nothing new
+
+[33mcommit e69f24e22a5f33f23f93df650ffb5668e330d86c[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Thu Nov 12 12:36:01 2020 +0300
+
+    well well
+
+[33mcommit d57f98d8bcea1099ef6de9cafa49eed91df7e3c6[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Wed Nov 11 15:47:42 2020 +0300
+
+    fix
+
+[33mcommit 1dd96ee5f173ce385338becc2df7e2970a5a1e79[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Wed Nov 11 12:20:40 2020 +0300
+
+    nothing works
+
+[33mcommit 866e89c80b46f5b46c3bb1a8d2d30406022b5d67[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Tue Nov 10 12:42:23 2020 +0300
+
+    resource manager shit
+
+[33mcommit 4708e948b2ea4359caf9c03e46b999b19e44943f[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Fri Nov 6 14:02:34 2020 +0300
+
+    loading screens almost ready
+
+[33mcommit 9141fca30657d33c192d3c028e3c2d3aaeee7243[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Wed Nov 4 17:13:30 2020 +0300
+
+    Yeah yeah
+
+[33mcommit d78b638b253cf3065c397ea776b389c04ea08641[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sun Nov 1 15:34:08 2020 +0300
+
+    trying make something work:DDDD
+
+[33mcommit 51f14fd40369b8edde46eadb4a5bcc08a0c3736c[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Tue Oct 27 15:54:05 2020 +0300
+
+    Moving on
+
+[33mcommit 02fa27c9217060c99954852554c2491feff9308a[m
+Author: Savin <savinov.vladislav@gmail.com>
+Date:   Sun Oct 25 16:59:06 2020 +0300
+
+            modified:   .vscode/settings.json
+            modified:   CMakeLists.txt
+            renamed:    build/.cmake/api/v1/reply/cache-v2-6da4cbac00f94249f742.json -> build/.cmake/api/v1/reply/cache-v2-9702754833958869eeed.json
+            renamed:    build/.cmake/api/v1/reply/codemodel-v2-0651fac29da865afae60.json -> build/.cmake/api/v1/reply/codemodel-v2-dc38b5048a639dd0f8b9.json
+            renamed:    build/.cmake/api/v1/reply/index-2020-10-17T11-56-07-0915.json -> build/.cmake/api/v1/reply/index-2020-10-25T12-36-37-0380.json
+            renamed:    build/.cmake/api/v1/reply/target-maze3d-Release-1f3a6adfacc08c7fd0a0.json -> build/.cmake/api/v1/reply/target-maze3d-Debug-a0a90b6cebb67e517411.json
+            modified:   build/CMakeCache.txt
+            modified:   build/CMakeFiles/Makefile2
+            modified:   build/CMakeFiles/maze3d.dir/CXX.includecache
+            modified:   build/CMakeFiles/maze3d.dir/DependInfo.cmake
+            modified:   build/CMakeFiles/maze3d.dir/build.make
+            modified:   build/CMakeFiles/maze3d.dir/cmake_clean.cmake
+            modified:   build/CMakeFiles/maze3d.dir/depend.internal
+            modified:   build/CMakeFiles/maze3d.dir/depend.make
+            modified:   build/CMakeFiles/maze3d.dir/flags.make
+            new file:   build/CMakeFiles/maze3d.dir/include/stb/stb_image.c.obj
+            modified:   build/CMakeFiles/maze3d.dir/includes_C.rsp
+            modified:   build/CMakeFiles/maze3d.dir/includes_CXX.rsp
+            modified:   build/CMakeFiles/maze3d.dir/link.txt
+            modified:   build/CMakeFiles/maze3d.dir/linklibs.rsp
+            modified:   build/CMakeFiles/maze3d.dir/main.cpp.obj
+            modified:   build/CMakeFiles/maze3d.dir/objects.a
+            modified:   build/CMakeFiles/maze3d.dir/objects1.rsp
+            modified:   build/CMakeFiles/maze3d.dir/progress.make
+            deleted:    build/CMakeFiles/maze3d.dir/src/baseTypes/disk_file_text_res.cpp.obj
+            deleted:    build/CMakeFiles/maze3d.dir/src/baseTypes/resource.cpp.obj
+            new file:   build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resource.cpp.obj
+            new file:   build/CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.obj
+            new file:   build/CMakeFiles/maze3d.dir/src/engine/render/shader.cpp.obj
+            new file:   build/CMakeFiles/maze3d.dir/src/engine/render/texture.cpp.obj
+            new file:   build/CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.obj
+            new file:   build/CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj
+            new file:   build/CMakeFiles/maze3d.dir/src/game/testScene.cpp.obj
+            modified:   build/CMakeFiles/maze3d.dir/src/glad.c.obj
+            deleted:    build/CMakeFiles/maze3d.dir/src/render/shader.cpp.obj
+            deleted:    build/CMakeFiles/maze3d.dir/src/utilities/fileLoader.cpp.obj
+            modified:   build/CMakeFiles/progress.marks
+            modified:   build/Makefile
+            modified:   build/cmake_install.cmake
+            modified:   build/compile_commands.json
+            new file:   build/libassimp.dll
+            modified:   build/maze3d.exe
+            modified:   build/shader.frag
+            modified:   build/shader.vert
+            new file:   build/wall.jpg
+            new file:   include/assimp/.editorconfig
+            new file:   include/assimp/BaseImporter.h
+            new file:   include/assimp/Bitmap.h
+            new file:   include/assimp/BlobIOSystem.h
+            new file:   include/assimp/ByteSwapper.h
+            new file:   include/assimp/ColladaMetaData.h
+            new file:   include/assimp/Compiler/poppack1.h
+            new file:   include/assimp/Compiler/pstdint.h
+            new file:   include/assimp/Compiler/pushpack1.h
+            new file:   include/assimp/CreateAnimMesh.h
+            new file:   include/assimp/DefaultIOStream.h
+            new file:   include/assi

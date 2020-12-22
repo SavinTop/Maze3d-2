@@ -25,7 +25,7 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 
 static void character_callback(GLFWwindow* window, unsigned int codepoint)
 {
-	
+	game.char_input_callback(window, codepoint);
 }
 
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)

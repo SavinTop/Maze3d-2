@@ -21,6 +21,7 @@ D:.
 |   |   +---gui
 |   |   |       basicTextRender.cpp
 |   |   |       basicTextRender.hpp
+|   |   |       basicTexturedRect.hpp
 |   |   |       button.cpp
 |   |   |       button.hpp
 |   |   |       fullscreenBox.cpp
@@ -82,6 +83,8 @@ D:.
 |   |       drawable.hpp
 |   |       drawableHolder.cpp
 |   |       drawableHolder.hpp
+|   |       easyLineRender.cpp
+|   |       easyLineRender.hpp
 |   |       
 |   \---utilities
 |           debug.hpp
@@ -110,8 +113,10 @@ D:.
     |           collisionChecker.hpp
     |           coloredMapGenerator.cpp
     |           coloredMapGenerator.hpp
-    |           raytracingHandler.cpp
-    |           raytracingHandler.hpp
+    |           raycastingHandler.cpp
+    |           raycastingHandler.hpp
+    |           shadowHandler.cpp
+    |           shadowHandler.hpp
     |           
     +---player
     |       player.cpp

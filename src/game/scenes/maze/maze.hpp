@@ -21,6 +21,7 @@
 #include "scenes/loadingScenes/LoadingScene.hpp"
 #include "maze_things/utils/raycastingHandler.hpp"
 #include "maze_things/utils/shadowHandler.hpp"
+#include "maze_things/utils/cheatCodeHandler.hpp"
 
 class mazeScene : public Scene{
     public:
@@ -34,6 +35,7 @@ class mazeScene : public Scene{
     void initResources() override;
     void mouseMove(double xpos, double ypos) override;
     void mouseDown(double xpos, double ypos, int mb, int action) override;
+    void charInput(unsigned int character) override;
     void okClicked();
     void calcShadows();
     private:
@@ -77,4 +79,6 @@ class mazeScene : public Scene{
     glm::vec3 lightPosition = glm::vec3(-4.0f, 15.0f, -10.0f);
 
     std::set<std::pair<int,int>> loadedSectors;
+
+    CheatCodeHandler cheatCode_h;
 };

@@ -14,7 +14,8 @@ void Mesh::setParams(const Containers::Mesh& meshContainer) {
 
 void Mesh::draw(oglw::Shader& program){
     unsigned int diffuseNr = 1;
-    unsigned int specularNr = 1;
+    unsigned int heightNr = 1;
+    unsigned int normalNr = 1;
     for(unsigned int i = 0; i < mesh.textures.size(); i++)
     {
         if(!mesh.textures[i].get()) continue;
@@ -26,14 +27,14 @@ void Mesh::draw(oglw::Shader& program){
             number = std::to_string(diffuseNr++);
             name = "texture_diffuse";
         }
-        else if(mesh.textures[i]->getType() == TextureType::Specular)
+        else if(mesh.textures[i]->getType() == TextureType::Height)
         {
-            number = std::to_string(specularNr++);
-            name = "texture_specular";
+            number = std::to_string(heightNr++);
+            name = "texture_height";
         }
         else if(mesh.textures[i]->getType() == TextureType::Normal)
         {
-            number = std::to_string(specularNr++);
+            number = std::to_string(normalNr++);
             name = "texture_normal";
         }
         

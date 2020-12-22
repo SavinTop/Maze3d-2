@@ -1114,6 +1114,33 @@ src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s
 .PHONY : src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s
 
+src/game/maze_things/utils/cheatCodeHandler.obj: src/game/maze_things/utils/cheatCodeHandler.cpp.obj
+
+.PHONY : src/game/maze_things/utils/cheatCodeHandler.obj
+
+# target to build an object file
+src/game/maze_things/utils/cheatCodeHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.obj
+.PHONY : src/game/maze_things/utils/cheatCodeHandler.cpp.obj
+
+src/game/maze_things/utils/cheatCodeHandler.i: src/game/maze_things/utils/cheatCodeHandler.cpp.i
+
+.PHONY : src/game/maze_things/utils/cheatCodeHandler.i
+
+# target to preprocess a source file
+src/game/maze_things/utils/cheatCodeHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.i
+.PHONY : src/game/maze_things/utils/cheatCodeHandler.cpp.i
+
+src/game/maze_things/utils/cheatCodeHandler.s: src/game/maze_things/utils/cheatCodeHandler.cpp.s
+
+.PHONY : src/game/maze_things/utils/cheatCodeHandler.s
+
+# target to generate assembly for a file
+src/game/maze_things/utils/cheatCodeHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.s
+.PHONY : src/game/maze_things/utils/cheatCodeHandler.cpp.s
+
 src/game/maze_things/utils/coloredMapGenerator.obj: src/game/maze_things/utils/coloredMapGenerator.cpp.obj
 
 .PHONY : src/game/maze_things/utils/coloredMapGenerator.obj
@@ -1609,6 +1636,9 @@ help:
 	@echo ... src/game/maze_things/legacy/ObjectMazeBuilder.obj
 	@echo ... src/game/maze_things/legacy/ObjectMazeBuilder.i
 	@echo ... src/game/maze_things/legacy/ObjectMazeBuilder.s
+	@echo ... src/game/maze_things/utils/cheatCodeHandler.obj
+	@echo ... src/game/maze_things/utils/cheatCodeHandler.i
+	@echo ... src/game/maze_things/utils/cheatCodeHandler.s
 	@echo ... src/game/maze_things/utils/coloredMapGenerator.obj
 	@echo ... src/game/maze_things/utils/coloredMapGenerator.i
 	@echo ... src/game/maze_things/utils/coloredMapGenerator.s

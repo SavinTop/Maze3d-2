@@ -8,12 +8,14 @@ in mat3 TBN;
 in vec4 FragPosLightSpace;
 
 uniform sampler2D texture_diffuse1;
-uniform sampler2D texture_specular1;
+uniform sampler2D texture_height1;
 uniform sampler2D texture_normal1;
 uniform sampler2D shadowMap;
 
 uniform vec3 lightDir;
 uniform vec3 viewPos;
+uniform bool showShadows;
+uniform bool showLight;
 
 float ShadowCalculation(vec4 fragPosLightSpace)
 {
@@ -44,7 +46,10 @@ shadow /= 9.0;
 
 void main()
 {
+    float ambient = 0.6;
     vec3 color = texture(texture_diffuse1, texC).rgb;
+    if(showLight)
+    {
     vec3 tnormal = texture(texture_normal1, texC).rgb;
     tnormal = normalize(tnormal * 2.0 - 1.0);
     tnormal = normalize(TBN * tnormal);
@@ -61,8 +66,16 @@ void main()
 
     float diff = max(dot(norm,lightDir),0.0);
 
-    float ambient = 0.5;
-    float shadow = ShadowCalculation(FragPosLightSpace);  
+    float shadow = 0;
+    if(showShadows)
+        shadow = ShadowCalculation(FragPosLightSpace);  
     vec3 result = (ambient+ (1.0 - shadow) *(diff+specular)) * color;
     FragColor =  vec4(result,1.0);
+    } else{
+        float shadow = 0;
+        if(showShadows)
+            shadow = ShadowCalculation(FragPosLightSpace);  
+        vec3 result = (ambient+(1.0 - shadow)) * color;
+        FragColor =  vec4(result,1.0);
+    }
 }

@@ -21,6 +21,7 @@ class GameProcess{
 
     void cursor_position_callback(double xpos, double ypos);
     void mouse_button_callback(double xpos, double ypos, int mb, int action);
+    void char_input_callback(GLFWwindow* window, unsigned int codepoint);
 
     private:
 
