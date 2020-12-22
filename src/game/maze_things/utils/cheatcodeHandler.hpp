@@ -13,6 +13,7 @@ struct settings{
     bool floor = true;
     bool walls = true;
     bool light = true;
+    bool doom = false;
 };
 
 class CheatCodeHandler{
@@ -34,7 +35,8 @@ private:
         "floor",
         "light",
         "walls",
-        "potato"
+        "potato",
+        "doom"
     };
     unsigned int matchCount();
 };

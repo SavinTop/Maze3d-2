@@ -50,6 +50,9 @@ void CheatCodeHandler::cheatCodeEntered()
         sett.shadows = false;
         sett.epilepsyShadows = false;
         sett.skybox = false;
+    }else if(temp=="doom")
+    {
+        sett.doom = !sett.doom;
     }
     else
         current = std::move(temp);

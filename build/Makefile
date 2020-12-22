@@ -1006,6 +1006,33 @@ src/game/gameprocess.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.s
 .PHONY : src/game/gameprocess.cpp.s
 
+src/game/maze_things/doomsDay/laserModel.obj: src/game/maze_things/doomsDay/laserModel.cpp.obj
+
+.PHONY : src/game/maze_things/doomsDay/laserModel.obj
+
+# target to build an object file
+src/game/maze_things/doomsDay/laserModel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/doomsDay/laserModel.cpp.obj
+.PHONY : src/game/maze_things/doomsDay/laserModel.cpp.obj
+
+src/game/maze_things/doomsDay/laserModel.i: src/game/maze_things/doomsDay/laserModel.cpp.i
+
+.PHONY : src/game/maze_things/doomsDay/laserModel.i
+
+# target to preprocess a source file
+src/game/maze_things/doomsDay/laserModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/doomsDay/laserModel.cpp.i
+.PHONY : src/game/maze_things/doomsDay/laserModel.cpp.i
+
+src/game/maze_things/doomsDay/laserModel.s: src/game/maze_things/doomsDay/laserModel.cpp.s
+
+.PHONY : src/game/maze_things/doomsDay/laserModel.s
+
+# target to generate assembly for a file
+src/game/maze_things/doomsDay/laserModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/doomsDay/laserModel.cpp.s
+.PHONY : src/game/maze_things/doomsDay/laserModel.cpp.s
+
 src/game/maze_things/floor/floorModel.obj: src/game/maze_things/floor/floorModel.cpp.obj
 
 .PHONY : src/game/maze_things/floor/floorModel.obj
@@ -1330,6 +1357,33 @@ src/game/scenes/maze/maze.res.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.s
 .PHONY : src/game/scenes/maze/maze.res.cpp.s
 
+src/game/scenes/maze/mazeDraw.obj: src/game/scenes/maze/mazeDraw.cpp.obj
+
+.PHONY : src/game/scenes/maze/mazeDraw.obj
+
+# target to build an object file
+src/game/scenes/maze/mazeDraw.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj
+.PHONY : src/game/scenes/maze/mazeDraw.cpp.obj
+
+src/game/scenes/maze/mazeDraw.i: src/game/scenes/maze/mazeDraw.cpp.i
+
+.PHONY : src/game/scenes/maze/mazeDraw.i
+
+# target to preprocess a source file
+src/game/scenes/maze/mazeDraw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.i
+.PHONY : src/game/scenes/maze/mazeDraw.cpp.i
+
+src/game/scenes/maze/mazeDraw.s: src/game/scenes/maze/mazeDraw.cpp.s
+
+.PHONY : src/game/scenes/maze/mazeDraw.s
+
+# target to generate assembly for a file
+src/game/scenes/maze/mazeDraw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.s
+.PHONY : src/game/scenes/maze/mazeDraw.cpp.s
+
 src/game/scenes/maze/mazeGui.obj: src/game/scenes/maze/mazeGui.cpp.obj
 
 .PHONY : src/game/scenes/maze/mazeGui.obj
@@ -1356,6 +1410,60 @@ src/game/scenes/maze/mazeGui.s: src/game/scenes/maze/mazeGui.cpp.s
 src/game/scenes/maze/mazeGui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.s
 .PHONY : src/game/scenes/maze/mazeGui.cpp.s
+
+src/game/scenes/maze/mazePhys.obj: src/game/scenes/maze/mazePhys.cpp.obj
+
+.PHONY : src/game/scenes/maze/mazePhys.obj
+
+# target to build an object file
+src/game/scenes/maze/mazePhys.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj
+.PHONY : src/game/scenes/maze/mazePhys.cpp.obj
+
+src/game/scenes/maze/mazePhys.i: src/game/scenes/maze/mazePhys.cpp.i
+
+.PHONY : src/game/scenes/maze/mazePhys.i
+
+# target to preprocess a source file
+src/game/scenes/maze/mazePhys.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.i
+.PHONY : src/game/scenes/maze/mazePhys.cpp.i
+
+src/game/scenes/maze/mazePhys.s: src/game/scenes/maze/mazePhys.cpp.s
+
+.PHONY : src/game/scenes/maze/mazePhys.s
+
+# target to generate assembly for a file
+src/game/scenes/maze/mazePhys.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.s
+.PHONY : src/game/scenes/maze/mazePhys.cpp.s
+
+src/game/scenes/maze/maze_lasers.obj: src/game/scenes/maze/maze_lasers.cpp.obj
+
+.PHONY : src/game/scenes/maze/maze_lasers.obj
+
+# target to build an object file
+src/game/scenes/maze/maze_lasers.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj
+.PHONY : src/game/scenes/maze/maze_lasers.cpp.obj
+
+src/game/scenes/maze/maze_lasers.i: src/game/scenes/maze/maze_lasers.cpp.i
+
+.PHONY : src/game/scenes/maze/maze_lasers.i
+
+# target to preprocess a source file
+src/game/scenes/maze/maze_lasers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.i
+.PHONY : src/game/scenes/maze/maze_lasers.cpp.i
+
+src/game/scenes/maze/maze_lasers.s: src/game/scenes/maze/maze_lasers.cpp.s
+
+.PHONY : src/game/scenes/maze/maze_lasers.s
+
+# target to generate assembly for a file
+src/game/scenes/maze/maze_lasers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.s
+.PHONY : src/game/scenes/maze/maze_lasers.cpp.s
 
 src/game/scenes/menu/endlessWindow.obj: src/game/scenes/menu/endlessWindow.cpp.obj
 
@@ -1624,6 +1732,9 @@ help:
 	@echo ... src/game/gameprocess.obj
 	@echo ... src/game/gameprocess.i
 	@echo ... src/game/gameprocess.s
+	@echo ... src/game/maze_things/doomsDay/laserModel.obj
+	@echo ... src/game/maze_things/doomsDay/laserModel.i
+	@echo ... src/game/maze_things/doomsDay/laserModel.s
 	@echo ... src/game/maze_things/floor/floorModel.obj
 	@echo ... src/game/maze_things/floor/floorModel.i
 	@echo ... src/game/maze_things/floor/floorModel.s
@@ -1660,9 +1771,18 @@ help:
 	@echo ... src/game/scenes/maze/maze.res.obj
 	@echo ... src/game/scenes/maze/maze.res.i
 	@echo ... src/game/scenes/maze/maze.res.s
+	@echo ... src/game/scenes/maze/mazeDraw.obj
+	@echo ... src/game/scenes/maze/mazeDraw.i
+	@echo ... src/game/scenes/maze/mazeDraw.s
 	@echo ... src/game/scenes/maze/mazeGui.obj
 	@echo ... src/game/scenes/maze/mazeGui.i
 	@echo ... src/game/scenes/maze/mazeGui.s
+	@echo ... src/game/scenes/maze/mazePhys.obj
+	@echo ... src/game/scenes/maze/mazePhys.i
+	@echo ... src/game/scenes/maze/mazePhys.s
+	@echo ... src/game/scenes/maze/maze_lasers.obj
+	@echo ... src/game/scenes/maze/maze_lasers.i
+	@echo ... src/game/scenes/maze/maze_lasers.s
 	@echo ... src/game/scenes/menu/endlessWindow.obj
 	@echo ... src/game/scenes/menu/endlessWindow.i
 	@echo ... src/game/scenes/menu/endlessWindow.s

@@ -6,7 +6,7 @@ ResourcePack mazeScene::getResources()
     temp.setResources(menu->getResources().getRes());
     temp.getRes().insert(temp.getRes().begin(),{cornerWallModel.get(), rootWallModel.get(),
                           lineWallModel.get(), program.get(), cmt.get(), skyboxProgram.get(), cmo.get(),
-                          floorTexture.get(), floorTextureNormal.get(), shadowProgram.get(),depthMapProgram.get()});
+                          floorTexture.get(), floorTextureNormal.get(), shadowProgram.get(),depthMapProgram.get(), laserShader.get()});
     return temp;
 }
 
@@ -33,4 +33,5 @@ void mazeScene::initResources()
     cmo = rm->createResource(res::ogl::CubemapModel(cmt), sceneName, "Skybox model");
     floorTexture = rm->createResource(res::ogl::Texture("data\\models\\floorTextures\\floor_color.jpg"), sceneName);
     floorTextureNormal = rm->createResource(res::ogl::Texture("data\\models\\floorTextures\\Snow_003_NORM.jpg", res::ogl::TextureType::Normal), sceneName);
+    laserShader = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\laser\\basic.vert", "data\\shaders\\laser\\basic.frag", "laserShader"), sceneName);
 }

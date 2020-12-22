@@ -60,7 +60,7 @@ void GameProcess::Start()
 
         double currDraw = glfwGetTime();
         if(currDraw-lastDraw>1.0f/maxFps){
-        glClearColor(0.9,0.9,0.9,1.0);
+        glClearColor(0.81,0.81,0.85,1.0);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         currentScene->onDraw(currDraw-lastDraw);
         lastDraw = currDraw;

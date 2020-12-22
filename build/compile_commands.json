@@ -151,6 +151,11 @@
 },
 {
   "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\maze_things\\doomsDay\\laserModel.cpp.obj -c D:\\21\\Maze3d\\src\\game\\maze_things\\doomsDay\\laserModel.cpp",
+  "file": "D:/21/Maze3d/src/game/maze_things/doomsDay/laserModel.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\maze_things\\floor\\floorModel.cpp.obj -c D:\\21\\Maze3d\\src\\game\\maze_things\\floor\\floorModel.cpp",
   "file": "D:/21/Maze3d/src/game/maze_things/floor/floorModel.cpp"
 },
@@ -211,8 +216,23 @@
 },
 {
   "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\maze\\mazeDraw.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\maze\\mazeDraw.cpp",
+  "file": "D:/21/Maze3d/src/game/scenes/maze/mazeDraw.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\maze\\mazeGui.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\maze\\mazeGui.cpp",
   "file": "D:/21/Maze3d/src/game/scenes/maze/mazeGui.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\maze\\mazePhys.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\maze\\mazePhys.cpp",
+  "file": "D:/21/Maze3d/src/game/scenes/maze/mazePhys.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\maze\\maze_lasers.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\maze\\maze_lasers.cpp",
+  "file": "D:/21/Maze3d/src/game/scenes/maze/maze_lasers.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",

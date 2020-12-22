@@ -94,10 +94,9 @@ void MazeGui::initBeg()
 
     const float downSpace = 0.15;
 
-    beg_mazemap_test = Button(nullptr,  beg_mazemap_tex.get(), beg_mazemap_tex.get());
+    beg_mazemap_test = Button(nullptr,  beg_mazemap_tex.get(), beg_mazemap_savin_tex.get(),0.1);
     beg_mazemap_test.setParent(&beg_fbox);
     beg_mazemap_test.setPosition(0.0f,0.0f+downSpace);
-    beg_mazemap_test.setRotation(180, glm::vec3(0,0,1));
     beg_mazemap_test.setSize(1.0f-downSpace,1.0f-downSpace);
 
     beg_ok = Button(nullptr, beg_ok_idle.get(), beg_ok_active.get());
@@ -130,11 +129,12 @@ void MazeGui::InitializeSubResources(std::string groupName)
     this->guiShader = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\basicGui\\basic.vert","data\\shaders\\basicGui\\basic.frag", "guiProgram"),groupName);
     this->beg_ok_idle = rm->createResource(res::ogl::Texture(spriteDirectory+"buttons\\ok_idle.png"),groupName);
     this->beg_ok_active = rm->createResource(res::ogl::Texture(spriteDirectory+"buttons\\ok_active.png"),groupName);
+    this->beg_mazemap_savin_tex = rm->createResource(res::ogl::Texture("data\\savin.jpg"), groupName);
 }
 
 ResourcePack& MazeGui::getResources() 
 {
-    r_pack = ResourcePack({guiShader.get(), beg_ok_active.get(), beg_ok_idle.get()});
+    r_pack = ResourcePack({guiShader.get(), beg_ok_active.get(), beg_ok_idle.get(), beg_mazemap_savin_tex.get()});
     return r_pack;
 }
 

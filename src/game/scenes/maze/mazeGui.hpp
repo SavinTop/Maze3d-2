@@ -47,6 +47,7 @@ private:
     std::shared_ptr<res::ogl::Texture> beg_ok_active;
     std::shared_ptr<res::ogl::Texture> beg_ok_idle;
     std::shared_ptr<res::ogl::Texture> beg_mazemap_tex;
+    std::shared_ptr<res::ogl::Texture> beg_mazemap_savin_tex;
 
 
     ResourcePack r_pack;

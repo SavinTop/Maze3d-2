@@ -22,6 +22,8 @@
 #include "maze_things/utils/raycastingHandler.hpp"
 #include "maze_things/utils/shadowHandler.hpp"
 #include "maze_things/utils/cheatCodeHandler.hpp"
+#include "maze_things/doomsDay/laserModel.hpp"
+#include "maze_things/doomsDay/laserObj.hpp"
 
 class mazeScene : public Scene{
     public:
@@ -38,12 +40,18 @@ class mazeScene : public Scene{
     void charInput(unsigned int character) override;
     void okClicked();
     void calcShadows();
+    void drawLasers(glm::mat4& proj, glm::mat4& view);
+    void laserPhys(float delta);
+    void shotLaser(glm::vec3 start, glm::vec3 dir, float speed);
+
     private:
     std::shared_ptr<res::ogl::Model> lineWallModel;
     std::shared_ptr<res::ogl::Model> rootWallModel;
     std::shared_ptr<res::ogl::Model> cornerWallModel;
     std::shared_ptr<res::ogl::Model> xmasTreeModel;
     FloorModel floor;
+    LaserModel laserModel;
+    std::shared_ptr<res::ogl::ShaderProgram> laserShader;
     std::shared_ptr<res::ogl::Texture> floorTexture;
     std::shared_ptr<res::ogl::Texture> floorTextureNormal;
     std::shared_ptr<res::ogl::ShaderProgram> program;
@@ -78,7 +86,7 @@ class mazeScene : public Scene{
 
     glm::vec3 lightPosition = glm::vec3(-4.0f, 15.0f, -10.0f);
 
-    std::set<std::pair<int,int>> loadedSectors;
-
     CheatCodeHandler cheatCode_h;
+
+    laserObject lasers[10] = {};
 };

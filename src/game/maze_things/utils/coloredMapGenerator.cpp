@@ -25,15 +25,15 @@ void ColoredMapGenerator::generateMap(MazeBuilder& mb)
 		for (int x = 0; x < width; x++)
 		{
             img.setPixel(x*wallLength,y*wallLength,Color::rgba(255,255,255,255));
-			if(h_walls[x][y])
+			if(h_walls[width-x-1][height-y-1])
             {
                 for(int c=1;c<wallLength;c++)
-                    img.setPixel(x*wallLength+c,y*wallLength,Color::rgba(255,255,255,255));
+                    img.setPixel(x*wallLength-c,y*wallLength,Color::rgba(255,255,255,255));
             }
-            if(v_walls[x][y])
+            if(v_walls[width-x-1][height-y-1])
             {
                 for(int c=1;c<wallLength;c++)
-                    img.setPixel(x*wallLength,y*wallLength+c,Color::rgba(255,255,255,255));
+                    img.setPixel(x*wallLength,y*wallLength-c,Color::rgba(255,255,255,255));
             }
 		}
 	}

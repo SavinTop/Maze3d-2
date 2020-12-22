@@ -8,7 +8,7 @@
 class Button : public GuiObject{
 public:
     Button();
-    Button(GuiObject* parent, res::ogl::Texture* idleTexture, res::ogl::Texture* mouseHoverTexture);
+    Button(GuiObject* parent, res::ogl::Texture* idleTexture, res::ogl::Texture* mouseHoverTexture, float fadeSpeed=3);
     void __draw(oglw::Shader &program) override;
 
     void __leftMouseBtnDown(int x, int y) override;
@@ -17,5 +17,8 @@ public:
 private:
     res::ogl::Texture* idleTexture;
     res::ogl::Texture* mouseHoverTexture;
-    res::ogl::Texture* currentTexture;
+    float transValue;
+    float disTrans;
+    float lastTime;
+    float fadeSpeed;
 };
