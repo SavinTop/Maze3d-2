@@ -62,6 +62,7 @@ void mazeScene::onDraw(float delta)
     if(sett.floor)
         floor.draw(program->getProgram());
 
+
     drawLasers(projection, view);
 
     if(sett.skybox){
@@ -78,10 +79,18 @@ void mazeScene::onDraw(float delta)
     glDepthFunc(GL_LESS);
     }
     menu->draw();
+    
+    if(sett.doom)
+    {
+        depthMapProgram->bind();
+        drawBasicTexturedRect(glm::vec4(0,0,1.0*(float)window_w/window_h,2.0), pistol_pack->getId((int)temp_i%6), depthMapProgram->getProgram());
+        if((int)temp_i%6!=0)
+            temp_i+=delta*30;
+    }
 
-    depthMapProgram->bind();
     //drawBasicTexturedRect(glm::vec4(0.0,0.0,1.0,1.0*(float)window_w/window_h), shadow_h.depthMapTex_, depthMapProgram->getProgram());
     //drawBasicTexturedRect(glm::vec4(0,0,1.0,1.0), maze_texture->getId(), depthMapProgram->getProgram());
 
     CheckGLError();
+    
 }

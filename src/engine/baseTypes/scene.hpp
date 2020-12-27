@@ -19,6 +19,7 @@ virtual void mouseMove(double xpos, double ypos){};
 virtual void mouseDown(double xpos, double ypos, int mb, int action){};
 virtual void charInput(unsigned int character){};
 std::string& getName(){return sceneName;};
+void setName(const std::string& name){sceneName = name;};
 protected:
     GameProcess* proc;
     ResourceManager* rm;

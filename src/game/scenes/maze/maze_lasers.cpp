@@ -8,7 +8,7 @@ void mazeScene::drawLasers(glm::mat4& proj, glm::mat4& view)
     glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(proj));
 
-    glUniform4fv(laserShader->getUniformLocation("color"), 1, glm::value_ptr(Color::getOglColor(Color::rgba(0,0,255,255))));
+    glUniform4fv(laserShader->getUniformLocation("color"), 1, glm::value_ptr(Color::getOglColor(Color::rgba(255,0,0,255))));
     
     for(int i=0;i<10;i++)
         if(!lasers[i].destroyed)
@@ -17,7 +17,7 @@ void mazeScene::drawLasers(glm::mat4& proj, glm::mat4& view)
 
 void mazeScene::laserPhys(float delta) 
 {
-    float collBox = 0.5;
+    float collBox = 0.05;
 
     auto getPointCollBox = [&collBox](glm::vec3 pos) {
         return glm::vec4{pos.x - collBox, pos.z - collBox, pos.x + collBox, pos.z + collBox};
@@ -38,7 +38,6 @@ void mazeScene::laserPhys(float delta)
                 curr.destroyed = true;
                 t->model = nullptr;
                 t->fw = t->sw = glm::vec4();
-                calcShadows();
             }
                 
         }
@@ -54,6 +53,7 @@ void mazeScene::shotLaser(glm::vec3 start, glm::vec3 dir, float speed)
             lasers[i].dir = dir*speed;
             lasers[i].destroyed = false;
             lasers[i].start = start;
+            temp_i = 1;
             break;
         }
             

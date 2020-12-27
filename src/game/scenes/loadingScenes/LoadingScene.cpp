@@ -26,6 +26,7 @@ LoadingScene::LoadingScene(GameProcess *proc, Scene* nextScene) : Scene(proc)
 void LoadingScene::start()
 {
     nextScene->initResources();
+    
     auto temp = nextScene->getResources().getRes();
     for (auto &el : temp)
     {
@@ -42,7 +43,8 @@ void LoadingScene::update(float delta)
         return;
     }
     auto &t = resourcesToLoad[currentIndex];
-    t->load();
+    if(!t->isLoaded())
+        t->load();
     currentIndex++;
     if(!t->resName_.empty())
     lbl.setText(t->resName_);

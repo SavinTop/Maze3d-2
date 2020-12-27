@@ -36,7 +36,7 @@ public:
             auto it = resources.find(name);
             if (it != resources.end())
             {
-                std::cout<<"resource: "<<name<<" REUSED\n";
+                //std::cout<<"resource: "<<name<<" REUSED\n";
                 return std::static_pointer_cast<T>((*it).second.lock());
             }
                 
@@ -52,7 +52,7 @@ public:
         if(!groupName.empty())
             groups[groupName].push_back(std::static_pointer_cast<Resource>(out));
 
-        std::cout<<"resource: "<<((name.empty())?"NONAME":name)<<" CREATED\n";
+        //std::cout<<"resource: "<<((name.empty())?"NONAME":name)<<" CREATED\n";
 
         return out;
     }

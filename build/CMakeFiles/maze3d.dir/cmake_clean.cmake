@@ -24,6 +24,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj"
+  "CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.obj"
   "CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.obj"

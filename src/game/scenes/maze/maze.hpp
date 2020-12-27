@@ -89,4 +89,7 @@ class mazeScene : public Scene{
     CheatCodeHandler cheatCode_h;
 
     laserObject lasers[10] = {};
+
+    std::shared_ptr<res::ogl::TexturePack> pistol_pack;
+    float temp_i = 0;
 };

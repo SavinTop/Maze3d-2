@@ -56,7 +56,8 @@ void mazeScene::physTick(float delta)
         player.setPosition(tempPos);
     }
 
-    if (coll(getPointCollBox(playerPos), omm.get(omm.width()-2, omm.height()-1)->fw))
+    //if (coll(getPointCollBox(playerPos), omm.get(omm.width()-2, omm.height()-1)->fw))
+    if (playerPos.x<0 || playerPos.x>omm.width()* 8 - 6 || playerPos.z<0 || playerPos.z>omm.height()* 8 - 6)
     {
         auto next = new LoadingScene(proc, new mazeScene(proc, maze_size_+5));
         next->initResources();

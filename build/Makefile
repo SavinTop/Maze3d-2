@@ -817,6 +817,33 @@ src/engine/baseTypes/resources/internal/OGL/texture.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.s
 .PHONY : src/engine/baseTypes/resources/internal/OGL/texture.cpp.s
 
+src/engine/baseTypes/resources/internal/OGL/texturePack.obj: src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.obj
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/texturePack.obj
+
+# target to build an object file
+src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.obj
+.PHONY : src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.obj
+
+src/engine/baseTypes/resources/internal/OGL/texturePack.i: src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.i
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/texturePack.i
+
+# target to preprocess a source file
+src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.i
+.PHONY : src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.i
+
+src/engine/baseTypes/resources/internal/OGL/texturePack.s: src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.s
+
+.PHONY : src/engine/baseTypes/resources/internal/OGL/texturePack.s
+
+# target to generate assembly for a file
+src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.s
+.PHONY : src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.s
+
 src/engine/baseTypes/scene.obj: src/engine/baseTypes/scene.cpp.obj
 
 .PHONY : src/engine/baseTypes/scene.obj
@@ -1711,6 +1738,9 @@ help:
 	@echo ... src/engine/baseTypes/resources/internal/OGL/texture.obj
 	@echo ... src/engine/baseTypes/resources/internal/OGL/texture.i
 	@echo ... src/engine/baseTypes/resources/internal/OGL/texture.s
+	@echo ... src/engine/baseTypes/resources/internal/OGL/texturePack.obj
+	@echo ... src/engine/baseTypes/resources/internal/OGL/texturePack.i
+	@echo ... src/engine/baseTypes/resources/internal/OGL/texturePack.s
 	@echo ... src/engine/baseTypes/scene.obj
 	@echo ... src/engine/baseTypes/scene.i
 	@echo ... src/engine/baseTypes/scene.s

@@ -111,6 +111,8 @@ void MazeBuilder::buildMaze()
 		m_hWallsArr[m_walls_w-1][h] = false;
 	for (int w = 0; w < m_walls_w; w++)
 		m_vWallsArr[w][m_walls_h-1] = false;
+
+	m_hWallsArr[m_walls_w-2][m_walls_h-1] = false;
 }
 
 bool MazeBuilder::canGo(intVec2 pos)

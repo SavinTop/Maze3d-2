@@ -16,13 +16,13 @@ void ResourceManager::__resourceDeleter(Resource* p)
         p->unload();
     delete p;
 
-    if(!name.empty())
-    {
-        if(resources.erase(name))
-        std::cout<<name<<" deleted\n";
-    }
-    else
-    {
-        std::cout<<"NONAME"<<" deleted\n";
-    }
+     if(!name.empty())
+     {
+         resources.erase(name);
+         //std::cout<<name<<" deleted\n";
+     }
+     else
+     {
+         //std::cout<<"NONAME"<<" deleted\n";
+     }
 }

@@ -6,7 +6,8 @@ ResourcePack mazeScene::getResources()
     temp.setResources(menu->getResources().getRes());
     temp.getRes().insert(temp.getRes().begin(),{cornerWallModel.get(), rootWallModel.get(),
                           lineWallModel.get(), program.get(), cmt.get(), skyboxProgram.get(), cmo.get(),
-                          floorTexture.get(), floorTextureNormal.get(), shadowProgram.get(),depthMapProgram.get(), laserShader.get()});
+                          floorTexture.get(), floorTextureNormal.get(), shadowProgram.get(),depthMapProgram.get(), laserShader.get(),
+                        pistol_pack.get()});
     return temp;
 }
 
@@ -34,4 +35,12 @@ void mazeScene::initResources()
     floorTexture = rm->createResource(res::ogl::Texture("data\\models\\floorTextures\\floor_color.jpg"), sceneName);
     floorTextureNormal = rm->createResource(res::ogl::Texture("data\\models\\floorTextures\\Snow_003_NORM.jpg", res::ogl::TextureType::Normal), sceneName);
     laserShader = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\laser\\basic.vert", "data\\shaders\\laser\\basic.frag", "laserShader"), sceneName);
+    pistol_pack = rm->createResource(res::ogl::TexturePack({
+        "data\\scenes\\maze_doom\\pistol\\pistol-0.png",
+        "data\\scenes\\maze_doom\\pistol\\pistol-1.png",
+        "data\\scenes\\maze_doom\\pistol\\pistol-2.png",
+        "data\\scenes\\maze_doom\\pistol\\pistol-3.png",
+        "data\\scenes\\maze_doom\\pistol\\pistol-4.png",
+        "data\\scenes\\maze_doom\\pistol\\pistol-5.png",
+    }), sceneName);
 }

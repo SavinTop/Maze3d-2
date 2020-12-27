@@ -6,3 +6,4 @@
 #include "model.hpp"
 #include "cubemapTexture.hpp"
 #include "cubemapModel.hpp"
+#include "texturePack.hpp"

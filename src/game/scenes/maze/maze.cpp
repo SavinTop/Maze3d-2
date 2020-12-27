@@ -15,7 +15,7 @@ void mazeScene::start()
     floor.setParams(glm::vec2(maze_size * 8 - 6, maze_size * 8 - 6), {floorTexture, floorTextureNormal});
     floor.setPosition(glm::vec3(maze_size * 8 / 2.0 - 4, -3, maze_size * 8 / 2.0 - 4));
     floor.load();
-    laserModel.setParams(glm::vec3(0.5,0.5,0.5));
+    laserModel.setParams(glm::vec3(0.05,0.05,0.05));
     laserModel.load();
 
     calcShadows();
@@ -80,10 +80,9 @@ void mazeScene::mouseDown(double xpos, double ypos, int mb, int action)
     {
         menu->mouseInput(xpos,ypos,lm);
         if(cheatCode_h.getSettings().doom)
-        shotLaser(player.getCamera().getPos()+player.getCamera().getFront()*2.0f, player.getCamera().getFront(), 50);
+        shotLaser(player.getCamera().getPos()+player.getCamera().getFront(), player.getCamera().getFront(), 100);
     }
-        menu->mouseInput(xpos,ypos,false);
-        
+        menu->mouseInput(xpos,ypos,false);  
 }
 
 void mazeScene::charInput(unsigned int character) 
