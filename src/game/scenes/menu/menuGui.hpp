@@ -19,9 +19,12 @@ public:
     std::vector<GuiObject*> getChildrenRecurs(GuiObject* curr);
     void initMain();
     void initEndless();
+    void initTimed();
     void setExitButtonClickCallBack(std::function<void(void)> click);
     void setEndlessStartButtonClickCallBack(std::function<void(void)> click);
+    void setTimedStartButtonClickCallBack(std::function<void(void)> click);
     int get_endless_lvl(){return endless_startLevel_value;}
+    int get_timed_lvl(){return timed_startLevel_value;}
 
     void endlessClick();
     void timedClick();
@@ -30,11 +33,14 @@ public:
 
     void endless_leftArrowClick();
     void endless_rightArrowClick();
+    void timed_leftArrowClick();
+    void timed_rightArrowClick();
 
 private:
     GuiWindow* currentWindow;
     GuiWindow main;
     GuiWindow endless;
+    GuiWindow timed;
     int w,h;
     ResourceManager* rm;
     std::string spriteDirectory = "data\\scenes\\mainMenu\\sprites\\";
@@ -52,7 +58,13 @@ private:
     Label endless_startLevel;
     int endless_startLevel_value;
     
+    FullscreenBox timed_fbox;
     Button timed_back_button;
+    Button timed_leftArrow;
+    Button timed_rightArrow;
+    Button timed_start_button;
+    Label timed_startLevel;
+    int timed_startLevel_value;
 
     std::shared_ptr<res::ogl::Texture> exit_idle;
     std::shared_ptr<res::ogl::Texture> exit_active;

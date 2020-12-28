@@ -45,6 +45,11 @@ void MenuGui::setEndlessStartButtonClickCallBack(std::function<void(void)> click
     endless_start_button.setClickCallback(click);
 }
 
+void MenuGui::setTimedStartButtonClickCallBack(std::function<void(void)> click) 
+{
+    timed_start_button.setClickCallback(click);
+}
+
 void MenuGui::back_click()
 {
     currentWindow = &main;
@@ -61,6 +66,7 @@ MenuGui::MenuGui(int w, int h, ResourceManager *rm)
 void MenuGui::start()
 {
     initMain();
+    initTimed();
     initEndless();
     currentWindow = &main;
 }

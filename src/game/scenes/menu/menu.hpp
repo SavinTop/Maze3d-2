@@ -34,6 +34,7 @@ void mouseDown(double xpos, double ypos, int mb, int action) override;
 void mouseMove(double xpos, double ypos) override;
 void exitClicked();
 void endless_start_clicked();
+void timed_start_clicked();
 
 private:
 std::shared_ptr<MenuGui> menu;

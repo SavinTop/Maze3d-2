@@ -5,6 +5,7 @@ void Menu::start()
     menu->start();
     menu->setExitButtonClickCallBack(std::bind(&Menu::exitClicked, this));
     menu->setEndlessStartButtonClickCallBack(std::bind(&Menu::endless_start_clicked, this));
+    menu->setTimedStartButtonClickCallBack(std::bind(&Menu::timed_start_clicked, this));
 }
 
 void Menu::update(float delta) 
@@ -55,6 +56,19 @@ void Menu::exitClicked()
 void Menu::endless_start_clicked() 
 {
     auto next = new LoadingScene(proc, new mazeScene(proc, menu->get_endless_lvl()));
+    next->initResources();
+    auto temp = next->getResources();
+    for(auto& el:temp.getRes())
+    {
+        el->subResources_.load();
+        el->load();
+    }
+    proc->ChangeScene(next);
+}
+
+void Menu::timed_start_clicked() 
+{
+    auto next = new LoadingScene(proc, new mazeScene(proc, menu->get_timed_lvl(), true));
     next->initResources();
     auto temp = next->getResources();
     for(auto& el:temp.getRes())

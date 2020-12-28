@@ -59,16 +59,19 @@ void mazeScene::physTick(float delta)
     //if (coll(getPointCollBox(playerPos), omm.get(omm.width()-2, omm.height()-1)->fw))
     if (playerPos.x<0 || playerPos.x>omm.width()* 8 - 6 || playerPos.z<0 || playerPos.z>omm.height()* 8 - 6)
     {
-        auto next = new LoadingScene(proc, new mazeScene(proc, maze_size_+5));
-        next->initResources();
-        auto temp = next->getResources();
-        for (auto &el : temp.getRes())
-        {
-            el->subResources_.load();
-            el->load();
-        }
-        proc->ChangeScene(next);
+        if(timed)
+            Lvld0ne_timed();
+        else
+            Lvld0ne_endless();
     }
 
     laserPhys(delta);
+
+    if(timed && !proc->GetPause())
+    {
+        float curr = glfwGetTime();
+        timer+=curr-last_time;
+        menu->timer_setTime(timer);
+        last_time = curr;
+    } 
 }

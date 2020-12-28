@@ -50,16 +50,7 @@ void mazeScene::update(float delta)
     int state = glfwGetKey(proc->getWnd(), GLFW_KEY_ESCAPE);
     if (state == GLFW_PRESS)
     {
-        glfwSetInputMode(proc->getWnd(), GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-        auto next = new LoadingScene(proc, new Menu(proc));
-        next->initResources();
-        auto temp = next->getResources();
-        for (auto &el : temp.getRes())
-        {
-            el->subResources_.load();
-            el->load();
-        }
-        proc->ChangeScene(next);
+        goToMainMenu();
     }
 }
 
@@ -94,7 +85,8 @@ void mazeScene::okClicked()
 {
     glfwSetInputMode(proc->getWnd(), GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
     proc->SetPause(false);
-    menu->currentWindow = nullptr;
+    menu->currentWindow = &menu->timer;
+    last_time = glfwGetTime();
     glfwSetCursorPos(proc->getWnd(), window_w / 2.0f, window_h / 2.0f);
 }
 
@@ -125,13 +117,48 @@ void mazeScene::calcShadows()
     glCullFace(GL_BACK);
 }
 
-mazeScene::mazeScene(GameProcess *proc, int maze_size) : Scene(proc), maze(maze_size, maze_size)
+void mazeScene::Lvld0ne_endless() 
 {
-    sceneName = "maze_scene";
+    auto next = new LoadingScene(proc, new mazeScene(proc, maze_size_+5));
+    next->initResources();
+    auto temp = next->getResources();
+    for (auto &el : temp.getRes())
+    {
+        el->subResources_.load();
+        el->load();
+    }
+    proc->ChangeScene(next);
+}
+
+void mazeScene::Lvld0ne_timed() 
+{
+    goToMainMenu();
+    std::cout<<"maze "<<maze_size_<<" dur "<<timer<<std::endl;
+}
+
+void mazeScene::goToMainMenu() 
+{
+    glfwSetInputMode(proc->getWnd(), GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+    auto next = new LoadingScene(proc, new Menu(proc));
+    next->initResources();
+    auto temp = next->getResources();
+    for (auto &el : temp.getRes())
+    {
+        el->subResources_.load();
+        el->load();
+    }
+    proc->ChangeScene(next);
+}
+
+mazeScene::mazeScene(GameProcess *proc, int maze_size, bool timed) : Scene(proc), maze(maze_size, maze_size)
+{
+    sceneName = timed?"maze_scene_timed":"maze_scene_endless";
     glfwGetWindowSize(proc->getWnd(), &window_w, &window_h);
     glfwSetInputMode(proc->getWnd(), GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
     fov = 60;
     maze_size_ = maze_size;
+    this->timed = timed;
+    timer = 0;
 }
 
 mazeScene::~mazeScene()

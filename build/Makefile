@@ -1222,6 +1222,33 @@ src/game/maze_things/utils/coloredMapGenerator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.s
 .PHONY : src/game/maze_things/utils/coloredMapGenerator.cpp.s
 
+src/game/maze_things/utils/dataHandler.obj: src/game/maze_things/utils/dataHandler.cpp.obj
+
+.PHONY : src/game/maze_things/utils/dataHandler.obj
+
+# target to build an object file
+src/game/maze_things/utils/dataHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.obj
+.PHONY : src/game/maze_things/utils/dataHandler.cpp.obj
+
+src/game/maze_things/utils/dataHandler.i: src/game/maze_things/utils/dataHandler.cpp.i
+
+.PHONY : src/game/maze_things/utils/dataHandler.i
+
+# target to preprocess a source file
+src/game/maze_things/utils/dataHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.i
+.PHONY : src/game/maze_things/utils/dataHandler.cpp.i
+
+src/game/maze_things/utils/dataHandler.s: src/game/maze_things/utils/dataHandler.cpp.s
+
+.PHONY : src/game/maze_things/utils/dataHandler.s
+
+# target to generate assembly for a file
+src/game/maze_things/utils/dataHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.s
+.PHONY : src/game/maze_things/utils/dataHandler.cpp.s
+
 src/game/maze_things/utils/raycastingHandler.obj: src/game/maze_things/utils/raycastingHandler.cpp.obj
 
 .PHONY : src/game/maze_things/utils/raycastingHandler.obj
@@ -1627,6 +1654,33 @@ src/game/scenes/menu/resourceMenuGui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.s
 .PHONY : src/game/scenes/menu/resourceMenuGui.cpp.s
 
+src/game/scenes/menu/timedWindow.obj: src/game/scenes/menu/timedWindow.cpp.obj
+
+.PHONY : src/game/scenes/menu/timedWindow.obj
+
+# target to build an object file
+src/game/scenes/menu/timedWindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj
+.PHONY : src/game/scenes/menu/timedWindow.cpp.obj
+
+src/game/scenes/menu/timedWindow.i: src/game/scenes/menu/timedWindow.cpp.i
+
+.PHONY : src/game/scenes/menu/timedWindow.i
+
+# target to preprocess a source file
+src/game/scenes/menu/timedWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.i
+.PHONY : src/game/scenes/menu/timedWindow.cpp.i
+
+src/game/scenes/menu/timedWindow.s: src/game/scenes/menu/timedWindow.cpp.s
+
+.PHONY : src/game/scenes/menu/timedWindow.s
+
+# target to generate assembly for a file
+src/game/scenes/menu/timedWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.s
+.PHONY : src/game/scenes/menu/timedWindow.cpp.s
+
 src/glad.obj: src/glad.c.obj
 
 .PHONY : src/glad.obj
@@ -1783,6 +1837,9 @@ help:
 	@echo ... src/game/maze_things/utils/coloredMapGenerator.obj
 	@echo ... src/game/maze_things/utils/coloredMapGenerator.i
 	@echo ... src/game/maze_things/utils/coloredMapGenerator.s
+	@echo ... src/game/maze_things/utils/dataHandler.obj
+	@echo ... src/game/maze_things/utils/dataHandler.i
+	@echo ... src/game/maze_things/utils/dataHandler.s
 	@echo ... src/game/maze_things/utils/raycastingHandler.obj
 	@echo ... src/game/maze_things/utils/raycastingHandler.i
 	@echo ... src/game/maze_things/utils/raycastingHandler.s
@@ -1828,6 +1885,9 @@ help:
 	@echo ... src/game/scenes/menu/resourceMenuGui.obj
 	@echo ... src/game/scenes/menu/resourceMenuGui.i
 	@echo ... src/game/scenes/menu/resourceMenuGui.s
+	@echo ... src/game/scenes/menu/timedWindow.obj
+	@echo ... src/game/scenes/menu/timedWindow.i
+	@echo ... src/game/scenes/menu/timedWindow.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s

@@ -8,7 +8,7 @@ void mazeScene::drawLasers(glm::mat4& proj, glm::mat4& view)
     glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view));
     glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(proj));
 
-    glUniform4fv(laserShader->getUniformLocation("color"), 1, glm::value_ptr(Color::getOglColor(Color::rgba(255,0,0,255))));
+    glUniform4fv(laserShader->getUniformLocation("color"), 1, glm::value_ptr(Color::getOglColor(Color::rgba(0,0,0,255))));
     
     for(int i=0;i<10;i++)
         if(!lasers[i].destroyed)

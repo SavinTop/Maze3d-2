@@ -40,5 +40,5 @@ void MenuGui::endlessClick()
 
 void MenuGui::timedClick() 
 {
-    
+    currentWindow = &timed;
 }

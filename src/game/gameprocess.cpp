@@ -6,6 +6,8 @@
 #include "scenes/loadingScenes/LoadingScene.hpp"
 #include "scenes/menu/menu.hpp"
 
+#include "game/maze_things/utils/dataHandler.hpp"
+
 const int maxFps = 150;
 const int PPS = 100;
 const int UPS = 120;

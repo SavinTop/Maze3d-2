@@ -18,7 +18,9 @@ void mouseInput(int x, int y, bool lb);
 
 void initDebug();
 void initBeg();
+void initTimer();
 void debug_setDebugPlayerPos(float x, float y);
+void timer_setTime(float t);
 
 void setMazeMap(std::shared_ptr<res::ogl::Texture> mazeTexture);
 void setOkCallback(std::function<void(void)> click);
@@ -29,18 +31,24 @@ std::vector<GuiObject*> getElements();
 std::vector<GuiObject*> getChildrenRecurs(GuiObject* curr);
 
 GuiWindow* currentWindow;
+GuiWindow debug;
+GuiWindow timer;
+GuiWindow beg;
 private:
     int w,h;
     ResourceManager* rm;
     FullscreenBox debug_fbox;
 
-    GuiWindow debug;
+    
     Label debug_playerX;
     Label debug_playerY;
     float debug_playerX_value;
     
+    
+    FullscreenBox timer_fbox;
+    Label timer_time;
+    float time_value;
 
-    GuiWindow beg;
     FullscreenBox beg_fbox;
     Button beg_mazemap_test;
     Button beg_ok;

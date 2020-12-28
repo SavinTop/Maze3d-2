@@ -5,6 +5,7 @@ void MazeGui::start()
 {
     initBeg();
     initDebug();
+    initTimer();
     currentWindow = &beg;
 }
 
@@ -108,10 +109,32 @@ void MazeGui::initBeg()
     beg.setDrawableChildArr(temp);
 }
 
+void MazeGui::initTimer() 
+{
+    timer = GuiWindow(w,h);
+    timer_fbox = FullscreenBox(nullptr,w,h);
+    timer_fbox.setParent(&timer);
+
+    timer_time.setParent(&timer_fbox);
+    timer_time.setPosition(0.0f, -0.9f);
+    timer_time.setSize(0.2f, 0.1f);
+    timer_time.setTextAlign(textAlign::Center);
+    timer_time.setColor(glm::vec3(Color::getOglColor(Color::rgba(0,255,0,255))));
+
+    auto temp = getChildrenRecurs(&timer);
+    timer.setDrawableChildArr(temp);
+}
+
 void MazeGui::debug_setDebugPlayerPos(float x, float y) 
 {
     debug_playerX.setText("x: "+std::to_string(x));
     debug_playerY.setText("y: "+std::to_string(y));
+}
+
+void MazeGui::timer_setTime(float t) 
+{
+    time_value = t;
+    timer_time.setText(std::to_string(t));
 }
 
 void MazeGui::setMazeMap(std::shared_ptr<res::ogl::Texture> mazeTexture) 

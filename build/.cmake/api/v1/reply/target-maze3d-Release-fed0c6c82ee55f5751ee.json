@@ -128,16 +128,18 @@
 				93,
 				95,
 				97,
-				98,
 				99,
+				100,
 				101,
-				102,
 				103,
 				104,
 				105,
+				106,
 				107,
 				109,
-				112
+				111,
+				112,
+				115
 			]
 		},
 		{
@@ -169,8 +171,8 @@
 			"language" : "C",
 			"sourceIndexes" : 
 			[
-				110,
-				111
+				113,
+				114
 			]
 		}
 	],
@@ -292,18 +294,20 @@
 				93,
 				95,
 				97,
-				98,
 				99,
+				100,
 				101,
-				102,
 				103,
 				104,
 				105,
+				106,
 				107,
 				109,
-				110,
 				111,
-				112
+				112,
+				113,
+				114,
+				115
 			]
 		},
 		{
@@ -364,9 +368,10 @@
 				92,
 				94,
 				96,
-				100,
-				106,
-				108
+				98,
+				102,
+				108,
+				110
 			]
 		}
 	],
@@ -848,6 +853,17 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "src/game/maze_things/utils/dataHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/game/maze_things/utils/dataHandler.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "src/game/maze_things/utils/raycastingHandler.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -973,6 +989,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/game/scenes/menu/resourceMenuGui.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/game/scenes/menu/timedWindow.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

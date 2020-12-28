@@ -191,6 +191,11 @@
 },
 {
   "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\maze_things\\utils\\dataHandler.cpp.obj -c D:\\21\\Maze3d\\src\\game\\maze_things\\utils\\dataHandler.cpp",
+  "file": "D:/21/Maze3d/src/game/maze_things/utils/dataHandler.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\maze_things\\utils\\raycastingHandler.cpp.obj -c D:\\21\\Maze3d\\src\\game\\maze_things\\utils\\raycastingHandler.cpp",
   "file": "D:/21/Maze3d/src/game/maze_things/utils/raycastingHandler.cpp"
 },
@@ -263,6 +268,11 @@
   "directory": "D:/21/Maze3d/build",
   "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\menu\\resourceMenuGui.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\menu\\resourceMenuGui.cpp",
   "file": "D:/21/Maze3d/src/game/scenes/menu/resourceMenuGui.cpp"
+},
+{
+  "directory": "D:/21/Maze3d/build",
+  "command": "D:\\CodeBlocks\\MinGW\\bin\\g++.exe   @CMakeFiles/maze3d.dir/includes_CXX.rsp -O3 -DNDEBUG   -o CMakeFiles\\maze3d.dir\\src\\game\\scenes\\menu\\timedWindow.cpp.obj -c D:\\21\\Maze3d\\src\\game\\scenes\\menu\\timedWindow.cpp",
+  "file": "D:/21/Maze3d/src/game/scenes/menu/timedWindow.cpp"
 },
 {
   "directory": "D:/21/Maze3d/build",

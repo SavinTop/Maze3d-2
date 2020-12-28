@@ -27,7 +27,7 @@
 
 class mazeScene : public Scene{
     public:
-    mazeScene(GameProcess* proc, int maze_size);
+    mazeScene(GameProcess* proc, int maze_size, bool timed = false);
     ~mazeScene();
     void start() override;
     void update(float delta) override;
@@ -43,6 +43,10 @@ class mazeScene : public Scene{
     void drawLasers(glm::mat4& proj, glm::mat4& view);
     void laserPhys(float delta);
     void shotLaser(glm::vec3 start, glm::vec3 dir, float speed);
+
+    void Lvld0ne_endless();
+    void Lvld0ne_timed();
+    void goToMainMenu();
 
     private:
     std::shared_ptr<res::ogl::Model> lineWallModel;
@@ -92,4 +96,8 @@ class mazeScene : public Scene{
 
     std::shared_ptr<res::ogl::TexturePack> pistol_pack;
     float temp_i = 0;
+
+    bool timed;
+    float last_time;
+    float timer; // for fucking pausing, thanks mr NIKOLAY
 };

@@ -57,6 +57,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/game/maze_things/legacy/ObjectMazeBuilder.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.obj"
   "D:/21/Maze3d/src/game/maze_things/utils/cheatCodeHandler.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.obj"
   "D:/21/Maze3d/src/game/maze_things/utils/coloredMapGenerator.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.obj"
+  "D:/21/Maze3d/src/game/maze_things/utils/dataHandler.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.obj"
   "D:/21/Maze3d/src/game/maze_things/utils/raycastingHandler.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj"
   "D:/21/Maze3d/src/game/maze_things/utils/shadowHandler.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj"
   "D:/21/Maze3d/src/game/player/player.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj"
@@ -72,6 +73,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/game/scenes/menu/menu.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj"
   "D:/21/Maze3d/src/game/scenes/menu/menuGui.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj"
   "D:/21/Maze3d/src/game/scenes/menu/resourceMenuGui.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj"
+  "D:/21/Maze3d/src/game/scenes/menu/timedWindow.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
