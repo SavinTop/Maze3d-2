@@ -19,6 +19,7 @@
 
 #include "game/scenes/maze/maze.hpp"
 #include "scenes/loadingScenes/LoadingScene.hpp"
+#include "maze_things/utils/dataHandler.hpp"
 
 class GameProcess;
 

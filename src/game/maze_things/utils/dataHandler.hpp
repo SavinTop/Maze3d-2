@@ -6,8 +6,9 @@
 struct data_line{
     bool valid_info = false;
     float min;
-    float avg;
     float max;
+    float sum = 0;
+    unsigned count = 0;
 };
 
 class dataHandler{
@@ -18,6 +19,7 @@ public:
     void clear();
     void clearLine(unsigned index);
     void update(unsigned index, float time);
+    std::vector<data_line>& getData(){return data;};
 private:
     std::vector<data_line> data;
 };

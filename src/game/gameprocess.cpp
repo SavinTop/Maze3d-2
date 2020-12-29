@@ -6,8 +6,6 @@
 #include "scenes/loadingScenes/LoadingScene.hpp"
 #include "scenes/menu/menu.hpp"
 
-#include "game/maze_things/utils/dataHandler.hpp"
-
 const int maxFps = 150;
 const int PPS = 100;
 const int UPS = 120;
@@ -55,7 +53,8 @@ void GameProcess::Start()
         }
 
         double currPhys = glfwGetTime();
-        if(!pause && currPhys-lastPhys>1.0f/PPS){
+        if(currPhys-lastPhys>1.0f/PPS){
+            if(!pause)
             currentScene->physTick(currPhys-lastPhys);
             lastPhys = currPhys;
         }

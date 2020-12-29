@@ -13,6 +13,7 @@ void Menu::update(float delta)
     int state = glfwGetKey(proc->getWnd(), GLFW_KEY_ESCAPE);
     if(state == GLFW_PRESS)
         glfwSetWindowShouldClose(proc->getWnd(), true);
+    
 }
 
 std::string text = "";

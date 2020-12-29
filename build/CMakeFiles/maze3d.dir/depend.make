@@ -5751,6 +5751,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj: ../src
 CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj: ../src/game/maze_things/legacy/ObjectMazeBuilder.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj: ../src/game/maze_things/utils/cheatCodeHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj: ../src/game/maze_things/utils/collisionChecker.hpp
+CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj: ../src/game/maze_things/utils/dataHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj: ../src/game/maze_things/utils/raycastingHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj: ../src/game/maze_things/utils/shadowHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj: ../src/game/player/player.hpp
@@ -6043,6 +6044,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj: ../src/game/maze_things
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj: ../src/game/maze_things/utils/cheatCodeHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj: ../src/game/maze_things/utils/collisionChecker.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj: ../src/game/maze_things/utils/coloredMapGenerator.hpp
+CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj: ../src/game/maze_things/utils/dataHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj: ../src/game/maze_things/utils/raycastingHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj: ../src/game/maze_things/utils/shadowHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj: ../src/game/player/player.hpp
@@ -6333,6 +6335,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj: ../src/game/maze_th
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj: ../src/game/maze_things/legacy/ObjectMazeBuilder.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj: ../src/game/maze_things/utils/cheatCodeHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj: ../src/game/maze_things/utils/collisionChecker.hpp
+CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj: ../src/game/maze_things/utils/dataHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj: ../src/game/maze_things/utils/raycastingHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj: ../src/game/maze_things/utils/shadowHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj: ../src/game/player/player.hpp
@@ -6620,6 +6623,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj: ../src/game/maze_th
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj: ../src/game/maze_things/legacy/ObjectMazeBuilder.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj: ../src/game/maze_things/utils/cheatCodeHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj: ../src/game/maze_things/utils/collisionChecker.hpp
+CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj: ../src/game/maze_things/utils/dataHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj: ../src/game/maze_things/utils/raycastingHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj: ../src/game/maze_things/utils/shadowHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj: ../src/game/player/player.hpp
@@ -7176,6 +7180,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj: ../src/game/maze_th
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj: ../src/game/maze_things/legacy/ObjectMazeBuilder.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj: ../src/game/maze_things/utils/cheatCodeHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj: ../src/game/maze_things/utils/collisionChecker.hpp
+CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj: ../src/game/maze_things/utils/dataHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj: ../src/game/maze_things/utils/raycastingHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj: ../src/game/maze_things/utils/shadowHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj: ../src/game/player/player.hpp
@@ -7463,6 +7468,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj: ../src/game/maze
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj: ../src/game/maze_things/legacy/ObjectMazeBuilder.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj: ../src/game/maze_things/utils/cheatCodeHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj: ../src/game/maze_things/utils/collisionChecker.hpp
+CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj: ../src/game/maze_things/utils/dataHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj: ../src/game/maze_things/utils/raycastingHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj: ../src/game/maze_things/utils/shadowHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj: ../src/game/player/player.hpp
@@ -7737,6 +7743,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj: ../src/engine/
 CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj: ../src/engine/render/drawable.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj: ../src/engine/utilities/debug.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj: ../src/engine/utilities/fileLoader.hpp
+CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj: ../src/game/maze_things/utils/dataHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj: ../src/game/scenes/menu/endlessWindow.cpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj: ../src/game/scenes/menu/menuGui.hpp
 
@@ -8006,6 +8013,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj: ../src/engine/bas
 CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj: ../src/engine/render/drawable.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj: ../src/engine/utilities/debug.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj: ../src/engine/utilities/fileLoader.hpp
+CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj: ../src/game/maze_things/utils/dataHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj: ../src/game/scenes/menu/mainWindow.cpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj: ../src/game/scenes/menu/menuGui.hpp
 
@@ -8288,6 +8296,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj: ../src/game/maze_things
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj: ../src/game/maze_things/legacy/ObjectMazeBuilder.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj: ../src/game/maze_things/utils/cheatCodeHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj: ../src/game/maze_things/utils/collisionChecker.hpp
+CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj: ../src/game/maze_things/utils/dataHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj: ../src/game/maze_things/utils/raycastingHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj: ../src/game/maze_things/utils/shadowHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj: ../src/game/player/player.hpp
@@ -8564,6 +8573,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj: ../src/engine/baseTy
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj: ../src/engine/render/drawable.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj: ../src/engine/utilities/debug.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj: ../src/engine/utilities/fileLoader.hpp
+CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj: ../src/game/maze_things/utils/dataHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj: ../src/game/scenes/menu/menuGui.cpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj: ../src/game/scenes/menu/menuGui.hpp
 
@@ -8833,6 +8843,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj: ../src/engin
 CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj: ../src/engine/render/drawable.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj: ../src/engine/utilities/debug.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj: ../src/engine/utilities/fileLoader.hpp
+CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj: ../src/game/maze_things/utils/dataHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj: ../src/game/scenes/menu/menuGui.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj: ../src/game/scenes/menu/resourceMenuGui.cpp
 
@@ -9102,6 +9113,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj: ../src/engine/ba
 CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj: ../src/engine/render/drawable.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj: ../src/engine/utilities/debug.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj: ../src/engine/utilities/fileLoader.hpp
+CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj: ../src/game/maze_things/utils/dataHandler.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj: ../src/game/scenes/menu/menuGui.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj: ../src/game/scenes/menu/timedWindow.cpp
 

@@ -2,6 +2,7 @@
 
 #include "baseTypes/gui/gui.hpp"
 #include "baseTypes/resource/resource.hpp"
+#include "game/maze_things/utils/dataHandler.hpp"
 
 class MenuGui : public Resource{
 public:
@@ -35,6 +36,7 @@ public:
     void endless_rightArrowClick();
     void timed_leftArrowClick();
     void timed_rightArrowClick();
+    void timed_update_res();
 
 private:
     GuiWindow* currentWindow;
@@ -64,6 +66,16 @@ private:
     Button timed_rightArrow;
     Button timed_start_button;
     Label timed_startLevel;
+
+    Label timed_min_text;
+    Label timed_avg_text;
+    Label timed_max_text;
+
+    Label timed_min_value;
+    Label timed_avg_value;
+    Label timed_max_value;
+    dataHandler timed_dh;
+
     int timed_startLevel_value;
 
     std::shared_ptr<res::ogl::Texture> exit_idle;

@@ -134,6 +134,8 @@ void mazeScene::Lvld0ne_timed()
 {
     goToMainMenu();
     std::cout<<"maze "<<maze_size_<<" dur "<<timer<<std::endl;
+    dh_test.update(maze_size_/5-1, timer);
+    dh_test.save();
 }
 
 void mazeScene::goToMainMenu() 
@@ -159,6 +161,7 @@ mazeScene::mazeScene(GameProcess *proc, int maze_size, bool timed) : Scene(proc)
     maze_size_ = maze_size;
     this->timed = timed;
     timer = 0;
+    dh_test.load();
 }
 
 mazeScene::~mazeScene()

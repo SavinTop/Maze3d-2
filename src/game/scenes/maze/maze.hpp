@@ -24,6 +24,7 @@
 #include "maze_things/utils/cheatCodeHandler.hpp"
 #include "maze_things/doomsDay/laserModel.hpp"
 #include "maze_things/doomsDay/laserObj.hpp"
+#include "maze_things/utils/dataHandler.hpp"
 
 class mazeScene : public Scene{
     public:
@@ -100,4 +101,6 @@ class mazeScene : public Scene{
     bool timed;
     float last_time;
     float timer; // for fucking pausing, thanks mr NIKOLAY
+
+    dataHandler dh_test;
 };

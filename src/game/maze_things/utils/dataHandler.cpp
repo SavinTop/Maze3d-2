@@ -42,7 +42,20 @@ void dataHandler::clearLine(unsigned index)
 
 void dataHandler::update(unsigned index, float time) 
 {
-    
+    auto& el = data[index];
+    if(!el.valid_info)
+    {
+        el.min = el.sum = el.max = time;
+        el.count = 1;
+        el.valid_info = true;
+    } else{
+        if(time<el.min)
+            el.min = time;
+        else if (time>el.max)
+            el.max = time;
+        el.sum+=time;
+        el.count++;
+    }
 }
 
 dataHandler::dataHandler() 
