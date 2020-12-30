@@ -78,6 +78,7 @@ void mazeScene::mouseDown(double xpos, double ypos, int mb, int action)
 
 void mazeScene::charInput(unsigned int character) 
 {
+    if(!timed)
     cheatCode_h.charInput(character);
 }
 
@@ -93,7 +94,7 @@ void mazeScene::okClicked()
 void mazeScene::calcShadows()
 {
     glCullFace(GL_FRONT);
-    shadow_h.gl_init(maze_size_, 20);
+    shadow_h.gl_init(maze_size_, 10);
     shadowProgram->bind();
     unsigned int lsm_id = shadowProgram->getUniformLocation("lightSpaceMatrix");
 
@@ -101,11 +102,12 @@ void mazeScene::calcShadows()
     float height = maze_size_ * 4;
 
     glm::mat4 lightProjection = glm::ortho(-width, width, -height, height, 1.0f, 1000.0f);
-    glm::mat4 lightView = glm::lookAt(lightPosition * (float)(maze_size_ / 5),
-                                      floor.getPosition(),
-                                      glm::vec3(0.0f, 1.0f, 0.0f));
+     glm::mat4 lightView = glm::lookAt(lightPosition * (float)(maze_size_ / 5),
+                                       floor.getPosition(),
+                                       glm::vec3(0.0f, 1.0f, 0.0f));
     lightSpaceMatrix = lightProjection * lightView;
     glUniformMatrix4fv(lsm_id, 1, false, glm::value_ptr(lightSpaceMatrix));
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     shadow_h.begin();
     for (int i = 0; i < omm.height(); i++)
         for (int j = 0; j < omm.width(); j++)
@@ -128,6 +130,7 @@ void mazeScene::Lvld0ne_endless()
         el->load();
     }
     proc->ChangeScene(next);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 }
 
 void mazeScene::Lvld0ne_timed() 
@@ -150,6 +153,7 @@ void mazeScene::goToMainMenu()
         el->load();
     }
     proc->ChangeScene(next);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 }
 
 mazeScene::mazeScene(GameProcess *proc, int maze_size, bool timed) : Scene(proc), maze(maze_size, maze_size)

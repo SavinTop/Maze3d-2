@@ -117,9 +117,9 @@ void MazeGui::initTimer()
 
     timer_time.setParent(&timer_fbox);
     timer_time.setPosition(0.0f, -0.9f);
-    timer_time.setSize(0.2f, 0.1f);
+    timer_time.setSize(2.0f, 0.1f);
     timer_time.setTextAlign(textAlign::Center);
-    timer_time.setColor(glm::vec3(Color::getOglColor(Color::rgba(0,255,0,255))));
+    timer_time.setColor(glm::vec3(Color::getOglColor(Color::rgba(255,255,0,255))));
 
     auto temp = getChildrenRecurs(&timer);
     timer.setDrawableChildArr(temp);

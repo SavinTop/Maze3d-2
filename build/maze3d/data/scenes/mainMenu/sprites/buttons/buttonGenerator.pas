@@ -59,9 +59,7 @@ generate_text_btn_active_idle('timed');
 generate_text_btn_active_idle('exit');
 generate_text_btn_active_idle('back');
 generate_text_btn_active_idle('start');
-generate_text_btn_active_idle('results');
+generate_text_btn_active_idle('help');
 generate_text_btn_active_idle('ok');
-generate_arrow_btn_active_idle('leftArrow','l');
-generate_arrow_btn_active_idle('rightArrow','r');
 halt();
 end.

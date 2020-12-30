@@ -749,9 +749,9 @@ CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.obj: ../src/e
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.obj: ../src/engine/baseTypes/gui/basicTextRender.cpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.obj: ../src/engine/baseTypes/gui/basicTextRender.hpp
 
-CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj: ../include/GLFW/glfw3.h
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj: ../include/KHR/khrplatform.h
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj: ../include/glad/glad.h
+CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj: ../include/glfw/glfw3.h
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj: ../include/glm/common.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj: ../include/glm/detail/_fixes.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj: ../include/glm/detail/_swizzle.hpp

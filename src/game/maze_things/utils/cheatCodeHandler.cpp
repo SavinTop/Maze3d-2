@@ -54,6 +54,10 @@ void CheatCodeHandler::cheatCodeEntered()
     {
         sett.doom = !sett.doom;
     }
+    else if(temp=="wireframe")
+    {
+        sett.wireframe = !sett.wireframe;
+    }
     else
         current = std::move(temp);
 

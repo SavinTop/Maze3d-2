@@ -750,9 +750,9 @@ CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.obj
  D:/21/Maze3d/src/engine/baseTypes/gui/basicTextRender.cpp
  D:/21/Maze3d/src/engine/baseTypes/gui/basicTextRender.hpp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj
- ../include/GLFW/glfw3.h
  ../include/KHR/khrplatform.h
  ../include/glad/glad.h
+ ../include/glfw/glfw3.h
  ../include/glm/common.hpp
  ../include/glm/detail/_fixes.hpp
  ../include/glm/detail/_swizzle.hpp

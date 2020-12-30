@@ -14,6 +14,7 @@ struct settings{
     bool walls = true;
     bool light = true;
     bool doom = false;
+    bool wireframe = false;
 };
 
 class CheatCodeHandler{
@@ -36,7 +37,8 @@ private:
         "light",
         "walls",
         "potato",
-        "doom"
+        "doom",
+        "wireframe"
     };
     unsigned int matchCount();
 };

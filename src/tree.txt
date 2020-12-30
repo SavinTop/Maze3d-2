@@ -75,6 +75,8 @@ D:.
 |   |                   shader.hpp
 |   |                   texture.cpp
 |   |                   texture.hpp
+|   |                   texturePack.cpp
+|   |                   texturePack.hpp
 |   |                   
 |   +---render
 |   |       camera.cpp
@@ -97,6 +99,11 @@ D:.
     |   game_scene_enum.hpp
     |   
     +---maze_things
+    |   +---doomsDay
+    |   |       laserModel.cpp
+    |   |       laserModel.hpp
+    |   |       laserObj.hpp
+    |   |       
     |   +---floor
     |   |       floorModel.cpp
     |   |       floorModel.hpp
@@ -110,9 +117,13 @@ D:.
     |   |       ObjectMazeBuilder.hpp
     |   |       
     |   \---utils
+    |           cheatCodeHandler.cpp
+    |           cheatcodeHandler.hpp
     |           collisionChecker.hpp
     |           coloredMapGenerator.cpp
     |           coloredMapGenerator.hpp
+    |           dataHandler.cpp
+    |           dataHandler.hpp
     |           raycastingHandler.cpp
     |           raycastingHandler.hpp
     |           shadowHandler.cpp
@@ -132,8 +143,11 @@ D:.
         |       maze.cpp
         |       maze.hpp
         |       maze.res.cpp
+        |       mazeDraw.cpp
         |       mazeGui.cpp
         |       mazeGui.hpp
+        |       mazePhys.cpp
+        |       maze_lasers.cpp
         |       
         \---menu
                 endlessWindow.cpp
@@ -143,4 +157,5 @@ D:.
                 menuGui.cpp
                 menuGui.hpp
                 resourceMenuGui.cpp
+                timedWindow.cpp
                 

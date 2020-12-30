@@ -2,6 +2,8 @@
 
 void mazeScene::onDraw(float delta)
 {
+    auto& sett = cheatCode_h.getSettings();
+    glPolygonMode(GL_FRONT_AND_BACK, sett.wireframe?GL_LINE:GL_FILL);
     program->bind();
     unsigned viewId = program->getUniformLocation("view");
     unsigned projectionId = program->getUniformLocation("projection");
@@ -25,7 +27,7 @@ void mazeScene::onDraw(float delta)
 
     glUniform1i(shadowMapid, 5);
     glActiveTexture(GL_TEXTURE0 + 5);
-    auto& sett = cheatCode_h.getSettings();
+    
     if(sett.shadows || sett.epilepsyShadows && sett.ep_shadow_state%2)
     {
         glUniform1i(program->getUniformLocation("showShadows"), 1);

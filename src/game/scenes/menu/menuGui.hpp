@@ -29,8 +29,9 @@ public:
 
     void endlessClick();
     void timedClick();
-
+    void helpClick();
     void back_click();
+
 
     void endless_leftArrowClick();
     void endless_rightArrowClick();
@@ -51,6 +52,7 @@ private:
     Button main_exit_button;
     Button main_timed_button;
     Button main_endless_button;
+    Button main_help_button;
 
     FullscreenBox endless_fbox;
     Button endless_back_button;
@@ -84,6 +86,8 @@ private:
     std::shared_ptr<res::ogl::Texture> timed_active;
     std::shared_ptr<res::ogl::Texture> endless_idle;
     std::shared_ptr<res::ogl::Texture> endless_active;
+    std::shared_ptr<res::ogl::Texture> help_idle;
+    std::shared_ptr<res::ogl::Texture> help_active;
     std::shared_ptr<res::ogl::Texture> back_idle;
     std::shared_ptr<res::ogl::Texture> back_active;
     std::shared_ptr<res::ogl::Texture> start_idle;

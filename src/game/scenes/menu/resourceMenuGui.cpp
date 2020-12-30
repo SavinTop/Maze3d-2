@@ -21,11 +21,14 @@ void MenuGui::InitializeSubResources(std::string groupName)
 
     this->guiShader = rm->createResource(ShaderProgram("data\\shaders\\basicGui\\basic.vert","data\\shaders\\basicGui\\basic.frag", "guiProgram"),groupName);
 
+    this->help_idle = rm->createResource(Texture(spriteDirectory+"buttons\\help_idle.png"),groupName);
+    this->help_active = rm->createResource(Texture(spriteDirectory+"buttons\\help_active.png"),groupName);
+
     this->subResources_.setResources({exit_active.get(), exit_idle.get(),
     endless_active.get(), endless_idle.get(),
     timed_active.get(), timed_idle.get(),
     back_active.get(), back_idle.get(),start_active.get(), start_idle.get(),
     leftArrow_active.get(), leftArrow_idle.get(),
     rightArrow_active.get(), rightArrow_idle.get(),
-    guiShader.get()});
+    guiShader.get(), help_active.get(), help_idle.get()});
 }

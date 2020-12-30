@@ -7,7 +7,6 @@ Button::Button():GuiObject(nullptr)
     this->idleTexture = this->mouseHoverTexture = nullptr;
     click = nullptr;
     transValue = disTrans = 0;
-    lastTime = glfwGetTime();
 }
 
 Button::Button(GuiObject* parent, res::ogl::Texture* idleTexture, res::ogl::Texture* mouseHoverTexture, float fadeSpeed):GuiObject(parent)
@@ -15,6 +14,7 @@ Button::Button(GuiObject* parent, res::ogl::Texture* idleTexture, res::ogl::Text
     this->idleTexture = idleTexture;
     this->mouseHoverTexture = mouseHoverTexture;
     this->fadeSpeed = fadeSpeed;
+    lastTime = glfwGetTime();
 }
 
 void Button::__draw(oglw::Shader &program) 
