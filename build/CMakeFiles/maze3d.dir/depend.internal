@@ -7478,6 +7478,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj
  D:/21/Maze3d/src/game/scenes/maze/mazeGui.hpp
  D:/21/Maze3d/src/game/scenes/maze/maze_lasers.cpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj
+ ../include/GLFW/glfw3.h
  ../include/KHR/khrplatform.h
  ../include/assimp/Compiler/poppack1.h
  ../include/assimp/Compiler/pstdint.h
@@ -7748,6 +7749,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj
  D:/21/Maze3d/src/game/scenes/menu/endlessWindow.cpp
  D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj
+ ../include/GLFW/glfw3.h
  ../include/KHR/khrplatform.h
  ../include/assimp/Compiler/poppack1.h
  ../include/assimp/Compiler/pstdint.h
@@ -8308,6 +8310,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj
  D:/21/Maze3d/src/game/scenes/menu/menu.hpp
  D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj
+ ../include/GLFW/glfw3.h
  ../include/KHR/khrplatform.h
  ../include/assimp/Compiler/poppack1.h
  ../include/assimp/Compiler/pstdint.h
@@ -8578,6 +8581,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj
  D:/21/Maze3d/src/game/scenes/menu/menuGui.cpp
  D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj
+ ../include/GLFW/glfw3.h
  ../include/KHR/khrplatform.h
  ../include/assimp/Compiler/poppack1.h
  ../include/assimp/Compiler/pstdint.h
@@ -8848,6 +8852,7 @@ CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj
  D:/21/Maze3d/src/game/scenes/menu/menuGui.hpp
  D:/21/Maze3d/src/game/scenes/menu/resourceMenuGui.cpp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj
+ ../include/GLFW/glfw3.h
  ../include/KHR/khrplatform.h
  ../include/assimp/Compiler/poppack1.h
  ../include/assimp/Compiler/pstdint.h

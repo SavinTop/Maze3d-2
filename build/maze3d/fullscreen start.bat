@@ -1,1 +1,0 @@
-maze3d -fullscreen

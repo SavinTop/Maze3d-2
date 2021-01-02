@@ -9,7 +9,7 @@ void mazeScene::start()
     player.setPosition(glm::vec3(3, 0, 3));
     player.mouseOffsetInput(-240, 0);
     maze.buildMaze();
-    omm.init(maze, DrawableHolder(rootWallModel.get()), DrawableHolder(lineWallModel.get()), DrawableHolder(cornerWallModel.get()));
+    omm.init(maze, DrawableHolder(rootWallModel.get()), DrawableHolder(lineWallModel.get()), DrawableHolder(cornerWallModel.get()),DrawableHolder(xmasTreeModel.get()));
     rth = RaycastingHandler(50, &omm);
     int maze_size = omm.width();
     floor.setParams(glm::vec2(maze_size * 8 - 6, maze_size * 8 - 6), {floorTexture, floorTextureNormal});
@@ -111,7 +111,13 @@ void mazeScene::calcShadows()
     shadow_h.begin();
     for (int i = 0; i < omm.height(); i++)
         for (int j = 0; j < omm.width(); j++)
+        {
             omm.get(j, i)->model.draw(shadowProgram->getProgram());
+            auto t = omm.get(j, i)->child;
+            if(t.get()) 
+                t->draw(shadowProgram->getProgram());
+        }
+            
 
     floor.draw(shadowProgram->getProgram());
     shadow_h.end(window_w, window_h);
@@ -121,6 +127,7 @@ void mazeScene::calcShadows()
 
 void mazeScene::Lvld0ne_endless() 
 {
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     auto next = new LoadingScene(proc, new mazeScene(proc, maze_size_+5));
     next->initResources();
     auto temp = next->getResources();
@@ -130,7 +137,6 @@ void mazeScene::Lvld0ne_endless()
         el->load();
     }
     proc->ChangeScene(next);
-    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 }
 
 void mazeScene::Lvld0ne_timed() 
@@ -143,6 +149,7 @@ void mazeScene::Lvld0ne_timed()
 
 void mazeScene::goToMainMenu() 
 {
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     glfwSetInputMode(proc->getWnd(), GLFW_CURSOR, GLFW_CURSOR_NORMAL);
     auto next = new LoadingScene(proc, new Menu(proc));
     next->initResources();
@@ -153,7 +160,6 @@ void mazeScene::goToMainMenu()
         el->load();
     }
     proc->ChangeScene(next);
-    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 }
 
 mazeScene::mazeScene(GameProcess *proc, int maze_size, bool timed) : Scene(proc), maze(maze_size, maze_size)

@@ -58,6 +58,10 @@ void CheatCodeHandler::cheatCodeEntered()
     {
         sett.wireframe = !sett.wireframe;
     }
+    else if(temp=="flash")
+    {
+        sett.flash = !sett.flash;
+    }
     else
         current = std::move(temp);
 

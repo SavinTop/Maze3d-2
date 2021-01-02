@@ -61,5 +61,6 @@ generate_text_btn_active_idle('back');
 generate_text_btn_active_idle('start');
 generate_text_btn_active_idle('help');
 generate_text_btn_active_idle('ok');
+generate_text_btn_active_idle('maze3d');
 halt();
 end.

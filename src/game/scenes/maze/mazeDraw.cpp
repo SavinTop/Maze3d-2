@@ -57,6 +57,8 @@ void mazeScene::onDraw(float delta)
                 if (auto t = omm.get(j, i))
                 {
                     t->model.draw(program->getProgram());
+                    if(t->child.get())
+                        t->child->draw(program->getProgram());
                 }
     }
     }

@@ -55,11 +55,12 @@ void MenuGui::back_click()
     currentWindow = &main;
 }
 
-MenuGui::MenuGui(int w, int h, ResourceManager *rm)
+MenuGui::MenuGui(int w, int h, ResourceManager *rm, GLFWwindow* wnd)
 {
     this->w = w;
     this->h = h;
     this->rm = rm;
+    this->wnd = wnd;
     currentWindow = nullptr;
 }
 

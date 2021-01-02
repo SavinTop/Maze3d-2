@@ -32,7 +32,7 @@ ResourcePack Menu::getResources()
 
 void Menu::initResources() 
 {
-    menu = rm->createResource<>(MenuGui(window_w, window_h, rm),sceneName, "mainmenugui");
+    menu = rm->createResource<>(MenuGui(window_w, window_h, rm, proc->getWnd()),sceneName, "mainmenugui");
     //testPlane = rm->createResource<>(res::ogl::Plane(glm::vec3(200,200,0), glm::vec2(200,200), {test.get()}),sceneName);
 }
 

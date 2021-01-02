@@ -3,11 +3,12 @@
 #include "baseTypes/gui/gui.hpp"
 #include "baseTypes/resource/resource.hpp"
 #include "game/maze_things/utils/dataHandler.hpp"
+#include <GLFW/glfw3.h>
 
 class MenuGui : public Resource{
 public:
     MenuGui();
-    MenuGui(int w, int h, ResourceManager* rm);
+    MenuGui(int w, int h, ResourceManager* rm, GLFWwindow* wnd);
 
     void start();
     void draw();
@@ -31,6 +32,7 @@ public:
     void timedClick();
     void helpClick();
     void back_click();
+    void maze3d_click();
 
 
     void endless_leftArrowClick();
@@ -40,6 +42,8 @@ public:
     void timed_update_res();
 
 private:
+    GLFWwindow* wnd;
+
     GuiWindow* currentWindow;
     GuiWindow main;
     GuiWindow endless;
@@ -53,6 +57,8 @@ private:
     Button main_timed_button;
     Button main_endless_button;
     Button main_help_button;
+    Button main_maze3d_button;
+    Button main_game_logo;
 
     FullscreenBox endless_fbox;
     Button endless_back_button;
@@ -92,6 +98,10 @@ private:
     std::shared_ptr<res::ogl::Texture> back_active;
     std::shared_ptr<res::ogl::Texture> start_idle;
     std::shared_ptr<res::ogl::Texture> start_active;
+    std::shared_ptr<res::ogl::Texture> maze3d_idle;
+    std::shared_ptr<res::ogl::Texture> maze3d_active;
+
+    std::shared_ptr<res::ogl::Texture> game_logo;
 
     //arrows
 

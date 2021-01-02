@@ -7,7 +7,7 @@ void mazeScene::physTick(float delta)
 
     glm::vec3 lastPlayerPos = player.getCamera().getPos();
 
-    float playerSpeed = 10;
+    float playerSpeed = sett.flash?30:10;
 
     if (glfwGetKey(proc->getWnd(), GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS)
     {

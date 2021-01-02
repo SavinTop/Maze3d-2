@@ -16,7 +16,7 @@ unsigned int ObjectMazeMap::height()
 	return m_map[0].size();
 }
 
-void ObjectMazeMap::init(MazeBuilder& maze, DrawableHolder rootWall, DrawableHolder lineWall, DrawableHolder cornerWall) 
+void ObjectMazeMap::init(MazeBuilder& maze, DrawableHolder rootWall, DrawableHolder lineWall, DrawableHolder cornerWall, DrawableHolder xmas_tree) 
 {
 	const int wallOffset = 4*2;
 
@@ -48,6 +48,11 @@ void ObjectMazeMap::init(MazeBuilder& maze, DrawableHolder rootWall, DrawableHol
 					m_map[x][y].wt = Corner;
 					m_map[x][y].fw = { x * wallOffset-1, y * wallOffset-1, x * wallOffset + wallOffset, y * wallOffset + 1 };
 					m_map[x][y].sw = { x * wallOffset-1, y * wallOffset-1, x * wallOffset + 1, y * wallOffset + wallOffset };
+					DrawableHolder temp_dh;
+					temp_dh = xmas_tree;
+					temp_dh.setPosition(m_map[x][y].model.getPosition()+glm::vec3(2,-2,2));
+    				temp_dh.setScale(glm::vec3(0.5));
+					m_map[x][y].child.reset(new DrawableHolder(temp_dh));
 				}
 				else
 				{
@@ -80,9 +85,9 @@ std::vector<std::vector<mazeObject>>& ObjectMazeMap::getMap()
 	return m_map;
 }
 
-ObjectMazeMap::ObjectMazeMap(MazeBuilder& maze, DrawableHolder rootWall, DrawableHolder lineWall, DrawableHolder cornerWall) 
+ObjectMazeMap::ObjectMazeMap(MazeBuilder& maze, DrawableHolder rootWall, DrawableHolder lineWall, DrawableHolder cornerWall, DrawableHolder xmas_tree) 
 {
-	init(maze, rootWall, lineWall, cornerWall);
+	init(maze, rootWall, lineWall, cornerWall, xmas_tree);
 }
 
 ObjectMazeMap::ObjectMazeMap() 
