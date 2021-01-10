@@ -19,5 +19,5 @@ ${TARGET_SRC}
 
 add_executable(maze3d ${TARGET_SRC})
 
-target_link_libraries(maze3d opengl32 libglfw3.a libassimp.dll.a libfreetype.a)
+target_link_libraries(maze3d opengl32 libglfw3.a libassimp.dll.a libfreetype.a libopenal32.a libogg.a libsfml-audio.a)
 set_target_properties(maze3d PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Maze3d )

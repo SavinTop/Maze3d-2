@@ -54,6 +54,7 @@ class mazeScene : public Scene{
     std::shared_ptr<res::ogl::Model> rootWallModel;
     std::shared_ptr<res::ogl::Model> cornerWallModel;
     std::shared_ptr<res::ogl::Model> xmasTreeModel;
+    std::shared_ptr<res::ogl::Model> bugattiModel;
     FloorModel floor;
     LaserModel laserModel;
     std::shared_ptr<res::ogl::ShaderProgram> laserShader;

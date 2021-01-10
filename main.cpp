@@ -5,6 +5,7 @@
 
 #include "game/gameprocess.hpp"
 #include "baseTypes/gui/gui.hpp"  
+#include "SFML/Audio.hpp"
 
 static GameProcess game;
 
@@ -112,6 +113,12 @@ int main(int argc, char **argv)
     glfwGetWindowSize(window, &window_w, &window_h);
     guiText_init(0,glm::min(window_h,window_w)*0.2,"data\\fonts\\steelfis.ttf");
     guiText_loadRangeOfCharacters(0,200);
+
+    sf::Music menu_music;
+    menu_music.openFromFile("data\\sound\\Kevin MacLeod _ Take the Lead.ogg");
+    //menu_music.setLoop(true);
+    menu_music.setVolume(30);
+    menu_music.play();
 
     game = GameProcess(window);
     game.Init();

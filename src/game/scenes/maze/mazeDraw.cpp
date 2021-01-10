@@ -66,7 +66,6 @@ void mazeScene::onDraw(float delta)
     if(sett.floor)
         floor.draw(program->getProgram());
 
-
     drawLasers(projection, view);
 
     if(sett.skybox){
