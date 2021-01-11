@@ -5,6 +5,7 @@
 #include "baseTypes/color.hpp"
 #include "scenes/loadingScenes/LoadingScene.hpp"
 #include "scenes/menu/menu.hpp"
+#include "game/scenes/belarus/belarusScene.hpp"
 
 const int maxFps = 150;
 const int PPS = 100;
@@ -73,12 +74,29 @@ void GameProcess::Start()
             SetCurrentScene(nextScene);
             nextScene = nullptr;
         }
+        if(belarus){
+            runProtocolBelarus();
+            belarus = false;
+        }
     }
 }
 
 void GameProcess::SetPause(bool val) 
 {
     pause = val;
+}
+
+void GameProcess::runProtocolBelarus() 
+{
+    auto curr = new BelarusScene(this);
+    curr->initResources();
+    auto temp = curr->getResources();
+    for(auto& el:temp.getRes())
+    {
+        el->subResources_.load();
+        el->load();
+    }
+    ChangeScene(curr);
 }
 
 GLFWwindow* GameProcess::getWnd() 

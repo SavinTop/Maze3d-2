@@ -43,6 +43,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj"
+  "CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj"
@@ -58,9 +59,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj"
   "CMakeFiles/maze3d.dir/src/glad.c.obj"
   "libmaze3d.dll.a"
-  "maze3d/maze3d.exe"
-  "maze3d/maze3d.exe.manifest"
-  "maze3d/maze3d.pdb"
+  "maze3d/data/bin/maze3d.exe"
+  "maze3d/data/bin/maze3d.exe.manifest"
+  "maze3d/data/bin/maze3d.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

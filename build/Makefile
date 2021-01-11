@@ -1330,6 +1330,33 @@ src/game/player/player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/player/player.cpp.s
 .PHONY : src/game/player/player.cpp.s
 
+src/game/scenes/belarus/belarusScene.obj: src/game/scenes/belarus/belarusScene.cpp.obj
+
+.PHONY : src/game/scenes/belarus/belarusScene.obj
+
+# target to build an object file
+src/game/scenes/belarus/belarusScene.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.obj
+.PHONY : src/game/scenes/belarus/belarusScene.cpp.obj
+
+src/game/scenes/belarus/belarusScene.i: src/game/scenes/belarus/belarusScene.cpp.i
+
+.PHONY : src/game/scenes/belarus/belarusScene.i
+
+# target to preprocess a source file
+src/game/scenes/belarus/belarusScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.i
+.PHONY : src/game/scenes/belarus/belarusScene.cpp.i
+
+src/game/scenes/belarus/belarusScene.s: src/game/scenes/belarus/belarusScene.cpp.s
+
+.PHONY : src/game/scenes/belarus/belarusScene.s
+
+# target to generate assembly for a file
+src/game/scenes/belarus/belarusScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.s
+.PHONY : src/game/scenes/belarus/belarusScene.cpp.s
+
 src/game/scenes/loadingScenes/LoadingScene.obj: src/game/scenes/loadingScenes/LoadingScene.cpp.obj
 
 .PHONY : src/game/scenes/loadingScenes/LoadingScene.obj
@@ -1849,6 +1876,9 @@ help:
 	@echo ... src/game/player/player.obj
 	@echo ... src/game/player/player.i
 	@echo ... src/game/player/player.s
+	@echo ... src/game/scenes/belarus/belarusScene.obj
+	@echo ... src/game/scenes/belarus/belarusScene.i
+	@echo ... src/game/scenes/belarus/belarusScene.s
 	@echo ... src/game/scenes/loadingScenes/LoadingScene.obj
 	@echo ... src/game/scenes/loadingScenes/LoadingScene.i
 	@echo ... src/game/scenes/loadingScenes/LoadingScene.s

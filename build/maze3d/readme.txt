@@ -6,3 +6,5 @@ music:
 Kevin MacLeod (incompetech.com)
 Licensed under Creative Commons: By Attribution 3.0
 http://creativecommons.org/licenses/by/3.0/
+
+если очень часто нажимать на B, то будет по кайфу вообще

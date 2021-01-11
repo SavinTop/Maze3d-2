@@ -16,12 +16,15 @@ class GameProcess{
     void Start();
     void SetPause(bool val);
     bool GetPause(){return pause;};
+    void runProtocolBelarus();
     GLFWwindow* getWnd();
     ResourceManager* rm;
 
     void cursor_position_callback(double xpos, double ypos);
     void mouse_button_callback(double xpos, double ypos, int mb, int action);
     void char_input_callback(GLFWwindow* window, unsigned int codepoint);
+
+    bool belarus = false;
 
     private:
 

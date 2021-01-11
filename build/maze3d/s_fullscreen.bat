@@ -1,0 +1,1 @@
+data\bin\maze3d -fullscreen

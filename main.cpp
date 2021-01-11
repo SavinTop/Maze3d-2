@@ -15,13 +15,16 @@ using namespace std::chrono_literals;
 static GameProcess game;
 
 static sf::Music menu_music;
-static int v = 30;
+static int v = 50;
 
 static const unsigned int SCR_WIDTH = 1000;
 static const unsigned int SCR_HEIGHT = 400;
 static const bool def_fullScreen = false;
 
 static bool forceChangeSong = false;
+static unsigned b_counter = 0;
+static bool anthemPlaying = false;
+static unsigned int lastSongIndex = 0;
 
 struct{
     bool fullscreen = def_fullScreen;
@@ -33,6 +36,8 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 {
 	if(key==GLFW_KEY_N && action==GLFW_RELEASE)
         forceChangeSong = true;
+    if(key==GLFW_KEY_B && action==GLFW_RELEASE)
+        b_counter++;
 }
 
 static void character_callback(GLFWwindow* window, unsigned int codepoint)
@@ -152,10 +157,24 @@ int main(int argc, char **argv)
         {
             if(forceChangeSong || menu_music.getStatus()!=sf::Music::Playing)
             {
-                menu_music.openFromFile(paths[rand()%paths.size()]);
+                auto curr = rand()%paths.size();
+                while(curr==lastSongIndex)
+                    curr = rand()%paths.size();
+                menu_music.openFromFile(paths[curr]);
                 menu_music.play();
                 forceChangeSong = false;
+                lastSongIndex = curr;
             }
+            if(b_counter>5)
+            {
+                menu_music.openFromFile("data\\sound\\pogonya.ogg");
+                menu_music.play();
+                forceChangeSong = false;
+                menu_music.setLoop(true);
+                game.belarus = true;
+                break;
+            }
+            b_counter = 0;
             std::this_thread::sleep_for(1s);
         }
     };

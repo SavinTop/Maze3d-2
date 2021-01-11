@@ -61,6 +61,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/game/maze_things/utils/raycastingHandler.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj"
   "D:/21/Maze3d/src/game/maze_things/utils/shadowHandler.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj"
   "D:/21/Maze3d/src/game/player/player.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj"
+  "D:/21/Maze3d/src/game/scenes/belarus/belarusScene.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.obj"
   "D:/21/Maze3d/src/game/scenes/loadingScenes/LoadingScene.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj"
   "D:/21/Maze3d/src/game/scenes/maze/maze.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj"
   "D:/21/Maze3d/src/game/scenes/maze/maze.res.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj"
