@@ -28,6 +28,7 @@ void mazeScene::laserPhys(float delta)
         {
             auto& curr = lasers[i];
             curr.holder.addPosition(curr.dir*delta);
+            curr.dir.y+=-9.8*delta;
             if(glm::length(curr.holder.getPosition()-curr.start)>100)
                 curr.destroyed = true;
             

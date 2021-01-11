@@ -78,7 +78,7 @@ void mazeScene::mouseDown(double xpos, double ypos, int mb, int action)
 
 void mazeScene::charInput(unsigned int character) 
 {
-    if(!timed)
+    if(!timed && !proc->GetPause())
     cheatCode_h.charInput(character);
 }
 
