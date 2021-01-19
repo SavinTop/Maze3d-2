@@ -18,6 +18,10 @@ void mazeScene::start()
     laserModel.setParams(glm::vec3(0.05,0.05,0.05));
     laserModel.load();
 
+    epm.setParams(glm::vec3(6,5000,6));
+    epm.setPosition(glm::vec3((omm.width()-1)* 8 - 4,0,(omm.height()-1)* 8 - 4));
+    epm.load();
+
     calcShadows();
 
     auto settings = res::ogl::DefaultTextureInfo;
@@ -43,6 +47,7 @@ void mazeScene::start()
         lasers[i].holder.setTarget((Drawable*)&laserModel);
         lasers[i].destroyed = true;
     }
+    timed_ended = false;
 }
 
 void mazeScene::update(float delta)
@@ -101,7 +106,7 @@ void mazeScene::calcShadows()
     float width = maze_size_ * 6;
     float height = maze_size_ * 4;
 
-    glm::mat4 lightProjection = glm::ortho(-width, width, -height, height, 1.0f, 1000.0f);
+    glm::mat4 lightProjection = glm::ortho(-width, width, -height, height, 1.0f, 3000.0f);
      glm::mat4 lightView = glm::lookAt(lightPosition * (float)(maze_size_ / 5),
                                        floor.getPosition(),
                                        glm::vec3(0.0f, 1.0f, 0.0f));
@@ -141,10 +146,9 @@ void mazeScene::Lvld0ne_endless()
 
 void mazeScene::Lvld0ne_timed() 
 {
-    goToMainMenu();
-    std::cout<<"maze "<<maze_size_<<" dur "<<timer<<std::endl;
     dh_test.update(maze_size_/5-1, timer);
     dh_test.save();
+    timed_ended = true;
 }
 
 void mazeScene::goToMainMenu() 
@@ -171,6 +175,9 @@ mazeScene::mazeScene(GameProcess *proc, int maze_size, bool timed) : Scene(proc)
     maze_size_ = maze_size;
     this->timed = timed;
     timer = 0;
+    //TODO temp
+    frameCounter = 0;
+    tempSum = 0;
     dh_test.load();
 }
 

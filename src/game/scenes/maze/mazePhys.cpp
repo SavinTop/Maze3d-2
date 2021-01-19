@@ -56,8 +56,8 @@ void mazeScene::physTick(float delta)
         player.setPosition(tempPos);
     }
 
-    //if (coll(getPointCollBox(playerPos), omm.get(omm.width()-2, omm.height()-1)->fw))
-    if (playerPos.x<0 || playerPos.x>omm.width()* 8 - 6 || playerPos.z<0 || playerPos.z>omm.height()* 8 - 6)
+    if (playerPos.x>(omm.width()-1)* 8 - 6 && playerPos.x<omm.width()* 8 - 6 
+    && playerPos.z>(omm.height()-1)* 8 - 6 && playerPos.z<omm.height()* 8 - 6 && !timed_ended)
     {
         if(timed)
             Lvld0ne_timed();
@@ -67,7 +67,7 @@ void mazeScene::physTick(float delta)
 
     laserPhys(delta);
 
-    if(timed && !proc->GetPause())
+    if(timed && !timed_ended && !proc->GetPause())
     {
         float curr = glfwGetTime();
         timer+=curr-last_time;

@@ -25,6 +25,7 @@
 #include "maze_things/doomsDay/laserModel.hpp"
 #include "maze_things/doomsDay/laserObj.hpp"
 #include "maze_things/utils/dataHandler.hpp"
+#include "maze_things/utils/innerModels/endpointModel.hpp"
 
 class mazeScene : public Scene{
     public:
@@ -87,7 +88,7 @@ class mazeScene : public Scene{
 
     //TODO do it fine, not like this
     std::shared_ptr<res::ogl::ShaderProgram> shadowProgram;
-    std::shared_ptr<res::ogl::ShaderProgram> depthMapProgram;
+    std::shared_ptr<res::ogl::ShaderProgram> pistolProgram;
     glm::mat4 lightSpaceMatrix;
 
     glm::vec3 lightPosition = glm::vec3(-4.0f, 15.0f, -10.0f);
@@ -101,7 +102,12 @@ class mazeScene : public Scene{
 
     bool timed;
     float last_time;
-    float timer; // for fucking pausing, thanks mr NIKOLAY
-
+    float timer; // for fucking pausing
+    unsigned frameCounter;
+    unsigned tempSum;
     dataHandler dh_test;
+
+    EndPointModel epm;
+    std::shared_ptr<res::ogl::ShaderProgram> epm_program;
+    bool timed_ended;
 };

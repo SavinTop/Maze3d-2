@@ -34,7 +34,8 @@ void RaycastingHandler::recalculate(float fov, glm::vec2 camPos, float camDir)
             auto& curr = rays[i];
             if(curr.collapsed) continue;
             glm::ivec2 sector{curr.currPos/8.0f};
-            bool collided = false;
+            bool collided = 0;
+            unsigned coll_counter = 0;
             const int sector_size = 1;
             for(int i=sector.y-sector_size;i<=sector.y+sector_size && !collided;i++)
                 for(int j=sector.x-sector_size;j<=sector.x+sector_size && !collided;j++)
@@ -47,7 +48,10 @@ void RaycastingHandler::recalculate(float fov, glm::vec2 camPos, float camDir)
                         collided |= lineRect(curr.start.x, curr.start.y, curr.end.x, curr.end.y, sw.x, sw.y,abs(sw.x-sw.z),abs(sw.y-sw.w));
                     if(collided)
                     {
-                        curr.collapsed = true;
+                        if(coll_counter == 0){
+                            curr.collapsed = true;
+                        }else collided = false;
+                        coll_counter++;
                     }
                     collidedSectors.insert(std::make_pair<int,int>((int)sector.x, (int)sector.y));
                 }
@@ -55,4 +59,7 @@ void RaycastingHandler::recalculate(float fov, glm::vec2 camPos, float camDir)
             allRaysCollapsed = false;
         }
     }
+    /*system("cls");
+    for(auto el:collidedSectors)
+        std::cout<<el.first<<' '<<el.second<<std::endl;*/
 }

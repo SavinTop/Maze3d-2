@@ -10,11 +10,12 @@ Model::Model(const std::string& path):Resource()
 void Model::load() 
 {
     loadModel(path);
+    loaded = true;
 }
 
 void Model::unload() 
 {
-    
+    loaded = false;
 }
 
 void Model::InitializeSubResources(std::string groupName) 

@@ -58,6 +58,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/21/Maze3d/src/game/maze_things/utils/cheatCodeHandler.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.obj"
   "D:/21/Maze3d/src/game/maze_things/utils/coloredMapGenerator.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.obj"
   "D:/21/Maze3d/src/game/maze_things/utils/dataHandler.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.obj"
+  "D:/21/Maze3d/src/game/maze_things/utils/innerModels/endpointModel.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.obj"
   "D:/21/Maze3d/src/game/maze_things/utils/raycastingHandler.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj"
   "D:/21/Maze3d/src/game/maze_things/utils/shadowHandler.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj"
   "D:/21/Maze3d/src/game/player/player.cpp" "D:/21/Maze3d/build/CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj"

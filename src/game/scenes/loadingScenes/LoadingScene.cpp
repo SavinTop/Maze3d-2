@@ -44,7 +44,10 @@ void LoadingScene::update(float delta)
     }
     auto &t = resourcesToLoad[currentIndex];
     if(!t->isLoaded())
+    {
         t->load();
+    }
+        
     currentIndex++;
     if(!t->resName_.empty())
     lbl.setText(t->resName_);

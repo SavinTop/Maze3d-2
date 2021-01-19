@@ -95,7 +95,7 @@ void MazeGui::initBeg()
 
     const float downSpace = 0.15;
 
-    beg_mazemap_test = Button(nullptr,  beg_mazemap_tex.get(), beg_mazemap_savin_tex.get(),0.1);
+    beg_mazemap_test = Button(nullptr,  beg_mazemap_tex.get(), beg_mazemap_tex.get(),0.1);
     beg_mazemap_test.setParent(&beg_fbox);
     beg_mazemap_test.setPosition(0.0f,0.0f+downSpace);
     beg_mazemap_test.setSize(1.0f-downSpace,1.0f-downSpace);
@@ -116,8 +116,8 @@ void MazeGui::initTimer()
     timer_fbox.setParent(&timer);
 
     timer_time.setParent(&timer_fbox);
-    timer_time.setPosition(0.0f, -0.9f);
-    timer_time.setSize(2.0f, 0.1f);
+    timer_time.setPosition(0.0f, -0.93f);
+    timer_time.setSize(2.0f, 0.05f);
     timer_time.setTextAlign(textAlign::Center);
     timer_time.setColor(glm::vec3(Color::getOglColor(Color::rgba(255,255,0,255))));
 

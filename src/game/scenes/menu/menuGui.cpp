@@ -2,12 +2,12 @@
 
 void MenuGui::load()
 {
-    
+    loaded = true;
 }
 
 void MenuGui::unload()
 {
-    
+    loaded = false;
 }
 
 void MenuGui::mouseInput(int x, int y, bool lb)

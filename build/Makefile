@@ -1249,6 +1249,33 @@ src/game/maze_things/utils/dataHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.s
 .PHONY : src/game/maze_things/utils/dataHandler.cpp.s
 
+src/game/maze_things/utils/innerModels/endpointModel.obj: src/game/maze_things/utils/innerModels/endpointModel.cpp.obj
+
+.PHONY : src/game/maze_things/utils/innerModels/endpointModel.obj
+
+# target to build an object file
+src/game/maze_things/utils/innerModels/endpointModel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.obj
+.PHONY : src/game/maze_things/utils/innerModels/endpointModel.cpp.obj
+
+src/game/maze_things/utils/innerModels/endpointModel.i: src/game/maze_things/utils/innerModels/endpointModel.cpp.i
+
+.PHONY : src/game/maze_things/utils/innerModels/endpointModel.i
+
+# target to preprocess a source file
+src/game/maze_things/utils/innerModels/endpointModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.i
+.PHONY : src/game/maze_things/utils/innerModels/endpointModel.cpp.i
+
+src/game/maze_things/utils/innerModels/endpointModel.s: src/game/maze_things/utils/innerModels/endpointModel.cpp.s
+
+.PHONY : src/game/maze_things/utils/innerModels/endpointModel.s
+
+# target to generate assembly for a file
+src/game/maze_things/utils/innerModels/endpointModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.s
+.PHONY : src/game/maze_things/utils/innerModels/endpointModel.cpp.s
+
 src/game/maze_things/utils/raycastingHandler.obj: src/game/maze_things/utils/raycastingHandler.cpp.obj
 
 .PHONY : src/game/maze_things/utils/raycastingHandler.obj
@@ -1867,6 +1894,9 @@ help:
 	@echo ... src/game/maze_things/utils/dataHandler.obj
 	@echo ... src/game/maze_things/utils/dataHandler.i
 	@echo ... src/game/maze_things/utils/dataHandler.s
+	@echo ... src/game/maze_things/utils/innerModels/endpointModel.obj
+	@echo ... src/game/maze_things/utils/innerModels/endpointModel.i
+	@echo ... src/game/maze_things/utils/innerModels/endpointModel.s
 	@echo ... src/game/maze_things/utils/raycastingHandler.obj
 	@echo ... src/game/maze_things/utils/raycastingHandler.i
 	@echo ... src/game/maze_things/utils/raycastingHandler.s

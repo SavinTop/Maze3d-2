@@ -6,8 +6,8 @@ ResourcePack mazeScene::getResources()
     temp.setResources(menu->getResources().getRes());
     temp.getRes().insert(temp.getRes().begin(),{cornerWallModel.get(), rootWallModel.get(),
                           lineWallModel.get(), program.get(), cmt.get(), skyboxProgram.get(), cmo.get(),
-                          floorTexture.get(), floorTextureNormal.get(), shadowProgram.get(),depthMapProgram.get(), laserShader.get(),
-                        pistol_pack.get(), xmasTreeModel.get()});
+                          floorTexture.get(), floorTextureNormal.get(), shadowProgram.get(),pistolProgram.get(), laserShader.get(),
+                        pistol_pack.get(), xmasTreeModel.get(), epm_program.get()});
     return temp;
 }
 
@@ -30,7 +30,7 @@ void mazeScene::initResources()
                              sceneName, "skyboxTexture");
     skyboxProgram = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\skybox\\skybox.vert", "data\\shaders\\skybox\\skybox.frag", "skyboxShader"), sceneName);
     shadowProgram = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\shadow\\shadow.vert", "data\\shaders\\shadow\\skybox.frag", "shadowShader"), sceneName);
-    depthMapProgram = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\depthMap\\depth.vert", "data\\shaders\\depthMap\\depth.frag", "depthShader"), sceneName);
+    pistolProgram = rm->createResource(res::ogl::ShaderProgram("data\\shaders\\depthMap\\depth.vert", "data\\shaders\\depthMap\\depth.frag", "depthShader"), sceneName);
     cmo = rm->createResource(res::ogl::CubemapModel(cmt), sceneName, "Skybox model");
     floorTexture = rm->createResource(res::ogl::Texture("data\\models\\floorTextures\\floor_color.jpg"), sceneName);
     floorTextureNormal = rm->createResource(res::ogl::Texture("data\\models\\floorTextures\\Snow_003_NORM.jpg", res::ogl::TextureType::Normal), sceneName);
@@ -43,4 +43,9 @@ void mazeScene::initResources()
         "data\\scenes\\maze_doom\\pistol\\pistol-4.png",
         "data\\scenes\\maze_doom\\pistol\\pistol-5.png",
     }), sceneName);
+
+    epm_program = rm->createResource<>(
+        res::ogl::ShaderProgram("data\\shaders\\colorOnlyGui\\basic.vert",
+                                "data\\shaders\\colorOnlyGui\\basic.frag",
+                                "loading bar shader"), sceneName);
 }

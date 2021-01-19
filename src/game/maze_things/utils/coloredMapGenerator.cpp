@@ -39,5 +39,5 @@ void ColoredMapGenerator::generateMap(MazeBuilder& mb)
 	}
 
     img.setPixel((width-1)*wallLength-2,(height-1)*wallLength-2,Color::rgba(255,255,0,255));
-
+    img.setPixel(wallLength-2,wallLength-2,Color::rgba(255,0,0,255));
 }

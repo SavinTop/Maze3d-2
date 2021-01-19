@@ -31,6 +31,7 @@ void Image::load() {
 
 void Image::unload() {
     image.clear();
+    loaded = false;
 }
 
 void Image::setParams(const std::string& path, int channelCount) {

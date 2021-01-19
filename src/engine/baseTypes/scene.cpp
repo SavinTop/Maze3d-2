@@ -3,7 +3,9 @@
 
 Scene::~Scene() 
 {
-    rm->clearGroup(sceneName);
+    //TODO no need, memory fine, just dont delete, little lick, but fuck it:ddddd
+    
+    //rm->clearGroup(sceneName);
 }
 
 

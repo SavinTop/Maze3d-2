@@ -15,7 +15,7 @@ using namespace std::chrono_literals;
 static GameProcess game;
 
 static sf::Music menu_music;
-static int v = 50;
+static int v = 25;
 
 static const unsigned int SCR_WIDTH = 1000;
 static const unsigned int SCR_HEIGHT = 400;
@@ -153,6 +153,8 @@ int main(int argc, char **argv)
     menu_music.setVolume(v);
     auto yeah = [&](){
         srand(time(0));
+        menu_music.openFromFile(paths[0]);
+        menu_music.play();
         while(true)
         {
             if(forceChangeSong || menu_music.getStatus()!=sf::Music::Playing)

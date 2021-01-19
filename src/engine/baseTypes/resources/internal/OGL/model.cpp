@@ -39,11 +39,13 @@ namespace res::ogl{
             this->meshes.push_back(el);
             this->meshes.back().load();
         }
+        loaded = true;
     }
     
     void Model::unload() 
     {
         //TODO unload
+        loaded = false;
     }
     
     void Model::InitializeSubResources(std::string groupName) 

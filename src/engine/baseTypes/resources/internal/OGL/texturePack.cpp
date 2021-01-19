@@ -20,6 +20,7 @@ namespace res::ogl
         for(auto& el:textures)
             if(!el->isLoaded())
                 el->load();
+        loaded = true;
     }
     
     void TexturePack::unload() 
@@ -27,6 +28,7 @@ namespace res::ogl
         for(auto& el:textures)
             if(el->isLoaded())
                 el->unload();
+        loaded = false;
     }
     
     void TexturePack::InitializeSubResources(std::string groupName) 
