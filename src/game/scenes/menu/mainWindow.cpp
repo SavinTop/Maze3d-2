@@ -4,7 +4,7 @@
 void MenuGui::initMain() 
 {
     float topOffset = -0.33;
-    float downButt = -0.90;
+    float downButt = -0.95;
     float dist = 0.25;
 
     main = GuiWindow(w,h);

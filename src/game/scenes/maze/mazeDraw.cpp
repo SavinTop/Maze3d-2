@@ -25,24 +25,6 @@ void mazeScene::onDraw(float delta)
 
     glUniform3fv(program->getUniformLocation("viewPos"), 1, glm::value_ptr(player.getCamera().getPos()));
 
-    /*
-    glUniform1i(shadowMapid, 5);
-    glActiveTexture(GL_TEXTURE0 + 5);
-
-    if (sett.shadows || sett.epilepsyShadows && sett.ep_shadow_state % 2)
-    {
-        glUniform1i(program->getUniformLocation("showShadows"), 1);
-        glBindTexture(GL_TEXTURE_2D, shadow_h.depthMapTex_);
-        glUniformMatrix4fv(lightspacematrixid, 1, false, glm::value_ptr(lightSpaceMatrix));
-    }
-    else
-    {
-        glUniform1i(program->getUniformLocation("showShadows"), 0);
-        glBindTexture(GL_TEXTURE_2D, 0);
-    }
-    sett.ep_shadow_state++;
-    */
-
     glUniform1i(program->getUniformLocation("showLight"), sett.light);
 
     glm::vec2 real_pp{player.getCamera().getPos().x, player.getCamera().getPos().z};
@@ -55,7 +37,6 @@ void mazeScene::onDraw(float delta)
         int wallsDrawnCounter = 0;
         for (auto &el : rth.getCollidedSectors())
         {
-            //bool tempArr[100000] = {};
             const int sector_size_plus = 1;
             const int sector_size_minus = 1;
             glm::ivec2 sector{el.first, el.second};
@@ -63,27 +44,30 @@ void mazeScene::onDraw(float delta)
                 for (int j = sector.x - sector_size_minus; j <= sector.x + sector_size_plus; j++)
                     if (auto t = omm.get(j, i))
                     {
-                        //unsigned ind = i*omm.width()+j;
-                        //if(tempArr[ind]) continue;
                         glm::vec3 lightDir = glm::normalize(lightPosition);
                         glUniform3fv(lightDirId, 1, glm::value_ptr(lightDir));
                     
                         auto& curr = shds.getBlock(j,i);
-                        if(curr.loaded)
+                        if(proc->GetPause())
+                            shds.update();
+                        if(curr.loaded && (sett.shadows || sett.epilepsyShadows && sett.ep_shadow_state % 2))
                         {
                         glUniform1i(shadowMapid, 5);
                         glActiveTexture(GL_TEXTURE0 + 5);
                         glUniform1i(program->getUniformLocation("showShadows"), 1);
                         glBindTexture(GL_TEXTURE_2D, curr.depthMapTex);
                         glUniformMatrix4fv(lightspacematrixid, 1, false, glm::value_ptr(curr.lightSpaceMatrix));
+                        }else
+                        {
+                        glUniform1i(program->getUniformLocation("showShadows"), 0);
+                        glBindTexture(GL_TEXTURE_2D, 0);
                         }
                         
                         t->model.draw(program->getProgram());
                         if (t->child.get())
                             t->child->draw(program->getProgram());
-                        //tempArr[ind] = true;
                         wallsDrawnCounter++;
-                        if (sett.floor)
+                        if (sett.floor && j!=omm.width()-1 && i!=omm.height()-1)
                         {
                             floor.setPosition(glm::vec3(j*8+4, -3, i*8+4));
                             floor.draw(program->getProgram());
@@ -96,6 +80,7 @@ void mazeScene::onDraw(float delta)
     }
 
     drawLasers(projection, view);
+    sett.ep_shadow_state++;
 
     if (sett.skybox)
     {

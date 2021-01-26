@@ -7,7 +7,7 @@
 #include "scenes/menu/menu.hpp"
 #include "game/scenes/belarus/belarusScene.hpp"
 
-const int maxFps = 150;
+const int maxFps = 200;
 const int PPS = 100;
 const int UPS = 120;
 

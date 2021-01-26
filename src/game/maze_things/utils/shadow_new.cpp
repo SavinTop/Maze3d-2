@@ -44,7 +44,7 @@ void Shadow_New::update()
         redrawBlock(x,y);
         update_stack.pop();
     }
-    if(glfwGetTime() - lastUpdated > 2)
+    if(glfwGetTime() - lastUpdated > 3)
     {
         for (int i = 0; i < omm->height(); i++)
         for (int j = 0; j < omm->width(); j++)

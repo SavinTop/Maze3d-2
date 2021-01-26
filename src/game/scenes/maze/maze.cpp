@@ -126,6 +126,7 @@ void mazeScene::Lvld0ne_timed()
 void mazeScene::goToMainMenu() 
 {
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+    cheatCode_h.getSettings().wireframe = false;
     glfwSetInputMode(proc->getWnd(), GLFW_CURSOR, GLFW_CURSOR_NORMAL);
     auto next = new LoadingScene(proc, new Menu(proc));
     next->initResources();
