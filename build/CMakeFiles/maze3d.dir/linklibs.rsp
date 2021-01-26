@@ -1,1 +1,1 @@
-  -LD:/21/Maze3d/libs  -lopengl32 -Wl,-Bstatic -lglfw3 -Wl,-Bdynamic -lassimp -Wl,-Bstatic -lfreetype -lopenal32 -logg -lsfml-audio -Wl,-Bdynamic -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+  -LD:/21/Maze3d/Maze3d/libs  -lopengl32 -Wl,-Bstatic -lglfw3 -Wl,-Bdynamic -lassimp -Wl,-Bstatic -lfreetype -lopenal32 -logg -lsfml-audio -Wl,-Bdynamic -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

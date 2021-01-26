@@ -25,6 +25,7 @@ void mazeScene::onDraw(float delta)
 
     glUniform3fv(program->getUniformLocation("viewPos"), 1, glm::value_ptr(player.getCamera().getPos()));
 
+    /*
     glUniform1i(shadowMapid, 5);
     glActiveTexture(GL_TEXTURE0 + 5);
 
@@ -40,6 +41,7 @@ void mazeScene::onDraw(float delta)
         glBindTexture(GL_TEXTURE_2D, 0);
     }
     sett.ep_shadow_state++;
+    */
 
     glUniform1i(program->getUniformLocation("showLight"), sett.light);
 
@@ -54,8 +56,8 @@ void mazeScene::onDraw(float delta)
         for (auto &el : rth.getCollidedSectors())
         {
             //bool tempArr[100000] = {};
-            const int sector_size_plus = 2;
-            const int sector_size_minus = 2;
+            const int sector_size_plus = 1;
+            const int sector_size_minus = 1;
             glm::ivec2 sector{el.first, el.second};
             for (int i = sector.y - sector_size_minus; i <= sector.y + sector_size_plus; i++)
                 for (int j = sector.x - sector_size_minus; j <= sector.x + sector_size_plus; j++)
@@ -63,19 +65,35 @@ void mazeScene::onDraw(float delta)
                     {
                         //unsigned ind = i*omm.width()+j;
                         //if(tempArr[ind]) continue;
+                        glm::vec3 lightDir = glm::normalize(lightPosition);
+                        glUniform3fv(lightDirId, 1, glm::value_ptr(lightDir));
+                    
+                        auto& curr = shds.getBlock(j,i);
+                        if(curr.loaded)
+                        {
+                        glUniform1i(shadowMapid, 5);
+                        glActiveTexture(GL_TEXTURE0 + 5);
+                        glUniform1i(program->getUniformLocation("showShadows"), 1);
+                        glBindTexture(GL_TEXTURE_2D, curr.depthMapTex);
+                        glUniformMatrix4fv(lightspacematrixid, 1, false, glm::value_ptr(curr.lightSpaceMatrix));
+                        }
+                        
                         t->model.draw(program->getProgram());
                         if (t->child.get())
                             t->child->draw(program->getProgram());
                         //tempArr[ind] = true;
                         wallsDrawnCounter++;
+                        if (sett.floor)
+                        {
+                            floor.setPosition(glm::vec3(j*8+4, -3, i*8+4));
+                            floor.draw(program->getProgram());
+                        }
+                            
                     }
         }
         //system("cls");
         //std::cout<<wallsDrawnCounter<<' '<<rth.getCollidedSectors().size()<<std::endl;
     }
-
-    if (sett.floor)
-        floor.draw(program->getProgram());
 
     drawLasers(projection, view);
 
@@ -89,7 +107,6 @@ void mazeScene::onDraw(float delta)
         auto view_sky = glm::mat4(glm::mat3(player.getCamera().getViewMatrix()));
         glUniformMatrix4fv(viewId, 1, GL_FALSE, glm::value_ptr(view_sky));
         glUniformMatrix4fv(projectionId, 1, GL_FALSE, glm::value_ptr(projection));
-        glBindTexture(GL_TEXTURE_2D, shadow_h.depthMapTex_);
         cmo->draw(skyboxProgram->getProgram());
         glDepthFunc(GL_LESS);
     }
@@ -116,10 +133,12 @@ void mazeScene::onDraw(float delta)
             drawBasicTexturedRect(glm::vec4(0, 0, 1.0 * (float)window_h / window_w, 2.0), pistol_pack->getId((int)temp_i % 6), pistolProgram->getProgram());
         if ((int)temp_i % 6 != 0)
             temp_i += delta * 30;
+
+        //drawBasicTexturedRect(glm::vec4(0,0,1.0,1.0), shds.getBlock(3,0).depthMapTex, pistolProgram->getProgram());
     }
 
-    //drawBasicTexturedRect(glm::vec4(0.0,0.0,1.0,1.0*(float)window_w/window_h), shadow_h.depthMapTex_, depthMapProgram->getProgram());
-    //drawBasicTexturedRect(glm::vec4(0,0,1.0,1.0), maze_texture->getId(), depthMapProgram->getProgram());
+    CheckGLError();
+    //drawBasicTexturedRect(glm::vec4(0.0,0.0,1.0,1.0*(float)window_w/window_h), shds.getBlock(1,1).depthMapTex, pistolProgram->getProgram());
 
     CheckGLError();
     frameCounter++;

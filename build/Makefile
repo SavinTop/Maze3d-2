@@ -67,10 +67,10 @@ RM = D:\dev\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\21\Maze3d
+CMAKE_SOURCE_DIR = D:\21\Maze3d\Maze3d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\21\Maze3d\build
+CMAKE_BINARY_DIR = D:\21\Maze3d\Maze3d\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\21\Maze3d\build\CMakeFiles D:\21\Maze3d\build\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\21\Maze3d\Maze3d\build\CMakeFiles D:\21\Maze3d\Maze3d\build\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\21\Maze3d\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\21\Maze3d\Maze3d\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1330,6 +1330,33 @@ src/game/maze_things/utils/shadowHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.s
 .PHONY : src/game/maze_things/utils/shadowHandler.cpp.s
 
+src/game/maze_things/utils/shadow_new.obj: src/game/maze_things/utils/shadow_new.cpp.obj
+
+.PHONY : src/game/maze_things/utils/shadow_new.obj
+
+# target to build an object file
+src/game/maze_things/utils/shadow_new.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.obj
+.PHONY : src/game/maze_things/utils/shadow_new.cpp.obj
+
+src/game/maze_things/utils/shadow_new.i: src/game/maze_things/utils/shadow_new.cpp.i
+
+.PHONY : src/game/maze_things/utils/shadow_new.i
+
+# target to preprocess a source file
+src/game/maze_things/utils/shadow_new.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.i
+.PHONY : src/game/maze_things/utils/shadow_new.cpp.i
+
+src/game/maze_things/utils/shadow_new.s: src/game/maze_things/utils/shadow_new.cpp.s
+
+.PHONY : src/game/maze_things/utils/shadow_new.s
+
+# target to generate assembly for a file
+src/game/maze_things/utils/shadow_new.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\maze3d.dir\build.make CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.s
+.PHONY : src/game/maze_things/utils/shadow_new.cpp.s
+
 src/game/player/player.obj: src/game/player/player.cpp.obj
 
 .PHONY : src/game/player/player.obj
@@ -1903,6 +1930,9 @@ help:
 	@echo ... src/game/maze_things/utils/shadowHandler.obj
 	@echo ... src/game/maze_things/utils/shadowHandler.i
 	@echo ... src/game/maze_things/utils/shadowHandler.s
+	@echo ... src/game/maze_things/utils/shadow_new.obj
+	@echo ... src/game/maze_things/utils/shadow_new.i
+	@echo ... src/game/maze_things/utils/shadow_new.s
 	@echo ... src/game/player/player.obj
 	@echo ... src/game/player/player.i
 	@echo ... src/game/player/player.s

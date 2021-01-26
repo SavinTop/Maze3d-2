@@ -39,6 +39,9 @@ void mazeScene::laserPhys(float delta)
                 curr.destroyed = true;
                 t->model = nullptr;
                 t->fw = t->sw = glm::vec4();
+                for(int y = sector.y-1;y<=sector.y+2;y++)
+                    for(int x = sector.x-1;x<=sector.x+1;x++)
+                        shds.forceUpdate(x, y);
             }
                 
         }

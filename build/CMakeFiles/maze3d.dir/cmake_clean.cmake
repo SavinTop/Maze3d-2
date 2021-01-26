@@ -43,6 +43,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj"
+  "CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.obj"
   "CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj"

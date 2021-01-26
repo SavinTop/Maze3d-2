@@ -19,13 +19,13 @@ void RaycastingHandler::recalculate(float fov, glm::vec2 camPos, float camDir)
         curr.start = camPos;
         curr.currPos = camPos;
         curr.end = camPos+glm::vec2(cos(dir)*1000,sin(dir)*1000);
-        curr.step = glm::vec2(cos(dir)*8,sin(dir)*8);
+        curr.step = glm::vec2(cos(dir)*3,sin(dir)*3);
         curr.collapsed = false;
     }
 
     bool allRaysCollapsed = false;
     int counter = 0;
-    while(!allRaysCollapsed && counter<20)
+    while(!allRaysCollapsed && counter<100)
     {
         counter++;
         allRaysCollapsed = true;
@@ -36,7 +36,7 @@ void RaycastingHandler::recalculate(float fov, glm::vec2 camPos, float camDir)
             glm::ivec2 sector{curr.currPos/8.0f};
             bool collided = 0;
             unsigned coll_counter = 0;
-            const int sector_size = 1;
+            const int sector_size = 0;
             for(int i=sector.y-sector_size;i<=sector.y+sector_size && !collided;i++)
                 for(int j=sector.x-sector_size;j<=sector.x+sector_size && !collided;j++)
                 if(auto t = mmp->get(j,i))

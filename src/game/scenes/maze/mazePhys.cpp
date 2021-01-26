@@ -56,8 +56,8 @@ void mazeScene::physTick(float delta)
         player.setPosition(tempPos);
     }
 
-    if (playerPos.x>(omm.width()-1)* 8 - 6 && playerPos.x<omm.width()* 8 - 6 
-    && playerPos.z>(omm.height()-1)* 8 - 6 && playerPos.z<omm.height()* 8 - 6 && !timed_ended)
+    if (playerPos.x>(omm.width()-1)* 8 - 8 && playerPos.x<omm.width()* 8 - 4 
+    && playerPos.z>(omm.height()-1)* 8 - 8 && playerPos.z<omm.height()* 8 - 4 && !timed_ended)
     {
         if(timed)
             Lvld0ne_timed();
@@ -74,4 +74,6 @@ void mazeScene::physTick(float delta)
         menu->timer_setTime(timer);
         last_time = curr;
     } 
+
+    shds.update();
 }

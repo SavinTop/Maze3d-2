@@ -12,7 +12,8 @@ void mazeScene::start()
     omm.init(maze, DrawableHolder(rootWallModel.get()), DrawableHolder(lineWallModel.get()), DrawableHolder(cornerWallModel.get()),DrawableHolder(xmasTreeModel.get()));
     rth = RaycastingHandler(50, &omm);
     int maze_size = omm.width();
-    floor.setParams(glm::vec2(maze_size * 8 - 6, maze_size * 8 - 6), {floorTexture, floorTextureNormal});
+    //floor.setParams(glm::vec2(maze_size * 8 - 6, maze_size * 8 - 6), {floorTexture, floorTextureNormal});
+    floor.setParams(glm::vec2(8, 8), {floorTexture, floorTextureNormal});
     floor.setPosition(glm::vec3(maze_size * 8 / 2.0 - 4, -3, maze_size * 8 / 2.0 - 4));
     floor.load();
     laserModel.setParams(glm::vec3(0.05,0.05,0.05));
@@ -22,7 +23,7 @@ void mazeScene::start()
     epm.setPosition(glm::vec3((omm.width()-1)* 8 - 4,0,(omm.height()-1)* 8 - 4));
     epm.load();
 
-    calcShadows();
+    shds.gl_init(&omm, &shadowProgram->getProgram(), 512, lightPosition, window_w, window_h);
 
     auto settings = res::ogl::DefaultTextureInfo;
     settings.mag_filter = GL_NEAREST;
@@ -57,6 +58,8 @@ void mazeScene::update(float delta)
     {
         goToMainMenu();
     }
+    if(proc->GetPause())
+            shds.update();
 }
 
 void mazeScene::mouseMove(double xpos, double ypos)
@@ -76,7 +79,7 @@ void mazeScene::mouseDown(double xpos, double ypos, int mb, int action)
     {
         menu->mouseInput(xpos,ypos,lm);
         if(cheatCode_h.getSettings().doom)
-        shotLaser(player.getCamera().getPos()+player.getCamera().getFront(), player.getCamera().getFront(), 100);
+        shotLaser(player.getCamera().getPos()+player.getCamera().getFront(), player.getCamera().getFront(), 75);
     }
         menu->mouseInput(xpos,ypos,false);  
 }
@@ -94,40 +97,6 @@ void mazeScene::okClicked()
     menu->currentWindow = &menu->timer;
     last_time = glfwGetTime();
     glfwSetCursorPos(proc->getWnd(), window_w / 2.0f, window_h / 2.0f);
-}
-
-void mazeScene::calcShadows()
-{
-    glCullFace(GL_FRONT);
-    shadow_h.gl_init(maze_size_, 10);
-    shadowProgram->bind();
-    unsigned int lsm_id = shadowProgram->getUniformLocation("lightSpaceMatrix");
-
-    float width = maze_size_ * 6;
-    float height = maze_size_ * 4;
-
-    glm::mat4 lightProjection = glm::ortho(-width, width, -height, height, 1.0f, 3000.0f);
-     glm::mat4 lightView = glm::lookAt(lightPosition * (float)(maze_size_ / 5),
-                                       floor.getPosition(),
-                                       glm::vec3(0.0f, 1.0f, 0.0f));
-    lightSpaceMatrix = lightProjection * lightView;
-    glUniformMatrix4fv(lsm_id, 1, false, glm::value_ptr(lightSpaceMatrix));
-    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-    shadow_h.begin();
-    for (int i = 0; i < omm.height(); i++)
-        for (int j = 0; j < omm.width(); j++)
-        {
-            omm.get(j, i)->model.draw(shadowProgram->getProgram());
-            auto t = omm.get(j, i)->child;
-            if(t.get()) 
-                t->draw(shadowProgram->getProgram());
-        }
-            
-
-    floor.draw(shadowProgram->getProgram());
-    shadow_h.end(window_w, window_h);
-    CheckGLError();
-    glCullFace(GL_BACK);
 }
 
 void mazeScene::Lvld0ne_endless() 
@@ -149,6 +118,9 @@ void mazeScene::Lvld0ne_timed()
     dh_test.update(maze_size_/5-1, timer);
     dh_test.save();
     timed_ended = true;
+    auto &sett = cheatCode_h.getSettings();
+    sett.doom = true;
+    sett.flash = true;
 }
 
 void mazeScene::goToMainMenu() 
@@ -187,4 +159,5 @@ mazeScene::~mazeScene()
     shadow_h.clear();
     floor.unload();
     laserModel.unload();
+    shds.clearAll();
 }

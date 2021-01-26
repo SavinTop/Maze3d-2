@@ -62,10 +62,10 @@ RM = D:\dev\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\21\Maze3d
+CMAKE_SOURCE_DIR = D:\21\Maze3d\Maze3d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\21\Maze3d\build
+CMAKE_BINARY_DIR = D:\21\Maze3d\Maze3d\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/maze3d.dir/depend.make
@@ -79,842 +79,856 @@ include CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.obj: ../src/engine/baseTypes/color.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\color.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\color.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\color.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\color.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\color.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\color.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\color.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\color.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/color.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\color.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\color.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\color.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\color.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.obj: ../src/engine/baseTypes/containers/Image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\containers\Image.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\containers\Image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\containers\Image.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\containers\Image.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\containers\Image.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\containers\Image.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\containers\Image.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\containers\Image.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/Image.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\containers\Image.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\containers\Image.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\containers\Image.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\containers\Image.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.obj: ../src/engine/baseTypes/containers/mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\containers\mesh.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\containers\mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\containers\mesh.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\containers\mesh.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\containers\mesh.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\containers\mesh.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\containers\mesh.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\containers\mesh.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/containers/mesh.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\containers\mesh.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\containers\mesh.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\containers\mesh.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\containers\mesh.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.obj: ../src/engine/baseTypes/gui/basicTextRender.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\basicTextRender.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\gui\basicTextRender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\basicTextRender.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\basicTextRender.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\gui\basicTextRender.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\basicTextRender.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\basicTextRender.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\basicTextRender.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/basicTextRender.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\gui\basicTextRender.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\basicTextRender.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\basicTextRender.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\basicTextRender.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj: ../src/engine/baseTypes/gui/button.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\button.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\gui\button.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\button.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\button.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\gui\button.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\button.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\button.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\button.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/button.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\gui\button.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\button.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\button.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\button.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.obj: ../src/engine/baseTypes/gui/fullscreenBox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\fullscreenBox.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\gui\fullscreenBox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\fullscreenBox.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\fullscreenBox.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\gui\fullscreenBox.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\fullscreenBox.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\fullscreenBox.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\fullscreenBox.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/fullscreenBox.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\gui\fullscreenBox.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\fullscreenBox.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\fullscreenBox.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\fullscreenBox.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.obj: ../src/engine/baseTypes/gui/guiObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\guiObject.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\gui\guiObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\guiObject.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\guiObject.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\gui\guiObject.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\guiObject.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\guiObject.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\guiObject.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiObject.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\gui\guiObject.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\guiObject.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\guiObject.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\guiObject.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.obj: ../src/engine/baseTypes/gui/guiWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\guiWindow.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\gui\guiWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\guiWindow.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\guiWindow.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\gui\guiWindow.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\guiWindow.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\guiWindow.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\guiWindow.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/guiWindow.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\gui\guiWindow.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\guiWindow.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\guiWindow.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\guiWindow.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.obj: ../src/engine/baseTypes/gui/justRect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\justRect.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\gui\justRect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\justRect.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\justRect.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\gui\justRect.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\justRect.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\justRect.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\justRect.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/justRect.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\gui\justRect.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\justRect.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\justRect.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\justRect.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.obj: ../src/engine/baseTypes/gui/label.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\label.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\gui\label.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\label.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\label.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\gui\label.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\label.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\label.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\label.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/label.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\gui\label.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\label.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\label.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\label.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/loadingBar.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/loadingBar.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/loadingBar.cpp.obj: ../src/engine/baseTypes/gui/loadingBar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/loadingBar.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\loadingBar.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\gui\loadingBar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/loadingBar.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\loadingBar.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\loadingBar.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/loadingBar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/loadingBar.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\gui\loadingBar.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\loadingBar.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\loadingBar.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\loadingBar.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/loadingBar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/gui/loadingBar.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\gui\loadingBar.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\loadingBar.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\gui\loadingBar.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\gui\loadingBar.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.obj: ../src/engine/baseTypes/oglWrappers/shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\oglWrappers\shader.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\oglWrappers\shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\oglWrappers\shader.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\oglWrappers\shader.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\oglWrappers\shader.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\oglWrappers\shader.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\oglWrappers\shader.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\oglWrappers\shader.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/oglWrappers/shader.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\oglWrappers\shader.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\oglWrappers\shader.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\oglWrappers\shader.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\oglWrappers\shader.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.obj: ../src/engine/baseTypes/resource/resource.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resource\resource.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\resource\resource.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resource\resource.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\resource\resource.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\resource\resource.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resource\resource.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\resource\resource.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resource\resource.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resource.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\resource\resource.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resource\resource.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\resource\resource.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resource\resource.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj: ../src/engine/baseTypes/resource/resourceManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resource\resourceManager.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\resource\resourceManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resource\resourceManager.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\resource\resourceManager.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\resource\resourceManager.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resource\resourceManager.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\resource\resourceManager.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resource\resourceManager.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/resource/resourceManager.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\resource\resourceManager.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resource\resourceManager.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\resource\resourceManager.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resource\resourceManager.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj: ../src/engine/baseTypes/resources/external/Image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\Image.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\resources\external\Image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\Image.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\external\Image.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\resources\external\Image.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\Image.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\external\Image.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\Image.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/Image.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\resources\external\Image.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\Image.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\external\Image.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\Image.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.obj: ../src/engine/baseTypes/resources/external/TextFile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\TextFile.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\resources\external\TextFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\TextFile.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\external\TextFile.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\resources\external\TextFile.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\TextFile.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\external\TextFile.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\TextFile.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/TextFile.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\resources\external\TextFile.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\TextFile.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\external\TextFile.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\TextFile.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.obj: ../src/engine/baseTypes/resources/external/model.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\model.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\resources\external\model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\model.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\external\model.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\resources\external\model.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\model.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\external\model.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\model.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/external/model.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\resources\external\model.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\model.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\external\model.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\external\model.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.obj: ../src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapModel.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\cubemapModel.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.obj: ../src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/cubemapTexture.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\cubemapTexture.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj: ../src/engine/baseTypes/resources/internal/OGL/mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\mesh.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\mesh.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\mesh.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\mesh.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\mesh.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\mesh.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\mesh.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/mesh.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\mesh.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\mesh.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\mesh.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\mesh.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.obj: ../src/engine/baseTypes/resources/internal/OGL/model.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\model.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\model.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\model.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\model.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\model.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\model.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\model.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/model.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\model.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\model.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\model.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\model.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj: ../src/engine/baseTypes/resources/internal/OGL/shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\shader.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\shader.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\shader.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\shader.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\shader.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\shader.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\shader.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/shader.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\shader.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\shader.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\shader.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\shader.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj: ../src/engine/baseTypes/resources/internal/OGL/texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\texture.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\texture.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\texture.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\texture.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\texture.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\texture.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\texture.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texture.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\texture.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\texture.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\texture.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\texture.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.obj: ../src/engine/baseTypes/resources/internal/OGL/texturePack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\texturePack.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\texturePack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\texturePack.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\texturePack.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\texturePack.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\texturePack.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\texturePack.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\texturePack.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/resources/internal/OGL/texturePack.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\resources\internal\OGL\texturePack.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\texturePack.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\resources\internal\OGL\texturePack.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\resources\internal\OGL\texturePack.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj: ../src/engine/baseTypes/scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\scene.cpp.obj -c D:\21\Maze3d\src\engine\baseTypes\scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\baseTypes\scene.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\baseTypes\scene.cpp
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\baseTypes\scene.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\scene.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\baseTypes\scene.cpp > CMakeFiles\maze3d.dir\src\engine\baseTypes\scene.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/baseTypes/scene.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\baseTypes\scene.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\scene.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\baseTypes\scene.cpp -o CMakeFiles\maze3d.dir\src\engine\baseTypes\scene.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.obj: ../src/engine/render/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\render\camera.cpp.obj -c D:\21\Maze3d\src\engine\render\camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\render\camera.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\render\camera.cpp
 
 CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\render\camera.cpp > CMakeFiles\maze3d.dir\src\engine\render\camera.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\render\camera.cpp > CMakeFiles\maze3d.dir\src\engine\render\camera.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/render/camera.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\render\camera.cpp -o CMakeFiles\maze3d.dir\src\engine\render\camera.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\render\camera.cpp -o CMakeFiles\maze3d.dir\src\engine\render\camera.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.obj: ../src/engine/render/drawable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\render\drawable.cpp.obj -c D:\21\Maze3d\src\engine\render\drawable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\render\drawable.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\render\drawable.cpp
 
 CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\render\drawable.cpp > CMakeFiles\maze3d.dir\src\engine\render\drawable.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\render\drawable.cpp > CMakeFiles\maze3d.dir\src\engine\render\drawable.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/render/drawable.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\render\drawable.cpp -o CMakeFiles\maze3d.dir\src\engine\render\drawable.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\render\drawable.cpp -o CMakeFiles\maze3d.dir\src\engine\render\drawable.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.obj: ../src/engine/render/drawableHolder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\render\drawableHolder.cpp.obj -c D:\21\Maze3d\src\engine\render\drawableHolder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\render\drawableHolder.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\render\drawableHolder.cpp
 
 CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\render\drawableHolder.cpp > CMakeFiles\maze3d.dir\src\engine\render\drawableHolder.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\render\drawableHolder.cpp > CMakeFiles\maze3d.dir\src\engine\render\drawableHolder.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/render/drawableHolder.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\render\drawableHolder.cpp -o CMakeFiles\maze3d.dir\src\engine\render\drawableHolder.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\render\drawableHolder.cpp -o CMakeFiles\maze3d.dir\src\engine\render\drawableHolder.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/render/easyLineRender.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/render/easyLineRender.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/render/easyLineRender.cpp.obj: ../src/engine/render/easyLineRender.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/maze3d.dir/src/engine/render/easyLineRender.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\render\easyLineRender.cpp.obj -c D:\21\Maze3d\src\engine\render\easyLineRender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/maze3d.dir/src/engine/render/easyLineRender.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\render\easyLineRender.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\render\easyLineRender.cpp
 
 CMakeFiles/maze3d.dir/src/engine/render/easyLineRender.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/render/easyLineRender.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\render\easyLineRender.cpp > CMakeFiles\maze3d.dir\src\engine\render\easyLineRender.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\render\easyLineRender.cpp > CMakeFiles\maze3d.dir\src\engine\render\easyLineRender.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/render/easyLineRender.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/render/easyLineRender.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\render\easyLineRender.cpp -o CMakeFiles\maze3d.dir\src\engine\render\easyLineRender.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\render\easyLineRender.cpp -o CMakeFiles\maze3d.dir\src\engine\render\easyLineRender.cpp.s
 
 CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.obj: ../src/engine/utilities/fileLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\utilities\fileLoader.cpp.obj -c D:\21\Maze3d\src\engine\utilities\fileLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\engine\utilities\fileLoader.cpp.obj -c D:\21\Maze3d\Maze3d\src\engine\utilities\fileLoader.cpp
 
 CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\engine\utilities\fileLoader.cpp > CMakeFiles\maze3d.dir\src\engine\utilities\fileLoader.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\engine\utilities\fileLoader.cpp > CMakeFiles\maze3d.dir\src\engine\utilities\fileLoader.cpp.i
 
 CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/engine/utilities/fileLoader.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\engine\utilities\fileLoader.cpp -o CMakeFiles\maze3d.dir\src\engine\utilities\fileLoader.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\engine\utilities\fileLoader.cpp -o CMakeFiles\maze3d.dir\src\engine\utilities\fileLoader.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj: ../src/game/gameprocess.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\gameprocess.cpp.obj -c D:\21\Maze3d\src\game\gameprocess.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\gameprocess.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\gameprocess.cpp
 
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\gameprocess.cpp > CMakeFiles\maze3d.dir\src\game\gameprocess.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\gameprocess.cpp > CMakeFiles\maze3d.dir\src\game\gameprocess.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/gameprocess.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\gameprocess.cpp -o CMakeFiles\maze3d.dir\src\game\gameprocess.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\gameprocess.cpp -o CMakeFiles\maze3d.dir\src\game\gameprocess.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/maze_things/doomsDay/laserModel.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/maze_things/doomsDay/laserModel.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/maze_things/doomsDay/laserModel.cpp.obj: ../src/game/maze_things/doomsDay/laserModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/doomsDay/laserModel.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\doomsDay\laserModel.cpp.obj -c D:\21\Maze3d\src\game\maze_things\doomsDay\laserModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/doomsDay/laserModel.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\doomsDay\laserModel.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\maze_things\doomsDay\laserModel.cpp
 
 CMakeFiles/maze3d.dir/src/game/maze_things/doomsDay/laserModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/maze_things/doomsDay/laserModel.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\maze_things\doomsDay\laserModel.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\doomsDay\laserModel.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\maze_things\doomsDay\laserModel.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\doomsDay\laserModel.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/maze_things/doomsDay/laserModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/maze_things/doomsDay/laserModel.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\maze_things\doomsDay\laserModel.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\doomsDay\laserModel.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\maze_things\doomsDay\laserModel.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\doomsDay\laserModel.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/maze_things/floor/floorModel.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/maze_things/floor/floorModel.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/maze_things/floor/floorModel.cpp.obj: ../src/game/maze_things/floor/floorModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/floor/floorModel.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\floor\floorModel.cpp.obj -c D:\21\Maze3d\src\game\maze_things\floor\floorModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/floor/floorModel.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\floor\floorModel.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\maze_things\floor\floorModel.cpp
 
 CMakeFiles/maze3d.dir/src/game/maze_things/floor/floorModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/maze_things/floor/floorModel.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\maze_things\floor\floorModel.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\floor\floorModel.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\maze_things\floor\floorModel.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\floor\floorModel.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/maze_things/floor/floorModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/maze_things/floor/floorModel.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\maze_things\floor\floorModel.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\floor\floorModel.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\maze_things\floor\floorModel.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\floor\floorModel.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.obj: ../src/game/maze_things/legacy/MazeBuilder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\legacy\MazeBuilder.cpp.obj -c D:\21\Maze3d\src\game\maze_things\legacy\MazeBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\legacy\MazeBuilder.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\maze_things\legacy\MazeBuilder.cpp
 
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\maze_things\legacy\MazeBuilder.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\legacy\MazeBuilder.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\maze_things\legacy\MazeBuilder.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\legacy\MazeBuilder.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeBuilder.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\maze_things\legacy\MazeBuilder.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\legacy\MazeBuilder.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\maze_things\legacy\MazeBuilder.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\legacy\MazeBuilder.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.obj: ../src/game/maze_things/legacy/MazeMapGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\legacy\MazeMapGenerator.cpp.obj -c D:\21\Maze3d\src\game\maze_things\legacy\MazeMapGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\legacy\MazeMapGenerator.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\maze_things\legacy\MazeMapGenerator.cpp
 
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\maze_things\legacy\MazeMapGenerator.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\legacy\MazeMapGenerator.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\maze_things\legacy\MazeMapGenerator.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\legacy\MazeMapGenerator.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/maze_things/legacy/MazeMapGenerator.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\maze_things\legacy\MazeMapGenerator.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\legacy\MazeMapGenerator.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\maze_things\legacy\MazeMapGenerator.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\legacy\MazeMapGenerator.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.obj: ../src/game/maze_things/legacy/ObjectMazeBuilder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\legacy\ObjectMazeBuilder.cpp.obj -c D:\21\Maze3d\src\game\maze_things\legacy\ObjectMazeBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\legacy\ObjectMazeBuilder.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\maze_things\legacy\ObjectMazeBuilder.cpp
 
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\maze_things\legacy\ObjectMazeBuilder.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\legacy\ObjectMazeBuilder.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\maze_things\legacy\ObjectMazeBuilder.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\legacy\ObjectMazeBuilder.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/maze_things/legacy/ObjectMazeBuilder.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\maze_things\legacy\ObjectMazeBuilder.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\legacy\ObjectMazeBuilder.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\maze_things\legacy\ObjectMazeBuilder.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\legacy\ObjectMazeBuilder.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.obj: ../src/game/maze_things/utils/cheatCodeHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\cheatCodeHandler.cpp.obj -c D:\21\Maze3d\src\game\maze_things\utils\cheatCodeHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\cheatCodeHandler.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\maze_things\utils\cheatCodeHandler.cpp
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\maze_things\utils\cheatCodeHandler.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\cheatCodeHandler.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\maze_things\utils\cheatCodeHandler.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\cheatCodeHandler.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/maze_things/utils/cheatCodeHandler.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\maze_things\utils\cheatCodeHandler.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\cheatCodeHandler.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\maze_things\utils\cheatCodeHandler.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\cheatCodeHandler.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.obj: ../src/game/maze_things/utils/coloredMapGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\coloredMapGenerator.cpp.obj -c D:\21\Maze3d\src\game\maze_things\utils\coloredMapGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\coloredMapGenerator.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\maze_things\utils\coloredMapGenerator.cpp
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\maze_things\utils\coloredMapGenerator.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\coloredMapGenerator.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\maze_things\utils\coloredMapGenerator.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\coloredMapGenerator.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/maze_things/utils/coloredMapGenerator.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\maze_things\utils\coloredMapGenerator.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\coloredMapGenerator.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\maze_things\utils\coloredMapGenerator.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\coloredMapGenerator.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.obj: ../src/game/maze_things/utils/dataHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\dataHandler.cpp.obj -c D:\21\Maze3d\src\game\maze_things\utils\dataHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\dataHandler.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\maze_things\utils\dataHandler.cpp
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\maze_things\utils\dataHandler.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\dataHandler.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\maze_things\utils\dataHandler.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\dataHandler.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/maze_things/utils/dataHandler.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\maze_things\utils\dataHandler.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\dataHandler.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\maze_things\utils\dataHandler.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\dataHandler.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.obj: ../src/game/maze_things/utils/innerModels/endpointModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\innerModels\endpointModel.cpp.obj -c D:\21\Maze3d\src\game\maze_things\utils\innerModels\endpointModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\innerModels\endpointModel.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\maze_things\utils\innerModels\endpointModel.cpp
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\maze_things\utils\innerModels\endpointModel.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\innerModels\endpointModel.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\maze_things\utils\innerModels\endpointModel.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\innerModels\endpointModel.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\maze_things\utils\innerModels\endpointModel.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\innerModels\endpointModel.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\maze_things\utils\innerModels\endpointModel.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\innerModels\endpointModel.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj: ../src/game/maze_things/utils/raycastingHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\raycastingHandler.cpp.obj -c D:\21\Maze3d\src\game\maze_things\utils\raycastingHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\raycastingHandler.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\maze_things\utils\raycastingHandler.cpp
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\maze_things\utils\raycastingHandler.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\raycastingHandler.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\maze_things\utils\raycastingHandler.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\raycastingHandler.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\maze_things\utils\raycastingHandler.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\raycastingHandler.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\maze_things\utils\raycastingHandler.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\raycastingHandler.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj: ../src/game/maze_things/utils/shadowHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\shadowHandler.cpp.obj -c D:\21\Maze3d\src\game\maze_things\utils\shadowHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\shadowHandler.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\maze_things\utils\shadowHandler.cpp
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\maze_things\utils\shadowHandler.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\shadowHandler.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\maze_things\utils\shadowHandler.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\shadowHandler.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\maze_things\utils\shadowHandler.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\shadowHandler.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\maze_things\utils\shadowHandler.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\shadowHandler.cpp.s
+
+CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.obj: CMakeFiles/maze3d.dir/flags.make
+CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
+CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.obj: ../src/game/maze_things/utils/shadow_new.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\shadow_new.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\maze_things\utils\shadow_new.cpp
+
+CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.i"
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\maze_things\utils\shadow_new.cpp > CMakeFiles\maze3d.dir\src\game\maze_things\utils\shadow_new.cpp.i
+
+CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.s"
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\maze_things\utils\shadow_new.cpp -o CMakeFiles\maze3d.dir\src\game\maze_things\utils\shadow_new.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj: ../src/game/player/player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\player\player.cpp.obj -c D:\21\Maze3d\src\game\player\player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\player\player.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\player\player.cpp
 
 CMakeFiles/maze3d.dir/src/game/player/player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/player/player.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\player\player.cpp > CMakeFiles\maze3d.dir\src\game\player\player.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\player\player.cpp > CMakeFiles\maze3d.dir\src\game\player\player.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/player/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/player/player.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\player\player.cpp -o CMakeFiles\maze3d.dir\src\game\player\player.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\player\player.cpp -o CMakeFiles\maze3d.dir\src\game\player\player.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.obj: ../src/game/scenes/belarus/belarusScene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\belarus\belarusScene.cpp.obj -c D:\21\Maze3d\src\game\scenes\belarus\belarusScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\belarus\belarusScene.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\belarus\belarusScene.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\belarus\belarusScene.cpp > CMakeFiles\maze3d.dir\src\game\scenes\belarus\belarusScene.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\belarus\belarusScene.cpp > CMakeFiles\maze3d.dir\src\game\scenes\belarus\belarusScene.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\belarus\belarusScene.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\belarus\belarusScene.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\belarus\belarusScene.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\belarus\belarusScene.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj: ../src/game/scenes/loadingScenes/LoadingScene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\loadingScenes\LoadingScene.cpp.obj -c D:\21\Maze3d\src\game\scenes\loadingScenes\LoadingScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\loadingScenes\LoadingScene.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\loadingScenes\LoadingScene.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\loadingScenes\LoadingScene.cpp > CMakeFiles\maze3d.dir\src\game\scenes\loadingScenes\LoadingScene.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\loadingScenes\LoadingScene.cpp > CMakeFiles\maze3d.dir\src\game\scenes\loadingScenes\LoadingScene.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\loadingScenes\LoadingScene.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\loadingScenes\LoadingScene.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\loadingScenes\LoadingScene.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\loadingScenes\LoadingScene.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj: ../src/game/scenes/maze/maze.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\maze\maze.cpp.obj -c D:\21\Maze3d\src\game\scenes\maze\maze.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\maze\maze.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\maze\maze.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\maze\maze.cpp > CMakeFiles\maze3d.dir\src\game\scenes\maze\maze.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\maze\maze.cpp > CMakeFiles\maze3d.dir\src\game\scenes\maze\maze.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\maze\maze.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\maze\maze.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\maze\maze.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\maze\maze.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj: ../src/game/scenes/maze/maze.res.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\maze\maze.res.cpp.obj -c D:\21\Maze3d\src\game\scenes\maze\maze.res.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\maze\maze.res.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\maze\maze.res.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\maze\maze.res.cpp > CMakeFiles\maze3d.dir\src\game\scenes\maze\maze.res.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\maze\maze.res.cpp > CMakeFiles\maze3d.dir\src\game\scenes\maze\maze.res.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/maze/maze.res.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\maze\maze.res.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\maze\maze.res.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\maze\maze.res.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\maze\maze.res.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj: ../src/game/scenes/maze/mazeDraw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\maze\mazeDraw.cpp.obj -c D:\21\Maze3d\src\game\scenes\maze\mazeDraw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\maze\mazeDraw.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\maze\mazeDraw.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\maze\mazeDraw.cpp > CMakeFiles\maze3d.dir\src\game\scenes\maze\mazeDraw.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\maze\mazeDraw.cpp > CMakeFiles\maze3d.dir\src\game\scenes\maze\mazeDraw.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeDraw.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\maze\mazeDraw.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\maze\mazeDraw.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\maze\mazeDraw.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\maze\mazeDraw.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.obj: ../src/game/scenes/maze/mazeGui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\maze\mazeGui.cpp.obj -c D:\21\Maze3d\src\game\scenes\maze\mazeGui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\maze\mazeGui.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\maze\mazeGui.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\maze\mazeGui.cpp > CMakeFiles\maze3d.dir\src\game\scenes\maze\mazeGui.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\maze\mazeGui.cpp > CMakeFiles\maze3d.dir\src\game\scenes\maze\mazeGui.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/maze/mazeGui.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\maze\mazeGui.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\maze\mazeGui.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\maze\mazeGui.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\maze\mazeGui.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj: ../src/game/scenes/maze/mazePhys.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\maze\mazePhys.cpp.obj -c D:\21\Maze3d\src\game\scenes\maze\mazePhys.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\maze\mazePhys.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\maze\mazePhys.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\maze\mazePhys.cpp > CMakeFiles\maze3d.dir\src\game\scenes\maze\mazePhys.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\maze\mazePhys.cpp > CMakeFiles\maze3d.dir\src\game\scenes\maze\mazePhys.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/maze/mazePhys.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\maze\mazePhys.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\maze\mazePhys.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\maze\mazePhys.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\maze\mazePhys.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj: ../src/game/scenes/maze/maze_lasers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\maze\maze_lasers.cpp.obj -c D:\21\Maze3d\src\game\scenes\maze\maze_lasers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\maze\maze_lasers.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\maze\maze_lasers.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\maze\maze_lasers.cpp > CMakeFiles\maze3d.dir\src\game\scenes\maze\maze_lasers.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\maze\maze_lasers.cpp > CMakeFiles\maze3d.dir\src\game\scenes\maze\maze_lasers.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/maze/maze_lasers.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\maze\maze_lasers.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\maze\maze_lasers.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\maze\maze_lasers.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\maze\maze_lasers.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj: ../src/game/scenes/menu/endlessWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\menu\endlessWindow.cpp.obj -c D:\21\Maze3d\src\game\scenes\menu\endlessWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\menu\endlessWindow.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\menu\endlessWindow.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\menu\endlessWindow.cpp > CMakeFiles\maze3d.dir\src\game\scenes\menu\endlessWindow.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\menu\endlessWindow.cpp > CMakeFiles\maze3d.dir\src\game\scenes\menu\endlessWindow.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/menu/endlessWindow.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\menu\endlessWindow.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\menu\endlessWindow.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\menu\endlessWindow.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\menu\endlessWindow.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj: ../src/game/scenes/menu/mainWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\menu\mainWindow.cpp.obj -c D:\21\Maze3d\src\game\scenes\menu\mainWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\menu\mainWindow.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\menu\mainWindow.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\menu\mainWindow.cpp > CMakeFiles\maze3d.dir\src\game\scenes\menu\mainWindow.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\menu\mainWindow.cpp > CMakeFiles\maze3d.dir\src\game\scenes\menu\mainWindow.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/menu/mainWindow.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\menu\mainWindow.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\menu\mainWindow.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\menu\mainWindow.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\menu\mainWindow.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj: ../src/game/scenes/menu/menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\menu\menu.cpp.obj -c D:\21\Maze3d\src\game\scenes\menu\menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\menu\menu.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\menu\menu.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\menu\menu.cpp > CMakeFiles\maze3d.dir\src\game\scenes\menu\menu.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\menu\menu.cpp > CMakeFiles\maze3d.dir\src\game\scenes\menu\menu.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/menu/menu.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\menu\menu.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\menu\menu.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\menu\menu.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\menu\menu.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj: ../src/game/scenes/menu/menuGui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\menu\menuGui.cpp.obj -c D:\21\Maze3d\src\game\scenes\menu\menuGui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\menu\menuGui.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\menu\menuGui.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\menu\menuGui.cpp > CMakeFiles\maze3d.dir\src\game\scenes\menu\menuGui.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\menu\menuGui.cpp > CMakeFiles\maze3d.dir\src\game\scenes\menu\menuGui.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/menu/menuGui.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\menu\menuGui.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\menu\menuGui.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\menu\menuGui.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\menu\menuGui.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj: ../src/game/scenes/menu/resourceMenuGui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\menu\resourceMenuGui.cpp.obj -c D:\21\Maze3d\src\game\scenes\menu\resourceMenuGui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\menu\resourceMenuGui.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\menu\resourceMenuGui.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\menu\resourceMenuGui.cpp > CMakeFiles\maze3d.dir\src\game\scenes\menu\resourceMenuGui.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\menu\resourceMenuGui.cpp > CMakeFiles\maze3d.dir\src\game\scenes\menu\resourceMenuGui.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/menu/resourceMenuGui.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\menu\resourceMenuGui.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\menu\resourceMenuGui.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\menu\resourceMenuGui.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\menu\resourceMenuGui.cpp.s
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj: ../src/game/scenes/menu/timedWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\menu\timedWindow.cpp.obj -c D:\21\Maze3d\src\game\scenes\menu\timedWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\src\game\scenes\menu\timedWindow.cpp.obj -c D:\21\Maze3d\Maze3d\src\game\scenes\menu\timedWindow.cpp
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\src\game\scenes\menu\timedWindow.cpp > CMakeFiles\maze3d.dir\src\game\scenes\menu\timedWindow.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\src\game\scenes\menu\timedWindow.cpp > CMakeFiles\maze3d.dir\src\game\scenes\menu\timedWindow.cpp.i
 
 CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/src/game/scenes/menu/timedWindow.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\src\game\scenes\menu\timedWindow.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\menu\timedWindow.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\src\game\scenes\menu\timedWindow.cpp -o CMakeFiles\maze3d.dir\src\game\scenes\menu\timedWindow.cpp.s
 
 CMakeFiles/maze3d.dir/src/glad.c.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/src/glad.c.obj: CMakeFiles/maze3d.dir/includes_C.rsp
 CMakeFiles/maze3d.dir/src/glad.c.obj: ../src/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/maze3d.dir/src/glad.c.obj"
-	D:\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze3d.dir\src\glad.c.obj   -c D:\21\Maze3d\src\glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/maze3d.dir/src/glad.c.obj"
+	D:\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze3d.dir\src\glad.c.obj   -c D:\21\Maze3d\Maze3d\src\glad.c
 
 CMakeFiles/maze3d.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/maze3d.dir/src/glad.c.i"
-	D:\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\21\Maze3d\src\glad.c > CMakeFiles\maze3d.dir\src\glad.c.i
+	D:\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\21\Maze3d\Maze3d\src\glad.c > CMakeFiles\maze3d.dir\src\glad.c.i
 
 CMakeFiles/maze3d.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/maze3d.dir/src/glad.c.s"
-	D:\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\21\Maze3d\src\glad.c -o CMakeFiles\maze3d.dir\src\glad.c.s
+	D:\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\21\Maze3d\Maze3d\src\glad.c -o CMakeFiles\maze3d.dir\src\glad.c.s
 
 CMakeFiles/maze3d.dir/include/stb/stb_image.c.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/include/stb/stb_image.c.obj: CMakeFiles/maze3d.dir/includes_C.rsp
 CMakeFiles/maze3d.dir/include/stb/stb_image.c.obj: ../include/stb/stb_image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/maze3d.dir/include/stb/stb_image.c.obj"
-	D:\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze3d.dir\include\stb\stb_image.c.obj   -c D:\21\Maze3d\include\stb\stb_image.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/maze3d.dir/include/stb/stb_image.c.obj"
+	D:\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\maze3d.dir\include\stb\stb_image.c.obj   -c D:\21\Maze3d\Maze3d\include\stb\stb_image.c
 
 CMakeFiles/maze3d.dir/include/stb/stb_image.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/maze3d.dir/include/stb/stb_image.c.i"
-	D:\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\21\Maze3d\include\stb\stb_image.c > CMakeFiles\maze3d.dir\include\stb\stb_image.c.i
+	D:\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\21\Maze3d\Maze3d\include\stb\stb_image.c > CMakeFiles\maze3d.dir\include\stb\stb_image.c.i
 
 CMakeFiles/maze3d.dir/include/stb/stb_image.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/maze3d.dir/include/stb/stb_image.c.s"
-	D:\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\21\Maze3d\include\stb\stb_image.c -o CMakeFiles\maze3d.dir\include\stb\stb_image.c.s
+	D:\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\21\Maze3d\Maze3d\include\stb\stb_image.c -o CMakeFiles\maze3d.dir\include\stb\stb_image.c.s
 
 CMakeFiles/maze3d.dir/main.cpp.obj: CMakeFiles/maze3d.dir/flags.make
 CMakeFiles/maze3d.dir/main.cpp.obj: CMakeFiles/maze3d.dir/includes_CXX.rsp
 CMakeFiles/maze3d.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/maze3d.dir/main.cpp.obj"
-	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\main.cpp.obj -c D:\21\Maze3d\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/maze3d.dir/main.cpp.obj"
+	D:\CodeBlocks\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\maze3d.dir\main.cpp.obj -c D:\21\Maze3d\Maze3d\main.cpp
 
 CMakeFiles/maze3d.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/maze3d.dir/main.cpp.i"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\main.cpp > CMakeFiles\maze3d.dir\main.cpp.i
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\21\Maze3d\Maze3d\main.cpp > CMakeFiles\maze3d.dir\main.cpp.i
 
 CMakeFiles/maze3d.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/maze3d.dir/main.cpp.s"
-	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\main.cpp -o CMakeFiles\maze3d.dir\main.cpp.s
+	D:\CodeBlocks\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\21\Maze3d\Maze3d\main.cpp -o CMakeFiles\maze3d.dir\main.cpp.s
 
 # Object files for target maze3d
 maze3d_OBJECTS = \
@@ -960,6 +974,7 @@ maze3d_OBJECTS = \
 "CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.obj" \
 "CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj" \
 "CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj" \
+"CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.obj" \
 "CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj" \
 "CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.obj" \
 "CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj" \
@@ -1024,6 +1039,7 @@ maze3d/data/bin/maze3d.exe: CMakeFiles/maze3d.dir/src/game/maze_things/utils/dat
 maze3d/data/bin/maze3d.exe: CMakeFiles/maze3d.dir/src/game/maze_things/utils/innerModels/endpointModel.cpp.obj
 maze3d/data/bin/maze3d.exe: CMakeFiles/maze3d.dir/src/game/maze_things/utils/raycastingHandler.cpp.obj
 maze3d/data/bin/maze3d.exe: CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadowHandler.cpp.obj
+maze3d/data/bin/maze3d.exe: CMakeFiles/maze3d.dir/src/game/maze_things/utils/shadow_new.cpp.obj
 maze3d/data/bin/maze3d.exe: CMakeFiles/maze3d.dir/src/game/player/player.cpp.obj
 maze3d/data/bin/maze3d.exe: CMakeFiles/maze3d.dir/src/game/scenes/belarus/belarusScene.cpp.obj
 maze3d/data/bin/maze3d.exe: CMakeFiles/maze3d.dir/src/game/scenes/loadingScenes/LoadingScene.cpp.obj
@@ -1046,7 +1062,7 @@ maze3d/data/bin/maze3d.exe: CMakeFiles/maze3d.dir/build.make
 maze3d/data/bin/maze3d.exe: CMakeFiles/maze3d.dir/linklibs.rsp
 maze3d/data/bin/maze3d.exe: CMakeFiles/maze3d.dir/objects1.rsp
 maze3d/data/bin/maze3d.exe: CMakeFiles/maze3d.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\21\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Linking CXX executable maze3d\data\bin\maze3d.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\21\Maze3d\Maze3d\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Linking CXX executable maze3d\data\bin\maze3d.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\maze3d.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1059,6 +1075,6 @@ CMakeFiles/maze3d.dir/clean:
 .PHONY : CMakeFiles/maze3d.dir/clean
 
 CMakeFiles/maze3d.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\21\Maze3d D:\21\Maze3d D:\21\Maze3d\build D:\21\Maze3d\build D:\21\Maze3d\build\CMakeFiles\maze3d.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\21\Maze3d\Maze3d D:\21\Maze3d\Maze3d D:\21\Maze3d\Maze3d\build D:\21\Maze3d\Maze3d\build D:\21\Maze3d\Maze3d\build\CMakeFiles\maze3d.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/maze3d.dir/depend
 
